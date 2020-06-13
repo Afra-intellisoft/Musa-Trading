@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="seq_maintenance_equipment" model="ir.sequence">
+            <field name="name">Maintenance Equipment</field>
+            <field name="code">maintenance.equipment</field>
+            <field name="prefix"></field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <record id="seq_mrp_worker" model="ir.sequence">
+            <field name="name">Mrp Worker</field>
+            <field name="code">mrp.worker</field>
+            <field name="prefix">Worker</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>

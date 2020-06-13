@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="is_asset_template">
+               <t t-call="report.html_container">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+                            <t>
+                                <strong>Date from:</strong>
+                                <span t-esc="data['start_date']"/>
+                                <br/>
+                                 <strong>Date to:</strong>
+                                  <span t-esc="data['end_date']"/>
+                                 <br/>
+                                 <strong>Category:</strong>
+                                  <span t-esc="data['category_id']"/>
+                            </t>
+                            <table class="table table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th><strong>Asset Name </strong></th>
+                                        <th class="text-center"><strong> Gross Value </strong></th>
+                                        <th class="text-center"><strong> Salvage Value </strong></th>
+                                        <th class="text-center"><strong> Residual Value </strong></th>
+                                        <th class="text-center"><strong>Vendor</strong></th>
+                                        <th class="text-center"><strong> Invoice </strong></th>
+                                    </tr>
+                                </thead>
+                            <tbody>
+                            <tr t-foreach="docs" t-as="o">
+                                <!--<tr t-foreach="o.move_finished_ids" t-as="line">-->
+                                <!--<tr t-foreach="line.active_move_lot_ids" t-as="m">-->
+                                <td>
+                                    <span t-field="o.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.value"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.salvage_value"/>
+                                </td>
+                                  <td class="text-center">
+                                    <span t-field="o.value_residual"/>
+                                </td>
+                                 <td class="text-center">
+                                    <span t-field="o.partner_id.name"/>
+                                </td>
+                                 <td class="text-center">
+                                    <span t-field="o.invoice_id.name"/>
+                                </td>
+                           </tr>
+                           <!--</tr>-->
+                           <!--</tr>-->
+                      </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</data>
+</odoo>

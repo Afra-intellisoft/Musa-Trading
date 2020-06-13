@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="hr_resignation_template">
+               <t t-call="report.html_container">
+                            <t t-call="report.external_layout">
+                        <div class="page">
+                            <table class="table table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th><strong>Resignation</strong></th>
+                                        <th class="text-center"><strong>Employee</strong></th>
+                                        <th class="text-center"><strong>Date</strong></th>
+                                        <th class="text-center"><strong>Reasons</strong></th>
+                                        <th class="text-center"><strong>Date Accepted</strong></th>
+                                    </tr>
+                                </thead>
+                            <tbody>
+                            <tr t-foreach="docs" t-as="o">
+                                <td>
+                                    <span t-field="o.name"/>
+                                </td>
+
+                                <td class="text-center">
+                                    <span t-field="o.employee_id.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.date"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.reasons"/>
+                                </td>
+                                 <td class="text-center">
+                                    <span t-field="o.accept_date"/>
+                                </td>
+                           </tr>
+                      </tbody>
+                    </table>
+                            <t t-foreach="docs" t-as="o">
+                                  <td class="text-center">
+                                   <strong>Hr Note</strong><span t-field="o.hr_not"/>
+                                </td>
+                            </t>
+                </div>
+            </t>
+        </t>
+    </template>
+</data>
+</odoo>

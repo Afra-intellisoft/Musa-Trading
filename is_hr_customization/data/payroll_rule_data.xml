@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="0">
+		<record id="hr_rule_deductions" model="hr.salary.rule">
+			<field name="name">Deductions Short Loan</field>
+			<field name="sequence" eval="11"/>
+			<field name="code">Deductions_short_loan</field>
+			<field name="category_id" ref="hr_payroll.DED"/>
+			<field name="condition_select">none</field>
+			<field name="amount_select">code</field>
+			<field name="amount_python_compute">result =-payslip.short_loan</field>
+		</record>
+
+		<record id="hr_rule_taxable" model="hr.salary.rule">
+            <field name="name">Gross</field>
+            <field name="sequence" eval="100"/>
+            <field name="code">GROSS</field>
+            <field name="category_id" ref="hr_payroll.GROSS"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = contract.gross</field>
+        </record>
+		<record id="contrib_register_employees" model="hr.contribution.register">
+            <field name="name">Employees</field>
+            <field name="partner_id" eval="False"/>
+        </record>
+		<record id="hr_rule_net" model="hr.salary.rule">
+            <field name="name">Net Salary</field>
+            <field name="sequence" eval="200"/>
+            <field name="code">NET</field>
+            <field name="category_id" ref="hr_payroll.NET"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = categories.BASIC + categories.Warning + categories.GROSS + categories.DED</field>
+            <field name="register_id" ref="contrib_register_employees"/>
+        </record>
+		<record id="Wear" model="hr.salary.rule.category">
+            <field name="name">Wear</field>
+            <field name="code">Wear</field>
+        </record>
+        <record id="hr_wear" model="hr.salary.rule">
+            <field name="name">Wear</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Wear</field>
+            <field name="category_id" ref="is_hr_customization.Wear"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = contract.wage*0.08</field>
+        </record>
+		<record id="Transportation" model="hr.salary.rule.category">
+            <field name="name">Transportation</field>
+            <field name="code">Transportation</field>
+        </record>
+        <record id="hr_transportation" model="hr.salary.rule">
+            <field name="name">Transportation</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Transportation</field>
+            <field name="category_id" ref="is_hr_customization.Transportation"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = contract.wage*0.1</field>
+        </record>
+		<record id="CLOTH" model="hr.salary.rule.category">
+            <field name="name">Cloth</field>
+            <field name="code">CLOTH</field>
+        </record>
+        <record id="hr_cloth" model="hr.salary.rule">
+            <field name="name">Cloth</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">CLOTH</field>
+            <field name="category_id" ref="is_hr_customization.CLOTH"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = contract.wage*0.05</field>
+        </record>
+		<record id="COLA" model="hr.salary.rule.category">
+            <field name="name">Cola</field>
+            <field name="code">COLA</field>
+        </record>
+        <record id="hr_cola" model="hr.salary.rule">
+            <field name="name">Cola</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">COLA</field>
+            <field name="category_id" ref="is_hr_customization.COLA"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = contract.wage*0.2</field>
+        </record>
+		<record id="Meal" model="hr.salary.rule.category">
+            <field name="name">Meal</field>
+            <field name="code">MEAL</field>
+        </record>
+        <record id="hr_meal" model="hr.salary.rule">
+            <field name="name">Meal</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">MEAL</field>
+            <field name="category_id" ref="is_hr_customization.Meal"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = contract.wage*0.05</field>
+        </record>
+        <record id="Warning" model="hr.salary.rule.category">
+            <field name="name">Warning</field>
+            <field name="code">Warning</field>
+        </record>
+        <record id="hr_Warning" model="hr.salary.rule">
+            <field name="name">Warning</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Warning</field>
+            <field name="category_id" ref="is_hr_customization.Warning"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = -payslip.warning</field>
+        </record>
+
+        <record id="structure_hr_payroll" model="hr.payroll.structure">
+            <field name="code">Musa Ali Altaib For Import And Export Structures</field>
+            <field name="name">Musa Ali Altaib Import And Export structures</field>
+            <field eval="[(6, 0, [ref('hr_rule_taxable'),
+            ref('hr_rule_net'),ref('hr_rule_deductions'),ref('hr_Warning'),
+            ref('hr_wear'),ref('hr_transportation'),ref('hr_cloth'),ref('hr_cola'),ref('hr_meal')
+            ])]" name="rule_ids"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+    </data>
+</odoo>

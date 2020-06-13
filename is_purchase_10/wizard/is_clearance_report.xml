@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="is_purchase_customs_clearance_template">
+               <tr t-call="report.html_container">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+                            <t t-foreach="docs" t-as="o">
+                            <t>
+                                <strong>Custom clearance report for period Date From:</strong>
+                                <span t-esc="data['start_date']"/>
+                                <td/>
+                                 <strong>Date to:</strong>
+                                  <span t-esc="data['end_date']"/>
+                                <br/>
+                                <strong>Clearance Date:</strong>
+                                <span t-field="o.date"/>
+                                <br/>
+                                 <strong> B/L No:</strong>
+                                  <span t-field="o.bl_no"/>
+                                <br/>
+                                 <strong> Certificate No :</strong>
+                                  <span t-field="o.certificate_number"/>
+                                <br/>
+                            </t>
+                                <br/>
+                                <t>
+                                <strong>Invoice No:</strong>
+                                <span t-field="o.invoice_no"/>
+                                <br/>
+<!--                                 <strong>Contract Reference:</strong>-->
+<!--                                <span t-field="o.name"/>-->
+<!--                                <br/>-->
+                               <strong>Serial No:</strong>
+                                <span t-field="o.name"/>
+                                <br/>
+                                </t>
+                                <br/>
+                            <td/>
+                            <table style="width:100%;" dir="ltr" class="table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th><strong>Vendor</strong></th>
+                                        <th class="text-center"><strong>Product</strong></th>
+                                        <th class="text-center"><strong>Unit of measure</strong></th>
+                                        <th class="text-center"><strong>Quantity</strong></th>
+                                        <th class="text-center"><strong>Weight</strong></th>
+                                        <th class="text-center"><strong>Price Doc</strong></th>
+                                        <th class="text-center"><strong>Total</strong></th>
+                                        <th class="text-center"><strong>Container No</strong></th>
+                                        <th class="text-center"><strong>Code No</strong></th>
+                                        <th class="text-center"><strong>Batch No</strong></th>
+                                    </tr>
+                                </thead>
+                            <tbody>
+                                <tr t-foreach="o.clearance_ids" t-as="line">
+                                <td>
+                                    <span t-field="o.partner_id.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="line.product_id.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="line.product_uom_qty.name"/>
+                                </td>
+                                 <td class="text-center">
+                                    <span t-field="line.product_qty"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="line.value_weight"/>
+                                </td>
+                                  <td class="text-center">
+                                    <span t-field="line.new_price"/>
+                                </td>
+
+                                  <td class="text-center">
+                                    <span t-field="line.total"/>
+                                </td>
+                                 <td class="text-center">
+                                    <span t-field="line.container_number"/>
+                                </td>
+                                     <td class="text-center">
+                                    <span t-field="line.code_number"/>
+                                </td>
+                                     <td class="text-center">
+                                    <span t-field="line.path_number"/>
+                                </td>
+                                </tr>
+                      </tbody>
+                    </table>
+                                <br/>
+                                 <t>
+                                <strong>Rent Car:</strong>
+                                <span t-field="o.vendor_id.name"/>
+                                <br/>
+                                 <strong>Date of car moved :</strong>
+                                  <span t-field="o.date_rent"/>
+                                <br/>
+                                 </t>
+                                <t>
+                                    <td>
+                                <strong>Bank:</strong>
+                                <span t-field="o.vendor_id.name"/>
+                                <br/>
+                                 <strong>Bank Commission:</strong>
+                                  <span t-field="o.amount_bank"/></td>
+
+                                <br/>
+                                <br/>
+                                 <strong> IDBC :</strong>
+                                <span t-field="o.idbc"/>
+                                <br/>
+                                 <strong>Date IBCB:</strong>
+                                  <span t-field="o.date_idbc"/>
+                                <br/>
+                                 <strong>NOte IBCB:</strong>
+                                  <span t-field="o.note_idbc"/>
+                                <br/>
+                            </t>
+                        <tr>
+                        <group>
+                           <br/>
+                                 <strong>  Shipping Time  :</strong>
+                                <span t-field="o.shipping_time"/>
+                                <br/>
+                                 <strong>Date  Shipping Time :</strong>
+                                  <span t-field="o.date_shipping_time"/>
+                                <br/>
+                                 <strong>NOte  Shipping Time :</strong>
+                                  <span t-field="o.note_shipping_time"/>
+                                <br/>
+                        </group>
+                        </tr>
+                                <tr>
+                                                            <group>
+                           <br/>
+                                 <strong> Shipment Arrived :</strong>
+                                <span t-field="o.shipment_arrive"/>
+                                <br/>
+                                 <strong>Date  Shipping Arrived :</strong>
+                                  <span t-field="o.date_arrive"/>
+                                <br/>
+                                 <strong>NOte  Shipping Arrived :</strong>
+                                  <span t-field="o.note_arrive"/>
+                                <br/>
+                        </group>
+                                    <group>
+                           <br/>
+                                 <strong> SSMO :</strong>
+                                <span t-field="o.ssmo"/>
+                                <br/>
+                                 <strong>Date  Shipping Arrived :</strong>
+                                  <span t-field="o.date_ssmo"/>
+                                <br/>
+                                 <strong>NOte  Shipping Arrived :</strong>
+                                  <span t-field="o.note_ssmo"/>
+                                <br/>
+                        </group>
+                                      <group>
+                           <br/>
+                                 <strong> Health :</strong>
+                                <span t-field="o.health"/>
+                                <br/>
+                                 <strong>Date  Shipping Arrived :</strong>
+                                  <span t-field="o.date_health"/>
+                                <br/>
+                                 <strong>NOte  Shipping Arrived :</strong>
+                                  <span t-field="o.note_health"/>
+                                <br/>
+                        </group>
+                                </tr>
+                                <br/>
+                                <br/>
+
+
+
+               </t>
+                </div>
+            </t>
+        </tr>
+    </template>
+</data>
+</odoo>

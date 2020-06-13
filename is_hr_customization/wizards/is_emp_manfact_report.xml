@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="hr_emp_shift_template">
+               <t t-call="report.html_container">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+                            <t>
+                                <strong>Date from:</strong>
+                                <span t-esc="data['start_date']"/>
+                                <br/>
+                                 <strong>Date to:</strong>
+                                  <span t-esc="data['end_date']"/>
+                            </t>
+                            <t/>
+                            <br/>
+                            <strong>Shift Girls</strong>
+                            <table class="table table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th><strong>Shift</strong></th>
+                                        <th class="text-center"><strong>Worker</strong></th>
+                                        <th class="text-center"><strong>Amount</strong></th>
+                                    </tr>
+                                </thead>
+                            <tbody>
+                            <tr t-foreach="docs" t-as="o">
+                                <tr t-foreach="o.manufacturing_ids" t-as="line">
+                                    <!--<tr t-foreach="o.manfact_boy_ids" t-as="b">-->
+                                <td>
+                                    <span t-field="o.name"/>
+                                </td>
+                                      <td class="text-center">
+                                    <span t-field="line.worker_name.name"/>
+                                </td>
+
+                                <td class="text-center">
+                                    <span t-field="line.total"/>
+                                </td>
+                                <!--<td class="text-center">-->
+                                    <!--<span t-field="b.worker_name.name"/>-->
+                                <!--</td>-->
+                                <!--<td class="text-center">-->
+                                    <!--<span t-field="b.price_daliy"/>-->
+                                <!--</td>-->
+                                <!--</tr>-->
+                                </tr>
+                           </tr>
+                      </tbody>
+                    </table>
+                            <strong>Shift Boy</strong>
+                            <table class="table table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th><strong>Shift</strong></th>
+                                        <th class="text-center"><strong>Worker</strong></th>
+                                        <th class="text-center"><strong>Amount</strong></th>
+                                    </tr>
+                                </thead>
+                            <tbody>
+                            <tr t-foreach="docs" t-as="o">
+                                <tr t-foreach="o.manufacturing_boy_ids" t-as="b">
+                                <td>
+                                    <span t-field="o.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="b.worker_name.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="b.price_daily"/>
+                                </td>
+                                </tr>
+                           </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</data>
+</odoo>

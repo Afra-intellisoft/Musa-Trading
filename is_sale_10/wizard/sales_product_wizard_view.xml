@@ -1,0 +1,39 @@
+<odoo>
+    <record id="sale_product_report_form" model="ir.ui.view">
+        <field name="name">sale.product.wizard</field>
+        <field name="model">sale.product.wizard</field>
+        <field name="arch" type="xml">
+            <form string="sale product">
+
+                <group  col="4">
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="product_id"/>
+
+                </group>
+
+                <footer>
+                    <button name="print_report" string="Print"  type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+
+            </form>
+        </field>
+    </record>
+    <record id="sale_product_ac_action" model="ir.actions.act_window">
+        <field name="name">Product Details</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sale.product.wizard</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="sale_product_report_form"/>
+        <field name="target">new</field>
+    </record>
+
+
+
+
+    <menuitem action="sale_product_ac_action" id="sale_product_ac_menu" parent="sales_team.menu_sale_report" sequence="3" />
+
+
+</odoo>

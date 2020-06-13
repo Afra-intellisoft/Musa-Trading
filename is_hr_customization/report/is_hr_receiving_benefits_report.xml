@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="hr_delivery_report">
+            <t t-call="report.html_container">
+              <t t-foreach="docs" t-as="o">
+        <div class="header">
+        <div class="row">
+    <center>
+            <div class="text-center col-xs-6">
+            <h6>
+    <span>بسم الله الرحمن الرحيم  </span><br></br>
+    <span>موسي علي الطيب للأستيراد والتصدير  </span>
+                <br/>
+                <span>إدارة شئؤن العاملين </span>
+                </h6>
+                </div>
+    </center>
+        </div>
+                    </div>
+                        <div class="page" style=" word-spacing: 2px; font-family:'Times New Roman', Serif;">
+                                <div class="row row-centered">
+                                    <div class="col-md-12 col-centered">
+                                                        <h6 class="text-center" style="border-bottom: 1px solid black;">
+                                                                <strong>  استلام الحقوق </strong>
+                                                        </h6>
+                                        </div>
+
+                                    </div>
+        <div style="align:right;font-size: 100%;direction: rtl;width: 100%">
+
+            تشهد موسي علي الطيب لأستيراد والتصدير بأن  <span t-field="o.employee_id"/>,قد اخذ كافة حقوقة المستحقة<br></br>
+            <br></br>
+
+               <br></br>
+  <strong>  الاسباب</strong><span t-field="o.reason"/>
+
+            <br></br>
+      <br></br> الزمن الاضافي<span t-field="o.overtime"/>
+        <br></br> الاجازات<span t-field="o.leave_balance"/>
+        <br></br> الاستحقاقات <span t-field="o.loan_amount"/>
+        <br></br>  Total Receivables <span t-field="o.total_receivables"/>
+            <table>
+                <tr>
+                    <td>
+                        توقيع الطرف الاول ................ ........
+                    </td>
+                    <td>
+                        توقيع الطرف الثاني ......................
+                    </td>
+                </tr>
+                <tr>
+                    <td>التاريخ ......................</td>
+                    <td>التاريخ ......................</td>
+                </tr>
+            </table>
+            <br></br><br></br>
+
+            </div>
+                            </div>
+                  </t>
+                </t>
+            </template>
+        </data>
+    </openerp>

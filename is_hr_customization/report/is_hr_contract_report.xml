@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="hr_contract_report">
+            <t t-call="report.html_container">
+              <t t-foreach="docs" t-as="o">
+        <div class="header">
+        <div class="row">
+            <!--<div class="col-xs-3">-->
+                <!--&lt;!&ndash;<img src='/is_hr_mepco/static/src/img/logo_white.png'  style="max-height: 50px; max-width:50px;"/>&ndash;&gt;-->
+<!--</div>-->
+    <center>
+            <div class="text-center col-xs-6">
+            <h6>
+    <span>بسم الله الرحمن الرحيم  </span><br></br>
+    <span>موسي علي الطيب للأستيراد والتصدير  </span>
+                <br/>
+                <span>إدارة شئؤن العاملين </span>
+                </h6>
+                </div>
+    </center>
+        </div>
+                    </div>
+                        <div class="page" style=" word-spacing: 2px; font-family:'Times New Roman', Serif;">
+                                <div class="row row-centered">
+                                    <div class="col-md-12 col-centered">
+                                                        <h6 class="text-center" style="border-bottom: 1px solid black;">
+                                                                <strong>  عقد مسمي لاجل </strong>
+                                                        </h6>
+                                        </div>
+
+                                    </div>
+        <div style="align:right;font-size: 100%;direction: rtl;width: 100%">
+            ابرم هذا العقد في يوم
+<strong style="align:right;font-size: 100%;font-weight: normal;">في يوم  </strong><span t-field="o.date_start" t-field-options='{"format": "dd"}'/>
+<strong style="align:right;font-size: 100%;font-weight: normal;">من شهر  </strong><span t-field="o.date_start" t-field-options='{"format": "MM"}'/>
+<strong style="align:right;font-size: 100%;font-weight: normal;">من العام </strong><span t-field="o.date_start" t-field-options='{"format": "yyyy"}'/><br></br>
+
+
+            بين موسي علي الطيب لأستيراد والتصدير ويسمي فيما بعد  بالطرف الاول,,
+            والمستخدم<span t-field="o.employee_id"/><br></br>
+قبل الطرف الاول استخدام الطرف التاني  وقبل الطرف الثاني خدمة الطرف الثاني بالشروط الوارده ادناة  وتتعتبر نافذه من تاريخ التوقيع عليها
+            <br></br>
+
+    1-يعمل الطرف الثاني لدي الطرف الاول في وظيفة
+ <span t-field="o.job_id"/>
+واي مهام تسند الية مالم تتعارض جوهريا مع طبيعه الوظيفة
+               <br></br>
+ <span t-field="o.text"/>
+
+            <br></br>
+      <br></br>      المرتب<span t-field="o.employee_id.contract_id.wage"/>
+        <br></br> البدلات<span t-field="o.employee_id.contract_id.gross"/>
+            <table>
+                <tr>
+                    <td>
+                        توقيع الطرف الاول ................ ........
+                    </td>
+                    <td>
+                        توقيع الطرف الثاني ......................
+                    </td>
+                </tr>
+                <tr>
+                    <td>التاريخ ......................</td>
+                    <td>التاريخ ......................</td>
+                </tr>
+            </table>
+            <br></br><br></br>
+            <table>
+                <strong>الشهود </strong>
+                <br></br>
+                <tr>
+                    <td>
+                       1................ ........
+                    </td>
+                    <td>
+                       2 ......................
+                    </td>
+                </tr>
+                <tr>
+                    <td>التاريخ ......................</td>
+                    <td>التاريخ ......................</td>
+                </tr>
+
+            </table>
+
+            </div>
+                            </div>
+                  </t>
+                </t>
+            </template>
+        </data>
+    </openerp>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="sales_tax_template">
+               <t t-call="report.html_container">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+                            <t>
+                                <strong>Date from:</strong>
+                                <span t-esc="data['start_date']"/>
+                                 <strong>Date to:</strong>
+                                  <span t-esc="data['end_date']"/>
+                            </t>
+                            <table class="table table-condensed">
+                                 <t t-set="total1" t-value="0.00"/>
+                                <thead>
+                                    <tr>
+                                        <th  class="text-center"><strong>product</strong></th>
+                                        <th class="text-center"><strong>Product Qty</strong></th>
+                                        <th class="text-center"><strong>Unit Price</strong></th>
+                                    </tr>
+                                </thead>
+                            <tbody>
+                            <tr t-foreach="docs" t-as="o">
+
+
+                                <td class="text-center">
+                                  <span t-field="o.product_id.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.product_uom_qty"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.price_unit"/>
+
+                                </td>
+                               <td class="text-center">
+                                    <span t-field="o.price_subtotal"/><t t-set="total1" t-value="total1+ o.price_subtotal"/>
+
+                                </td>
+
+
+
+                           </tr>
+
+  <tr class="text-right">
+                                <td colspan="8">
+                                    <strong>Total: </strong>
+                                    <span t-esc="round(total1,2)"/>
+                                </td>
+                             </tr>
+
+                            </tbody>
+                    </table>
+
+                </div>
+            </t>
+        </t>
+    </template>
+</data>
+</odoo>

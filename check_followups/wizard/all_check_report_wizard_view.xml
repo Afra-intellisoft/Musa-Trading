@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+    <record id="all_check_report_wizard_form" model="ir.ui.view">
+        <field name="name">All check Report Wizard</field>
+        <field name="model">all.check.report.wizard</field>
+        <field name="arch" type="xml">
+            <form string="All Check Report">
+
+                <group  col="4">
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                    <field name="type"/>
+                </group>
+
+
+                <footer>
+                    <button name="create_report" string="Print"  type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+
+            </form>
+        </field>
+    </record>
+    <record id="all_check_report_wizard_action" model="ir.actions.act_window">
+        <field name="name">All check Report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">all.check.report.wizard</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="all_check_report_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+    <menuitem action="all_check_report_wizard_action"  name="Customer Check Report" id="main_check_report_menu_root" parent="account.menu_finance_legal_statement" />
+
+
+    </data>
+</odoo>

@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Form view of BOUNS -->
+        <record id="view_sale_bonus_form" model="ir.ui.view">
+            <field name="name">sale.person.bonus.form</field>
+            <field name="model">sale.person.bonus</field>
+            <field name="arch" type="xml">
+                <form string="Employee Bonus">
+                     <header>
+                        <button name="order_stock" type="object" string="Material Request"  attrs="{'invisible': ['|', '|' , ('request', '=', True), ('bonus_type','!=', 'product')]}"  class="oe_highlight"/>
+                        <button name="order_hr_bonus" type="object" string="Hr Request"  attrs="{'invisible': ['|', '|' , ('order_request', '=', True), ('bonus_type','!=', 'cash')]}" class="oe_highlight"/>
+                         <field name="state" widget="statusbar" statusbar_visible="draft,done" />
+                    </header>
+                    <sheet>
+                            <group col="4">
+                                <field name="name" readonly="1"/>
+                                <field name="order_request" invisible="1"/>
+                                <field name="request" invisible="1"/>
+                                <field name="date" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="employee_id" attrs="{'readonly':[('state','!=','draft')]}" />
+                                <field name="partner_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="invoice_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="company_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="request_currency" attrs="{'readonly':[('state','!=','draft')]}" />
+                            </group>
+                            <group col="4">
+                                <field name="bonus_type" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="request_amount" attrs="{'invisible':[('bonus_type','!=','cash')],'required':[('bonus_type','=','cash')]}"/>
+                                <field name="product_id" attrs="{'invisible':[('bonus_type','!=','product')],'required':[('bonus_type','=','product')]}"/>
+                                <field name="product_qty" attrs="{'invisible':[('bonus_type','!=','product')],'required':[('bonus_type','=','product')]}"/>
+                            </group>
+                        <group>
+                            <field name="notes" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree view of Finance Approval -->
+        <record id="view_sale_bonus_tree" model="ir.ui.view">
+            <field name="name">sale.person.bonus.tree</field>
+            <field name="model">sale.person.bonus</field>
+            <field name="arch" type="xml">
+                <tree string="Bonus">
+ <field name="name" readonly="1"/>
+                           <field name="date"/>
+                            <field name="employee_id" />
+                            <field name="invoice_id"/>
+                            <field name="request_amount"/>
+<!--                            <field name="exp_account"/>-->
+                </tree>
+            </field>
+        </record>
+
+        <!-- Search view of Finance Approval -->
+        <record id="view_sale_bonus_search" model="ir.ui.view">
+            <field name="name">sale.person.bonus.search</field>
+            <field name="model">sale.person.bonus</field>
+            <field name="arch" type="xml">
+                <search string="Employee Bonus">
+                    <field name="date"/>
+                    <field name="employee_id" />
+                </search>
+            </field>
+        </record>
+
+        <!-- Action of bouns System -->
+        <record id="action_sale_bonus" model="ir.actions.act_window">
+            <field name="name">Employee Bonus</field>
+            <field name="res_model">sale.person.bonus</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_by_today':1,}</field>
+        </record>
+<menuitem id="menu_bonus" name="Employee Bonus" parent="sale.menu_sale_invoicing" action="action_sale_bonus"/>
+
+
+          <record model="ir.ui.view" id="view_sale_order_for_inherited">
+        <field name="name">sale.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+
+<!--               <header>-->
+<!--                <button name="contract_request" string="Contract Request" type="object" states="sale" class="oe_highlight"  attrs="{'invisible': ['|','|','|' , ('contract', '=', True),('sale_type', '=', 'internal'), ('state','not in', ('sale','done'))]}"/>-->
+<!--            </header>-->
+
+<!--            <xpath expr="//notebook/page/field/form/group/group//field[@name='product_id']" position="after">-->
+<!--                <field name="grade"/>-->
+<!--              <field name="net_kgs"/>-->
+<!--                <field name="total_kgs"/>-->
+<!--             </xpath>-->
+             <xpath expr="/form/header/field[@name='state']" position="replace">
+                     <field name="state" widget="statusbar" statusbar_visible="draft,mg,sent,sale" readonly="1"/>
+             </xpath>
+            <xpath expr="/form/header/button[@name='action_cancel']" position="replace">
+            <button name="action_cancel" states="draft,sent,mg,sale" type="object" string="Cancel"/>
+            </xpath>
+
+            <xpath expr="/form/header/button[@name='action_confirm']" position="after">
+                     <button name="Need_approval" widget="statusbar"  type="object" attrs="{'invisible':['|',('price','=',False),('state','in',('mg','sale','cancel'))]}" string="Approved Manger" class="oe_highlight"/>
+				</xpath>
+             <xpath expr="/form/header/button[@name='action_confirm']" position="replace">
+                     <button name="action_confirm" widget="statusbar" states="mg" type="object" string="Confirm Sale" class="oe_highlight" />
+				</xpath>
+
+            <xpath expr="//field[@name='partner_id']" position="after">
+
+                <field name="sale_type" invisible="1"/>
+                <field name="price" invisible="1"/>
+                <field name="contract" invisible="1"/>
+            </xpath>
+              <xpath expr="//field[@name='payment_term_id']" position="after">
+
+                    <field name="other"/>
+
+            </xpath>
+            <xpath expr="//field[@name='partner_shipping_id']" position="after">
+                    <field name="customs_id" readonly="1"/>
+                    <field name="signal_consign_id" attrs="{'invisible': [ ('sale_type', '!=', 'external')]}"/>
+                    <field name="destination_id" attrs="{'invisible': [ ('sale_type', '!=', 'external')]}"/>
+                    <field name="notify_party_id" attrs="{'invisible': [ ('sale_type', '!=', 'external')]}"/>
+                    <field name="ship_to" attrs="{'invisible': [ ('sale_type', '!=', 'external')]}"/>
+
+            </xpath>
+             <xpath expr="//field[@name='amount_total']" position="after">
+<div  class="text-right">
+                    <field name="to_text"/>
+</div>
+            </xpath>
+            <xpath expr="//page[2]" position="after">
+                <page string="Export Information" attrs="{'invisible': [ ('sale_type', '!=', 'external')]}">
+             <group  col="2">
+                 <group>
+                    <field name="packaging_details"/>
+                    <field name="per_item"/>
+                    <field name="mark_number"/>
+                    <field name="shipment_duration"/>
+                    <field name="production_date"/>
+                     </group>
+                 <group>
+                    <!--<field name="expiration_date"/>-->
+                    <field name="bank_details"/>
+                    <field name="other_condition"/>
+                    <field name="other_signature"/>
+                    <field name="other_stamp"/>
+                     </group>
+                  </group>
+                 </page>
+            </xpath>
+
+
+
+
+         <xpath expr="//field[@name='order_line']/tree//field[@name='name']" position="after">
+         <field name="grade" />
+<!--              <field name="net_kgs"/>-->
+<!--                <field name="total_kgs"/>-->
+             </xpath>
+             <xpath expr="//field[@name='order_line']/tree//field[@name='price_unit']" position="replace">
+                <field name="price_unit"  attrs="{'readonly':[('state','!=','mg')]}"/>
+             </xpath>
+             <xpath expr="//field[@name='order_line']/tree//field[@name='price_unit']" position="before">
+                <field name="new_price"/>
+             </xpath>
+             <xpath expr="//field[@name='order_line']/tree//field[@name='name']" position="after">
+                <field name="std"/>
+                <field name="unit_in_page"/>
+                <field name="net_kgs"/>
+                <field name="total_kgs"/>
+             </xpath>
+        </field>
+        </record>
+
+
+
+    <record id="inherited_view_partner_form" model="ir.ui.view">
+      	<field name="name">inherited.view.partner.form</field>
+      	<field name="model">res.partner</field>
+      	<field name="inherit_id" ref="base.view_partner_form"/>
+		  <field name="arch" type="xml">
+			  <xpath expr="//page[@name='sales_purchases']//field[@name='user_id']" position="after">
+               <field name="amount" groups="sales_team.group_sale_manager"/>
+        	</xpath>
+          </field>
+     </record>
+
+<!--<sale order>-->
+        
+  <record id="sale.action_quotations" model="ir.actions.act_window">
+            <field name="name">Quotations</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="sale.view_quotation_tree"/>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="search_view_id" ref="sale.sale_order_view_search_inherit_quotation"/>
+            <field name="context">{'hide_sale': True,'default_sale_type':'internal'}</field>
+            <field name="domain">[('state','in',('draft','sent','cancel'))]</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Create a Quotation, the first step of a new sale.
+              </p><p>
+                Your next actions should flow efficiently: confirm the Quotation
+                to a Sale Order, then create the Invoice and collect the Payment.
+              </p><p>
+                Note that once a Quotation becomes a Sale Order, it will be moved
+                from the Quotations list to the Sales Order list.
+              </p>
+            </field>
+        </record>
+        <record id="sale.action_orders" model="ir.actions.act_window">
+            <field name="name">Sales Orders</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="search_view_id" ref="sale.sale_order_view_search_inherit_sale"/>
+            <field name="context">{}</field>
+            <field name="domain">[('state', 'not in', ('draft', 'sent', 'cancel'))]</field>
+            <field name="context">{'search_default_todo':1,'default_sale_type':'internal'}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create a Quotation, the first step of a new sale.
+                </p><p>
+                    Once the quotation is confirmed, it becomes a sales order.
+                    You'll be able to invoice it and collect payments.
+                    From the <i>Sales Orders</i> menu, you can track delivery
+                    orders or services.
+                </p>
+            </field>
+        </record>
+
+         <record id="is_action_quotations" model="ir.actions.act_window">
+            <field name="name">Quotations</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_type">form</field>
+            <!--<field name="view_id" ref="view_quotation_tree"/>-->
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="context">{'hide_sale': True,'default_sale_type':'external'}</field>
+            <field name="domain">[('sale_type','=','external'),('state', 'in', ('draft', 'sent', 'cancel'))]</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Create a Quotation, the first step of a new sale.
+              </p><p>
+                Your next actions should flow efficiently: confirm the Quotation
+                to a Sale Order, then create the Invoice and collect the Payment.
+              </p><p>
+                Note that once a Quotation becomes a Sale Order, it will be moved
+                from the Quotations list to the Sales Order list.
+              </p>
+            </field>
+        </record>
+
+        <record id="is_action_orders" model="ir.actions.act_window">
+            <field name="name">Sales Orders</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="domain">[('state', 'not in', ('draft', 'sent', 'cancel'))]</field>
+            <field name="context">{'search_default_todo':1,'default_sale_type':'external'}</field>
+            <field name="domain">[('sale_type','=','external')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create a Quotation, the first step of a new sale.
+                </p><p>
+                    Once the quotation is confirmed, it becomes a sales order.
+                    You'll be able to invoice it and collect payments.
+                    From the <i>Sales Orders</i> menu, you can track delivery
+                    orders or services.
+                </p>
+            </field>
+        </record>
+                <menuitem
+            id= "is_menu_sales_config"
+            parent= "sales_team.menu_base_partner"
+            name= "Sales External"
+            sequence="9"
+            />
+
+<!--            <menuitem parent="is_menu_sales_config" id="is_quotations_order_views"-->
+<!--              action="is_action_quotations"  sequence="3"/>-->
+
+            <menuitem parent="is_menu_sales_config" id="is_sale_order_views"
+              action="is_action_orders"  sequence="4"/>
+
+        <record model="ir.actions.act_window" id="action_sale_contract_list">
+            <field name="name">Sale for Contract</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">customs.clearance.export</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('request_id','=',active_id)]</field>
+            <field name="context">{"default_request_id":active_id}</field>
+        </record>
+        <record model="ir.actions.act_window" id="action_sale_contract_to_so">
+            <field name="name">Sale for Contract</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">customs.clearance.export</field>
+            <field name="view_mode">form,tree</field>
+            <field name="domain">[('request_id','=',active_id)]</field>
+            <field name="context">{"default_request_id":active_id}</field>
+        </record>
+
+   <record id="sale_contract_view_form" model="ir.ui.view">
+        <field name="name">sale.contract.form</field>
+        <field name="model">sale.contract</field>
+        <field name="arch" type="xml">
+            <form string="Sale Contract">
+             <header>
+                 <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
+                 <button name="%(action_sale_contract_to_so)d" type="action" string="New C/C" attrs="{'invisible': [('state', '!=','open')]}" />
+                 <button name="open_request" string="Running" type="object" states="draft" class="oe_highlight" />
+<!--                <button name="clearance_request" string="Clearance Request" type="object" states="open" class="oe_highlight"  attrs="{'invisible': ['|', '|' , ('clearance', '=', True), ('state','not in', ('open'))]}"/>-->
+             </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                            <button name="%(action_sale_contract_list)d" type="action" class="oe_stat_button" icon="fa-list-alt"
+                                    attrs="{'invisible': [('state', 'not in', ('open','close'))]}" >
+                                <field name="sale_count" widget="statinfo" string="Custom/Clearance"/>
+                            </button>
+                        </div>
+                    <group col="2">
+                        <group>
+                            <field name="name"/>
+                            <field name="date"/>
+<!--                            <field name="invoiced" invisible="1"/>-->
+<!--                            <field name="reference"/>-->
+                            <field name="vendor_id" required="1"/>
+                            <!--<field name="currency_id"/>-->
+                            <field name="clearance" invisible="1"/>
+                        </group>
+                        <group>
+
+                            <field name="delivery_location"/>
+                            <field name="city"/>
+                            <field name="beneficiary"/>
+                            <field name="pricelist_id" />
+                            <field name="payment_term_id" required="1"/>
+                        </group>
+
+                    </group>
+                    <group>
+                    <notebook>
+                        <page string="Product">
+                            <field name ="line_ids" colspan="4" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="product_id" />
+                                    <field name="product_uom_qty" />
+                                    <field name="product_qty" />
+                                    <field name="quantity" />
+                                    <field name="qty_remaining" readonly="1" string="Qty Consumed"/>
+<!--                                    <field name="discount" />-->
+                                    <field name="weight" />
+                                    <field name="value_weight" />
+                                    <field name="price" />
+                                    <field name="expired" invisible="1"/>
+                                    <field name="total_qty"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                    </group>
+                        <group>
+                            <field name="note" />
+                        </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="sale_contract_view_tree" model="ir.ui.view">
+            <field name="model">sale.contract</field>
+            <field name="arch" type="xml">
+                <tree string="Sale Contract">
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="reference"/>
+                    <field name="vendor_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+    <!--<record id="sale_contract_view_search" model="ir.ui.view">-->
+        <!--<field name="name">sale.contract search</field>-->
+        <!--<field name="model">sale.contract</field>-->
+        <!--<field name="arch" type="xml">-->
+            <!--<search string="Sale Contract">-->
+                <!--<field name="name"/>-->
+                <!--<field name="date"/>-->
+                <!--<group expand="0" string="Group By">-->
+                    <!--<filter name=" By Employee name" domain="[]" context="{'group_by' : 'name'}"/>-->
+                    <!--<filter name=" By Request state" domain="[]" context="{'group_by' : 'state'}"/>-->
+                    <!--<filter name=" By Date" domain="[]" context="{'group_by' : 'date'}"/>-->
+                <!--</group>-->
+            <!--</search>-->
+        <!--</field>-->
+    <!--</record>-->
+
+    <record id="action_sale_contract" model="ir.actions.act_window">
+        <field name="name">Sale Contract</field>
+        <field name="res_model">sale.contract</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem parent="is_menu_sales_config"  id="menu_sale_contract"
+              action="action_sale_contract" sequence="1"/>
+
+      <record id="action_sale_custody_clearance" model="ir.actions.act_window">
+        <field name="name">Custody Clearance</field>
+        <field name="res_model">custody.clearance</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'default_export_id':active_id}</field>
+        <field name="domain">[('export_id','=',active_id)]</field>
+    </record>
+  <record id="customs_clearance_export_view_form" model="ir.ui.view">
+        <field name="name">customs.clearance.export.form</field>
+        <field name="model">customs.clearance.export</field>
+        <field name="arch" type="xml">
+            <form string="Customs Clearance">
+             <header>
+               <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
+                <button name="approve_open" string="Running" type="object" states="draft" class="oe_highlight" />
+                <button name="approve_done" string="Done" type="object"  attrs="{'invisible': [ '|',('rent_car', '=', False), ('done', '=', True)]}" class="oe_highlight" />
+              </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                      <button name="%(action_sale_custody_clearance)d"
+                            class="oe_stat_button"
+                            icon="fa-pencil-square-o"
+                            type="action"
+                            >
+                            <field name="contracts_count" widget="statinfo" string="Custody"/>
+                        </button>
+                    </div>
+                    <group col="2">
+                    <group>
+                        <field name="name"/>
+                        <field name="done" invisible="1"/>
+                        <field name="request_id" readonly="1"/>
+<!--                        <field name="contract_id"/>-->
+                        <field name="date"/>
+                        <field name="bl_no"/>
+                        <field name="vendor_id"/>
+                        <!--<field name="contract_id"/>-->
+                    </group>
+                     <group>
+                        <field name="certificate_number" />
+                        <field name="invoice_no" />
+                        <field name="clearance" invisible="1"/>
+                         <field name="pricelist_id"/>
+                         <field name="payment_term_id"/>
+                         <field name="clearance_amount"/>
+                    </group>
+                    </group>
+                    <group>
+                    <notebook>
+                        <page string="Product">
+                            <field name ="export_ids" colspan="4" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="product_id" />
+                                    <field name="product_qty" />
+                                    <field name="product_uom_qty" />
+                                    <field name="value_weight"/>
+                                    <field name="weight" />
+                                    <field name="container_number" />
+                                    <field name="code_number" />
+                                    <field name="path_number" />
+                                    <field name="price" />
+                                    <field name="total_qty"/>
+                                    <field name="note" />
+                                    <!--<button name="count_form" string="Clearance Request" type="object" class="oe_highlight"/>-->
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Information Bank" attrs="{'invisible': [ ('state', '=', 'draft')]}">
+                            <group col="2">
+                            <group>
+<!--                                <field name="bank_id" />-->
+<!--                                <field name="currency_id" />-->
+                                <field name="bank_commission" />
+<!--                                <field name="value_goods" />-->
+<!--                                <field name="total_bank" />-->
+                            </group>
+                              <group>
+                                 <field name="idbc" />
+                                 <field name="date_idbc" attrs="{'invisible': [ ('idbc', '=', False)]}"/>
+                                 <field name="note_idbc" attrs="{'invisible': [ ('idbc', '=', False)]}"/>
+                            </group>
+                            <group>
+                                 <field name="docs_bank" />
+                                 <field name="date_bank" attrs="{'invisible': [ ('docs_bank', '=', False)]}"/>
+                                 <field name="note_bank" attrs="{'invisible': [ ('docs_bank', '=', False)]}"/>
+                            </group>
+                            <group>
+                                 <field name="appeal_signed" />
+                                 <field name="date_appeal_signed" attrs="{'invisible': [ ('appeal_signed', '=', False)]}"/>
+                                 <field name="note_appeal_signed" attrs="{'invisible': [ ('appeal_signed', '=', False)]}"/>
+                            </group>
+                            </group>
+                        </page>
+                          <page string="Shipment" attrs="{'invisible': [ ('state', '=', 'draft')]}">
+                            <group col="2">
+                            <group>
+                                <field name="shipping_time" />
+                                <field name="date_shipping_time" attrs="{'invisible': [ ('shipping_time', '=', False)]}"/>
+                                <field name="note_shipping_time" attrs="{'invisible': [ ('shipping_time', '=', False)]}"/>
+                                <field name="attach_shipping" attrs="{'invisible': [ ('shipping_time', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="eta" />
+                                <field name="date_eta" attrs="{'invisible': [ ('eta', '=', False)]}"/>
+                                <field name="note_shipping_time" attrs="{'invisible': [ ('eta', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="shipment_arrive" />
+                                <field name="date_arrive" attrs="{'invisible': [ ('shipment_arrive', '=', False)]}"/>
+                                <field name="note_arrive" attrs="{'invisible': [ ('shipment_arrive', '=', False)]}"/>
+                                <field name="done_shipment_arrive" attrs="{'invisible': [ ('shipment_arrive', '=', False)]}"/>
+                            </group>
+                            </group>
+                        </page>
+                        <page string="Clearance Paperwork" attrs="{'invisible': [ ('done_shipment_arrive', '=', False)]}">
+                            <group col="2">
+                            <group>
+                                <field name="health" />
+                                <field name="health_no" attrs="{'invisible': [ ('health', '=', False)]}"/>
+                                <field name="date_health" attrs="{'invisible': [ ('health', '=', False)]}"/>
+                                <field name="note_health" attrs="{'invisible': [ ('health', '=', False)]}"/>
+                                <field name="attach_health" attrs="{'invisible': [ ('health', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="inspector" />
+                                <field name="inspector_no" attrs="{'invisible': [ ('inspector', '=', False)]}"/>
+                                <field name="date_inspector" attrs="{'invisible': [ ('inspector', '=', False)]}"/>
+                                <field name="note_inspector" attrs="{'invisible': [ ('inspector', '=', False)]}"/>
+                                <field name="attach_inspector" attrs="{'invisible': [ ('inspector', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="ssmo" />
+                                <field name="ssmo_no" attrs="{'invisible': [ ('ssmo', '=', False)]}"/>
+                                <field name="date_ssmo" attrs="{'invisible': [ ('ssmo', '=', False)]}"/>
+                                <field name="attach_ssmo" attrs="{'invisible': [ ('ssmo', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="docs" />
+                                <field name="docs_no" attrs="{'invisible': [ ('docs', '=', False)]}"/>
+                                <field name="date_docs" attrs="{'invisible': [ ('docs', '=', False)]}"/>
+                                <field name="attach_docs" attrs="{'invisible': [ ('docs', '=', False)]}"/>
+                                <field name="done_docs" attrs="{'invisible': [ ('docs', '=', False)]}"/>
+                            </group>
+                             <group>
+                                <field name="other" />
+                                <field name="other_no" attrs="{'invisible': [ ('other', '=', False)]}"/>
+                                <field name="date_other" attrs="{'invisible': [ ('other', '=', False)]}"/>
+                                <field name="note_other" attrs="{'invisible': [ ('other', '=', False)]}"/>
+                                <field name="attach_other" attrs="{'invisible': [ ('other', '=', False)]}"/>
+                            </group>
+                         </group>
+                        </page>
+                        <page string="Under Clearance Point" attrs="{'invisible': [ ('done_docs', '=', False)]}">
+                            <group col="2">
+                            <group>
+                                <field name="vassal_hooked" />
+                                <field name="date_vassal_hooked" attrs="{'invisible': [ ('vassal_hooked', '=', False)]}"/>
+                                <field name="note_vassal_hooked" attrs="{'invisible': [ ('vassal_hooked', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="container_dispatch" />
+                                <field name="date_container_dispatch" attrs="{'invisible': [ ('container_dispatch', '=', False)]}"/>
+                                <field name="note_container_dispatch" attrs="{'invisible': [ ('container_dispatch', '=', False)]}"/>
+                            </group>
+                             <group>
+                                <field name="moving_containers" />
+                                <field name="date_moving" attrs="{'invisible': [ ('moving_containers', '=', False)]}"/>
+                                <field name="note_moving" attrs="{'invisible': [ ('moving_containers', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="examine_goods" />
+                                <field name="date_goods" attrs="{'invisible': [ ('examine_goods', '=', False)]}"/>
+                                <field name="note_goods" attrs="{'invisible': [ ('examine_goods', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="certificate_received" />
+                                <field name="date_certificate" attrs="{'invisible': [ ('certificate_received', '=', False)]}"/>
+                                <field name="note_certificate" attrs="{'invisible': [ ('certificate_received', '=', False)]}"/>
+                                <field name="done_clearance" attrs="{'invisible': [ ('certificate_received', '=', False)]}"/>
+                            </group>
+                             <group>
+                                <field name="rent_car" />
+                                <field name="date_rent" attrs="{'invisible': [ ('rent_car', '=', False)]}"/>
+                                <field name="note_rent" attrs="{'invisible': [ ('rent_car', '=', False)]}"/>
+                                <field name="amount_rent" attrs="{'invisible': [ ('rent_car', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="total_amount_ex" />
+                            </group>
+                                <group>
+                                 <field name="account_debit_id" attrs="{'invisible': [ ('rent_car', '=', False)]}"/>
+                                 <field name="account_credit_id" attrs="{'invisible': [ ('rent_car', '=', False)]}"/>
+                                 <field name="journal_id" attrs="{'invisible': [ ('rent_car', '=', False)]}"/>
+                                 <field name="move_id" attrs="{'invisible': [ ('rent_car', '=', False)]}"/>
+                                 <button name="finance_approve" string="Journal Entry" type="object" class="oe_highlight" attrs="{'invisible': ['|',('clearance', '=', True),('rent_car', '=', False)]}"/>
+                                 </group>
+                            </group>
+                         </page>
+                    </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="customs_clearance_export_view_tree" model="ir.ui.view">
+            <field name="model">customs.clearance.export</field>
+            <field name="arch" type="xml">
+                <tree string="Customs Clearance">
+                    <field name="name"/>
+                    <field name="request_id"/>
+                    <field name="date"/>
+                    <field name="vendor_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+    <!--<record id="customs_clearance_view_export_search" model="ir.ui.view">-->
+        <!--<field name="name">customs.clearance search</field>-->
+        <!--<field name="model">customs.clearance</field>-->
+        <!--<field name="arch" type="xml">-->
+            <!--<search string="Customs Clearance">-->
+                <!--<field name="name"/>-->
+                <!--<group expand="0" string="Group By">-->
+                    <!--<filter name=" By Employee name" domain="[]" context="{'group_by' : 'name'}"/>-->
+                    <!--&lt;!&ndash;<filter name=" By Request state" domain="[]" context="{'group_by' : 'state'}"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<filter name=" By Date" domain="[]" context="{'group_by' : 'date'}"/>&ndash;&gt;-->
+                <!--</group>-->
+            <!--</search>-->
+        <!--</field>-->
+    <!--</record>-->
+
+    <record id="action_customs_clearance_export" model="ir.actions.act_window">
+        <field name="name">Customs Clearance</field>
+        <field name="res_model">customs.clearance.export</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem parent="is_menu_sales_config"  id="menu_customs_clearance_export"
+              action="action_customs_clearance_export" sequence="2"/>
+<!--inherit product tamplate        -->
+
+       <record model="ir.ui.view" id="product_template_for_inherited">
+        <field name="name">product.template.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+
+
+<!--             </xpath>-->
+             <xpath expr="//field[@name='list_price']" position="after">
+                     <field name="average_price"/>
+             </xpath>
+
+
+          </field>
+        </record>
+
+
+<!--    <record id="oodo_partner_view_form" model="ir.ui.view">-->
+<!--                <field name="name">res.partner.form.inherit</field>-->
+<!--                <field name="model">res.partner</field>-->
+<!--                <field name="inherit_id" ref="is_sale_10.inherited_view_partner_form" />-->
+<!--                <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_salesman') ])]" />-->
+<!--                <field name="arch" type="xml">-->
+<!--                    <field name="amount" position="attributes">-->
+<!--                       <attribute name="readonly">1</attribute>-->
+<!--                    </field>-->
+<!--                </field>-->
+<!--    </record>-->
+<!--    <record id="ids_partner_view_form_mgr" model="ir.ui.view">-->
+<!--                <field name="name">res.partner.form.inherit1</field>-->
+
+<!--                <field name="model">res.partner</field>-->
+<!--                <field name="inherit_id" ref="is_sale_10.inherited_view_partner_form" />-->
+<!--                <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_salesman_all_leads') ])]" />-->
+<!--                <field name="arch" type="xml">-->
+<!--                    <field name="amount" position="attributes">-->
+<!--                       <attribute name="readonly">1</attribute>-->
+<!--                    </field>-->
+<!--                </field>-->
+<!--    </record>-->
+
+    </data>
+</odoo>

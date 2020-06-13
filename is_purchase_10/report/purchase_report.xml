@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <report
+            string="Contract"
+            id="action_report_contract"
+            model="purchase.contract.line"
+            report_type="qweb-pdf"
+            name="is_purchase_10.is_purchase_contract_template"
+            file="is_purchase_10.is_purchase_contract_template"
+            menu="False"
+        />
+<!--  <report-->
+<!--            id="action_report_partner-ledger"-->
+<!--            model="account.invoice"-->
+<!--            string="Partner Ledger"-->
+<!--            report_type="qweb-pdf"-->
+<!--            name="account.report_partnerledger"-->
+<!--            file="account.report_partnerledger"-->
+<!--            />-->
+        <report
+            string="Customs Clearance"
+            id="action_report_customs_clearance"
+            model="customs.clearance"
+            report_type="qweb-pdf"
+            name="is_purchase_10.is_purchase_customs_clearance_template"
+            file="is_purchase_10.is_purchase_customs_clearance_template"
+            menu="False"
+        />
+
+        <report
+            string="Track Qty"
+            id="action_report_track_qty"
+            model="purchase.track.quantity"
+            report_type="qweb-pdf"
+            name="is_purchase_10.is_purchase_track_template"
+            file="is_purchase_10.is_purchase_track_template"
+            menu="False"
+        />
+
+        <report
+            string="Client Qty"
+            id="action_report_client_qty"
+            model="purchase.contract.line"
+            report_type="qweb-pdf"
+            name="is_purchase_10.is_purchase_client_template"
+            file="is_purchase_10.is_purchase_client_template"
+            menu="False"
+        />
+        <report
+            string="Cultivate Qty"
+            id="action_report_cultivate_qty"
+            model="purchase.contract.line"
+            report_type="qweb-pdf"
+            name="is_purchase_10.is_purchase_cultivate_template"
+            file="is_purchase_10.is_purchase_cultivate_template"
+            menu="False"
+        />
+        <!--<report-->
+            <!--string="Purchase Order"-->
+            <!--id="action_report_purchase_order"-->
+            <!--model="purchase.order"-->
+            <!--report_type="qweb-pdf"-->
+            <!--name="is_purchase_10.report_purchase_order_document"-->
+            <!--file="is_purchase_10.report_purchase_order_document"-->
+        <!--/>-->
+</odoo>

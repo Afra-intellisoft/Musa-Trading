@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+		<record id="is_hr_count_manufacturing_tree_view" model="ir.ui.view">
+			<field name="name">Employee Manufacturing</field>
+			<field name="model">is.hr.count.manufacturing</field>
+			<field name="arch" type="xml">
+				<tree string="Manufacturing">
+                       <field name="name"/>
+                       <field name="date"/>
+                       <field name="date_order"/>
+				</tree>
+			</field>
+		</record>
+
+
+	<record id="is_hr_count_manufacturing_form_view" model="ir.ui.view">
+			<field name="name">Payslip Manufacturing</field>
+			<field name="model">is.hr.count.manufacturing</field>
+			<field name="arch" type="xml">
+				<form string="Manufacturing">
+                    <header>
+                        <button name="action_auditor"  string="Auditor" type="object" class="oe_highlight" states="finance_approval" groups="is_accounting_approval_10.auditor_access_group"/>
+                        <button name="finance_approve"  string="Finance Approve" type="object" class="oe_highlight" states="draft" groups="is_accounting_approval_10.auditor_access_group"/>
+                        <button name="close"  string="Close Shift" type="object" class="oe_highlight" states="in_progress"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,auditor"/>
+                    </header>
+					<sheet>
+                    <group>
+                       <field name="date" />
+                       <field name="name"/>
+                       <field name="date_order"/>
+					</group>
+                        <notebook>
+                               <group string="Worker Girls"/>
+                               <page string="Worker Girls">
+                                <field  name="manufacturing_ids">
+                                    <tree editable="bottom" >
+                                        <field name="worker_name" readonly="1"/>
+                                        <field name="total" readonly="1"/>
+                                   </tree>
+                               </field>
+                            </page>
+                            <group string="Worker Boy"/>
+                               <page string="Worker Boy">
+                                <field  name="manufacturing_boy_ids">
+                                    <tree editable="bottom" >
+                                        <field name="worker_name" readonly="1"/>
+                                        <field name="price_daily" readonly="1"/>
+                                   </tree>
+                               </field>
+                            </page>
+                               <page string="Account">
+                                   <group>
+                                       <field name="account_id" />
+                                    <field name="account_credit"/>
+                                    <field name="journal_id"/>
+                                    <field name="move_id" readonly="1"/>
+                                   </group>
+                            </page>
+                        </notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record id="action_is_hr_count_manufacturing" model="ir.actions.act_window">
+			<field name="name">Payslip Manufacturing</field>
+			<field name="res_model">is.hr.count.manufacturing</field>
+			<field name="view_mode">tree,form</field>
+	</record>
+
+<menuitem name="Employee Manufacturing" parent="hr_payroll.menu_hr_payroll_root" id="menu_hr_manufacturing_allowance" groups="hr.group_hr_manager"  sequence="15"/>
+<menuitem parent="menu_hr_manufacturing_allowance" name="Payslip Manufacturing" id="menu_hr_manufacturing" action="action_is_hr_count_manufacturing" sequence="10" groups="hr.group_hr_manager"/>
+
+
+
+    	<record id="mrp_employee_tree_view" model="ir.ui.view">
+			<field name="name">mrp.worker.tree</field>
+			<field name="model">mrp.worker</field>
+			<field name="arch" type="xml">
+				<tree string="Workers Manufacturing">
+					<field name="name"/>
+					<field name="serial_no"/>
+				</tree>
+			</field>
+		</record>
+
+
+	<record id="mrp_employee_form_view" model="ir.ui.view">
+			<field name="name">mrp.worker.form</field>
+			<field name="model">mrp.worker</field>
+			<field name="arch" type="xml">
+				<form string="Workers Manufacturing">
+					<sheet>
+                        <group >
+                            <field name="serial_no"/>
+                            <field name="name"/>
+                        </group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record id="action_mrp_employee" model="ir.actions.act_window">
+			<field name="name">Workers Manufacturing</field>
+			<field name="res_model">mrp.worker</field>
+			<field name="view_mode">tree,form</field>
+	</record>
+    <menuitem name="Workers Manufacturing" action="action_mrp_employee" parent="menu_hr_manufacturing_allowance" id="menu_worker_mrp"  sequence="10"  groups="hr.group_hr_manager"/>
+
+</odoo>

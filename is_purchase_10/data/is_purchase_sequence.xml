@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="seq_purchase_contract" model="ir.sequence">
+            <field name="name">Purchase Contract</field>
+            <field name="code">purchase.contract</field>
+            <field name="prefix">Contract</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <record id="seq_customs_clearance" model="ir.sequence">
+            <field name="name">Customs Clearance</field>
+            <field name="code">customs.clearance</field>
+            <field name="prefix">Cu</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <record id="seq_track_qty" model="ir.sequence">
+            <field name="name">Track Quantity</field>
+            <field name="code">purchase.track.quantity</field>
+            <field name="prefix">TC</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+    </data>
+</odoo>

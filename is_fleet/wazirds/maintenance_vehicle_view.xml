@@ -1,0 +1,32 @@
+<odoo>
+    <record id="maintenance_wizard" model="ir.ui.view">
+        <field name="name">Maintenance Vehicle</field>
+        <field name="model">maintenance.wizard</field>
+        <field name="arch" type="xml">
+
+            <form string="Status">
+                   <p><strong>Select period </strong></p><br/>
+                    <group col="4">
+                        <field name="start_date"/>
+                        <field name="end_date" />
+
+
+                    </group>
+                    <footer>
+                        <button name="print_report" string="Print" type="object" class="oe_highlight" /> or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+        </field>
+    </record>
+ <record id="maintenance_wizard_report_action" model="ir.actions.act_window">
+        <field name="name">Maintenance Vehicle</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">maintenance.wizard</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="maintenance_wizard"/>
+        <field name="target">new</field>
+    </record>
+        <menuitem action="maintenance_wizard_report_action" id="maintenance_wizard_report_menu" parent="fleet.menu_fleet_reporting" name="Maintenance Vehicle Report"/>
+    </odoo>

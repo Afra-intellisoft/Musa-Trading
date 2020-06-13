@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+         <record id="bank_account_mode_view" model="res.bank">
+            <field name="name">Bank of Khartoum</field>
+            <field name="bic" eval="21313"/>
+            <field name="bank_id" eval="1"/>
+        </record>
+    </data>
+</odoo>

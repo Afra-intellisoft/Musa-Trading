@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="hr_bonus_template">
+               <t t-call="report.html_container">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+                            <t>
+                                <strong>Date from:</strong>
+                                <span t-esc="data['start_date']"/>
+                                 <strong>Date to:</strong>
+                                  <span t-esc="data['end_date']"/>
+                            </t>
+                            <table class="table table-condensed">
+                                 <t t-set="total1" t-value="0.00"/>
+                                <thead>
+                                    <tr>
+                                        <th><strong>Bonus No.</strong></th>
+                                        <th  class="text-center"><strong>Date</strong></th>
+                                        <th class="text-center"><strong>Employee</strong></th>
+                                        <th class="text-center"><strong>Bonus Amount</strong></th>
+                                    </tr>
+                                </thead>
+                            <tbody>
+                            <tr t-foreach="docs" t-as="o">
+                               <tr t-foreach="o.bonus_ids" t-as="line">
+
+                                <td>
+                                  <span t-field="o.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.date"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="line.employee_id.name"/>
+
+                                </td>
+                              <td class="text-center">
+                                    <span t-field="line.amount"/>
+                                </td>
+                           </tr>
+                            </tr>
+                            </tbody>
+                    </table>
+
+                </div>
+            </t>
+        </t>
+    </template>
+</data>
+</odoo>

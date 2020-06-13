@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="is_purchase_client_template">
+               <tr t-call="report.html_container">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+<!--                            <t t-foreach="docs" t-as="o">-->
+<!--                            <t>-->
+                                <strong>Custom clearance report for period Date From:</strong>
+                                <span t-esc="data['start_date']"/>
+                                <td/>
+                                 <strong>Date to:</strong>
+                                  <span t-esc="data['end_date']"/>
+                                <br/>
+                                 <strong>Supplier:</strong>
+                                  <span t-esc="data['vendor']"/>
+                                <br/>
+<!--                            </t>-->
+<!--                                <br/>-->
+                            <table  style="width:100%;" dir="ltr" class="table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th><strong>Product</strong></th>
+                                        <th class="text-center"><strong>Vendor</strong></th>
+                                        <th class="text-center"><strong>Grade</strong></th>
+                                        <th class="text-center"><strong>Lot No</strong></th>
+                                        <th class="text-center"><strong>Invoice No</strong></th>
+                                        <th class="text-center"><strong>Price</strong></th>
+                                        <th class="text-center"><strong>Qty Remaining</strong></th>
+                                        <th class="text-center"><strong>Auction No</strong></th>
+                                        <th class="text-center"><strong>Reference NO</strong></th>
+                                    </tr>
+                                </thead>
+                            <tbody>
+                                <tr t-foreach="docs" t-as="o">
+                                <td>
+                                    <span t-field="o.product_id.name"/>
+                                </td>
+                                 <td class="text-center">
+                                    <span t-field="o.vendor_id.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.grade_id.name"/>
+                                </td>
+
+                                 <td class="text-center">
+                                    <span t-field="o.lot_number"/>
+                                </td>
+                                 <td class="text-center">
+                                    <span t-field="o.no_invoice"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.price"/>
+                                </td>
+                                 <td class="text-center">
+                                    <span t-field="o.qty_supplier"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.invoice_id.auction_no"/>
+                                </td>
+                                    <td class="text-center">
+                                    <span t-field="o.invoice_id.name"/>
+                                </td>
+                             </tr>
+                      </tbody>
+                    </table>
+
+<!--               </t>-->
+                </div>
+            </t>
+        </tr>
+    </template>
+</data>
+</odoo>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="valuation_template">
+               <t t-call="report.html_container">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+                            <t>
+                                <strong>Date from:</strong>
+                                <span t-esc="date_from"/>
+                                 <strong>Date to:</strong>
+                                  <span t-esc="date_to"/><br/>
+                            </t>
+                            <br/>
+                            <br/>
+                            <br/>
+
+                            <table class="table table-condensed">
+                                 <t t-set="total1" t-value="0.00"/>
+                                <t  t-set="i" t-value="0"/>
+
+                                <thead>
+                                    <tr>
+                                        <th ><strong>No.</strong></th>
+                                        <th class="text-center"><strong>Valuation Date.</strong></th>
+                                        <th class="text-center"><strong> Name </strong></th>
+                                        <th class="text-center"><strong> Product </strong></th>
+                                        <th class="text-center"><strong>Note</strong></th>
+                                    </tr>
+                                </thead>
+                            <tbody>
+
+
+                            <tr t-foreach="market" t-as="o">
+                             <t  t-set="i" t-value="i + 1"/>
+                                <td > <span t-esc="i"/>
+                                </td>
+                                <td class="text-center" >
+                                    <span t-esc="o['date']"/>
+                                </td>
+                                 <td class="text-center">
+                                     <span t-esc="o['name']"/>
+                                </td>
+                                <td class="text-center">
+                                     <span t-esc="o['product']"/>
+                                </td>
+                                <td class="text-center">
+                                     <span t-esc="o['text']"/>
+                                </td>
+
+                            </tr>
+                            </tbody>
+
+                    </table>
+
+                </div>
+            </t>
+        </t>
+    </template>
+</data>
+</odoo>

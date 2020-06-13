@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_quotation_sale_inherit_edit" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//h2//span" position="replace">
+               <span t-if="doc.state not in ['draft','sent']"> Sale Order # </span>
+        </xpath>
+
+        <xpath expr="//div[@class='row mt32 mb32']//div[3]" position="after">
+       <div name="Warehouse" t-if="doc.warehouse_id.name" class="col-xs-3">
+                    <strong> Warehouse :</strong>
+                    <p t-field="doc.warehouse_id"/>
+                </div>
+</xpath>
+
+
+<xpath expr="//table[@class='table table-condensed']//thead//tr/th[2]" position="after">
+      <th class="text-center"><strong>Grade</strong></th>
+      <th class="text-center"><strong>net kgs</strong></th>
+      <th class="text-center"><strong>pkgs</strong></th>
+</xpath>
+<xpath expr="//tbody//t/t/tr//td[3]" position="before">
+       <td class="text-right">
+<span t-field="l.grade.name"/>
+         </td>
+ <td class="text-right">
+         <span t-field="l.net_kgs"/>
+         </td>
+<td class="text-right">
+         <span t-field="l.total_kgs"/>
+         </td>
+	    </xpath>
+        <xpath expr="//div/table[@class='table table-condensed']" position="after">
+
+        <table class="table table-condensed">
+                                <tr class="text-left">
+                                    <td >
+                                        <strong> Amount in word : </strong>
+
+                                        <span t-esc="doc['to_text']"/>
+
+<!--                                                 <span t-field="l.check_amount_in_words"/>-->
+
+                                   </td>
+                                </tr>
+
+
+            </table>
+
+        </xpath>
+
+</template>
+</odoo>

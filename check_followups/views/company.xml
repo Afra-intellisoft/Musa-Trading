@@ -1,0 +1,17 @@
+<odoo>
+
+    <!--<record id="company_view_check_followups" model="ir.ui.view">-->
+        <!--<field name="name">res.company.checks.config</field>-->
+        <!--<field name="model">res.company</field>-->
+        <!--<field name="inherit_id" ref="base.view_company_form"/>-->
+        <!--<field name="priority">20</field>-->
+        <!--<field name="arch" type="xml">-->
+
+            <!--<xpath expr="//group[@name='account_grp']" position="inside">-->
+                <!--<field name="automate_check_withdrawal"/>-->
+            <!--</xpath>-->
+
+        <!--</field>-->
+    <!--</record>-->
+
+</odoo>

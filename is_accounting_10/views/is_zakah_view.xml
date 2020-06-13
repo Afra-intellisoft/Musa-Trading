@@ -1,0 +1,120 @@
+<odoo>
+<record id="tree_zakah_view" model="ir.ui.view">
+			<field name="name">zaka.account.tree</field>
+			<field name="model">zaka.account</field>
+			<field name="arch" type="xml">
+				<tree >
+					<field name="name"/>
+					<field name="date"/>
+					<field name="amount"  sum="tax_amount"/>
+					<field name="state"/>
+
+				</tree>
+			</field>
+		</record>
+
+
+		<record id="view_zakah_form" model="ir.ui.view">
+			<field name="name">zaka.account.form</field>
+			<field name="model">zaka.account</field>
+			<field eval="2" name="priority"/>
+			<field name="arch" type="xml">
+				<form >
+                 <header>
+					 <button string="confirm" name="confirm" type="object"  state="draft" class="oe_highlight" attrs="{'invisible':[('state','!=','draft')]}"/>
+		           <field name="state" widget="statusbar" statusbar_visible="draft,finish" statusbar_colors='{"draft":"blue","confirm":"blue"}'/>
+					</header>
+					<sheet>
+                        <div class="oe_title">
+
+							<label for="name" class="oe_edit_only"/>
+							<h1>
+								<field name="name" class="oe_inline"/>
+							</h1>
+						</div>
+						<group col="4">
+							<div colspan="4">
+								<group>
+
+									<field name="zaka_no" readonly="True"/>
+									<field name="date"  attrs="{'readonly': [('state','=','finish')]}"/>
+									<field name="company_id" attrs="{'readonly': [('state','=','finish')]}"/>
+
+								</group>
+							</div>
+<!--							<field name="from_date"  attrs="{'readonly':[('state','=','confirm')]}" />-->
+<!--							<field name="to_date"  attrs="{'readonly':[('state','=','confirm')]}" />-->
+						</group>
+						<group>
+<!--								<field name="zakah_amount"  attrs="{'readonly':[('state','=','confirm')]}"/>-->
+							<field name="amount"  attrs="{'readonly': [('state','=','finish')]}"/>
+							<field name="rmain_amount" attrs="{'readonly': [('state','=','finish')]}"/>
+							<field name="note" attrs="{'readonly': [('state','=','finish')]}"/>
+
+					   </group>
+						<notebook>
+							<page string="Collect zakah" >
+								<field name="zakah_line_ids">
+									<tree string="Dollar Line" editable="bottom">
+								        <field name="date"/>
+										<field name="partner_id"/>
+										<field name="amount" sum ="Total"/>
+										<field name="debit_account"/>
+<!--										<field name="credit_account"/>-->
+										<field name="journal_id"/>
+										<field name="move_id"/>
+										<field name="paid" readonly="1"/>
+										<field name="note"/>
+										<button name="validate"  class="oe_highlight" string="Pay Amount" type="object"  attrs="{'invisible': [('paid','=',True)]}" />
+
+
+									</tree>
+								</field>
+
+							</page>
+							<page string="Zakat Payment By Check">
+								<field name="check_line_ids">
+									<tree editable="bottom">
+										<field name="date"  attrs="{'readonly': [('paid','=',True)]}" />
+										<field name="account_holder"  attrs="{'readonly': [('paid','=',True)]}" />
+										<field name="check_no"  attrs="{'readonly': [('paid','=',True)]}" />
+										<field name="bank_id"  attrs="{'readonly': [('paid','=',True)]}" />
+										<field name="amount" sum="total"  attrs="{'readonly': [('paid','=',True)]}"  />
+										<field name="journal_id"   attrs="{'readonly': [('paid','=',True)]}"   />
+										<field name="currency_id"   attrs="{'readonly': [('paid','=',True)]}"   />
+										<field name="paid" readonly="1"/>
+
+										<button name="create_check"  class="oe_highlight" string="Create Check" type="object"  attrs="{'invisible': [('paid','=',True)]}" />
+									</tree>
+								</field>
+							</page>
+						</notebook>
+
+					</sheet>
+
+				</form>
+			</field>
+		</record>
+		<record id="zakah_filter" model="ir.ui.view">
+            <field name="name">zaka.account.search</field>
+            <field name="model">zaka.account</field>
+            <field name="arch" type="xml">
+                <search string="Search Zakah">
+                    <field name="name" string="zakah Name"/>
+
+                    <field name="date"/>
+
+                </search>
+            </field>
+        </record>
+	<record id="act_zakah_request" model="ir.actions.act_window">
+			<field name="name">Zakat Payment</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">zaka.account</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+
+		</record>
+            <menuitem   action="act_zakah_request" id="menu_zakah" name="Zakat Payment " parent="account.menu_finance_entries" groups="account.group_account_manager"/>
+
+    </odoo>

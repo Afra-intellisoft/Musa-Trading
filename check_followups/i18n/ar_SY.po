@@ -1,0 +1,899 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* check_followups
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-12 11:07+0000\n"
+"PO-Revision-Date: 2020-03-12 11:07+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.vendor_payment_check
+msgid "<strong>Check the Name and Check Number.</strong>"
+msgstr "<strong>Check the Name and Check Number.</strong>"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_account_holder
+msgid "Account Holder"
+msgstr "صاحب الحساب"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_res_bank_acc_holderx
+msgid "Account Holder X-axis"
+msgstr "Account Holder X-axis"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_res_bank_acc_holdery
+msgid "Account Holder Y-axis"
+msgstr "Account Holder Y-axis"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_payment_Account_No
+#: model:ir.model.fields,field_description:check_followups.field_partner_bank_account_Account_No
+msgid "Account No"
+msgstr "رقم الحساب"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_account_number
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_account_number
+msgid "Account Number"
+msgstr "رقم الحساب"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_payment_check_reports_Account_Holder_Name
+msgid "Account holder name"
+msgstr "Account holder name"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.banktemplate
+msgid "All   Dimensions in mm"
+msgstr "All   Dimensions in mm"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.al_check_report_wizard_form
+#: model:ir.ui.view,arch_db:check_followups.all_check_report_wizard_form
+msgid "All Check Report"
+msgstr "All Check Report"
+
+#. module: check_followups
+#: model:ir.actions.act_window,name:check_followups.all_check_report_wizard_action
+msgid "All check Report"
+msgstr "All check Report"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_cash_replacement_amount
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_amount
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_amount
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_original_amount
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_payment_check_amount_in_words
+msgid "Amount In Words"
+msgstr "المبلغ كتابه"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_payment_check_reports_amount_lang
+msgid "Amount Language"
+msgstr "لغة المبلغ"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_res_bank_amountx
+msgid "Amount X-axis"
+msgstr "Amount X-axis"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_res_bank_amounty
+msgid "Amount Y-axis"
+msgstr "Amount Y-axis"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_res_bank_amount_textx
+msgid "Amount in Text X-axis"
+msgstr "Amount in Text X-axis"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_res_bank_amount_texty
+msgid "Amount in Text Y-axis"
+msgstr "Amount in Text Y-axis"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_payment_check_reports_Amount_in_word
+msgid "Amount in word"
+msgstr "المبلغ كتابة"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.customerformview
+msgid "Approve"
+msgstr "موافقة"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_check
+msgid "Approved"
+msgstr "Approved"
+
+#. module: check_followups
+#: selection:payment.check_reports,amount_lang:0
+msgid "Arabic"
+msgstr "عربي"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_res_company_automate_check_withdrawal
+msgid "Automate check withdrawal/deposition in bank"
+msgstr "ايداع الشيك في حساب البنك"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_res_bank
+#: model:ir.model.fields,field_description:check_followups.field_account_payment_Bank_id
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_bank_id
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_bank_id
+msgid "Bank"
+msgstr "المصرف"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.Partner_Bank_Info
+msgid "Bank Name"
+msgstr "اسم البنك"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_res_partner_Bank_Account_ids
+msgid "Bank account ids"
+msgstr "Bank account ids"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_bank_id
+#: model:ir.model.fields,field_description:check_followups.field_partner_bank_account_Bank_id
+msgid "Bank id"
+msgstr "اسم البنك"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_journal_id
+msgid "Bank/Cash Journal"
+msgstr "اليومية"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_beneficiary_id
+msgid "Beneficiary"
+msgstr "المستفيد"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.al_check_report_wizard_form
+#: model:ir.ui.view,arch_db:check_followups.all_check_report_wizard_form
+#: model:ir.ui.view,arch_db:check_followups.vendor_payment_check
+#: model:ir.ui.view,arch_db:check_followups.wizard_check_replacement_view_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.wizard_check_replacement_view_form
+msgid "Cash Replacements:"
+msgstr "تغييرات النقدية:"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_cash_replacement_ids
+msgid "Cash replacement ids"
+msgstr "Cash replacement ids"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_journal_check_ids
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_name
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_checklogs_Check
+#: model:ir.ui.view,arch_db:check_followups.vendor_payment_check
+msgid "Check"
+msgstr "شيك"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.journal_dashboard
+msgid "Check Collection"
+msgstr "شيكات تحت التحصيل"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_payment_check_date
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_date
+msgid "Check Date"
+msgstr "تاريخ الشيك"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.companytemplate
+msgid "Check Follow up"
+msgstr "متابعة الشيكات"
+
+#. module: check_followups
+#: model:account.payment.method,name:check_followups.account_payment_method_check_inBound
+#: model:account.payment.method,name:check_followups.account_payment_method_check_outBound
+#: model:ir.ui.menu,name:check_followups.menu_finance_checkfollowups
+msgid "Check Followup"
+msgstr "متابعة الشيكات"
+
+#. module: check_followups
+#: model:ir.actions.act_window,name:check_followups.customer
+#: model:ir.actions.act_window,name:check_followups.vendor
+msgid "Check Followups"
+msgstr "متابعة الشيكات"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.Payment_bank_account_fields
+#: model:ir.ui.view,arch_db:check_followups.invoice_payment
+msgid "Check Info"
+msgstr "معلومات الشيك"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_journal_Check_no
+#: model:ir.model.fields,field_description:check_followups.field_account_payment_Check_no
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_check_no
+#: model:ir.model.fields,field_description:check_followups.field_payment_check_reports_check_no
+msgid "Check No"
+msgstr "رقم الشيك"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_journal_check_num_id
+#: model:ir.model.fields,field_description:check_followups.field_account_journal_check_vendor_id
+msgid "Check Num"
+msgstr "Check Num"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_number
+msgid "Check Number"
+msgstr "رقم الشيك"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.journal_dashboard
+msgid "Check Out Standing"
+msgstr "شيكات مسحوبة"
+
+#. module: check_followups
+#: selection:check_followups.check_followups,state:0
+#: model:ir.ui.view,arch_db:check_followups.customerformview
+#: model:ir.ui.view,arch_db:check_followups.form
+msgid "Check Rejected"
+msgstr "رفض الشيك"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.wizard_check_replacement_view_form
+msgid "Check Replacement"
+msgstr "تغيير الشيك"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.wizard_check_replacement_view_form
+msgid "Check Replacements:"
+msgstr " تغيرات الشيك:"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_journal_check_total
+#: model:ir.model.fields,field_description:check_followups.field_account_journal_check_vendor_total
+msgid "Check Total"
+msgstr "Check Total"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_res_partner_check_ids
+msgid "Check ids"
+msgstr "Check ids"
+
+#. module: check_followups
+#: model:ir.actions.report.xml,name:check_followups.check_print
+msgid "Check print"
+msgstr "Check print"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_check_replacement_ids
+msgid "Check replacement ids"
+msgstr "Check replacement ids"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_check_followups_check_followups
+msgid "Checks Followup"
+msgstr "متابعة الشيكات"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_payment_child_ids
+msgid "Child ids"
+msgstr "Child ids"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_res_company
+msgid "Companies"
+msgstr "المؤسسات"
+
+#. module: check_followups
+#: code:addons/check_followups/models/models.py:196
+#: code:addons/check_followups/models/models.py:198
+#, python-format
+msgid "Configuration Error !"
+msgstr "خطا في الضبط !"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.wizard_check_replacement_view_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_all_check_repor_wizard_create_uid
+#: model:ir.model.fields,field_description:check_followups.field_all_check_report_wizard_create_uid
+#: model:ir.model.fields,field_description:check_followups.field_cash_replacement_create_uid
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_create_uid
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_checklogs_create_uid
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_create_uid
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_create_uid
+#: model:ir.model.fields,field_description:check_followups.field_partner_bank_account_create_uid
+#: model:ir.model.fields,field_description:check_followups.field_payment_check_reports_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_all_check_repor_wizard_create_date
+#: model:ir.model.fields,field_description:check_followups.field_all_check_report_wizard_create_date
+#: model:ir.model.fields,field_description:check_followups.field_cash_replacement_create_date
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_create_date
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_checklogs_create_date
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_create_date
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_create_date
+#: model:ir.model.fields,field_description:check_followups.field_partner_bank_account_create_date
+#: model:ir.model.fields,field_description:check_followups.field_payment_check_reports_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_cash_replacement_currency_id
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_currency_id
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_currency_id
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: check_followups
+#: selection:check_followups.check_followups,type:0
+#: model:ir.ui.view,arch_db:check_followups.companytemplate
+msgid "Customer"
+msgstr "العميل"
+
+#. module: check_followups
+#: model:ir.ui.menu,name:check_followups.customer_action
+msgid "Customer Check "
+msgstr "شيكات العملاء "
+
+#. module: check_followups
+#: model:ir.ui.menu,name:check_followups.main_check_report_menu_root
+msgid "Customer Check Report"
+msgstr "تقرير شيكات العملاء"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_cash_replacement_date
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_Date
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_checklogs_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_res_bank_datex
+msgid "Date X-axis"
+msgstr "Date X-axis"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_res_bank_datey
+msgid "Date Y-axis"
+msgstr "Date Y-axis"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_Date_late
+msgid "Date late"
+msgstr "تاريخ التأخير"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.customerformview
+msgid "Deposit In Bank"
+msgstr "ايداع في البنك"
+
+#. module: check_followups
+#: selection:check_followups.check_followups,state:0
+#: model:ir.ui.view,arch_db:check_followups.form
+msgid "Deposit in Bank"
+msgstr "ايداع في البنك"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_checklogs_name
+msgid "Description"
+msgstr "الوصف"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_all_check_repor_wizard_display_name
+#: model:ir.model.fields,field_description:check_followups.field_all_check_report_wizard_display_name
+#: model:ir.model.fields,field_description:check_followups.field_cash_replacement_display_name
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_display_name
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_checklogs_display_name
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_display_name
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_display_name
+#: model:ir.model.fields,field_description:check_followups.field_partner_bank_account_display_name
+#: model:ir.model.fields,field_description:check_followups.field_payment_check_reports_display_name
+#: model:ir.model.fields,field_description:check_followups.field_report_check_followups_al_check_report_display_name
+#: model:ir.model.fields,field_description:check_followups.field_report_check_followups_all_check_report_display_name
+#: model:ir.model.fields,field_description:check_followups.field_report_check_followups_check_bank_template1_display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: check_followups
+#: selection:check_followups.check_followups,state:0
+msgid "Done"
+msgstr "تم"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_payment_due_date
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_Date_due
+msgid "Due Date"
+msgstr "تاريخ الاستحقاق"
+
+#. module: check_followups
+#: selection:payment.check_reports,amount_lang:0
+msgid "English"
+msgstr "انجليذي"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_all_check_repor_wizard_date_from
+#: model:ir.model.fields,field_description:check_followups.field_all_check_report_wizard_date_from
+msgid "From Date"
+msgstr "من تاريخ"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_all_check_repor_wizard_id
+#: model:ir.model.fields,field_description:check_followups.field_all_check_report_wizard_id
+#: model:ir.model.fields,field_description:check_followups.field_cash_replacement_id
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_id
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_checklogs_id
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_id
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_id_4075
+#: model:ir.model.fields,field_description:check_followups.field_partner_bank_account_id
+#: model:ir.model.fields,field_description:check_followups.field_payment_check_reports_id
+#: model:ir.model.fields,field_description:check_followups.field_report_check_followups_al_check_report_id
+#: model:ir.model.fields,field_description:check_followups.field_report_check_followups_all_check_report_id
+#: model:ir.model.fields,field_description:check_followups.field_report_check_followups_check_bank_template1_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: check_followups
+#: selection:check_followups.check_followups,state:0
+msgid "In Bank"
+msgstr "في البنك"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_account_journal
+#: model:ir.model.fields,field_description:check_followups.field_cash_replacement_journal_id
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_journal_id
+msgid "Journal"
+msgstr "اليومية"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_account_move_line
+msgid "Journal Item"
+msgstr "عنصر يومية"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_all_check_repor_wizard___last_update
+#: model:ir.model.fields,field_description:check_followups.field_all_check_report_wizard___last_update
+#: model:ir.model.fields,field_description:check_followups.field_cash_replacement___last_update
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups___last_update
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_checklogs___last_update
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement___last_update
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard___last_update
+#: model:ir.model.fields,field_description:check_followups.field_partner_bank_account___last_update
+#: model:ir.model.fields,field_description:check_followups.field_payment_check_reports___last_update
+#: model:ir.model.fields,field_description:check_followups.field_report_check_followups_al_check_report___last_update
+#: model:ir.model.fields,field_description:check_followups.field_report_check_followups_all_check_report___last_update
+#: model:ir.model.fields,field_description:check_followups.field_report_check_followups_check_bank_template1___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_all_check_repor_wizard_write_uid
+#: model:ir.model.fields,field_description:check_followups.field_all_check_report_wizard_write_uid
+#: model:ir.model.fields,field_description:check_followups.field_cash_replacement_write_uid
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_write_uid
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_checklogs_write_uid
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_write_uid
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_write_uid
+#: model:ir.model.fields,field_description:check_followups.field_partner_bank_account_write_uid
+#: model:ir.model.fields,field_description:check_followups.field_payment_check_reports_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_all_check_repor_wizard_write_date
+#: model:ir.model.fields,field_description:check_followups.field_all_check_report_wizard_write_date
+#: model:ir.model.fields,field_description:check_followups.field_cash_replacement_write_date
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_write_date
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_checklogs_write_date
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_write_date
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_write_date
+#: model:ir.model.fields,field_description:check_followups.field_partner_bank_account_write_date
+#: model:ir.model.fields,field_description:check_followups.field_payment_check_reports_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_Last_state
+msgid "Last state"
+msgstr "Last state"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_log_ids
+msgid "Log ids"
+msgstr "Log ids"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_cash_replacement_memo
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_communication
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_memo
+#: model:ir.ui.view,arch_db:check_followups.customerformview
+#: model:ir.ui.view,arch_db:check_followups.form
+msgid "Memo"
+msgstr "مذكرة"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_returning_memo
+msgid "Memo (Return to AC payment)"
+msgstr "(ملاحظة (ارجاع الي الحساب"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_res_bank_money_text_height
+msgid "Money Area Height"
+msgstr "Money Area Height"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_res_bank_money_text_width
+msgid "Money Area Width"
+msgstr "Money Area Width"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_checklogs_move_id
+#: model:ir.ui.view,arch_db:check_followups.customerformview
+#: model:ir.ui.view,arch_db:check_followups.form
+msgid "Move"
+msgstr "نقل"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_payment_payment_method_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_res_bank_account_holder_width
+msgid "Name Width"
+msgstr "Name Width"
+
+#. module: check_followups
+#: selection:account.payment,security_level:0
+msgid "None"
+msgstr "عديم"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_payment_notes
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_notes
+msgid "Note"
+msgstr "الملاحظة"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_original_check
+msgid "Original check"
+msgstr "Original check"
+
+#. module: check_followups
+#: selection:check_followups.check_followups,state:0
+msgid "Out Standing"
+msgstr "شيكات صادرة "
+
+#. module: check_followups
+#: selection:all.check.repor.wizard,type:0
+msgid "Out Standing Checks"
+msgstr "شيكات مسحوبة"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_journal_out_standing
+msgid "Out standing"
+msgstr "Out standing"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_res_partner
+msgid "Partner"
+msgstr "شريك"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_payment_partner_bank_account
+msgid "Partner Account"
+msgstr "حساب الشريك"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_partner_id
+#: model:ir.model.fields,field_description:check_followups.field_partner_bank_account_Partner_Id
+msgid "Partner id"
+msgstr "Partner id"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.vendor_payment_check
+msgid "Pay To"
+msgstr "ادفع الي"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_checklogs_payment_id
+msgid "Payment"
+msgstr "دفعيه"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_payment_id
+msgid "Payment id"
+msgstr "Payment id"
+
+#. module: check_followups
+#: model:ir.model.fields,help:check_followups.field_check_followups_check_followups_journal_id
+msgid "Payment journal."
+msgstr "Payment journal."
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.al_check_report_wizard_form
+#: model:ir.ui.view,arch_db:check_followups.all_check_report_wizard_form
+msgid "Print"
+msgstr "طباعة"
+
+#. module: check_followups
+#: model:ir.actions.act_window,name:check_followups.action_check_payment_print
+#: model:ir.actions.report.xml,name:check_followups.action_check_report
+#: model:ir.actions.report.xml,name:check_followups.all_check
+#: model:ir.ui.view,arch_db:check_followups.vendor_payment_check
+msgid "Print Check"
+msgstr "طباعة الشيك"
+
+#. module: check_followups
+#: selection:all.check.report.wizard,type:0
+msgid "Recived Checks"
+msgstr "شيكات مستلمة"
+
+#. module: check_followups
+#: selection:all.check.repor.wizard,type:0
+#: selection:all.check.report.wizard,type:0
+msgid "Rejected Checks"
+msgstr "شيكات مرفوضة"
+
+#. module: check_followups
+#: model:ir.actions.act_window,name:check_followups.action_check_replacement_wizard
+msgid "Replace Check"
+msgstr "تبديل الشيك"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_payment_parent_id
+msgid "Replacement For"
+msgstr "البديل "
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_all_check_repor_wizard_type
+#: model:ir.model.fields,field_description:check_followups.field_all_check_report_wizard_type
+msgid "Report Type"
+msgstr "نوع التقرير"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_payment_check_reports_reprint_flag
+msgid "Reprint flag"
+msgstr "Reprint flag"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_journal_rdv
+msgid "Return / Payable"
+msgstr "حساب المرتجع / حساب المدفوعات"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_journal_rdc
+msgid "Return / Receivable"
+msgstr "جساب المرتجع / حساب المقبوضات"
+
+#. module: check_followups
+#: selection:all.check.repor.wizard,type:0
+#: selection:all.check.report.wizard,type:0
+msgid "Return Checks"
+msgstr "شيكات راجعة"
+
+#. module: check_followups
+#: selection:check_followups.check_followups,state:0
+#: model:ir.ui.view,arch_db:check_followups.customerformview
+#: model:ir.ui.view,arch_db:check_followups.form
+msgid "Return to Partner"
+msgstr "ارجاع الشيك للشريك"
+
+#. module: check_followups
+#: selection:account.payment,security_level:0
+msgid "Risky"
+msgstr "مخاطرة"
+
+#. module: check_followups
+#: selection:account.payment,security_level:0
+msgid "Secured"
+msgstr "أمن"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_payment_security_level
+msgid "Security Level"
+msgstr "مستوي الامان"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.customerformview
+#: model:ir.ui.view,arch_db:check_followups.form
+msgid "Set TO Done"
+msgstr "جعله الي تم"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_state
+msgid "State"
+msgstr "الولاية"
+
+#. module: check_followups
+#: code:addons/check_followups/models/models.py:196
+#, python-format
+msgid "The journal %s does not have a sequence, please specify one."
+msgstr "اليومية %s  ليس لها تسلسل فضلا اختر واحدا."
+
+#. module: check_followups
+#: code:addons/check_followups/models/models.py:198
+#, python-format
+msgid "The sequence of journal %s is deactivated."
+msgstr "الرقم التسلسلي لليومية %s غير مفعل."
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_all_check_repor_wizard_date_to
+#: model:ir.model.fields,field_description:check_followups.field_all_check_report_wizard_date_to
+msgid "To Date"
+msgstr "الى تاريخ"
+
+#. module: check_followups
+#: selection:check_followups.check_followups,type:0
+msgid "Transfer"
+msgstr "ارسال"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_check_followups_check_followups_type
+msgid "Type"
+msgstr "نوع"
+
+#. module: check_followups
+#: selection:check_followups.check_followups,state:0
+msgid "Under Collection"
+msgstr "شيك تحت التحصيل"
+
+#. module: check_followups
+#: selection:all.check.report.wizard,type:0
+msgid "Under Collection Checks"
+msgstr "شيكات تحت التحصيل"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_account_journal_under_collection
+msgid "Under collection"
+msgstr "شيكات تحت التحصيل"
+
+#. module: check_followups
+#: selection:account.payment,security_level:0
+msgid "Unsecured"
+msgstr "غير أمن"
+
+#. module: check_followups
+#: selection:check_followups.check_followups,type:0
+#: model:ir.ui.view,arch_db:check_followups.companytemplate
+msgid "Vendor"
+msgstr "المورد"
+
+#. module: check_followups
+#: model:ir.ui.menu,name:check_followups.vendor_action
+msgid "Vendor Check "
+msgstr "شيكات المزودون "
+
+#. module: check_followups
+#: model:ir.ui.menu,name:check_followups.main_check_v_report_menu_root
+msgid "Vendor Check Report"
+msgstr "تقرير شيكات الموردين"
+
+#. module: check_followups
+#: model:ir.actions.act_window,name:check_followups.al_check_report_wizard_action
+msgid "Vendor check Report"
+msgstr "تقرير شيكات الموردين"
+
+#. module: check_followups
+#: selection:all.check.report.wizard,type:0
+msgid "Waiting Checks"
+msgstr "شيكات منتظرة لدى البنك"
+
+#. module: check_followups
+#: selection:check_followups.check_followups,state:0
+#: model:ir.ui.view,arch_db:check_followups.customerformview
+msgid "Waiting In Bank"
+msgstr "شيكات منتظرة لدى البنك"
+
+#. module: check_followups
+#: selection:all.check.repor.wizard,type:0
+msgid "Withdrawal Checks"
+msgstr "شيكات مصروفة"
+
+#. module: check_followups
+#: model:ir.model.fields,field_description:check_followups.field_cash_replacement_wizard_id
+#: model:ir.model.fields,field_description:check_followups.field_check_replacement_wizard_id
+msgid "Wizard id"
+msgstr "Wizard id"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_all_check_repor_wizard
+msgid "all.check.repor.wizard"
+msgstr "all.check.repor.wizard"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_all_check_report_wizard
+msgid "all.check.report.wizard"
+msgstr "all.check.report.wizard"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_cash_replacement
+msgid "cash.replacement"
+msgstr "cash.replacement"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_check_replacement
+msgid "check.replacement"
+msgstr "check.replacement"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_check_replacement_wizard
+msgid "check.replacement.wizard"
+msgstr "check.replacement.wizard"
+
+#. module: check_followups
+#: model:ir.actions.act_window,name:check_followups.Checktemplate
+#: model:ir.actions.act_window,name:check_followups.companycheck
+msgid "check_followups window"
+msgstr "check_followups window"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_check_followups_checklogs
+msgid "check_followups.checklogs"
+msgstr "check_followups.checklogs"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.vendor_payment_check
+#: model:ir.ui.view,arch_db:check_followups.wizard_check_replacement_view_form
+msgid "or"
+msgstr "أو"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_partner_bank_account
+msgid "partner.bank.account"
+msgstr "partner.bank.account"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_account_payment
+msgid "payment"
+msgstr "payment"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_payment_check_reports
+msgid "payment.check_reports"
+msgstr "payment.check_reports"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_report_check_followups_al_check_report
+msgid "report.check_followups.al_check_report"
+msgstr "report.check_followups.al_check_report"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_report_check_followups_all_check_report
+msgid "report.check_followups.all_check_report"
+msgstr "report.check_followups.all_check_report"
+
+#. module: check_followups
+#: model:ir.model,name:check_followups.model_report_check_followups_check_bank_template1
+msgid "report.check_followups.check_bank_template1"
+msgstr "report.check_followups.check_bank_template1"
+
+#. module: check_followups
+#: model:ir.ui.view,arch_db:check_followups.banktemplate
+msgid "template"
+msgstr "template"
+

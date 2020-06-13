@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="seq_maintenance_order_no" model="ir.sequence">
+            <field name="name">Maintenance No.</field>
+            <field name="code">workshop.maintenance.order.no</field>
+            <field name="prefix">Main/%(year)s/</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+            <field name="implementation">no_gap</field>
+        </record>
+    </data>
+</openerp>

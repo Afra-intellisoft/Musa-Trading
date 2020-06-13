@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_finance_approval">
+            <!--<t t-call="web.html_container">-->
+                <t t-foreach="docs" t-as="o">
+                    <!--<t t-call="web.external_layout">-->
+                        <div class="page">
+                            <div class="oe_structure">
+                                <div class="row row-centered">
+                                    <div class="col-md-12 col-centered">
+                                        <group string="Financial Approval">
+                                            <table class="table" style="direction: rtl;">
+                                                <tr class="text-center">
+                                                    <td colspan="12" style="border: 1px solid black;">
+                                                        <h4>
+
+                                                                <strong>طلب تصديق </strong>
+
+                                                        </h4>
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td colspan="12" style="border: 1px solid black;">
+                                                        <h4>
+
+                                                                <strong>PAYMENT APPROVAL REQUEST</strong>
+
+                                                        </h4>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>بيانات الطلب</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center">
+                                                        <span t-field="o.name"/>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>التاريخ:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center">
+                                                        <span t-field="o.fa_date"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>مقدم الطلب:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center"
+                                                        colspan="3">
+                                                        <span t-field="o.requester"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>الرجاء التكرم بتصديق مبلغ</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center"
+                                                        colspan="2">
+                                                        <t t-esc="'{0:,.2f}'.format(o.request_amount)"/>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center">
+                                                        <strong>
+                                                            <span t-field="o.request_currency.narration_ar_un"/>
+                                                        </strong>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>المبلغ كتابتة:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center"
+                                                        colspan="3">
+                                                        <span t-field="o.request_amount_words"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>المستفيد:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center"
+                                                        colspan="3">
+                                                        <span t-field="o.beneficiary"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: 1 px solid black;" colspan="4">
+                                                        <strong>الغرض:</strong>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: 1 px solid black;" class="text-center"
+                                                        colspan="4">
+                                                        <span t-field="o.reason"/>
+                                                    </td>
+                                                </tr>
+                                                <tr t-if="o.analytic_account">
+                                                    <td style="border: 1 px solid black;" colspan="4">
+                                                        <strong>مركز التكلفة:</strong>
+                                                    </td>
+                                                </tr>
+                                                <tr t-if="o.analytic_account">
+                                                    <td style="border: 1 px solid black;" class="text-center"
+                                                        colspan="4">
+                                                        <span t-field="o.analytic_account"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: none;"></td>
+                                                    <td style="border: none;"></td>
+                                                    <td style="border: none;"></td>
+                                                    <td style="border: none;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>مدير االادارة/القسم:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center">
+                                                        <span t-field="o.mn_app_id.name"/>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>الامضاء:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center">
+                                                        <span t-if="o.mn_app_id.resized_user_signature"
+                                                              t-field="o.mn_app_id.resized_user_signature"
+                                                              t-field-options='{"widget": "image"}'/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>المدير العام:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center">
+                                                        <span t-field="o.general_manager_id.name"/>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>الامضاء:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center">
+                                                        <span t-if="o.general_manager_id.resized_user_signature"
+                                                              t-field="o.general_manager_id.resized_user_signature"
+                                                              t-field-options='{"widget": "image"}'/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>مدير الحسابات:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center">
+                                                        <span t-field="o.fm_app_id.name"/>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>الامضاء:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center">
+                                                        <span t-if="o.fm_app_id.resized_user_signature"
+                                                              t-field="o.fm_app_id.resized_user_signature"
+                                                              t-field-options='{"widget": "image"}'/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>المدير المالي:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center">
+                                                        <span t-field="o.gm_app_id.name"/>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>الامضاء:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center">
+                                                        <span t-if="o.gm_app_id.resized_user_signature"
+                                                              t-field="o.gm_app_id.resized_user_signature"
+                                                              t-field-options='{"widget": "image"}'/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: none;"></td>
+                                                    <td style="border: none;"></td>
+                                                    <td style="border: none;"></td>
+                                                    <td style="border: none;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>بند الصرف:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center">
+                                                        <span t-field="o.exp_account"/>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>طريقة السداد:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center">
+                                                        <t t-if="o.payment_method == 'cash'">
+                                                            <span>نقداً</span>
+                                                        </t>
+                                                        <t t-if="o.payment_method == 'cheque'">
+                                                            <span>شيك</span>
+                                                        </t>
+                                                        <t t-if="o.payment_method == 'transfer'">
+                                                            <span>تحويل</span>
+                                                        </t>
+                                                        <t t-if="o.payment_method == 'trust'">
+                                                            <span>اعتماد</span>
+                                                        </t>
+                                                        <t t-if="o.payment_method == 'other'">
+                                                            <span>أخرى</span>
+                                                        </t>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: 1 px solid black;">
+                                                        <strong>البنك:</strong>
+                                                    </td>
+                                                    <td style="border: 1 px solid black;" class="text-center"
+                                                        colspan="3">
+                                                        <span t-field="o.journal_id.name"/>
+                                                    </td>
+                                                </tr>
+                                                <!--<tr>-->
+                                                    <!--<td style="border: 1 px solid black;">-->
+                                                        <!--<strong>رئيس الحسابات:</strong>-->
+                                                    <!--</td>-->
+                                                    <!--<td style="border: 1 px solid black;" class="text-center"-->
+                                                        <!--colspan="3">-->
+                                                    <!--</td>-->
+                                                <!--</tr>-->
+                                            </table>
+                                        </group>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!--</t>-->
+                <!--</t>-->
+            </t>
+        </template>
+    </data>
+</odoo>

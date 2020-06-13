@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_purchase_order_document" inherit_id="purchase.report_purchaseorder_document">
+
+<xpath expr="//div[@class='page']" position="replace">
+    <h2>Purchase Order Confirmation #</h2>
+</xpath>
+
+</template>
+ <template id="report_purchaseorder" inherit_id="purchase.report_purchaseorder">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+            <t t-call="purchase.report_purchase_order_document" t-lang="o.partner_id.lang"/>
+        </t>
+    </t>
+<!--<xpath expr="//div[@class='page']" position="replace">-->
+    <!--<h2>Purchase Order Confirmation #</h2>-->
+<!--</xpath>-->
+ </template>
+</odoo>

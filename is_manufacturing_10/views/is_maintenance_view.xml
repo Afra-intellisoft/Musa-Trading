@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="maintenance_equipment_views_form" model="ir.ui.view">
+            <field name="name">maintenance.equipment</field>
+            <field name="model">maintenance.equipment</field>
+            <field name="inherit_id" ref="maintenance.hr_equipment_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='owner_user_id']" position="after">
+                        <field name="amount" />
+                        <field name="purchase_date" />
+                        <field name="attached" />
+                 </xpath>
+                <!--<xpath expr="//field[@name='serial_no']" position="replace">-->
+                        <!--<field name="serial_no"  invisible="1"/>-->
+                 <!--</xpath>-->
+                <xpath expr="//field[@name='location']" position="replace">
+                        <field name="factory_id" />
+                 </xpath>
+                <!--<xpath expr="//field[@name='category_id']" position="replace">-->
+                        <!--<field name="serial_no" readonly="1"/>-->
+                 <!--</xpath>-->
+            </field>
+        </record>
+
+
+        <record id="maintenance_request_views_form" model="ir.ui.view">
+            <field name="name">maintenance.request</field>
+            <field name="model">maintenance.request</field>
+            <field name="inherit_id" ref="maintenance.hr_equipment_request_view_form"/>
+            <field name="arch" type="xml">
+                  <header>
+                      <button name="finance_approval"  string="Finance Approval" type="object" class="oe_highlight" attrs="{'invisible': ['|', ('request', '=', True)]}" groups="is_accounting_approval_10.auditor_access_group"/>
+                       <!--<field name="state" widget="statusbar" />-->
+                  </header>
+                <xpath expr="//field[@name='priority']" position="after">
+                        <field name="vendor_id" />
+                        <field name="amount" />
+                        <field name="request" invisible="1"/>
+                 </xpath>
+            </field>
+        </record>
+    
+    
+
+
+</odoo>

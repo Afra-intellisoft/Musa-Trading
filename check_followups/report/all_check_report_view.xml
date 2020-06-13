@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="check_followups.all_check_report">
+        <t t-call="report.html_container" >
+            <t t-call="report.external_layout" >
+                <t t-call="report.internal_layout">
+                    <div class="page test"  >
+                        <center>
+                            <h3 class="strong">إدارة المالية</h3>
+                        </center>
+                        <t t-if="type == 'check_recivce'">
+                             <div class="page-header">
+                                <center>
+                                    <h2>
+                                        <u>الشيكات الواردة:</u>
+                                        <p>
+                                            <strong><h2><span t-esc="check_recivce"/></h2></strong>
+                                        </p>
+                                    </h2>
+                                </center>
+
+                            </div>
+                            <div class="">
+                                <table class="table table-bordered table-condensed" >
+                                   <thead >
+                                        <thead>
+                                            <tr>
+                                                <th><strong>الملاحظة</strong></th>
+                                                <th><strong>رقم الفاتورة</strong></th>
+                                                <th><strong>تاريخ الإستلام</strong></th>
+                                                <th><strong>قيمة الشيك </strong></th>
+                                                <th><strong>رقم الشيك</strong></th>
+                                                <th>العميل </th>
+                                                <th>رقم</th>
+                                            </tr>
+                                        </thead>
+
+                                    </thead>-
+                                    <tbody >
+                                        <t t-foreach="check_ids" t-as="rec">
+                                            <tr >
+                                                <td class="">
+                                                    <span t-esc="rec['notes']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['communication']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['date']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['amount']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['check_no']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['account_holder']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['num_line']"/>
+                                                </td>
+                                            </tr>
+                                             <!--<tr>-->
+                                                 <!--<td>Total Employees:<t t-esc="rec['total_employee']"/></td>-->
+                                             <!--</tr>-->
+                                        </t>
+
+                                        <!--Total employee: <span t-esc="total_employee"/>-->
+                                        <!--<t t-foreach="rec.num_line" t-as="p">&ndash;&gt;-->
+                                        <!--</t>-->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </t>
+
+<!--                        returen check-->
+                         <t t-if="type == 'check_return'">
+                             <div class="page-header">
+                                <center>
+                                    <h2>
+                                        <u>الشيكات الراجعة:</u>
+                                        <p>
+                                            <strong><h2><span t-esc="check_recivce"/></h2></strong>
+                                        </p>
+                                    </h2>
+                                </center>
+
+                            </div>
+                            <div class="">
+                                <table class="table table-bordered table-condensed" >
+                                   <thead >
+                                        <thead>
+                                            <tr>
+                                                <th><strong>الملاحظة</strong></th>
+                                                <th><strong>رقم الفاتورة</strong></th>
+                                                <th><strong>تاريخ الإستلام</strong></th>
+                                                <th><strong>قيمة الشيك </strong></th>
+                                                <th><strong>رقم الشيك</strong></th>
+                                                <th>العميل </th>
+                                                <th>رقم</th>
+                                            </tr>
+                                        </thead>
+
+                                    </thead>-
+                                    <tbody >
+                                        <t t-foreach="check_return_ids" t-as="rec">
+                                            <tr >
+                                                <td class="">
+                                                    <span t-esc="rec['notes']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['communication']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['date']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['amount']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['check_no']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['account_holder']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['num_line']"/>
+                                                </td>
+                                            </tr>
+                                             <!--<tr>-->
+                                                 <!--<td>Total Employees:<t t-esc="rec['total_employee']"/></td>-->
+                                             <!--</tr>-->
+                                        </t>
+
+                                        <!--Total employee: <span t-esc="total_employee"/>-->
+                                        <!--<t t-foreach="rec.num_line" t-as="p">&ndash;&gt;-->
+                                        <!--</t>-->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </t>
+
+<!--                        waiting check-->
+                        <t t-if ="type == 'check_waiting'">
+                             <div class="page-header">
+                                <center>
+                                    <h2>
+                                        <u>شيكات قيد الإنتظار :</u>
+                                        <p>
+                                            <strong><h2><span t-esc="check_waiting"/></h2></strong>
+                                        </p>
+                                    </h2>
+                                </center>
+
+                            </div>
+                            <div class="">
+                                <table class="table table-bordered table-condensed" >
+                                   <thead >
+                                        <thead>
+                                            <tr>
+                                                <th><strong>الملاحظة</strong></th>
+                                                <th><strong>رقم الفاتورة</strong></th>
+                                                <th><strong>تاريخ الإستلام</strong></th>
+                                                <th><strong>قيمة الشيك </strong></th>
+                                                <th><strong>رقم الشيك</strong></th>
+                                                <th>العميل </th>
+                                                <th>رقم</th>
+                                            </tr>
+                                        </thead>
+
+                                    </thead>-
+                                    <tbody >
+                                        <t t-foreach="check_waiting_ids" t-as="rec">
+                                            <tr >
+                                                <td class="">
+                                                    <span t-esc="rec['notes']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['communication']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['date']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['amount']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['check_no']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['account_holder']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['num_line']"/>
+                                                </td>
+                                            </tr>
+                                             <!--<tr>-->
+                                                 <!--<td>Total Employees:<t t-esc="rec['total_employee']"/></td>-->
+                                             <!--</tr>-->
+                                        </t>
+
+                                        <!--Total employee: <span t-esc="total_employee"/>-->
+                                        <!--<t t-foreach="rec.num_line" t-as="p">&ndash;&gt;-->
+                                        <!--</t>-->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </t>
+<!--                        reject check-->
+
+
+                        <!--                        returen check-->
+                         <t t-if="type == 'check_reject'">
+                             <div class="page-header">
+                                <center>
+                                    <h2>
+                                        <u>الشيكات المرفوضة :</u>
+                                        <p>
+                                            <strong><h2><span t-esc="check_reject"/></h2></strong>
+                                        </p>
+                                    </h2>
+                                </center>
+
+                            </div>
+                            <div class="">
+                                <table class="table table-bordered table-condensed" >
+                                   <thead >
+                                        <thead>
+                                            <tr>
+                                                <th><strong>الملاحظة</strong></th>
+                                                <th><strong>رقم الفاتورة</strong></th>
+                                                <th><strong>تاريخ الإستلام</strong></th>
+                                                <th><strong>قيمة الشيك </strong></th>
+                                                <th><strong>رقم الشيك</strong></th>
+                                                <th>العميل </th>
+                                                <th>رقم</th>
+                                            </tr>
+                                        </thead>
+
+                                    </thead>-
+                                    <tbody >
+                                        <t t-foreach="check_reject_ids" t-as="rec">
+                                            <tr >
+                                                <td class="">
+                                                    <span t-esc="rec['notes']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['communication']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['date']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['amount']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['check_no']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['account_holder']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['num_line']"/>
+                                                </td>
+                                            </tr>
+                                             <!--<tr>-->
+                                                 <!--<td>Total Employees:<t t-esc="rec['total_employee']"/></td>-->
+                                             <!--</tr>-->
+                                        </t>
+
+                                        <!--Total employee: <span t-esc="total_employee"/>-->
+                                        <!--<t t-foreach="rec.num_line" t-as="p">&ndash;&gt;-->
+                                        <!--</t>-->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </t>
+                         <t t-if="type == 'check_collection'">
+                             <div class="page-header">
+                                <center>
+                                    <h2>
+                                        <u>الشيكات تحت التحصيل :</u>
+                                        <p>
+                                            <strong><h2><span t-esc="check_collection"/></h2></strong>
+                                        </p>
+                                    </h2>
+                                </center>
+
+                            </div>
+                            <div class="">
+                                <table class="table table-bordered table-condensed" >
+                                   <thead >
+                                        <thead>
+                                            <tr>
+                                                <th><strong>الملاحظة</strong></th>
+                                                <th><strong>رقم الفاتورة</strong></th>
+                                                <th><strong>تاريخ الإستلام</strong></th>
+                                                <th><strong>قيمة الشيك </strong></th>
+                                                <th><strong>رقم الشيك</strong></th>
+                                                <th>العميل </th>
+                                                <th>رقم</th>
+                                            </tr>
+                                        </thead>
+
+                                    </thead>-
+                                    <tbody >
+                                        <t t-foreach="check_collection_ids" t-as="rec">
+                                            <tr >
+                                                <td class="">
+                                                    <span t-esc="rec['notes']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['communication']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['date']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['amount']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['check_no']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['account_holder']"/>
+                                                </td>
+                                                <td class="">
+                                                    <span t-esc="rec['num_line']"/>
+                                                </td>
+                                            </tr>
+                                             <!--<tr>-->
+                                                 <!--<td>Total Employees:<t t-esc="rec['total_employee']"/></td>-->
+                                             <!--</tr>-->
+                                        </t>
+
+                                        <!--Total employee: <span t-esc="total_employee"/>-->
+                                        <!--<t t-foreach="rec.num_line" t-as="p">&ndash;&gt;-->
+                                        <!--</t>-->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </t>
+
+<!--                        ?///////////////////////////////////////By location______________-->
+
+
+<!--                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%The End Of All Report   </t>-->
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

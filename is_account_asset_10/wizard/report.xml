@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <report
+            string="Asset"
+            id="action_asset_report_details"
+            model="account.asset.asset"
+            report_type="qweb-pdf"
+            name="is_account_asset_10.is_asset_template"
+            file="is_account_asset_10.is_asset_template"
+        />
+
+</odoo>

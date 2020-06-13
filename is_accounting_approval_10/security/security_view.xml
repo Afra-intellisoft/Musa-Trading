@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- group of general manager -->
+        <record id="general_manager_access_group" model="res.groups">
+            <field name="name">General Manager(Approval)</field>
+            <field name="help">General and Deputy Manager</field>
+        </record>
+
+        <!--<record id="advisor_access_group" model="res.groups">-->
+                    <!--<field name="name">Advisor</field>-->
+                    <!--<field name="help">Advisor Manager</field>-->
+                <!--</record>-->
+
+         group of auditor
+        <record id="auditor_access_group" model="res.groups">
+            <field name="name">Auditor</field>
+            <field name="help">Auditor for custody clearance</field>
+        </record>
+
+        <!-- group of manager approvers -->
+        <record id="manager_access_group" model="res.groups">
+            <field name="name">Direct Manager</field>
+            <field name="help">Direct Manager</field>
+        </record>
+
+        <!-- group of validator -->
+        <!--<record id="validator_access_group" model="res.groups">-->
+            <!--<field name="name">Validator</field>-->
+            <!--<field name="help">Validator</field>-->
+        <!--</record>-->
+
+        <!-- Record Rules -->
+        <record id="finance_access_rule_all" model="ir.rule">
+            <field name="name">Finance Access Rule</field>
+            <field name="model_id" ref="model_finance_approval"/>
+            <!--<field name="domain_force">['|',('user_id','=',user.id),('manager_id','=',user.id)]</field>-->
+            <field name="domain_force">['&amp;', '|',('user_id','=',user.id),('manager_id','=',user.id),
+                '|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+        <record id="finance_access_rule_approvers" model="ir.rule">
+            <field name="name">Finance Access Rule Approvers</field>
+            <field name="model_id" ref="model_finance_approval"/>
+            <!--<field name="domain_force">[(1,'=',1)]</field>-->
+            <field name="domain_force">['&amp;',(1,'=',1),'|',
+                ('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+            <!--<field name="groups"-->
+                   <!--eval="[-->
+
+                   <!--(4, ref('account.group_account_manager')),-->
+                   <!--(4, ref('is_accounting_approval_12_golden.general_manager_access_group'))]"/>-->
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+        <template id="is_purchase_contract_template">
+        <t t-call="report.html_container">
+                    <t t-call="report.external_layout">
+                    <div class="page">
+                        <div class="row row-centered">
+                            <div class="col-md-12 col-centered">
+                                <t>
+                                <strong>Purchase contract report for for period Date From:</strong>
+                                <span t-esc="data['start_date']"/>
+                                <td/>
+                                 <strong>Date to:</strong>
+                                  <span t-esc="data['end_date']"/>
+                                <br/>
+                                </t>
+                                <br/>
+                                <br/>
+<!--                                <div>-->
+<!--                               <t t-foreach="docs" t-as="o">-->
+<!--                                <strong>Contract Date:</strong>-->
+<!--                                <span t-field="o.line_id.date"/>-->
+<!--                                <br/>-->
+<!--                                 <strong>Period:</strong>-->
+<!--                                  <span t-field="o.line_id.date_from"/>-->
+<!--                                <br/>-->
+<!--                                  <span t-field="o.line_id.date_to"/>-->
+<!--                                <br/>-->
+<!--                                <t>-->
+<!--                                <strong>Date Invoice:</strong>-->
+<!--                                <span t-field="o.line_id.date_invoice"/>-->
+<!--                                <br/>-->
+<!--                                 <strong>Invoice Reference:</strong>-->
+<!--                                <span t-field="o.line_id.invoice"/>-->
+<!--                                <br/>-->
+<!--                                </t>-->
+<!--                                <br/>-->
+<!--                            <td/>-->
+<!--                                    <br/>-->
+<!--                               </t>-->
+<!--                                </div>-->
+                                <table style="width:100%;" dir="ltr" class="table-bordered" >
+
+                                    <thead>
+                                    <tr>
+                                        <th><strong>Vendor</strong></th>
+                                        <th class="text-center"><strong>Contract Ref</strong></th>
+                                        <th class="text-center"><strong>Product</strong></th>
+                                        <th class="text-center"><strong>Unit of measure</strong></th>
+                                        <th class="text-center"><strong>Quantity</strong></th>
+                                        <th class="text-center"><strong>Qty Consumed</strong></th>
+                                        <th class="text-center"><strong>Weight</strong></th>
+                                        <th class="text-center"><strong>Price</strong></th>
+                                        <th class="text-center"><strong>Date From</strong></th>
+                                        <th class="text-center"><strong>Date To</strong></th>
+                                        <th class="text-center"><strong>State</strong></th>
+                                    </tr>
+                                </thead>
+                                    <tr t-foreach="docs" t-as="o">
+                                        <td>
+                                        <span t-field="o.line_id.vendor_id.name"/>
+                                        </td>
+                                        <td class="text-center">
+                                        <span t-field="o.line_id.name"/>
+                                        </td>
+                                        <td class="text-center">
+                                        <span t-field="o.product_id.name"/>
+                                        </td>
+                                        <td class="text-center">
+                                        <span t-field="o.product_uom_qty.name"/>
+                                        </td>
+                                        <td class="text-center">
+                                        <span t-field="o.product_qty"/>
+                                        </td>
+                                        <td class="text-center">
+                                        <span t-field="o.qty_done"/>
+                                        </td>
+                                        <td class="text-center">
+                                        <span t-field="o.weight"/>
+                                        </td>
+                                        <td class="text-center">
+                                        <span t-field="o.price"/>
+                                        </td>
+                                        <td class="text-center">
+                                        <span t-field="o.line_id.date_from"/>
+                                        </td>
+                                        <td class="text-center">
+                                        <span t-field="o.line_id.date_to"/>
+                                        </td>
+<!--                                <br/>-->
+                                        <td class="text-center">
+                                        <span t-field="o.line_id.state"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </t>
+        </t>
+    </template>
+</data>
+</odoo>

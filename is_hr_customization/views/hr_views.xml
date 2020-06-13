@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="hr_contract_views_form" model="ir.ui.view">
+            <field name="name">Hr Contract</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="before">
+                    <field name="name_ex" class="oe_inline"/>
+                </xpath>
+                <xpath expr="//field[@name='job_id']" position="after">
+                    <field name="attach" class="oe_inline"/>
+                </xpath>
+                    <xpath expr="//field[@name='wage']" position="after">
+                        <field name="gross"/>
+                        <field name="total_salary"/>
+                        <field name="paid_leave"/>
+                        <field name="incentive"/>
+                        <field name="benefits"/>
+                        <!--<field name="taker_benefits"/>-->
+                        <!--<field name="gratuities"/>-->
+                         <field name="legal_leave"/>
+                    </xpath>
+                <xpath expr="//page[@name='information']" position="after">
+                    <page string="Terms Contract" >
+                          <field name="text" />
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    <record id="is_hr_contract_view_tree" model="ir.ui.view">
+            <field name="name">Hr Contract</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="before">
+                    <field name="name_ex" class="oe_inline"/>
+                </xpath>
+            </field>
+    </record>
+      <record id="hr_emp_views_form" model="ir.ui.view">
+            <field name="name">Hr Employee</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <div class="oe_button_box" position="inside">
+				<button class="oe_stat_button" name="custody_view" type="object" icon="fa-list-ol">
+					<field string="Custody" name="custody_count" widget="statinfo"/>
+				</button>
+			</div>
+                 <xpath expr="//field[@name='user_id']" position="before">
+                        <field name="hiring_date" />
+                        <field name="account_id" />
+                        <field name="bank_id" />
+                        <field name="branch_id" />
+                        <field name="bank_account_no" />
+                 </xpath>
+                <xpath expr="//field[@name='birthday']" position="after">
+                        <field name="age" />
+                 </xpath>
+                <xpath expr="//field[@name='address_home_id']" position="replace">
+                        <field name="relation" />
+                        <field name="relative_relation" />
+                        <field name="phone" />
+                        <field name="home_address"/>
+                 </xpath>
+
+                <xpath expr="//page[@name='hr_settings']" position="after">
+                    <page name="warning" string="Warning" groups="hr.group_hr_user,base.group_user">
+                          <field name="hr_warning_ids" context="{'default_employee_id': active_id}">
+                            <tree string="Employee Warning(s)">
+                                <field name="employee_id" string="Employee" />
+                                <field name="pen_type" />
+                                <field name="leval" />
+                                <field name="deduct_dayes" />
+                                <field name="deduct_amount" />
+                                <field name="explanation_date" />
+                                <field name="state" />
+                            </tree>
+                          </field>
+                    </page>
+                     <page name="short_loan" string="Short Loan" groups="hr.group_hr_user,base.group_user">
+                              <field name="short_loan_ids" context="{'default_employee_id': active_id}">
+                                <tree string="Employee Short Loan(s)">
+                                    <field name="employee_id"/>
+                                    <field name="loan_amount" sum="loan_amount"/>
+                                    <field name="date"/>
+                                    <field name="state"/>
+                                </tree>
+                              </field>
+                        </page>
+                        <page name="long_loan" string="Long Loan" groups="hr.group_hr_user,base.group_user">
+                                  <field name="loan_ids" context="{'default_employee_id': active_id}">
+                                    <tree string="Employee Long Loan(s)">
+                                        <field name="employee_id"/>
+                                        <field name="loan_amount" sum="loan_amount"/>
+                                        <field name="date"/>
+                                        <field name="state"/>
+                                    </tree>
+				            	  </field>
+                            </page>
+                    <!--<page string="Custody" groups="hr.group_hr_user,base.group_user">-->
+                                  <!--<field name="custody_ids">-->
+                                    <!--<tree string="Employee Custody">-->
+                                        <!--<field name="employee"/>-->
+                                        <!--<field name="custody_name"/>-->
+                                        <!--<field name="return_date"/>-->
+                                    <!--</tree>-->
+				            	  <!--</field>-->
+                            <!--</page>-->
+                </xpath>
+            </field>
+        </record>
+
+    <!--permission-->
+
+    <record id="hr_permission_view_form" model="ir.ui.view">
+        <field name="name">permission.form</field>
+        <field name="model">hr.permission</field>
+        <field name="arch" type="xml">
+            <form string="Permission">
+                <header>
+                    <button string="Submit" name="submit_request"  states="draft" type="object"  class="oe_highlight"  />
+                    <button string="Approve" name="approve_request"  states="submit" type="object" />
+                    <button string="Cancel" name="request_cancel"  states="submit" type="object" />
+                    <field name="state" widget="statusbar" statusbar_visible="draft,approve" />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="date"/>
+                        <field name="name"/>
+                        <field name="employee_id" />
+                        <label for="request_date_from" string="From"/>
+                        <div>
+                            <div class="o_row o_row_readonly">
+                                <field name="request_date_from" class="oe_inline"
+                                    attrs="{'readonly': [('state', 'not in', ('draft', 'confirm'))]}"/>
+                                <span class="oe_inline"
+                                    attrs="{'invisible': ['|', ('request_unit_half', '=', True)]}">
+                                    To
+                                </span>
+                                <field name="request_date_to" class="oe_inline"
+                                    attrs="{
+                                        'readonly': [('state', 'not in', ('draft', 'confirm'))],
+                                        'invisible': ['|', ('request_unit_half', '=', True)]
+                                    }"/>
+                                <field name="request_date_from_period" class="oe_inline"
+                                    string="In"
+                                    options="{'horizontal': True}"
+                                    attrs="{
+                                        'readonly': [('state', 'not in', ('draft', 'confirm'))],
+                                        'required': [('request_unit_half', '=', True)],
+                                        'invisible': [('request_unit_half', '=', False)]}"/>
+                            </div>
+                                                        <div class="o_row o_row_readonly">
+                                <label for="request_unit_half"
+                                    attrs="{'readonly': [('state', 'not in', ('draft', 'confirm'))]}"/>
+                                <field name="request_unit_half"
+                                    attrs="{'readonly': [('state', 'not in', ('draft', 'confirm'))]}"/>
+                                                        </div>
+                        </div>
+                    </group>
+
+
+                    <group>
+                        <field name="reasons"/>
+                        <field name="attach"/>
+                    </group>
+                    <group>
+                            <field name="supervisor_notes" attrs="{'invisible':[('state','=', 'draft')]}" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="hr_permission_view_tree" model="ir.ui.view">
+            <field name="model">hr.permission</field>
+            <field name="arch" type="xml">
+                <tree string="Permission">
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+    <record id="hr_permission_view_search" model="ir.ui.view">
+        <field name="name">permission.search</field>
+        <field name="model">hr.permission</field>
+        <field name="arch" type="xml">
+            <search string="Permission">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="state"/>
+                <group expand="0" string="Group By">
+                    <filter name=" By Employee name" domain="[]" context="{'group_by' : 'name'}"/>
+                    <filter name=" By Request state" domain="[]" context="{'group_by' : 'state'}"/>
+                    <filter name=" By Date" domain="[]" context="{'group_by' : 'date'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_hr_permission" model="ir.actions.act_window">
+        <field name="name">Permission</field>
+        <field name="res_model">hr.permission</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem parent="hr.menu_hr_root"  name='Permission' id="hr_permission_views"
+              action="action_hr_permission" groups="hr.group_hr_user,hr.group_hr_manager,base.group_user"/>
+<!--task-->
+    <record id="hr_task_view_form" model="ir.ui.view">
+        <field name="name">task.form</field>
+        <field name="model">hr.task</field>
+        <field name="arch" type="xml">
+            <form string="Task">
+                <header>
+                    <button string="Submit" name="submit_request"  states="draft" type="object"  class="oe_highlight"  />
+                    <button string="Approve" name="approve_request"  states="submit" type="object" groups="hr.group_hr_manager" />
+                    <button  name="finance_request" string="Finance Request"  type="object" attrs="{'invisible':['|',('task_type','!=','finance'),('state','!=','approve')],'required':[('task_type','=','finance')]}" groups="hr.group_hr_manager"/>
+                    <button string="Done" name="done_request"  states="request,finance" type="object" groups="hr.group_hr_manager"/>
+                    <button name="order_stock" string="Material Request" type="object" attrs="{'invisible':['|',('task_type','!=','material'),('state','!=','approve')],'required':[('task_type','=','material')]}" class="oe_highlight" groups="hr.group_hr_manager"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done" />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="date"/>
+                        <field name="name"/>
+                        <field name="department_id"/>
+                        <field name="task_type"/>
+                    </group>
+                    <group>
+                        <field name="amount" attrs="{'invisible':[('task_type','!=','finance')],'required':[('task_type','=','finance')]}"/>
+                        <field name="description"/>
+                    </group>
+
+                    <group string="Product"  attrs="{'invisible':[('task_type','!=','material')],'required':[('task_type','=','material')]}">
+                            <field name="task_ids" nolabel="1">
+                                <tree string="Product" editable="bottom">
+                                    <field name="product_id" />
+                                    <field name="uom_id" />
+                                    <field name="account_id" invisible="1"/>
+                                    <field name="quantity" />
+                                    <!--<field name="price" />-->
+                                    <field name="note" />
+                                    <!--<field name="purchase" />-->
+                                </tree>
+                            </field>
+                        </group>
+                     <group>
+                            <field name="note"  />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="hr_task_view_tree" model="ir.ui.view">
+            <field name="model">hr.task</field>
+            <field name="arch" type="xml">
+                <tree string="Task">
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+    <record id="hr_task_view_search" model="ir.ui.view">
+        <field name="name">task.search</field>
+        <field name="model">hr.task</field>
+        <field name="arch" type="xml">
+            <search string="Task">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="state"/>
+                <group expand="0" string="Group By">
+                    <filter name=" By Employee name" domain="[]" context="{'group_by' : 'name'}"/>
+                    <filter name=" By Request state" domain="[]" context="{'group_by' : 'state'}"/>
+                    <filter name=" By Date" domain="[]" context="{'group_by' : 'date'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_hr_task" model="ir.actions.act_window">
+        <field name="name">Task</field>
+        <field name="res_model">hr.task</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem parent="hr.menu_hr_root"  name='Tasks' id="hr_task_views"
+              action="action_hr_task" groups="hr.group_hr_user,hr.group_hr_manager"/>
+<!--training-->
+    <record id="hr_emp_training_view_form" model="ir.ui.view">
+        <field name="name">hr.employee.training.form</field>
+        <field name="model">hr.employee.training</field>
+        <field name="arch" type="xml">
+            <form string="Training">
+                <header>
+                    <button string="Submit" name="submit_request"  states="draft" type="object"  class="oe_highlight" />
+                    <button string="Done" name="done_request"  states="submit" type="object" groups="hr.group_hr_manager"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done" />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="date"/>
+                        <field name="name"/>
+                        <field name="specialist_id"/>
+                    </group>
+                    <group>
+                        <label for="Period" class="oe_edit_only" string="Period" />
+                        <div><field name="date_from" /><field name="date_to"/></div>
+                        <field name="course_id"/>
+                        <field name="hall_id"/>
+                    </group>
+                    <group>
+                    <notebook>
+                        <page string="Employee">
+                            <field name ="emp_line_ids" colspan="4" nolabel="1">
+                            </field>
+                        </page>
+                        <page string="Attach">
+                            <group>
+                                <field name="line_ids" nolabel="1">
+                                <tree string="Attachment" editable="bottom">
+                                    <field name="name" />
+                                    <field name="attach" />
+                                </tree>
+                            </field>
+                            </group>
+                        </page>
+                    </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="hr_emp_training_view_tree" model="ir.ui.view">
+            <field name="model">hr.employee.training</field>
+            <field name="arch" type="xml">
+                <tree string="Training">
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+    <record id="hr_emp_training_view_search" model="ir.ui.view">
+        <field name="name">training.search</field>
+        <field name="model">hr.employee.training</field>
+        <field name="arch" type="xml">
+            <search string="Training">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="state"/>
+                <group expand="0" string="Group By">
+                    <filter name=" By Employee name" domain="[]" context="{'group_by' : 'name'}"/>
+                    <filter name=" By Request state" domain="[]" context="{'group_by' : 'state'}"/>
+                    <filter name=" By Date" domain="[]" context="{'group_by' : 'date'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_hr_emp_training" model="ir.actions.act_window">
+        <field name="name">Training</field>
+        <field name="res_model">hr.employee.training</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem parent="hr.menu_hr_root"  name='Training' id="hr_emp_training_views"
+              action="action_hr_emp_training" groups="hr.group_hr_manager"/>
+   <!--hr letter internal-->
+    <record id="hr_letter_internal_view_form" model="ir.ui.view">
+        <field name="name">hr.letter.internal.form</field>
+        <field name="model">hr.letter.internal</field>
+        <field name="arch" type="xml">
+            <form string="Letter Internal">
+                <header>
+                    <button string="Submit" name="submit_request"  states="draft" type="object"  class="oe_highlight"  />
+                    <button string="Done" name="done_request"  states="submit" type="object"  class="oe_highlight"  />
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done" />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="date_order"/>
+                        <field name="employee_id"/>
+                        <field name="job_id"/>
+                        <field name="date_execute"/>
+                        <!--<field name="destination_id"/>-->
+                        <field name="subject_id"/>
+                        <field name="subject_sub"/>
+                        <!--<field name="type_letter"/>-->
+                    </group>
+                    <notebook>
+                        <page string="Employee">
+                            <group  nolabel="1" editable="bottom">
+                                <field name="hr_emp_ids" nolabel="1"/>
+                            </group>
+
+                        </page>
+                    </notebook>
+                    <group>
+                        <field name="note"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="hr_letter_internal_view_tree" model="ir.ui.view">
+            <field name="model">hr.letter.internal</field>
+            <field name="arch" type="xml">
+                <tree string="Letter Internal">
+                        <field name="name"/>
+                        <field name="date_order"/>
+                        <field name="employee_id"/>
+                        <field name="job_id"/>
+                        <!--<field name="destination_id"/>-->
+                        <field name="subject_id"/>
+                        <!--<field name="type_letter"/>-->
+                        <field name="state"/>
+                </tree>
+            </field>
+        </record>
+    <!--<record id="hr_letter_external_view_search" model="ir.ui.view">-->
+        <!--<field name="name">Letter External.search</field>-->
+        <!--<field name="model">hr.letter.external</field>-->
+        <!--<field name="arch" type="xml">-->
+            <!--<search string="Letter External">-->
+                <!--<field name="name"/>-->
+                <!--<field name="date"/>-->
+                <!--<field name="state"/>-->
+                <!--<group expand="0" string="Group By">-->
+                    <!--<filter name=" By Employee name" domain="[]" context="{'group_by' : 'name'}"/>-->
+                    <!--<filter name=" By Request state" domain="[]" context="{'group_by' : 'state'}"/>-->
+                    <!--<filter name=" By Date" domain="[]" context="{'group_by' : 'date'}"/>-->
+                <!--</group>-->
+            <!--</search>-->
+        <!--</field>-->
+    <!--</record>-->
+
+    <record id="action_hr_letter_internal" model="ir.actions.act_window">
+        <field name="name">Letter Internal</field>
+        <field name="res_model">hr.letter.internal</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem parent="hr.menu_hr_root"  name='Letter' id="hr_letter_views"/>
+
+    <menuitem parent="hr_letter_views"  name='Letter Internal' id="hr_letter_internal_views"
+              action="action_hr_letter_internal" groups="hr.group_hr_manager"/>
+
+
+
+    <!--hr letter external-->
+    <record id="hr_letter_external_view_form" model="ir.ui.view">
+        <field name="name">hr.letter.external.form</field>
+        <field name="model">hr.letter.external</field>
+        <field name="arch" type="xml">
+            <form string="Letter External">
+                <header>
+                    <button string="Submit" name="submit_request"  states="draft" type="object"  class="oe_highlight"  />
+                    <button string="Done" name="done_request"  states="submit" type="object"  class="oe_highlight"  />
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done" />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="date"/>
+                        <field name="employee_id"/>
+                        <field name="job_id"/>
+                        <field name="destination_id"/>
+                        <field name="subject_id"/>
+                        <field name="is_department_id"/>
+                        <field name="letter_type_id"/>
+                    </group>
+                    <group>
+                        <field name="note"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="hr_letter_external_view_tree" model="ir.ui.view">
+            <field name="model">hr.letter.external</field>
+            <field name="arch" type="xml">
+                <tree string="Letter External">
+                        <field name="name"/>
+                        <field name="date"/>
+                        <field name="employee_id"/>
+                        <field name="job_id"/>
+                        <field name="destination_id"/>
+                        <field name="subject_id"/>
+                        <field name="is_department_id"/>
+                        <field name="letter_type_id" required="1"/>
+                        <field name="state"/>
+                </tree>
+            </field>
+        </record>
+    <!--<record id="hr_letter_external_view_search" model="ir.ui.view">-->
+        <!--<field name="name">Letter External.search</field>-->
+        <!--<field name="model">hr.letter.external</field>-->
+        <!--<field name="arch" type="xml">-->
+            <!--<search string="Letter External">-->
+                <!--<field name="name"/>-->
+                <!--<field name="date"/>-->
+                <!--<field name="state"/>-->
+                <!--<group expand="0" string="Group By">-->
+                    <!--<filter name=" By Employee name" domain="[]" context="{'group_by' : 'name'}"/>-->
+                    <!--<filter name=" By Request state" domain="[]" context="{'group_by' : 'state'}"/>-->
+                    <!--<filter name=" By Date" domain="[]" context="{'group_by' : 'date'}"/>-->
+                <!--</group>-->
+            <!--</search>-->
+        <!--</field>-->
+    <!--</record>-->
+
+    <record id="action_hr_letter_external" model="ir.actions.act_window">
+        <field name="name">Letter External</field>
+        <field name="res_model">hr.letter.external</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem parent="hr_letter_views"  name='Letter External' id="hr_letter_external_views"
+              action="action_hr_letter_external" groups="hr.group_hr_manager"/>
+
+</odoo>

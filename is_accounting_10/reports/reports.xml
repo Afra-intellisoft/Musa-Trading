@@ -1,0 +1,14 @@
+<odoo>
+
+   <report id="currency_report"
+                model="account.dollar.line"
+                string="Currency Valution"
+                report_type="qweb-pdf"
+                name="is_accounting_10.currency_valuation"
+                file="is_accounting_10.currency_valuation"
+               menu="False"
+        />
+
+
+
+</odoo>

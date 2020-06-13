@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="is_production_shift_template">
+               <t t-call="report.html_container">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+                            <t>
+                                <strong>Date from:</strong>
+                                <span t-esc="data['start_date']"/>
+                                <br/>
+                                 <strong>Date to:</strong>
+                                  <span t-esc="data['end_date']"/>
+                            </t>
+                            <br/>
+                                <t>
+                                     <th><strong>Shift:</strong></th>
+                                    <span t-esc="data['shift_id']"/>
+                                </t>
+                                <br/>
+                            <table class="table table-condensed">
+                                <thead>
+                                    <tr>
+
+                                        <th><strong>Product</strong></th>
+                                        <th class="text-center"><strong> Deadline Start</strong></th>
+                                        <th class="text-center"><strong>Serial No </strong></th>
+                                        <th class="text-center"><strong>Quantity</strong></th>
+                                        <th class="text-center"><strong>Barcode</strong></th>
+                                        <th class="text-center"><strong>End of Life Date </strong></th>
+                                    </tr>
+                                </thead>
+                            <tbody>
+                            <t t-foreach="docs" t-as="o">
+
+                                <tr t-foreach="o.move_finished_ids" t-as="line">
+
+                                <td>
+                                    <span t-field="line.product_id.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.date_planned_start"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.name"/>
+                                </td>
+                                  <td class="text-center">
+                                    <span t-field="line.quantity_done"/>
+                                </td>
+                                    <t t-foreach="line.active_move_lot_ids" t-as="m">
+
+                                 <td class="text-center">
+                                    <span t-field="m.lot_id.name"/>
+                                </td>
+                                 <td class="text-center">
+                                    <span t-field="m.lot_id.life_date"/>
+                                </td>
+                           </t>
+                           </tr>
+                            </t>
+
+                      </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</data>
+</odoo>

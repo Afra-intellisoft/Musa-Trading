@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+      <record id="action_custody_clearance" model="ir.actions.act_window">
+        <field name="name">Custody Clearance</field>
+        <field name="res_model">custody.clearance</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'default_customs_id':active_id}</field>
+        <field name="domain">[('customs_id','=',active_id)]</field>
+    </record>
+      <record id="action_stock_land_cost" model="ir.actions.act_window">
+        <field name="name">Landed Cost</field>
+        <field name="res_model">stock.landed.cost</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'default_cost_id':active_id}</field>
+        <field name="domain">[('cost_id','=',active_id)]</field>
+    </record>
+
+    <record id="customs_clearance_view_form" model="ir.ui.view">
+        <field name="name">customs.clearance.form</field>
+        <field name="model">customs.clearance</field>
+        <field name="arch" type="xml">
+            <form string="Customs Clearance">
+             <header>
+                    <!--<button name="count_form" string="Agricultural Request" type="object" class="oe_highlight" attrs="{'invisible': [ ('agricultural', '=', True)]}"/>-->
+                    <button string="Running" name="approve_open"  states="draft" type="object"  class="oe_highlight"  groups="purchase.group_purchase_manager"/>
+                    <button string="Done" name="approve_done" type="object"  class="oe_highlight"  groups="purchase.group_purchase_manager"  attrs="{'invisible': [ '|',('rent_car', '=', False), ('done', '=', True)]}"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done" />
+             </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                      <button name="%(action_custody_clearance)d"
+                            class="oe_stat_button"
+                            icon="fa-pencil-square-o"
+                            type="action"
+                            >
+                            <field name="contracts_count" widget="statinfo" string="Custody"/>
+                        </button>
+                        &#160;
+                        &#160;
+                        &#160;
+                        <button name="%(action_stock_land_cost)d"
+                            class="oe_stat_button"
+                            icon="fa-truck"
+                            type="action"
+                            >
+                            <field name="cost_count" widget="statinfo" string="Landed Costs"/>
+                        </button>
+                    </div>
+                    <group col="2">
+                    <group>
+                        <field name="name"/>
+                        <field name="done" invisible="1"/>
+                        <field name="track_id"/>
+                        <field name="contract_id" required="1"/>
+<!--                        <field name="request_id"/>-->
+                        <field name="agricultural" invisible="1"/>
+                        <field name="date_order"/>
+                        <field name="partner_id" required="1"/>
+                        <field name="requester"/>
+                        <!--<field name="contract_id"/>-->
+                    </group>
+                     <group>
+                        <field name="clearance" invisible="1"/>
+                         <field name="bl_no"/>
+                        <field name="certificate_number" />
+                        <field name="invoice_no" />
+                        <field name="currency_id" required="1"/>
+                         <field name="clearance_amount"/>
+                    </group>
+                    </group>
+                    <group>
+                    <notebook>
+                        <page string="Product" >
+                            <field name ="clearance_ids" colspan="4" nolabel="1"   attrs="{'readonly': [('state', '=','open')]}">
+                                <tree editable="bottom">
+                                    <field name="product_id" />
+                                    <field name="product_uom_qty" />
+                                    <field name="grade_id" />
+                                    <field name="product_qty" />
+                                    <field name="weight" />
+                                    <field name="value_weight" />
+                                    <field name="container_number" />
+                                    <field name="code_number" />
+                                    <field name="path_number" />
+                                    <field name="scheduled_date" required="1"/>
+                                    <field name="price" />
+                                    <field name="new_price" />
+                                    <field name="total"/>
+                                    <field name="note" />
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Information Bank" attrs="{'invisible': [ ('state', '=', 'draft')]}">
+                            <group col="2">
+                            <group>
+<!--                                <field name="vendor_id" />-->
+                                <!--<field name="currency_id" />-->
+                                <!--<field name="rate"/>-->
+<!--                                <field name="account_invoice_id" />-->
+<!--                                <field name="account_debit_id" />-->
+                                <!--<field name="average" />-->
+<!--                                <field name="bank_commission" />-->
+                                <!--<field name="value_goods" />-->
+                                <!--<field name="total_bank" />-->
+<!--                                <field name="total_currency" />-->
+                                <field name="amount_bank" />
+<!--                                <field name="invoice" invisible="1"/>-->
+                            </group>
+<!--                                <group>-->
+<!--                                <button name="count_invoice" string="Invoice" type="object" class="oe_highlight" attrs="{'invisible': [('invoice', '=', True)]}"/>-->
+<!--                           </group>-->
+                              <group>
+                                 <field name="idbc" />
+                                 <field name="date_idbc" attrs="{'invisible': [ ('idbc', '=', False)]}"/>
+                                 <field name="note_idbc" attrs="{'invisible': [ ('idbc', '=', False)]}"/>
+                            </group>
+                            <group>
+                                 <field name="docs_bank" />
+                                 <field name="date_docs" attrs="{'invisible': [ ('docs_bank', '=', False)]}"/>
+                                 <field name="note_docs" attrs="{'invisible': [ ('docs_bank', '=', False)]}"/>
+                            </group>
+                            <group>
+                                 <field name="appeal_signed" />
+                                 <field name="date_appeal_signed" attrs="{'invisible': [ ('appeal_signed', '=', False)]}"/>
+                                 <field name="note_appeal_signed" attrs="{'invisible': [ ('appeal_signed', '=', False)]}"/>
+                            </group>
+                            <!--<group>-->
+                                 <!--<field name="account_debit_id" />-->
+                                 <!--<field name="account_credit_id" />-->
+                                 <!--<field name="move_id" />-->
+                            <!--</group>-->
+                            <!--<group>-->
+                                <!--<button name="finance_approve" string="Finance Request" type="object" class="oe_highlight" attrs="{'invisible': [('clearance', '=', True)]}"/>-->
+                           <!--</group>-->
+                            </group>
+                        </page>
+                        <page string="Shipment" attrs="{'invisible': [ ('state', '=', 'draft')]}">
+                            <group col="2">
+                            <group>
+                                <field name="shipping_time" />
+                                <field name="date_shipping_time" attrs="{'invisible': [ ('shipping_time', '=', False)]}"/>
+                                <field name="note_shipping_time" attrs="{'invisible': [ ('shipping_time', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="eta" />
+                                <field name="date_eta" attrs="{'invisible': [ ('eta', '=', False)]}"/>
+                                <field name="note_shipping_time" attrs="{'invisible': [ ('eta', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="shipment_arrive" />
+                                <field name="date_arrive" attrs="{'invisible': [ ('shipment_arrive', '=', False)]}"/>
+                                <field name="note_arrive" attrs="{'invisible': [ ('shipment_arrive', '=', False)]}"/>
+                                <field name="done_shipment_arrive" attrs="{'invisible': [ ('shipment_arrive', '=', False)]}"/>
+                            </group>
+                            </group>
+                        </page>
+                        <page string="Clearance Paperwork" attrs="{'invisible': [ ('state', '=', 'draft')]}">
+                            <group col="2">
+                            <group>
+                                <field name="health" />
+                                <field name="date_health" attrs="{'invisible': [ ('health', '=', False)]}"/>
+                                <field name="note_health" attrs="{'invisible': [ ('health', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="custom" />
+                                <field name="date_custom" attrs="{'invisible': [ ('custom', '=', False)]}"/>
+                                <field name="note_custom" attrs="{'invisible': [ ('custom', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="ssmo" />
+                                <field name="date_ssmo" attrs="{'invisible': [ ('ssmo', '=', False)]}"/>
+                                <field name="note_ssmo" attrs="{'invisible': [ ('ssmo', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="docs" />
+                                <field name="date" attrs="{'invisible': [ ('docs', '=', False)]}"/>
+                                <field name="note_docs" attrs="{'invisible': [ ('docs', '=', False)]}"/>
+                                <field name="done_docs" attrs="{'invisible': [ ('docs', '=', False)]}"/>
+                            </group>
+                             <group>
+                                <field name="other" />
+                                <field name="date_other" attrs="{'invisible': [ ('other', '=', False)]}"/>
+                                <field name="note_other" attrs="{'invisible': [ ('other', '=', False)]}"/>
+                            </group>
+                         </group>
+                        </page>
+                         <page string="Under Clearance Point" attrs="{'invisible': [ ('done_docs', '=', False)]}">
+                            <group col="2">
+                            <group>
+                                <field name="vassal_hooked" />
+                                <field name="date_vassal_hooked" attrs="{'invisible': [ ('vassal_hooked', '=', False)]}"/>
+                                <field name="note_vassal_hooked" attrs="{'invisible': [ ('vassal_hooked', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="container_dispatch" />
+                                <field name="date_container_dispatch" attrs="{'invisible': [ ('container_dispatch', '=', False)]}"/>
+                                <field name="note_container_dispatch" attrs="{'invisible': [ ('container_dispatch', '=', False)]}"/>
+                            </group>
+                             <group>
+                                <field name="moving_containers" />
+                                <field name="date_moving" attrs="{'invisible': [ ('moving_containers', '=', False)]}"/>
+                                <field name="note_moving" attrs="{'invisible': [ ('moving_containers', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="examine_goods" />
+                                <field name="date_goods" attrs="{'invisible': [ ('examine_goods', '=', False)]}"/>
+                                <field name="note_goods" attrs="{'invisible': [ ('examine_goods', '=', False)]}"/>
+                            </group>
+                            <group>
+                                <field name="certificate_received" />
+                                <field name="date_certificate" attrs="{'invisible': [ ('certificate_received', '=', False)]}"/>
+                                <field name="note_certificate" attrs="{'invisible': [ ('certificate_received', '=', False)]}"/>
+                                <field name="done_clearance" attrs="{'invisible': [ ('certificate_received', '=', False)]}"/>
+                            </group>
+                             <group>
+                                <field name="rent_car" />
+                                <field name="date_rent" attrs="{'invisible': [ ('rent_car', '=', False)]}"/>
+                                <field name="note_rent" attrs="{'invisible': [ ('rent_car', '=', False)]}"/>
+                                <field name="amount_rent" attrs="{'invisible': [ ('rent_car', '=', False)]}"/>
+                            </group>
+                                <group>
+                                <field name="total_amount_clearance" />
+                                <field name="attach" />
+                            </group>
+                                <group>
+                                 <field name="account_debit_id" attrs="{'invisible': [ ('rent_car', '=', False)]}"/>
+                                 <field name="account_credit_id" attrs="{'invisible': [ ('rent_car', '=', False)]}"/>
+                                 <field name="journal_id" attrs="{'invisible': [ ('rent_car', '=', False)]}"/>
+                                 <field name="move_id" attrs="{'invisible': [ ('rent_car', '=', False)]}"/>
+                                 <button name="finance_approve" string="Journal Entry" type="object" class="oe_highlight" attrs="{'invisible': ['|',('clearance', '=', True),('rent_car', '=', False)]}"/>
+                                 </group>
+
+                            </group>
+                         </page>
+                    </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="customs_clearance_view_tree" model="ir.ui.view">
+            <field name="model">customs.clearance</field>
+            <field name="arch" type="xml">
+                <tree string="Customs Clearance">
+                    <field name="name"/>
+                    <field name="track_id"/>
+                    <field name="contract_id"/>
+                    <field name="date_order"/>
+                    <field name="partner_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+    <record id="customs_clearance_view_search" model="ir.ui.view">
+        <field name="name">customs.clearance search</field>
+        <field name="model">customs.clearance</field>
+        <field name="arch" type="xml">
+            <search string="Customs Clearance">
+                <field name="name"/>
+                <group expand="0" string="Group By">
+                    <filter name=" By Employee name" domain="[]" context="{'group_by' : 'name'}"/>
+                    <!--<filter name=" By Request state" domain="[]" context="{'group_by' : 'state'}"/>-->
+                    <!--<filter name=" By Date" domain="[]" context="{'group_by' : 'date'}"/>-->
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_customs_clearance" model="ir.actions.act_window">
+        <field name="name">Customs Clearance</field>
+        <field name="res_model">customs.clearance</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem parent="menu_is_procurement_management"  id="menu_customs_clearance"
+              action="action_customs_clearance" groups="purchase.group_purchase_manager" sequence="2"/>
+
+    <record id="product_stander_view_form" model="ir.ui.view">
+        <field name="name">product.stander.form</field>
+        <field name="model">product.stander</field>
+        <field name="arch" type="xml">
+            <form string="Grade">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="product_stander_view_tree" model="ir.ui.view">
+            <field name="model">product.stander</field>
+            <field name="arch" type="xml">
+                <tree string="Stander">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+    <record id="action_product_stander" model="ir.actions.act_window">
+        <field name="name">Stander</field>
+        <field name="res_model">product.stander</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem parent="purchase.menu_purchase_config"  id="menu_stander_form"
+              action="action_product_stander" groups="purchase.group_purchase_manager"/>
+
+
+
+    <record id="product_vendor_invoice_view_form" model="ir.ui.view">
+        <field name="name">purchase.vendor.invoice.form</field>
+        <field name="model">purchase.vendor.invoice</field>
+        <field name="arch" type="xml">
+            <form string="Supplier Orders">
+                <header>
+                    <button string="Open" name="approve_open"  states="draft" type="object"  class="oe_highlight"  groups="purchase.group_purchase_manager"/>
+                    <button string="Done" name="approve_done"  states="open" type="object"  class="oe_highlight"  groups="purchase.group_purchase_manager"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done" />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="partner_id" />
+                        <field name="auction_no" />
+                        <field name="date"/>
+                        <field name="attach"/>
+                        <!--<field name="qty_delivery"  readonly="1"/>-->
+                    </group>
+                     <notebook>
+                        <page string="Supplier Orders">
+                           <field name ="invoice_ids" colspan="4" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="vendor_id"  domain="[('custom_supplier','=','True')]"/>
+                                    <field name="grade_id" />
+                                    <field name="product_id" />
+                                    <field name="product_uom_qty" />
+                                    <field name="product_qty" sum="product_qty"/>
+                                    <field name="weight" sum="weight"/>
+                                    <field name="price" sum="price"/>
+                                    <field name="commission" sum="commission"/>
+                                    <field name="total_qty_supplier" sum="total_qty_supplier"/>
+                                    <field name="qty_supplier" sum="qty_supplier" />
+                                    <field name="lot_number" />
+                                    <field name="no_invoice" />
+                                    <field name="expired_order" invisible="1"/>
+                                    <field name="value_weight" invisible="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                         <!--<page string="Track Quantity">-->
+                           <!--<field name ="purchase_inv_ids" colspan="4" nolabel="1" >-->
+                                <!--<tree editable="bottom">-->
+                                    <!--<field name="vendor_id" />-->
+                                    <!--<field name="product_id" />-->
+                                    <!--<field name="product_uom_qty" />-->
+                                    <!--<field name="grade_id" />-->
+                                    <!--<field name="product_qty" />-->
+                                    <!--<field name="qty_consumed" />-->
+                                    <!--<field name="qty_remain" />-->
+                                    <!--<field name="value_weight" />-->
+                                    <!--<field name="price" />-->
+                                    <!--&lt;!&ndash;<field name="value_weight" invisible="1"/>&ndash;&gt;-->
+                                <!--</tree>-->
+                            <!--</field>-->
+                        <!--</page>-->
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="product_vendor_invoice_view_tree" model="ir.ui.view">
+            <field name="model">purchase.vendor.invoice</field>
+            <field name="arch" type="xml">
+                <tree string="Supplier Orders">
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+    <record id="action_vendor_invoice_stander" model="ir.actions.act_window">
+        <field name="name">Supplier Orders</field>
+        <field name="res_model">purchase.vendor.invoice</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem parent="menu_is_procurement_management"  id="menu_vendor_invoice_form"
+              action="action_vendor_invoice_stander" groups="purchase.group_purchase_manager"/>
+
+    <record id="product_track_quantity_view_form" model="ir.ui.view">
+        <field name="name">purchase.track.quantity.form</field>
+        <field name="model">purchase.track.quantity</field>
+        <field name="arch" type="xml">
+            <form string="Track Quantity">
+                <header>
+                    <button name="vendor_request" string="Vendor Request" type="object" class="oe_highlight" attrs="{'invisible': ['|', '|' , ('request', '=', True), ('state','not in', ('draft'))]}" groups="purchase.group_purchase_manager"/>
+                    <button name="vendor_update" string="Clearance Request" type="object" class="oe_highlight"  state="request"  attrs="{'invisible': ['|', '|' , ('update', '=', True), ('state','not in', ('request'))]}"/>
+                    <field name="state" widget="statusbar" clickable="1"/>
+                </header>
+                <sheet>
+                    <group col="2">
+                        <group>
+                            <field name="name"/>
+                            <field name="auction_no" string="Reference No" required="1"/>
+                            <field name="date"/>
+                            <field name="stander_id" required="1"/>
+                            <field name="product_uom_id" />
+                        </group>
+                        <group>
+                            <field name="contract_id" required="1"/>
+                            <field name="currency_id" required="1"/>
+                            <field name="vendor_id" required="1"/>
+                            <field name="avg_price" />
+                            <field name="qty_delivery" />
+                            <field name="qty_consumed"  required="1"/>
+                            <field name="request" invisible="1"/>
+                            <field name="update" invisible="1"/>
+                        </group>
+                    </group>
+                     <notebook>
+                        <page string="Track Quantity">
+                           <field name ="quantity_ids" colspan="4" nolabel="1" >
+                                <tree editable="bottom">
+                                    <field name="vendor_id" readonly="1"/>
+                                    <field name="product_id" readonly="1"/>
+                                    <field name="product_uom_qty" readonly="1"/>
+                                    <field name="grade_id" readonly="1"/>
+                                    <field name="product_qty" sum="product_qty" readonly="1"/>
+                                    <field name="value_weight" readonly="1"/>
+                                    <field name="price" sum="price" readonly="1"/>
+                                    <field name="qty_consumed" sum="qty_consumed" string="Qty Kg"/>
+                                    <field name="total_qty" sum="total_qty"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="product_track_quantity_view_tree" model="ir.ui.view">
+            <field name="model">purchase.track.quantity</field>
+            <field name="arch" type="xml">
+                <tree string="Track Quantity">
+                    <field name="name"/>
+                    <field name="auction_no"/>
+                    <field name="date"/>
+                    <field name="stander_id"/>
+                    <field name="contract_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+    <record id="action_track_quantity_stander" model="ir.actions.act_window">
+        <field name="name">Track Quantity</field>
+        <field name="res_model">purchase.track.quantity</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem parent="menu_is_procurement_management"  id="menu_track_quantity_form"
+              action="action_track_quantity_stander" groups="purchase.group_purchase_manager"/>
+
+
+    <record id="is_custody_clearance_form" model="ir.ui.view">
+            <field name="name">custody.clearance.form</field>
+            <field name="model">custody.clearance</field>
+            <field name="inherit_id" ref="is_custody_clearance_10.view_finance_approval_form"/>
+            <field name="arch" type="xml">
+            <xpath expr="//field[@name='reason']" position="after">
+                <field name="customs_id" invisible="1"/>
+            </xpath>
+            </field>
+        </record>
+
+    <record id="is_land_cost_form" model="ir.ui.view">
+            <field name="name">Land Cost.form</field>
+            <field name="model">stock.landed.cost</field>
+            <field name="inherit_id" ref="stock_landed_costs.view_stock_landed_cost_form"/>
+            <field name="arch" type="xml">
+            <xpath expr="//field[@name='date']" position="after">
+                <field name="cost_id" invisible="1" />
+            </xpath>
+            </field>
+        </record>
+
+
+</odoo>

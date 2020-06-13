@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_bonus_view_form" model="ir.ui.view">
+        <field name="name">hr.bonus.month.form</field>
+        <field name="model">hr.bonus.month</field>
+        <field name="arch" type="xml">
+            <form string="Traning">
+                <header>
+                    <!--<button string="Compute" name="compute_bonus_month"  states="draft" type="object"  class="oe_highlight"  />-->
+                    <button string="Auditor" name="bonus_auditor" states="done"  type="object" class="oe_highlight"/>
+                    <button string="Finance Approve" name="finance_approve"  type="object" attrs="{'invisible': ['|',('finance_request', '=', True)]}" />
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done" />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="date"/>
+                        <field name="finance_request" invisible="True"/>
+                    </group>
+                    <group>
+                        <field name="journal_id" required="1"/>
+                        <field name="account_id" required="1"/>
+                        <field name="move_id"/>
+                    </group>
+                    <group>
+                    <notebook>
+                        <page string="Employee Bonus">
+                            <field name ="bonus_ids" colspan="4" nolabel="1">
+                                <tree editable="top">
+                                    <field name="employee_id"/>
+                                    <field name="amount"/>
+                                    <field name="account_id" required="1"/>
+                                    <field name="invoice_id"/>
+                                    <field name="date_bonus"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="hr_bonus_view_tree" model="ir.ui.view">
+            <field name="name">hr.bonus.month.tree</field>
+            <field name="model">hr.bonus.month</field>
+            <field name="arch" type="xml">
+                <tree string="Bonus">
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+    <record id="action_hr_bonus" model="ir.actions.act_window">
+        <field name="name">Bonus</field>
+        <field name="res_model">hr.bonus.month</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+<menuitem parent="hr.menu_hr_root"  name='Bonus' id="hr_bonus_views"
+               />
+    <menuitem parent="hr_bonus_views"  name='Bonus' id="hr_emp_bonus_views"
+              action="action_hr_bonus" groups="hr.group_hr_user,hr.group_hr_manager"/>
+
+</odoo>

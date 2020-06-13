@@ -1,0 +1,60 @@
+<odoo>
+    <data>
+        <record id="action_finance_vendor_bill" model="ir.actions.act_window">
+            <field name="name">Finance Approval</field>
+            <field name="res_model">finance.approval</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('invoice_id' , '=' , active_id)]</field>
+            <field name="context">{'default_invoice_id':active_id}</field>
+        </record>
+
+
+<!--        <record id="vendor_bill_form_inherit" model="ir.ui.view">-->
+<!--            <field name="name">vendor_bill_form_inherit</field>-->
+<!--            <field name="model">account.invoice</field>-->
+<!--            <field name="inherit_id" ref="account.invoice_supplier_form"/>-->
+<!--            <field name="arch" type="xml">-->
+<!--                &lt;!&ndash;to hide register payment button &ndash;&gt;-->
+<!--                &lt;!&ndash;<xpath expr="/form/header/button[@name='137']" position="attributes">&ndash;&gt;-->
+<!--                &lt;!&ndash;<attribute name="invisible">1</attribute>&ndash;&gt;-->
+<!--                &lt;!&ndash;</xpath>&ndash;&gt;-->
+<!--&lt;!&ndash;                <xpath expr="/form/header/button[@states='open']" position="replace">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <button name='get_amount'  states="open" string="Create Financial Approval" groups="account.group_account_invoice" class="oe_highlight" type="object"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                </xpath>&ndash;&gt;-->
+<!--                <xpath expr="//form/sheet/div/h1/field[@name='number']" position="before">-->
+<!--                    &lt;!&ndash;<field name="total_app" invisible="1"/>&ndash;&gt;-->
+
+<!--                    <div class="oe_button_box" name="button_box">-->
+
+<!--                        <button type="action" name="%(action_finance_vendor_bill)d" icon="fa-pencil-square-o"  class="oe_stat_button"  >-->
+<!--                            <field name="approval_count" widget="statinfo" string="Financial Approval" help="Payment Through Financial Approval"/>-->
+<!--                            <field name="finance_ids" invisible="1"/>-->
+<!--                        </button>-->
+<!--                    </div>-->
+
+<!--                </xpath>-->
+<!--            </field>-->
+<!--        </record>-->
+        <record id="action_invoice_tree_fa" model="ir.actions.act_window">
+            <field name="name">Vendor Bills</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field eval="False" name="view_id"/>
+            <field name="domain">[('type','in',('in_invoice', 'in_refund')),('state','=','open')]</field>
+            <field name="context">{'default_type': 'in_invoice', 'type': 'in_invoice', 'journal_type': 'purchase'}</field>
+            <field name="search_view_id" ref="account.view_account_invoice_filter"/>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to record a new vendor bill.
+                </p><p>
+                You can control the invoice from your vendor according to
+                what you purchased or received.
+            </p>
+            </field>
+        </record>
+        <!--<menuitem action="action_invoice_tree_fa" id="menu_action_invoice_tree_fa" parent="menu_fa_child" sequence="2"/>-->
+
+    </data>
+</odoo>

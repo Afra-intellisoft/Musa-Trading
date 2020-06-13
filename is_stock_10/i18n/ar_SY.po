@@ -1,0 +1,183 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* is_stock_10
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-10 08:03+0000\n"
+"PO-Revision-Date: 2019-12-10 08:03+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_city_state_name
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_city
+msgid "City"
+msgstr "المدينة"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_city_state_city_code
+msgid "Code"
+msgstr "الكود"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_city_state_create_uid
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_city_state_create_date
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_partner_id
+msgid "Customer"
+msgstr "العميل"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_city_state_display_name
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: is_stock_10
+#: model:ir.ui.view,arch_db:is_stock_10.lot_serial_inherit
+msgid "Expiration date"
+msgstr "تاريخ الإنتهاء"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_city_state_id
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_city_state___last_update
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_city_state_write_uid
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_city_state_write_date
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_stock_picking_picking_type_name
+msgid "Picking"
+msgstr "اختيار"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_product_price
+msgid "Price"
+msgstr "سعر"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_product_id
+msgid "Product"
+msgstr "منتج"
+
+#. module: is_stock_10
+#: model:ir.ui.view,arch_db:is_stock_10.lot_serial_inherit
+msgid "Production date"
+msgstr "تاريخ اﻹنتاج"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_name
+msgid "Qantity"
+msgstr "الكمية"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_product_quantity
+#: model:ir.ui.view,arch_db:is_stock_10.lot_serial_inherit
+msgid "Quantity"
+msgstr "كمية"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_stock_picking_quantity_picking_ids
+msgid "Quantity Picking"
+msgstr "Quantity Picking"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_serial_no
+msgid "Serial Number"
+msgstr "الرقم التسلسلي"
+
+#. module: is_stock_10
+#: model:ir.ui.view,arch_db:is_stock_10.view_stock_form_inherited
+msgid "Shipments"
+msgstr "الشحنات"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_product_state
+msgid "State"
+msgstr "المحافظة"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_city_state_state_id
+msgid "State id"
+msgstr "الولاية"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_after_price
+msgid "Taxed Amount"
+msgstr "المبغ بعد الضريبة"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_tax_id
+msgid "Taxes"
+msgstr "الضرائب"
+
+#. module: is_stock_10
+#: code:addons/is_stock_10/models/is_stock.py:93
+#, python-format
+msgid "The Quantity You Enter  if it Bigger OR Smaller Than Approved Quantity."
+msgstr "الكمية المدخلة اكبر  او اقل من الكمية الموافق عليها."
+
+#. module: is_stock_10
+#: model:ir.model,name:is_stock_10.model_stock_picking
+msgid "Transfer"
+msgstr "نقل"
+
+#. module: is_stock_10
+#: model:ir.ui.view,arch_db:is_stock_10.lot_serial_inherit
+msgid "Unit Of Measure"
+msgstr "وحدة القياس"
+
+#. module: is_stock_10
+#: model:ir.model,name:is_stock_10.model_city_state
+msgid "city.state"
+msgstr "city.state"
+
+#. module: is_stock_10
+#: model:ir.model,name:is_stock_10.model_collect_product
+msgid "collect.product"
+msgstr "collect.product"
+
+#. module: is_stock_10
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_operation_id
+#: model:ir.model.fields,field_description:is_stock_10.field_product_quantity_state_stock_move_id
+msgid "operation"
+msgstr "operation"
+
+#. module: is_stock_10
+#: model:ir.model,name:is_stock_10.model_product_quantity_state
+msgid "product.quantity.state"
+msgstr "product.quantity.state"
+

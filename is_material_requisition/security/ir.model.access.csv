@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_material_request_manager,material.request,model_material_request,stock.group_stock_manager,1,1,1,1
+access_material_request_line_manager,material.request.line,model_material_request_line,stock.group_stock_manager,1,1,1,1
+,,,,,,,
+access_material_request_department_manager,material.request,model_material_request,is_material_requisition.group_stock_custom_user,1,1,1,1
+access_material_request_line_department_manager,material.request.line,model_material_request_line,is_material_requisition.group_stock_custom_user,1,1,1,1

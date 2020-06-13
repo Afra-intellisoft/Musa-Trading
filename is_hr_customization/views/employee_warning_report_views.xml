@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="report_emp_worning">
+    <t t-call="report.external_layout">
+        <div class="page">
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th class="text-center"><strong>Employee</strong></th>
+                        <th class="text-center"><strong>Penalty</strong></th>
+                        <th class="text-center"><strong>Leval</strong></th>
+                        <th class="text-right"><strong>Deduct Dayes</strong></th>
+                        <th class="text-right"><strong>Deduct Amount</strong></th>
+                        <th class="text-right"><strong>Explanation Date</strong></th>
+                        <th class="text-right"><strong>Reason</strong></th>
+                        <th class="text-right"><strong>Penalty Description </strong></th>
+                        <th class="text-right"><strong>HR Notes </strong></th>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+                    <tr t-foreach="o.hr_warning_ids" t-as="line">
+                        <td>
+                            <span t-field="line.employee_id"/>
+                        </td>
+                        <td class="text-center">
+                            <span t-field="line.pen_type"/>
+                        </td>
+                        <td class="text-center">
+                            <span t-field="line.leval"/>
+                        </td>
+                        <td class="text-right">
+                            <span t-field="line.deduct_dayes"/>
+                        </td>
+                        <td class="text-right">
+                            <span t-field="line.deduct_amount"/>
+                        </td>
+                        <td class="text-right">
+                            <span t-field="line.explanation_date"/>
+                        </td>
+                        <td class="text-right">
+                            <span t-field="line.explanation"/>
+                        </td>
+                         <td class="text-right">
+                            <span t-field="line.pen_desc"/>
+                        </td>
+                         <td class="text-right">
+                            <span t-field="line.hr_notes"/>
+                        </td>
+                   </tr>
+                </tbody>
+            </table>
+        </div>
+    </t>
+</template>
+
+<template id="report_emp">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+            <t t-call="is_hr_customization.report_emp_worning"/>
+        </t>
+    </t>
+</template>
+</odoo>

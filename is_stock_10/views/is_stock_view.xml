@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <data>
+     <record model="ir.ui.view" id="view_stock_form_inherited">
+        <field name="name">stock.picking.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+               <xpath expr="//field[@name='origin']" position="after">
+              <field name="picking_type_name" invisible="1"/>
+              <field name="picking_type_custom" invisible="1"/>
+              </xpath>
+            <xpath expr="//page[@name='extra']" position="after">
+                <page string="Shipments"  attrs="{'invisible': [('picking_type_custom', '!=','outgoing')]}">
+                            <field name="quantity_picking_ids" >
+                                <tree editable="bottom">
+                                    <field name="partner_id"/>
+                                    <field name="product_id"/>
+                                    <field name="product_quantity"/>
+                                    <field name="product_price"/>
+                                    <field name="tax_id"/>
+                                    <field name="after_price"/>
+                                    <field name="serial_no"/>
+                                    <field name="product_state"/>
+                                    <field name="city"/>
+
+                                </tree>
+                            </field>
+                      </page>
+             </xpath>
+        </field>
+    </record>
+
+<!--         <record model="ir.ui.view" id="view_stock_lot_form_inherite">-->
+<!--        <field name="name">stock.production.lot.form</field>-->
+<!--        <field name="model">stock.production.lot</field>-->
+<!--        <field name="inherit_id" ref="stock.view_production_lot_form"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--               <xpath expr="//group[@name='main_group']" position="after">-->
+
+<!--                <group colspan="8" string="Dates">-->
+<!--                <group>-->
+<!--                    <field name="expirtaion_date"/>-->
+<!--                </group>-->
+<!--                    <group>-->
+<!--                    <field name="production_date"/>-->
+<!--                </group>-->
+<!--                </group>-->
+
+<!--               </xpath>-->
+<!--&lt;!&ndash;               <field name="life_date" position="attributes">&ndash;&gt;-->
+<!--&lt;!&ndash;              <attribute name="invisible">1</attribute>&ndash;&gt;-->
+<!--&lt;!&ndash;               </field>&ndash;&gt;-->
+
+<!--        </field>-->
+<!--         </record>-->
+
+<!--         <record model="ir.ui.view" id="view_stock_exp_form_inherite">-->
+<!--        <field name="name">stock.production.lot.form</field>-->
+<!--        <field name="model">stock.production.lot</field>-->
+<!--        <field name="inherit_id" ref="product_expiry.view_move_form_expiry"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--             <xpath expr="//field[@name='use_date']" position="attributes">-->
+
+<!--                <attribute name="invisible">0</attribute>-->
+<!--             </xpath>-->
+
+<!--             <xpath expr="//field[@name='use_date']" position="attributes">-->
+
+<!--                <attribute name="invisible">1</attribute>-->
+<!--               </xpath>-->
+<!--             <xpath expr="//field[@name='removal_date']" position="attributes">-->
+
+<!--                <attribute name="invisible">1</attribute>-->
+<!--               </xpath>-->
+<!--             <xpath expr="//field[@name='alert_date']" position="attributes">-->
+
+<!--                <attribute name="invisible">1</attribute>-->
+<!--               </xpath>-->
+
+<!--        </field>-->
+
+<!--         </record>-->
+
+    </data>
+</odoo>
+

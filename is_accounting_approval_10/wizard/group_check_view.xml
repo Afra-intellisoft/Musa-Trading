@@ -1,0 +1,67 @@
+<odoo>
+    <data>
+
+        <!-- Register payment from several invoices -->
+
+        <record id="view_account_payment_from_fa" model="ir.ui.view">
+            <field name="name">fa.register.payments.wizard</field>
+            <field name="model">fa.register.payments</field>
+            <field name="arch" type="xml">
+                <form string="Register Payment">
+                    <group>
+                        <field name="journal_id" widget="selection" />
+                        <field name="check_date" />
+                        <field name="Account_No" />
+                        <field name="Bank_id"/>
+                        <field name="Check_no" />
+                        <field name="payment_method_name" widget="selection" domain="[('payment_type','=','outbound')]" />
+
+                        <!--<field name="payment_method_id" string=" " widget="radio" />-->
+
+                        <!--<field name="payment_method_name" />-->
+                        <field name="partner_id" />
+                    </group>
+                    <!--<group>-->
+                    <!--<label for="amount"/>-->
+                    <!--<div name="amount_div" class="o_row">-->
+                    <!--<field name="amount" />-->
+                    <!--<field name="currency_id"-->
+                    <!--options="{'no_create': True, 'no_open': True}"-->
+                    <!--/>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <!--</group>-->
+                    <footer>
+                        <button string='Validate' name="validate" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window
+                id="action_account_payment_from_fa"
+                name="Register Payment"
+                res_model="fa.register.payments"
+                src_model="finance.approval"
+                view_mode="form"
+                multi="True"
+                target="new"
+                key2="client_action_multi"
+        />
+
+        <!-- Action confirm_payments for multi -->
+        <record id="action_account_confirm_payments" model="ir.actions.server">
+            <field name="name">Confirm Payments</field>
+            <field name="type">ir.actions.server</field>
+            <field name="state">code</field>
+            <field name="model_id" ref="account.model_account_payment"/>
+            <field name="binding_model_id" ref="account.model_account_payment"/>
+            <field name="code">
+                records.post()
+            </field>
+        </record>
+
+    </data>
+</odoo>

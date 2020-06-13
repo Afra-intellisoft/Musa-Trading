@@ -1,0 +1,1537 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* is_purchase_10
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-11 09:49+0000\n"
+"PO-Revision-Date: 2020-03-11 13:28+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ar_SY\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_invoice_count
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_invoice_count
+msgid "# of Bills"
+msgstr "الفواتير"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid ""
+"<br/>\n"
+"                                 <strong>  Shipping Time  :</strong>"
+msgstr ""
+"<br/>\n"
+"                                 <strong> تاريخ الشحن  :</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_client_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_track_template
+msgid ""
+"<br/>\n"
+"                                 <strong> Auction NO :</strong>"
+msgstr ""
+"<br/>\n"
+"                                 <strong> رقم المزاد :</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid ""
+"<br/>\n"
+"                                 <strong> B/L No:</strong>"
+msgstr ""
+"<br/>\n"
+"                                 <strong> B/L رقم:</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid ""
+"<br/>\n"
+"                                 <strong> Shipment Arrived :</strong>"
+msgstr ""
+"<br/>\n"
+"                                 <strong> وصول الشحنة:</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid ""
+"<br/>\n"
+"                                 <strong>Bank Commission:</strong>"
+msgstr ""
+"<br/>\n"
+"                                 <strong>عمولة البنك:</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid ""
+"<br/>\n"
+"                                 <strong>Date  Shipping Arrived :</strong>"
+msgstr ""
+"<br/>\n"
+"                                 <strong>تاريخ وصول الشحنة</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid ""
+"<br/>\n"
+"                                 <strong>Date  Shipping Time :</strong>"
+msgstr ""
+"<br/>\n"
+"                                 <strong>تاريخ وصول الشحنة</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid ""
+"<br/>\n"
+"                                 <strong>Date IBCB:</strong>"
+msgstr ""
+"<br/>\n"
+"                                 <strong> IBCB تاريخ </strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_contract_template
+msgid ""
+"<br/>\n"
+"                                 <strong>Invoice Reference:</strong>"
+msgstr ""
+"<br/>\n"
+"                                 <strong>مرجع الفاتورة</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid ""
+"<br/>\n"
+"                                 <strong>NOte  Shipping Arrived :</strong>"
+msgstr ""
+"<br/>\n"
+"                                 <strong>وصول الشحنة</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid ""
+"<br/>\n"
+"                                 <strong>NOte  Shipping Time :</strong>"
+msgstr ""
+"<br/>\n"
+"                                 <strong>زمن وصول الشحنة</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid ""
+"<br/>\n"
+"                                 <strong>NOte IBCB:</strong>"
+msgstr ""
+"<br/>\n"
+"                                 <strong>IBCB تعليق    </strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_contract_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_cultivate_template
+msgid ""
+"<br/>\n"
+"                                 <strong>Period:</strong>"
+msgstr ""
+"<br/>\n"
+"                                 <strong>الفترة</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid ""
+"<br/>\n"
+"                                <br/>\n"
+"                                 <strong> IDBC :</strong>"
+msgstr ""
+"<br/>\n"
+"                                <br/>\n"
+"                                 <strong> IDBC :</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_cultivate_template
+msgid "<strong> Form NO :</strong>"
+msgstr "<strong>رقم</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_track_template
+msgid "<strong> Qty Consumed </strong>"
+msgstr "<strong>الكمية المستهلكلة</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_track_template
+msgid "<strong> Qty Delivery </strong>"
+msgstr "<strong>الكمية المصدقة </strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_track_template
+msgid "<strong> Quantity</strong>"
+msgstr "<strong> الكمية</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid "<strong>Bank:</strong>"
+msgstr "<strong>البنك</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid "<strong>Clearance Date:</strong>"
+msgstr "<strong>تاريخ التخليص</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid "<strong>Container No</strong>"
+msgstr "<strong>رقم الكونتينر</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_contract_template
+msgid "<strong>Contract Date:</strong>"
+msgstr "<strong>تاريخ العقد/strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_track_template
+msgid "<strong>Contract No</strong>"
+msgstr "<strong>رقم العقد</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_contract_template
+msgid "<strong>Contract</strong>"
+msgstr "<strong>العقد</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_contract_template
+msgid "<strong>Date Invoice:</strong>"
+msgstr "<strong>تاريخ الفاتورة</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_client_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_track_template
+msgid "<strong>Date:</strong>"
+msgstr "<strong>تاريخ:</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_client_template
+msgid "<strong>Grade</strong>"
+msgstr "<strong>الدرجة</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid "<strong>Invoice No:</strong>"
+msgstr "<strong>رقم الفاتورة</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_contract_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_cultivate_template
+msgid "<strong>Note</strong>"
+msgstr "<strong>تعليق</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_client_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_contract_template
+msgid "<strong>Price</strong>"
+msgstr "<strong>السعر</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_track_template
+msgid "<strong>Product Stander :</strong>"
+msgstr "<strong>مقياس المنتج</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_client_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_contract_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_cultivate_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_track_template
+msgid "<strong>Product</strong>"
+msgstr "<strong>المنتج</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_cultivate_template
+msgid "<strong>Qty Approve</strong>"
+msgstr "<strong>الكمية المصدقة</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_cultivate_template
+msgid "<strong>Qty Consumed</strong>"
+msgstr "<strong>الكمية المستهلكة</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_client_template
+msgid "<strong>Qty Delivery</strong>"
+msgstr "<strong>الكمية المشحونة</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_cultivate_template
+msgid "<strong>Qty Remaining</strong>"
+msgstr "<strong>الكمية المتبقية</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_contract_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid "<strong>Quantity</strong>"
+msgstr "<strong>كمية</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.clearance_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.client_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.contract_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.cultivate_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.track_wizard
+msgid "<strong>Select period </strong>"
+msgstr "<strong>الفترة </strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid "<strong>Serial No:</strong>"
+msgstr "<strong>الرقم المتسلسل</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_contract_template
+msgid "<strong>State Contract</strong>"
+msgstr "<strong>حالة العقد</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid "<strong>Total</strong>"
+msgstr "<strong>الإجمالي</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_contract_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+msgid "<strong>Unit of measure</strong>"
+msgstr "<strong>وحدة القياس</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_client_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_contract_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_track_template
+msgid "<strong>Vendor</strong>"
+msgstr "<strong>المورد</strong>"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_client_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_contract_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_customs_clearance_template
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_track_template
+msgid "<strong>Weight</strong>"
+msgstr "<strong>الوزن</strong>"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_custody_clearance
+msgid "A model for tracking custody clearance."
+msgstr "نموذج لتتبع التخليص "
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_account_credit_id
+msgid "Account Credit"
+msgstr "حساب الدائن"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_account_debit_id
+msgid "Account Debit"
+msgstr "حساب المدين"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_account_invoice_contract_id
+msgid "Add Contract Order"
+msgstr "Add Contract Order"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_cultivate_ids
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_cultivate_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_form_id
+msgid "Agricultural"
+msgstr "زراعي"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.action_cultivate_form
+#: model:ir.ui.menu,name:is_purchase_10.menu_cultivate_form
+#: model:ir.ui.view,arch_db:is_purchase_10.cultivate_form_view_form
+#: model:ir.ui.view,arch_db:is_purchase_10.cultivate_form_view_search
+#: model:ir.ui.view,arch_db:is_purchase_10.cultivate_form_view_tree
+msgid "Agricultural Form"
+msgstr "فورم الزراعة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_agricultural
+msgid "Agricultural Request"
+msgstr " فورم زراعة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_product_agriculture
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_template_agriculture
+#: model:ir.ui.view,arch_db:is_purchase_10.is_product_template_form
+msgid "Agriculture Form"
+msgstr " فورم زراعة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_amount_rent
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_appeal_signed
+msgid "Appeal Signed"
+msgstr "Appeal Signed"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_product_asset_category_id
+msgid "Asset Type"
+msgstr "نوع الأصل"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_vendor_invoice_name
+msgid "Auction NO"
+msgstr "رقم المزاد"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_average
+msgid "Average Cost Of Rate"
+msgstr "متوسط ​​التكلفة "
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_bl_no
+msgid "B/L No"
+msgstr "B/L رقم"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_bank_commission
+msgid "Bank Commission"
+msgstr "عمولة البنك"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_invoice_lines
+msgid "Bill Lines"
+msgstr "Bill Lines"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_invoice_ids
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_invoice_ids
+msgid "Bills"
+msgstr "الفواتير"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.clearance_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.client_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.contract_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.cultivate_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.track_wizard
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_capacity
+msgid "Capacity"
+msgstr "سعة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_certificate_number
+msgid "Certificate No"
+msgstr "رقم الشهادة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_certificate_received
+msgid "Certificate Received"
+msgstr "Certificate Received"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_clearance_id
+msgid "Clearance"
+msgstr "تخليص"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.customs_clearance_view_form
+msgid "Clearance Paperwork"
+msgstr "التخليص الورقي"
+
+#. module: is_purchase_10
+#: model:ir.ui.menu,name:is_purchase_10.clearance_report_menu
+msgid "Clearance Report"
+msgstr "تقرير التخليص الجمركي"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_clearance
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_clearance
+#: model:ir.ui.view,arch_db:is_purchase_10.product_track_quantity_view_form
+msgid "Clearance Request"
+msgstr "التخليص الجمركي"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.clearance_report_action
+msgid "Clearance Status"
+msgstr "حالة التخليص الجمركي"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,help:is_purchase_10.is_purchase_form_action
+msgid "Click to create a quotation that will be converted into a purchase order."
+msgstr "انقر لإنشاء عرض أسعار سيتم تحويله إلى أمر شراء."
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,help:is_purchase_10.is_purchase_rfq
+msgid "Click to create a request for quotation."
+msgstr "انقر لإنشاء طلب شراء."
+
+#. module: is_purchase_10
+#: model:ir.actions.report.xml,name:is_purchase_10.action_report_client_qty
+msgid "Client Qty"
+msgstr "Client Qty"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_code_number
+msgid "Coder No"
+msgstr "رقم Coder"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_company_id
+msgid "Company"
+msgstr "المؤسسة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_container_dispatch
+msgid "Container Dispatch"
+msgstr "قسم الكونتينر"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_container_number
+msgid "Container No"
+msgstr "رقم الكونتينر"
+
+#. module: is_purchase_10
+#: model:ir.actions.report.xml,name:is_purchase_10.action_report_contract
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_clearance_ids
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_contract_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_cost_ids
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_customs_ids
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_request_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_ids
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_line_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_contract_id
+msgid "Contract"
+msgstr "العقد"
+
+#. module: is_purchase_10
+#: model:ir.ui.menu,name:is_purchase_10.contract_report_menu
+msgid "Contract Report"
+msgstr "تقرير العقودات"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_order_contract
+#: model:ir.ui.view,arch_db:is_purchase_10.is_purchase_order_form
+msgid "Contract Request"
+msgstr "العقد"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.contract_report_action
+msgid "Contract Status"
+msgstr "حالة العقد"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_contracts_count
+msgid "Contracts"
+msgstr "العقود"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_purchase_count
+msgid "Count"
+msgstr "حساب"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_invoice
+msgid "Count Invoice"
+msgstr "حساب الفاتورة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_account_invoice_id
+msgid "Count Rate"
+msgstr "Count Rate"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_clearance_wizard_create_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_client_wizard_create_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_contract_wizard_create_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_create_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_wizard_create_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_create_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_grade_create_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_stander_create_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_create_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_create_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_create_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_vendor_invoice_create_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_track_wizard_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_clearance_wizard_create_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_client_wizard_create_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_contract_wizard_create_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_create_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_wizard_create_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_create_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_grade_create_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_stander_create_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_create_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_create_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_create_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_vendor_invoice_create_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_track_wizard_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_cultivate_id
+msgid "Cultivate Form"
+msgstr "فورم الزراعة"
+
+#. module: is_purchase_10
+#: model:ir.ui.menu,name:is_purchase_10.cultivate_report_menu
+msgid "Cultivate Form Report"
+msgstr "فورم الزراعة"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.cultivate_report_action
+msgid "Cultivate Form Status"
+msgstr "حالة فورم الزراعة"
+
+#. module: is_purchase_10
+#: model:ir.actions.report.xml,name:is_purchase_10.action_report_cultivate_qty
+msgid "Cultivate Qty"
+msgstr "كمية فورم الزراعة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_currency_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_rate
+msgid "Current Rate"
+msgstr "السعر الحالي"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.customs_clearance_view_form
+msgid "Custody"
+msgstr "عهدة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_clearance_amount
+msgid "Custody Amount"
+msgstr "مبلغ العهدة"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.action_custody_clearance
+msgid "Custody Clearance"
+msgstr "التخليص الجمركي"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_custom
+msgid "Custom"
+msgstr "عميل"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.purchase_contract_view_form
+msgid "Custom/Clearance"
+msgstr "تخليص/جمركي"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.action_customs_clearance
+#: model:ir.actions.report.xml,name:is_purchase_10.action_report_customs_clearance
+#: model:ir.model.fields,field_description:is_purchase_10.field_account_invoice_invoice_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_custody_clearance_customs_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_stock_landed_cost_cost_id
+#: model:ir.ui.menu,name:is_purchase_10.menu_customs_clearance
+#: model:ir.ui.view,arch_db:is_purchase_10.customs_clearance_view_form
+#: model:ir.ui.view,arch_db:is_purchase_10.customs_clearance_view_search
+#: model:ir.ui.view,arch_db:is_purchase_10.customs_clearance_view_tree
+msgid "Customs Clearance"
+msgstr "التخليص الجمركي"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_appeal_signed
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_arrive
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_certificate
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_container_dispatch
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_custom
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_docs
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_eta
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_goods
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_health
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_idbc
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_moving
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_order
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_other
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_rent
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_shipping_time
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_ssmo
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_date_vassal_hooked
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_vendor_invoice_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_date_from
+msgid "Date From"
+msgstr "التاريخ من"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_date_invoice
+msgid "Date Invoice"
+msgstr "تاريخ الفاتورة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_date_to
+msgid "Date To"
+msgstr "التاريخ للإنتهاء"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_product_deferred_revenue_category_id
+msgid "Deferred Revenue Type"
+msgstr "نوع الإيرادات المدفوعة مقدما"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_delivery_location
+msgid "Delivery Location"
+msgstr "موقع التسليم"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_clearance_wizard_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_client_wizard_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_contract_wizard_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_wizard_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_grade_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_stander_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_vendor_invoice_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_client_template_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_contract_template_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_cultivate_template_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_customs_clearance_template_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_track_template_display_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_track_wizard_display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_docs
+msgid "Docs"
+msgstr "المستندات"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_docs_bank
+msgid "Docs Bank"
+msgstr "مستندات البنك"
+
+#. module: is_purchase_10
+#: selection:customs.clearance,state:0
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_done_clearance
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_done_docs
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_done_shipment_arrive
+#: model:ir.ui.view,arch_db:is_purchase_10.customs_clearance_view_form
+msgid "Done"
+msgstr "منتهي"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_eta
+msgid "ETA"
+msgstr "ETA"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_clearance_wizard_end_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_client_wizard_end_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_contract_wizard_end_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_date_end
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_wizard_end_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_track_wizard_end_date
+msgid "End Date"
+msgstr "تاريخ الإنتهاء"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,help:is_purchase_10.field_product_product_split_method
+msgid ""
+"Equal : Cost will be equally divided.\n"
+"By Quantity : Cost will be divided according to product's quantity.\n"
+"By Current cost : Cost will be divided according to product's current cost.\n"
+"By Weight : Cost will be divided depending on its weight.\n"
+"By Volume : Cost will be divided depending on its volume."
+msgstr ""
+"Equal : Cost will be equally divided.\n"
+"By Quantity : Cost will be divided according to product's quantity.\n"
+"By Current cost : Cost will be divided according to product's current cost.\n"
+"By Weight : Cost will be divided depending on its weight.\n"
+"By Volume : Cost will be divided depending on its volume."
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_examine_goods
+msgid "Examine Goods"
+msgstr "فحص البضاعة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_expiration_date
+msgid "Expiration Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: is_purchase_10
+#: selection:cultivate.form,state:0
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_expired
+#: selection:purchase.contract,state:0
+msgid "Expired"
+msgstr "صلاحية"
+
+#. module: is_purchase_10
+#: selection:purchase.order,purchase_type:0
+msgid "External Purchase"
+msgstr "المشتريات الخارجية"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_name
+msgid "Form NO"
+msgstr " رقم"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.action_product_grade
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_grade_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_grade_id
+#: model:ir.ui.menu,name:is_purchase_10.menu_grade_form
+#: model:ir.ui.view,arch_db:is_purchase_10.product_grade_view_form
+#: model:ir.ui.view,arch_db:is_purchase_10.product_grade_view_tree
+#: model:ir.ui.view,arch_db:is_purchase_10.product_stander_view_form
+msgid "Grade"
+msgstr "الدرجة"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.cultivate_form_view_search
+#: model:ir.ui.view,arch_db:is_purchase_10.customs_clearance_view_search
+#: model:ir.ui.view,arch_db:is_purchase_10.purchase_contract_view_search
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_health
+msgid "Health"
+msgstr "الصحة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_clearance_wizard_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_client_wizard_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_contract_wizard_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_wizard_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_grade_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_stander_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_vendor_invoice_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_client_template_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_contract_template_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_cultivate_template_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_customs_clearance_template_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_track_template_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_track_wizard_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_idbc
+msgid "IDBC"
+msgstr "IDBC"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.customs_clearance_view_form
+msgid "Information Bank"
+msgstr "معلومات البنك"
+
+#. module: is_purchase_10
+#: selection:purchase.order,purchase_type:0
+msgid "Internal Purchase"
+msgstr "المشتريات الداخلية"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_account_invoice
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_invoice_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_purchase_inv_id
+#: model:ir.ui.view,arch_db:is_purchase_10.customs_clearance_view_form
+msgid "Invoice"
+msgstr "الفاتورة"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "بند الفاتورة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_invoice_no
+msgid "Invoice No"
+msgstr "رقم الفاتورة"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.client_report_action
+msgid "Invoice Quantity Status"
+msgstr "حالة طلبات المورد"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_invoice
+msgid "Invoice Reference"
+msgstr "مرجع الفاتورة"
+
+#. module: is_purchase_10
+#: model:ir.ui.menu,name:is_purchase_10.client_report_menu
+msgid "Invoice Report"
+msgstr "تقرير طلبات المورد"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_move_id
+msgid "Journal Entry"
+msgstr "قيد يومية"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_cost_count
+msgid "Land Cost"
+msgstr "التكلفة الاضافية"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.action_stock_land_cost
+msgid "Landed Cost"
+msgstr "التكلفة الاضافية"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_product_landed_cost_ok
+#: model:ir.ui.view,arch_db:is_purchase_10.customs_clearance_view_form
+msgid "Landed Costs"
+msgstr "التكلفة الاضافية"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_clearance_wizard___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_client_wizard___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_contract_wizard___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_wizard___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_grade___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_stander___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_vendor_invoice___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_client_template___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_contract_template___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_cultivate_template___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_customs_clearance_template___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_report_is_purchase_10_is_purchase_track_template___last_update
+#: model:ir.model.fields,field_description:is_purchase_10.field_track_wizard___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_clearance_wizard_write_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_client_wizard_write_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_contract_wizard_write_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_write_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_wizard_write_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_write_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_grade_write_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_stander_write_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_write_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_write_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_write_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_vendor_invoice_write_uid
+#: model:ir.model.fields,field_description:is_purchase_10.field_track_wizard_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_clearance_wizard_write_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_client_wizard_write_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_contract_wizard_write_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_write_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_wizard_write_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_write_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_grade_write_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_stander_write_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_write_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_write_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_write_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_vendor_invoice_write_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_track_wizard_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_account_invoice_line_contract_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_quantity_ids
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_vendor_invoice_invoice_ids
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_vendor_invoice_purchase_inv_ids
+msgid "Line"
+msgstr "Line"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_lost_number
+msgid "Lost No"
+msgstr "Lost No"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,help:is_purchase_10.is_purchase_rfq
+msgid ""
+"Most propositions of purchase orders are created automatically\n"
+"                by Odoo based on inventory needs."
+msgstr ""
+"Most propositions of purchase orders are created automatically\n"
+"                by Odoo based on inventory needs."
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_moving_containers
+msgid "Moving Containers"
+msgstr "Moving Containers"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: is_purchase_10
+#: selection:cultivate.form,state:0 selection:customs.clearance,state:0
+#: selection:purchase.contract,state:0
+#: selection:purchase.track.quantity,state:0
+msgid "New"
+msgstr "جديد"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.purchase_contract_view_form
+msgid "New C/C"
+msgstr "جديد C/C"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_no_invoice
+msgid "No Invoice"
+msgstr "رقم الفاتورة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_appeal_signed
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_arrive
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_certificate
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_container_dispatch
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_custom
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_docs
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_eta
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_goods
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_health
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_idbc
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_moving
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_other
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_rent
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_shipping_time
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_ssmo
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_note_vassal_hooked
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_note
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_note
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_order_note
+msgid "Note"
+msgstr "الملاحظة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_notes
+msgid "Notes"
+msgstr "الملاحظات"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_other
+msgid "Other"
+msgstr "اخري"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_path_number
+msgid "Path No"
+msgstr "Path No"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.cultivate_form_view_form
+#: model:ir.ui.view,arch_db:is_purchase_10.purchase_contract_view_form
+msgid "Period"
+msgstr "الفترة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_price
+msgid "Price"
+msgstr "السعر "
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.clearance_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.client_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.contract_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.cultivate_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.track_wizard
+msgid "Print"
+msgstr "طباعة"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_product_product
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_product_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_product_id
+#: model:ir.ui.view,arch_db:is_purchase_10.cultivate_form_view_form
+#: model:ir.ui.view,arch_db:is_purchase_10.customs_clearance_view_form
+#: model:ir.ui.view,arch_db:is_purchase_10.purchase_contract_view_form
+msgid "Product"
+msgstr "منتج"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.action_purchase_contract
+#: model:ir.ui.menu,name:is_purchase_10.menu_purchase_contract
+#: model:ir.ui.view,arch_db:is_purchase_10.purchase_contract_view_form
+#: model:ir.ui.view,arch_db:is_purchase_10.purchase_contract_view_search
+#: model:ir.ui.view,arch_db:is_purchase_10.purchase_contract_view_tree
+msgid "Purchase Contract"
+msgstr "العقودات"
+
+#. module: is_purchase_10
+#: model:ir.ui.menu,name:is_purchase_10.menu_is_procurement_management
+msgid "Purchase External"
+msgstr "المشتريات الخارجية"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_purchase_order
+msgid "Purchase Order"
+msgstr "أمر الشراء"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "خط امر الشراء"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.is_purchase_form_action
+#: model:ir.ui.menu,name:is_purchase_10.is_purchase_order_external
+msgid "Purchase Orders"
+msgstr "اوامر الشراء"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_order_purchase_type
+msgid "Purchases Type"
+msgstr "نوع الشراء"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_qty_approve
+msgid "Qty Approve"
+msgstr "الكمية المصدقة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_qty_consumed
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_qty_done
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_qty_consumed
+msgid "Qty Consumed"
+msgstr "الكمية المستهلكة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_qty_delivery
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_qty_delivery
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_vendor_invoice_qty_delivery
+msgid "Qty Delivery"
+msgstr "الكمية المشحونة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_qty_remainder
+msgid "Qty Remainder"
+msgstr "الكمية المتبقية"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_qty_remain
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_qty_remaining
+msgid "Qty Remaining"
+msgstr "الكمية المتبقية"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_product_qty
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_quantity_id
+msgid "Quantity"
+msgstr "كمية"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_track_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_clearance_ids
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_reference
+msgid "Reference"
+msgstr "مرجع"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_rent_car
+msgid "Rent Car"
+msgstr "ايجار العربة"
+
+#. module: is_purchase_10
+#: selection:customs.clearance,state:0
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_request
+#: selection:purchase.track.quantity,state:0
+msgid "Request"
+msgstr "طلب"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_requester
+msgid "Requester"
+msgstr "الطالب"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.is_purchase_rfq
+#: model:ir.ui.menu,name:is_purchase_10.is_purchase_order_views
+msgid "Requests for Quotation"
+msgstr "طلبات التسعير"
+
+#. module: is_purchase_10
+#: selection:cultivate.form,state:0 selection:customs.clearance,state:0
+#: model:ir.ui.view,arch_db:is_purchase_10.customs_clearance_view_form
+#: model:ir.ui.view,arch_db:is_purchase_10.purchase_contract_view_form
+#: selection:purchase.contract,state:0
+msgid "Running"
+msgstr "جاري"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_ssmo
+msgid "SSMO"
+msgstr "SSMO"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.action_purchase_contract_list
+#: model:ir.actions.act_window,name:is_purchase_10.action_purchase_contract_to_so
+msgid "Sale for Contract"
+msgstr "عقد بيع"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_name
+msgid "Serial No"
+msgstr "رقم متسلسل"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.customs_clearance_view_form
+msgid "Shipment"
+msgstr "الشحنة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_shipment_arrive
+msgid "Shipment Arrived"
+msgstr "وصول الشحنة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_shipping_time
+msgid "Shipping Time"
+msgstr "زمن الشحنة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_product_split_method
+msgid "Split Method"
+msgstr "طريقة التقسيم"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.action_product_stander
+#: model:ir.model.fields,field_description:is_purchase_10.field_product_stander_name
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_stander_id
+#: model:ir.ui.menu,name:is_purchase_10.menu_stander_form
+#: model:ir.ui.view,arch_db:is_purchase_10.product_stander_view_tree
+msgid "Stander"
+msgstr "مقياس"
+
+#. module: is_purchase_10
+#: selection:purchase.contract,state:0
+#: selection:purchase.track.quantity,state:0
+msgid "Start Clearance"
+msgstr "بدء التخليص"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_clearance_wizard_start_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_client_wizard_start_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_contract_wizard_start_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_date_start
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_wizard_start_date
+#: model:ir.model.fields,field_description:is_purchase_10.field_track_wizard_start_date
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_state
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_state
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_state
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_state
+#: model:ir.ui.view,arch_db:is_purchase_10.clearance_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.client_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.contract_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.cultivate_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.track_wizard
+msgid "Status"
+msgstr "الحاله "
+
+#. module: is_purchase_10
+#: model:ir.model.fields,help:is_purchase_10.field_purchase_contract_state
+msgid "Status of the contract"
+msgstr "حالة العقد"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_stock_landed_cost
+msgid "Stock Landed Cost"
+msgstr "التكلفه الاضافيه للمخزون"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.action_vendor_invoice_stander
+#: model:ir.ui.menu,name:is_purchase_10.menu_vendor_invoice_form
+#: model:ir.ui.view,arch_db:is_purchase_10.product_vendor_invoice_view_form
+#: model:ir.ui.view,arch_db:is_purchase_10.product_vendor_invoice_view_tree
+msgid "Supplier Orders"
+msgstr "طلبات المورد"
+
+#. module: is_purchase_10
+#: code:addons/is_purchase_10/models/is_customs_clearance.py:209
+#, python-format
+msgid "The Qty consumed greater than qty approved"
+msgstr "The Qty consumed greater than qty approved"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,help:is_purchase_10.is_purchase_rfq
+msgid ""
+"The quotation contains the history of the discussion/negotiation\n"
+"                you had with your vendor. Once confirmed, a request for\n"
+"                quotation is converted into a purchase order."
+msgstr ""
+"The quotation contains the history of the discussion/negotiation\n"
+"                you had with your vendor. Once confirmed, a request for\n"
+"                quotation is converted into a purchase order."
+
+#. module: is_purchase_10
+#: code:addons/is_purchase_10/models/is_purshase.py:406
+#, python-format
+msgid "This Product Has Agriculture Form ?"
+msgstr "هل المنتج زراعي؟"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_total
+msgid "Total"
+msgstr "الإجمالي "
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_total_amount_clearance
+msgid "Total Amount Clearance"
+msgstr "مبلغ التخليص الكلي"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_total_currency
+msgid "Total Currency Company"
+msgstr "مبلغ الشركة الكلي"
+
+#. module: is_purchase_10
+#: model:ir.actions.report.xml,name:is_purchase_10.action_report_track_qty
+msgid "Track Qty"
+msgstr "تعقب الكميات"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.action_track_quantity_stander
+#: model:ir.ui.menu,name:is_purchase_10.menu_track_quantity_form
+#: model:ir.ui.view,arch_db:is_purchase_10.product_track_quantity_view_form
+#: model:ir.ui.view,arch_db:is_purchase_10.product_track_quantity_view_tree
+msgid "Track Quantity"
+msgstr "تعقب الكميات"
+
+#. module: is_purchase_10
+#: model:ir.ui.menu,name:is_purchase_10.track_report_menu
+msgid "Track Quantity Report"
+msgstr "تقرير تعقب الكميات"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,name:is_purchase_10.track_report_action
+msgid "Track Quantity Status"
+msgstr "حالة تعقب الكميات"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.customs_clearance_view_form
+msgid "Under Clearance Point"
+msgstr "تحت عملية التخليص"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_product_uom_qty
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_uom_id
+msgid "Unit of measure"
+msgstr "وحدة القياس"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_update
+msgid "Update"
+msgstr "تحديث"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_cultivate_form_attch
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_attch
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_vendor_invoice_attach
+msgid "Upload File"
+msgstr "تحميل ملف"
+
+#. module: is_purchase_10
+#: model:ir.actions.act_window,help:is_purchase_10.is_purchase_form_action
+msgid ""
+"Use this menu to search within your purchase orders by\n"
+"                references, vendor, products, etc. For each purchase order,\n"
+"                you can track the related discussion with the vendor, control\n"
+"                the products received and control the vendor bills."
+msgstr ""
+"Use this menu to search within your purchase orders by\n"
+"                references, vendor, products, etc. For each purchase order,\n"
+"                you can track the related discussion with the vendor, control\n"
+"                the products received and control the vendor bills."
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_value_goods
+msgid "Value Goods"
+msgstr "قيمة البضاعة"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_value_weight
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_order_line_value_weight
+msgid "Value Weight"
+msgstr "قيمة الوزن"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_vassal_hooked
+msgid "Vassal Hooked"
+msgstr "Vassal Hooked"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_partner_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_customs_clearance_vendor_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_vendor_id
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_vendor_id
+msgid "Vendor"
+msgstr "المورّد"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.product_track_quantity_view_form
+msgid "Vendor Request"
+msgstr "سحب كميات"
+
+#. module: is_purchase_10
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_contract_line_weight
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_order_line_weight
+#: model:ir.model.fields,field_description:is_purchase_10.field_purchase_track_quantity_weight
+msgid "Weight"
+msgstr "وزن"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_clearance_wizard
+msgid "clearance.wizard"
+msgstr "التخليص الجمركي"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_client_wizard
+msgid "client.wizard"
+msgstr "المورد"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_contract_wizard
+msgid "contract.wizard"
+msgstr "العقودات"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_cultivate_form
+msgid "cultivate.form"
+msgstr "الزراعة"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_cultivate_wizard
+msgid "cultivate.wizard"
+msgstr "الزراعة"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_customs_clearance
+msgid "customs.clearance"
+msgstr "التخليص الجمركي"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.clearance_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.client_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.contract_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.cultivate_wizard
+#: model:ir.ui.view,arch_db:is_purchase_10.track_wizard
+msgid "or"
+msgstr "أو"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_product_grade
+msgid "product.grade"
+msgstr "درجة المنتج"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_product_stander
+msgid "product.stander"
+msgstr "مقياس"
+
+#. module: is_purchase_10
+#: model:ir.ui.view,arch_db:is_purchase_10.product_track_quantity_view_form
+#: model:ir.ui.view,arch_db:is_purchase_10.product_vendor_invoice_view_form
+msgid "product_qty"
+msgstr "product_qty"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_purchase_contract
+msgid "purchase.contract"
+msgstr "عقودات"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_purchase_contract_line
+msgid "purchase.contract.line"
+msgstr "عقودات"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_purchase_track_quantity
+msgid "purchase.track.quantity"
+msgstr "تعقب الكميات"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_purchase_vendor_invoice
+msgid "purchase.vendor.invoice"
+msgstr "فواتير المورد"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_report_is_purchase_10_is_purchase_client_template
+msgid "report.is_purchase_10.is_purchase_client_template"
+msgstr "report.is_purchase_10.is_purchase_client_template"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_report_is_purchase_10_is_purchase_contract_template
+msgid "report.is_purchase_10.is_purchase_contract_template"
+msgstr "report.is_purchase_10.is_purchase_contract_template"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_report_is_purchase_10_is_purchase_cultivate_template
+msgid "report.is_purchase_10.is_purchase_cultivate_template"
+msgstr "report.is_purchase_10.is_purchase_cultivate_template"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_report_is_purchase_10_is_purchase_customs_clearance_template
+msgid "report.is_purchase_10.is_purchase_customs_clearance_template"
+msgstr "report.is_purchase_10.is_purchase_customs_clearance_template"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_report_is_purchase_10_is_purchase_track_template
+msgid "report.is_purchase_10.is_purchase_track_template"
+msgstr "report.is_purchase_10.is_purchase_track_template"
+
+#. module: is_purchase_10
+#: model:ir.model,name:is_purchase_10.model_track_wizard
+msgid "track.wizard"
+msgstr "تعقب"

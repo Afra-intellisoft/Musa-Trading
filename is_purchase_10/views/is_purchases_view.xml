@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <!--<menuitem id="purchase.menu_procurement_management" name="Purchase Internal"-->
+            <!--parent="purchase.menu_purchase_root" sequence="1" />-->
+
+
+    <menuitem id="menu_is_procurement_management" name="Purchase External"
+            parent="purchase.menu_purchase_root" sequence="1" groups="purchase.group_purchase_manager"/>
+
+    <record id="purchase.purchase_rfq" model="ir.actions.act_window">
+            <field name="name">Requests for Quotation</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">purchase.order</field>
+            <field name="context">{'search_default_todo':1,'default_purchase_type':'internal'}</field>
+            <field name="domain">[('purchase_type','=','internal'),('state','in',('draft','sent','bid','cancel', 'confirmed'))]</field>
+            <field name="view_mode">tree,kanban,form,pivot,graph,calendar</field>
+            <field name="search_view_id" ref="purchase.view_purchase_order_filter"/>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to create a request for quotation.
+              </p><p>
+                The quotation contains the history of the discussion/negotiation
+                you had with your vendor. Once confirmed, a request for
+                quotation is converted into a purchase order.
+              </p><p>
+                Most propositions of purchase orders are created automatically
+                by Odoo based on inventory needs.
+              </p>
+            </field>
+        </record>
+        <record id="purchase.purchase_form_action" model="ir.actions.act_window">
+            <field name="name">Purchase Orders</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">purchase.order</field>
+            <field name="context">{'search_default_todo':1,'default_purchase_type':'internal'}</field>
+            <field name="view_mode">tree,kanban,form,pivot,graph,calendar</field>
+            <field name="context">{'search_default_todo':1, 'show_purchase': True}</field>
+            <field name="domain">[('state','not in',('draft','sent','bid', 'confirmed')),('purchase_type','=','internal')]</field>
+            <field name="search_view_id" ref="purchase.view_purchase_order_filter"/>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to create a quotation that will be converted into a purchase order.
+              </p><p>
+                Use this menu to search within your purchase orders by
+                references, vendor, products, etc. For each purchase order,
+                you can track the related discussion with the vendor, control
+                the products received and control the vendor bills.
+              </p>
+            </field>
+        </record>
+     <record id="is_purchase_rfq" model="ir.actions.act_window">
+            <field name="name">Requests for Quotation</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">purchase.order</field>
+            <field name="context">{'search_default_todo':1,'default_purchase_type':'external'}</field>
+            <field name="domain">[('purchase_type','=','external'),('state','in',('draft','sent','bid','cancel', 'confirmed'))]</field>
+            <field name="view_mode">tree,kanban,form,pivot,graph,calendar</field>
+            <field name="search_view_id" ref="purchase.view_purchase_order_filter"/>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to create a request for quotation.
+              </p><p>
+                The quotation contains the history of the discussion/negotiation
+                you had with your vendor. Once confirmed, a request for
+                quotation is converted into a purchase order.
+              </p><p>
+                Most propositions of purchase orders are created automatically
+                by Odoo based on inventory needs.
+              </p>
+            </field>
+        </record>
+        <record id="is_purchase_form_action" model="ir.actions.act_window">
+            <field name="name">Purchase Orders</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">purchase.order</field>
+            <field name="context">{'search_default_todo':1,'default_purchase_type':'external'}</field>
+            <field name="view_mode">tree,kanban,form,pivot,graph,calendar</field>
+            <field name="context">{'search_default_todo':1, 'show_purchase': True}</field>
+            <field name="domain">[('state','not in',('draft','sent','bid', 'confirmed')),('purchase_type','=','external')]</field>
+            <field name="search_view_id" ref="purchase.view_purchase_order_filter"/>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to create a quotation that will be converted into a purchase order.
+              </p><p>
+                Use this menu to search within your purchase orders by
+                references, vendor, products, etc. For each purchase order,
+                you can track the related discussion with the vendor, control
+                the products received and control the vendor bills.
+              </p>
+            </field>
+        </record>
+    <record id="is_res_partner_form" model="ir.ui.view">
+            <field name="name">res.partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+               <div>
+                    <group col="2">
+                        <group>
+                            <field name="custom_supplier"/>
+                        </group>
+                   </group>
+               </div>
+            </xpath>
+            </field>
+        </record>
+
+    <record id="is_product_template_form" model="ir.ui.view">
+            <field name="name">product.template.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+            <xpath expr="//div[@class='oe_title']" position="after">
+               <div>
+                    <group col="2">
+                        <group>
+                            <field name="agriculture_id"/>
+                        </group>
+                   </group>
+               </div>
+            </xpath>
+            </field>
+        </record>
+    <record id="is_purchase_order_form" model="ir.ui.view">
+            <field name="name">purchase.order.form</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+           <header>
+<!--                <button name="contract_request" string="Contract Request" type="object"  class="oe_highlight"  attrs="{'invisible': ['|','|','|' , ('contract', '=', True),('purchase_type', '=', 'internal'), ('state','not in', ('purchase','done'))]}" groups="purchase.group_purchase_manager"/>-->
+                <!--<button name="contract_request" string="Contract Request" type="object" states="purchase"  />-->
+            </header>
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="purchase_type" invisible="1"/>
+                <field name="contract" invisible="1"/>
+                <field name="customs_id" readonly="1"/>
+            </xpath>
+            <xpath expr="//field//tree//field[@name='name']" position="after">
+                <field name="value_weight" invisible="1"/>
+                <field name="weight"/>
+            </xpath>
+             <xpath expr="//field//tree//field[@name='price_unit']" position="after">
+                <field name="new_price"/>
+            </xpath>
+            <xpath expr="//page//field[@name='incoterm_id']" position="after">
+                <field name="note" />
+            </xpath>
+            </field>
+        </record>
+    <record model="ir.actions.act_window" id="action_purchase_contract_to_so">
+            <field name="name">Sale for Contract</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">customs.clearance</field>
+            <field name="view_mode">form,tree</field>
+            <field name="domain">[('contract_id','=',active_id)]</field>
+            <field name="context">{"default_contract_id":active_id}</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_purchase_contract_list">
+            <field name="name">Sale for Contract</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">customs.clearance</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('contract_id','=',active_id)]</field>
+            <field name="context">{"default_contract_id":active_id}</field>
+        </record>
+
+    <record id="purchase_contract_view_form" model="ir.ui.view">
+        <field name="name">purchase.contract.form</field>
+        <field name="model">purchase.contract</field>
+        <field name="arch" type="xml">
+            <form string="Purchase Contract">
+             <header>
+                <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
+                 <button name="%(action_purchase_contract_to_so)d" type="action" string="New C/C" attrs="{'invisible': [('state', '!=','open')]}" />
+<!--                <button name="clearance_request" string="Clearance Request" type="object" states="open" class="oe_highlight"  attrs="{'invisible': ['|', '|' , ('clearance', '=', True), ('state','not in', ('open'))]}" groups="purchase.group_purchase_manager"/>-->
+                <button name="agriculture_request" string="Running" type="object" states="draft" class="oe_highlight" groups="purchase.group_purchase_manager"/>
+             </header>
+                <sheet>
+                         <div class="oe_button_box" name="button_box">
+                            <button name="%(action_purchase_contract_list)d" type="action" class="oe_stat_button" icon="fa-list-alt"
+                                    attrs="{'invisible': [('state', 'not in', ('open','close'))]}" >
+                                <field name="purchase_count" widget="statinfo" string="Custom/Clearance"/>
+                            </button>
+                        </div>
+                    <group col="2">
+                        <group>
+                            <field name="name"/>
+                            <field name="date"/>
+<!--                            <field name="reference"/>-->
+                            <label for="Period" class="oe_edit_only" string="Period" />
+                        <div><field name="date_from" /><field name="date_to"/></div>
+                        </group>
+                        <group>
+                            <field name="vendor_id" required="1"/>
+                            <field name="currency_id" required="1"/>
+                            <field name="company_id" readonly="1"/>
+                            <field name="delivery_location"/>
+                            <field name="clearance" invisible="1"/>
+                        </group>
+
+                    </group>
+                    <group>
+                    <notebook>
+                        <page string="Product">
+                            <field name ="line_ids" colspan="4" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="product_id"  required="1"/>
+                                    <field name="product_uom_qty" />
+                                    <field name="product_qty"  required="1"/>
+                                    <field name="qty_custom" />
+                                    <field name="qty_done" readonly="1"/>
+                                    <field name="value_weight" />
+                                    <field name="weight" />
+                                    <field name="price"  required="1"/>
+                                    <field name="total" />
+                                    <field name="expired" invisible="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                    </group>
+                        <group>
+                            <field name="note" />
+                        </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="purchase_contract_view_tree" model="ir.ui.view">
+            <field name="model">purchase.contract</field>
+            <field name="arch" type="xml">
+                <tree string="Purchase Contract">
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="vendor_id"/>
+                    <field name="currency_id"/>
+                    <!--<field name="cultivate_id"/>-->
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+    <record id="purchase_contract_view_search" model="ir.ui.view">
+        <field name="name">purchase.contract search</field>
+        <field name="model">purchase.contract</field>
+        <field name="arch" type="xml">
+            <search string="Purchase Contract">
+                <field name="name"/>
+                <field name="date"/>
+                <group expand="0" string="Group By">
+                    <filter name=" By Employee name" domain="[]" context="{'group_by' : 'name'}"/>
+                    <filter name=" By Request state" domain="[]" context="{'group_by' : 'state'}"/>
+                    <filter name=" By Date" domain="[]" context="{'group_by' : 'date'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_purchase_contract" model="ir.actions.act_window">
+        <field name="name">Purchase Contract</field>
+        <field name="res_model">purchase.contract</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem parent="menu_is_procurement_management"  id="menu_purchase_contract"
+              action="action_purchase_contract" groups="purchase.group_purchase_manager" sequence="1"/>
+
+
+    <record id="cultivate_form_view_form" model="ir.ui.view">
+        <field name="name">cultivate.form</field>
+        <field name="model">cultivate.form</field>
+        <field name="arch" type="xml">
+            <form string="Agricultural Form">
+             <header>
+                <field name="state" widget="statusbar" clickable="1"/>
+<!--                <button name="close_form" string="Expired" type="object" states="open" class="oe_highlight" />-->
+             </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="date"/>
+                        <!--<field name="capacity"/>-->
+                    </group>
+                    <group>
+                        <label for="Period" class="oe_edit_only" string="Period" />
+                        <div><field name="date_start" /><field name="date_end"/></div>
+                    </group>
+                    <group>
+                        <field name="attach"/>
+                    </group>
+                    <notebook>
+                        <page string="Product" >
+                           <field name ="cultivate_ids" colspan="4" nolabel="1"  >
+<!--                               attrs="{'readonly': [ ('state', '=', 'close')]}"-->
+                                <tree editable="bottom">
+                                    <field name="product_id" domain="[('agriculture_id.name','!=',False)]"/>
+                                    <field name="qty_approve" />
+                                    <field name="qty_consumed" />
+                                    <field name="qty_remaining" />
+                                    <field name="expired_agricultural" />
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Contract information" >
+                           <field name ="form_ids" colspan="4" nolabel="1"  >
+<!--                               attrs="{'readonly': [ ('state', '=', 'close')]}"-->
+                                <tree editable="bottom">
+                                    <field name="contract_form_id" />
+<!--                                    <field name="product_id" />-->
+                                    <field name="qty_contract" />
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                    <group>
+                        <field name="notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="cultivate_form_view_tree" model="ir.ui.view">
+            <field name="model">cultivate.form</field>
+            <field name="arch" type="xml">
+                <tree string="Agricultural Form">
+                    <field name="name"/>
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+    <record id="cultivate_form_view_search" model="ir.ui.view">
+        <field name="name">cultivate.form search</field>
+        <field name="model">cultivate.form</field>
+        <field name="arch" type="xml">
+            <search string="Agricultural Form">
+                <field name="name"/>
+                <!--<field name="date"/>-->
+                <group expand="0" string="Group By">
+                    <filter name=" By Employee name" domain="[]" context="{'group_by' : 'name'}"/>
+                    <!--<filter name=" By Request state" domain="[]" context="{'group_by' : 'state'}"/>-->
+                    <!--<filter name=" By Date" domain="[]" context="{'group_by' : 'date'}"/>-->
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_cultivate_form" model="ir.actions.act_window">
+        <field name="name">Agricultural Form</field>
+        <field name="res_model">cultivate.form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem parent="menu_is_procurement_management"  id="menu_cultivate_form"
+              action="action_cultivate_form" groups="purchase.group_purchase_manager"/>
+
+
+
+
+    <record id="product_grade_view_form" model="ir.ui.view">
+        <field name="name">product.grade.form</field>
+        <field name="model">product.grade</field>
+        <field name="arch" type="xml">
+            <form string="Grade">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="product_grade_view_tree" model="ir.ui.view">
+            <field name="model">product.grade</field>
+            <field name="arch" type="xml">
+                <tree string="Grade">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+    <record id="action_product_grade" model="ir.actions.act_window">
+        <field name="name">Grade</field>
+        <field name="res_model">product.grade</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem parent="purchase.menu_purchase_config"  id="menu_grade_form"
+              action="action_product_grade" groups="purchase.group_purchase_manager"/>
+<!--        <menuitem parent="menu_is_procurement_management" id="is_purchase_order_views"-->
+<!--              action="is_purchase_rfq" groups="purchase.group_purchase_manager" sequence="3"/>-->
+        <menuitem parent="menu_is_procurement_management" id="is_purchase_order_external"
+              action="is_purchase_form_action" groups="purchase.group_purchase_manager" sequence="4"/>
+</odoo>
+

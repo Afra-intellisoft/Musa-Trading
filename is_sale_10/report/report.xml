@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report 
+            id="sale_wizard"
+            string="Products Sales Report"
+            model="sale.order"
+            report_type="qweb-pdf"
+            file="is_sale_10.sales_template"
+            name="is_sale_10.sales_template"
+	        menu="False"
+        />
+        <report
+            id="sale_product_wizard"
+            string="Product"
+            model="sale.order"
+            report_type="qweb-pdf"
+            file="is_sale_10.sales_product_template"
+            name="is_sale_10.sales_product_template"
+	        menu="False"
+        />
+<report
+            id="customer_products_amount"
+            string="Customer Report"
+            model="sale.order"
+            report_type="qweb-pdf"
+            file="is_sale_10.sales_customer_template"
+            name="is_sale_10.sales_customer_template"
+	    menu="False"
+        />
+        <report
+            id="state_products_amount"
+            string="Product State  Report"
+            model="product.quantity.state"
+            report_type="qweb-pdf"
+            file="is_sale_10.product_state_template"
+            name="is_sale_10.product_state_template"
+	    menu="False"
+        />
+           <report
+            id="state_report"
+            string="State And City Report"
+            model="product.quantity.state"
+            report_type="qweb-pdf"
+            file="is_sale_10.state_customer_template"
+            name="is_sale_10.state_customer_template"
+	    menu="False"
+        />
+          <report
+            id="partner_report"
+            string="Best Partners Report"
+            model="sale.order"
+            report_type="qweb-pdf"
+            file="is_sale_10.best_partner_template"
+            name="is_sale_10.best_partner_template"
+	    menu="False"
+        />
+         <report
+            id="all_state_report"
+            string="ALL State Report"
+            model="product.quantity.state"
+            report_type="qweb-pdf"
+            file="is_sale_10.all_state_template"
+            name="is_sale_10.all_state_template"
+	    menu="False"
+        />
+         <report
+            id="external_report_sale_order"
+            string=" External Quotation / Order"
+            model="sale.order"
+            report_type="qweb-pdf"
+            file="is_sale_10.report_external_saleorder"
+            name="is_sale_10.report_external_saleorder"
+        />
+
+           <report
+            id="external_report_invoice_sale_order"
+            string=" External Order Invoice "
+            model="sale.order"
+            report_type="qweb-pdf"
+            file="is_sale_10.report_external_invoice_saleorder"
+            name="is_sale_10.report_external_invoice_saleorder"
+        />
+ <report
+            id="valuation_report"
+            string="Market valuation Report"
+            model="market.valuation"
+            report_type="qweb-pdf"
+            file="is_sale_10.valuation_template"
+            name="is_sale_10.valuation_template"
+            menu="False"
+        />
+         <report
+            id="product_valuation_report"
+            string="Market Product valuation Report"
+            model="market.valuation"
+            report_type="qweb-pdf"
+            file="is_sale_10.valuation_product_template"
+            name="is_sale_10.valuation_product_template"
+             menu="False"
+        />
+
+    </data>
+</odoo>

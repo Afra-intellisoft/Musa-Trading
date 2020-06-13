@@ -1,0 +1,4030 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* is_hr_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-16 12:31+0000\n"
+"PO-Revision-Date: 2019-11-16 16:20+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ar_SY\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_department_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_department_id
+msgid "  Department"
+msgstr "  الادارة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_gm_nots
+msgid "  Notes"
+msgstr "ملاحظات"
+
+#. module: is_hr_customization
+#: selection:end.duty,state:0 selection:separation.staff,state:0
+msgid " Confirm"
+msgstr " تأكيد"
+
+#. module: is_hr_customization
+#: selection:end.duty,state:0
+msgid " Confirmed"
+msgstr " تمت الموافقة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_date
+msgid " Date "
+msgstr " التاريخ "
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_date_of_form
+msgid " Date Of Form"
+msgstr "من تاريخ"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_end_day
+msgid " End day"
+msgstr "تاريخ النهاية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_accu_nots
+msgid " Finance Notes"
+msgstr "تعليق المالية"
+
+#. module: is_hr_customization
+#: selection:penalty.penalty,leval:0
+msgid " First penalty"
+msgstr "الانذار الاول"
+
+#. module: is_hr_customization
+#: selection:penalty.penalty,leval:0
+msgid " Four penalty"
+msgstr "الانذار الرابع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_gratuities
+msgid " Gratuities "
+msgstr "الاكراميات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_hr_not
+msgid " HR Notes"
+msgstr "تعليق الموارد البشرية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_mnagre_not
+msgid " Manger Notes"
+msgstr "تعليق المدير المباشر"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_other_receivables
+msgid " Other Receivables"
+msgstr "اخري"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_overtime
+msgid " Overtime"
+msgstr "الزمن الاضافي"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_temporary_workers_name
+msgid " Payment to Temporary Workers"
+msgstr "دفعيات العمال"
+
+#. module: is_hr_customization
+#: selection:penalty.penalty,leval:0
+msgid " Second penalty"
+msgstr "الانذار الثاني"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_hiring_date
+msgid " Start Day"
+msgstr "تاريخ البداية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_supervisor_not
+msgid " Supervisor Notes"
+msgstr "ملاحظات المشرف"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.menu_hr_worker_allowance
+msgid " Temporary workers"
+msgstr "العمال"
+
+#. module: is_hr_customization
+#: selection:penalty.penalty,leval:0
+msgid " Third penalty"
+msgstr "الانذار الثالث"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_total
+msgid " Total "
+msgstr "المجموع"
+
+#. module: is_hr_customization
+#: selection:resignation,state:0
+msgid " confirm"
+msgstr " تاكيد"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_leave_balance
+msgid " leaves B    alance"
+msgstr "الاجازة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_custody_count
+msgid "# Custody"
+msgstr "تصفية العهد"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+msgid "(update)"
+msgstr "(تحديث)"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/is_hr_custody.py:25
+#, python-format
+msgid "/web#id=%s&view_type=form&model=hr.custody&menu_id="
+msgstr "/web#id=%s&view_type=form&model=hr.custody&menu_id="
+
+#. module: is_hr_customization
+#: selection:hr.contract,legal_leave:0
+msgid "20 days"
+msgstr "20 يوم"
+
+#. module: is_hr_customization
+#: selection:hr.contract,legal_leave:0
+msgid "25 days"
+msgstr "25 يوم"
+
+#. module: is_hr_customization
+#: selection:hr.contract,legal_leave:0
+msgid "30 days"
+msgstr "30 يوم"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_shift_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_external_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_internal_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_loan_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_warning_template
+msgid ""
+"<br/>\n"
+"                                 <strong>Date to:</strong>"
+msgstr ""
+"<br/>\n"
+"                                 <strong>من تاريخ:</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_shift_template
+msgid ""
+"<br/>\n"
+"                            <strong>Shift Girls</strong>"
+msgstr ""
+"<br/>\n"
+"                            <strong>لقطة البنات</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_external_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_internal_template
+msgid ""
+"<br/>\n"
+"                            <strong>Subject:</strong>"
+msgstr ""
+"<br/>\n"
+"                            <strong>الموضوع</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_delivery_report
+msgid "<br/>  Total Receivables"
+msgstr "<br/>  المجموع الكلي"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_permission_view_form
+msgid ""
+"<span class=\"oe_inline\" attrs=\"{'invisible': ['|', ('request_unit_half', '=', True)]}\">\n"
+"                                    To\n"
+"                                </span>"
+msgstr ""
+"<span class=\"oe_inline\" attrs=\"{'invisible': ['|', ('request_unit_half', '=', True)]}\">\n"
+"                                    To\n"
+"                                </span>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_external_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_internal_template
+msgid "<strong> Destination </strong>"
+msgstr "<strong> الجهة المرسل اليها </strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_employee_details_report
+msgid "<strong> Employee Name</strong>"
+msgstr "<strong>الموظف</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_loan_template
+msgid "<strong> No Of Month </strong>"
+msgstr "<strong>عدد الشهور </strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_loan_template
+msgid "<strong> Start Date of Payment </strong>"
+msgstr "<strong>تاريخ بدء الدفع </strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_external_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_internal_template
+msgid "<strong> Type Letter </strong>"
+msgstr "<strong> نوع الخطاب</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "<strong>Address</strong>"
+msgstr "<strong>عنوان</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_shift_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_loan_template
+msgid "<strong>Amount</strong>"
+msgstr "<strong>المبلغ</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "<strong>Bank Account</strong>"
+msgstr "</strong>حساب البنك<strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.end_service_template
+msgid "<strong>Bisac :</strong>"
+msgstr "<strong>الاساسي</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_employee_details_report
+msgid "<strong>Company</strong>"
+msgstr "<strong>الشركة</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.end_service_template
+msgid "<strong>Date :</strong>"
+msgstr "<strong>التاريخ</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_resignation_template
+msgid "<strong>Date Accepte</strong>"
+msgstr "<strong>تاريخ الموافقة</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "<strong>Date From</strong>"
+msgstr "<strong>التاريخ من</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "<strong>Date To</strong>"
+msgstr "<strong>التاريخ إلى</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.end_service_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_shift_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_external_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_internal_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_loan_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_warning_template
+msgid "<strong>Date from:</strong>"
+msgstr "<strong>الي تاريخ:</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_employee_details_report
+msgid "<strong>Date of Joining</strong>"
+msgstr "<strong>تاريخ الانضمام</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.end_service_template
+msgid "<strong>Date to:</strong>"
+msgstr "<strong>الي تاريخ</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_perm_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_resignation_template
+msgid "<strong>Date</strong>"
+msgstr "<strong>التاريخ</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_warning_template
+#: model:ir.ui.view,arch_db:is_hr_customization.report_emp_worning
+msgid "<strong>Deduct Amount</strong>"
+msgstr "<strong>المبلغ</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_warning_template
+#: model:ir.ui.view,arch_db:is_hr_customization.report_emp_worning
+msgid "<strong>Deduct Dayes</strong>"
+msgstr "<strong>خصم ايام</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_employee_details_report
+msgid "<strong>Department</strong>"
+msgstr "<strong>الادارة</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "<strong>Designation</strong>"
+msgstr "<strong>التعيين</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "<strong>Email</strong>"
+msgstr "<strong>البريد الإلكتروني</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.end_service_template
+msgid "<strong>Employee:</strong>"
+msgstr "<strong>الموظف:</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_shift_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_loan_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_perm_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_resignation_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_warning_template
+#: model:ir.ui.view,arch_db:is_hr_customization.report_emp_worning
+msgid "<strong>Employee</strong>"
+msgstr "<strong>الموظف</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.report_emp_worning
+msgid "<strong>Explanation Date</strong>"
+msgstr "<strong>تاريخ التفسير </strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.end_service_template
+msgid "<strong>Gross :</strong>"
+msgstr "<strong>البدلات</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.report_emp_worning
+msgid "<strong>HR Notes </strong>"
+msgstr "<strong>تعليق الموارد البشرية</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_resignation_template
+msgid "<strong>Hr Note</strong>"
+msgstr "<strong>ملاحظات الموارد البشرية</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "<strong>Identification No</strong>"
+msgstr "<strong>رقم الهوية</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_employee_details_report
+msgid "<strong>Job Position</strong>"
+msgstr "<strong>الوظيفة</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_warning_template
+#: model:ir.ui.view,arch_db:is_hr_customization.report_emp_worning
+msgid "<strong>Leval</strong>"
+msgstr "<strong>المستوي</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "<strong>Name</strong>"
+msgstr "<strong>اسم</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_external_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_internal_template
+msgid "<strong>Note:</strong>"
+msgstr "<strong>ملاحظات</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.end_service_template
+msgid "<strong>Overtime :</strong>"
+msgstr "<strong>الزمن الاضافي</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.report_emp_worning
+msgid "<strong>Penalty Description </strong>"
+msgstr "<strong>وصف العقوبة</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_warning_template
+#: model:ir.ui.view,arch_db:is_hr_customization.report_emp_worning
+msgid "<strong>Penalty</strong>"
+msgstr "<strong>العقوبة</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_perm_template
+msgid "<strong>Permission</strong>"
+msgstr "<strong>الاذونات</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.report_emp_worning
+msgid "<strong>Reason</strong>"
+msgstr "<strong>الاسباب</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "<strong>Reference</strong>"
+msgstr "<strong>مرجع</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_resignation_template
+msgid "<strong>Resignation</strong>"
+msgstr "<strong>الديانة</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_perm_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_resignation_template
+msgid "<strong>Resons</strong>"
+msgstr "<strong>الاسباب</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.emp_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.end_service_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.is_letter_external_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.is_letter_internal_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.loan_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_wizard
+msgid "<strong>Select period </strong>"
+msgstr "<strong>الفترة </strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_external_template
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_internal_template
+msgid "<strong>Serial No</strong>"
+msgstr "<strong>الرقم المتسلسل</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_shift_template
+msgid "<strong>Shift Boy</strong>"
+msgstr "<strong>لقطة الاولاد</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_shift_template
+msgid "<strong>Shift</strong>"
+msgstr "<strong>اللقطة</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.end_service_template
+msgid "<strong>Warning :</strong>"
+msgstr "<strong>الاخطاء والعقوبات</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_warning_template
+msgid "<strong>Warning</strong>"
+msgstr "<strong>الاخطاء والعقوبات</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_employee_details_report
+msgid "<strong>Work Location</strong>"
+msgstr "<strong>موقع العمل</strong>"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_shift_template
+msgid "<strong>Worker</strong>"
+msgstr "<strong>العمال</strong>"
+
+#. module: is_hr_customization
+#: selection:resignation,state:0
+msgid "Accept"
+msgstr "قبول"
+
+#. module: is_hr_customization
+#: selection:hr.cust.overtime,state:0 selection:hr.overtime,state:0
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line_account_id
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_count_manfact_form_view
+msgid "Account"
+msgstr "حساب"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_account_id
+msgid "Account Employee"
+msgstr "حساب الموظف"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+msgid "Account Move"
+msgstr "قيد اليومية"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.form_hr_long_loan_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+msgid "Accounting Information"
+msgstr "معلومات محاسبية"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.end_duty_form
+msgid "Accounts"
+msgstr "الحسابات"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_warning_warnings_form2
+msgid "Action to be taken"
+msgstr "Action to be taken"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_activity_id
+msgid "Activity"
+msgstr "نشاط"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_bonus.py:120
+#: code:addons/is_hr_customization/models/hr_bonus.py:136
+#: code:addons/is_hr_customization/models/hr_loan.py:215
+#: code:addons/is_hr_customization/models/hr_loan.py:231
+#: code:addons/is_hr_customization/models/hr_loan.py:738
+#: code:addons/is_hr_customization/models/hr_loan.py:754
+#: code:addons/is_hr_customization/models/hr_overtime.py:313
+#: code:addons/is_hr_customization/models/hr_overtime.py:329
+#: code:addons/is_hr_customization/models/is_hr_manfact.py:96
+#: code:addons/is_hr_customization/models/is_hr_manfact.py:112
+#: code:addons/is_hr_customization/models/is_hr_manfact.py:169
+#: code:addons/is_hr_customization/models/is_hr_manfact.py:186
+#, python-format
+msgid "Adjustment Entry"
+msgstr "قيد اليومية"
+
+#. module: is_hr_customization
+#: selection:hr.permission,request_date_from_period:0
+msgid "Afternoon"
+msgstr "فترة المساء"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_age
+msgid "Age"
+msgstr "العمر"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_employee.py:35
+#, python-format
+msgid "Allocation for %s"
+msgstr "Allocation for %s"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_line_amount
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_amount
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_request_amount_words
+msgid "Amount in Words"
+msgstr "المبلغ بالحروف"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_analytic_debit_account_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_analytic_debit_account_id
+msgid "Analytic Account"
+msgstr "الحساب التحليلي"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_tree_view
+msgid "Annual leave bonus and transport"
+msgstr "Annual leave bonus and transport"
+
+#. module: is_hr_customization
+#: selection:end.duty,state:0 selection:hr.employee.traning,state:0
+#: selection:hr.letter.external,state:0 selection:hr.letter.internal,state:0
+#: selection:hr.permission,state:0 selection:hr.task,state:0
+#: model:ir.ui.view,arch_db:is_hr_customization.form_hr_long_loan_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_custody_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_long_loan_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_permission_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_task_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+#: selection:separation.staff,state:0
+msgid "Approve"
+msgstr "تصدق"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_filter
+msgid "Approve Batch Grant"
+msgstr "Approve Batch Grant"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_approve_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_done_date
+msgid "Approve Date"
+msgstr "تاريخ الموافقة"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_long_loan_filter
+msgid "Approve Loan"
+msgstr "تاكيد السلفية"
+
+#. module: is_hr_customization
+#: selection:hr.custody,state:0 selection:hr.gratuities.paysheet,state:0
+#: selection:hr.loan,state:0 selection:hr.overtime,state:0
+#: selection:hr.temporary.worker.paysheet,state:0
+msgid "Approved"
+msgstr "موافقة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_done_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_done_date
+msgid "Approved Date"
+msgstr "تاريخ الموافقة"
+
+#. module: is_hr_customization
+#: selection:hr.long.loan,state:0
+msgid "Approved by HR"
+msgstr "موافقة بواسطة الموارد البشرية"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.wizard_installment_stop_form
+msgid "Are you sure you want to stop installment for this period for all employees??"
+msgstr "Are you sure you want to stop installment for this period for all employees??"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_traning_view_form
+msgid "Attach"
+msgstr "ارفاق ملف"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_line_attach
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_warning_attach
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_attach
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_traning_view_form
+msgid "Attachment"
+msgstr "ارفاق ملف"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_contract_attach
+msgid "Attachment CV"
+msgstr "ارفاق ملف CV"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_attach
+msgid "Attachments"
+msgstr "المُرفقات"
+
+#. module: is_hr_customization
+#: selection:hr.bonus.month,state:0 selection:hr.gratuities.paysheet,state:0
+#: selection:hr.loan,state:0 selection:hr.long.loan,state:0
+#: selection:hr.overtime.month,state:0
+#: selection:hr.temporary.worker.paysheet,state:0 selection:hr.warnings,state:0
+#: model:ir.ui.view,arch_db:is_hr_customization.form_hr_long_loan_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_bonus_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_count_manfact_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.overtime_form1_view
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_management_new
+#: selection:is.hr.count.manfact,state:0
+msgid "Auditor"
+msgstr "المراجع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_balance_amount
+msgid "Balance Amount"
+msgstr "مبلغ الموازنة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_loan_amount
+msgid "Balance Amount of Benefits"
+msgstr "مبلغ  الفوائد نهاية الخدمة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_loan_dedication
+msgid "Balance Amount of Loan"
+msgstr "مبلغ السلفية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_hr_warning
+msgid "Balance Amount of Warning"
+msgstr "مبلغ العقوبة"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.temporary_workers_form_view
+msgid "Basic Informations"
+msgstr "معلومات اساسية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_employee_salary
+msgid "Basic Salary"
+msgstr "المرتب الاساسي"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_contract_benefits
+msgid "Benefits"
+msgstr "فوائد نهاية الخدمة"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_bonus
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_line_bonus_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_bonus_name
+#: model:ir.ui.menu,name:is_hr_customization.hr_bonus_views
+#: model:ir.ui.menu,name:is_hr_customization.hr_emp_bonus_views
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_bonus_view_tree
+#: model:ir.ui.view,arch_db:is_hr_customization.view_bonus_report
+msgid "Bonus"
+msgstr "العلاوات"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_bonus_report_excel
+msgid "Bonus Excel Report"
+msgstr "تقرير العلاوات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_bonus_ids
+msgid "Bonus Month"
+msgstr "العلاوات الشهرية"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.menu_bonus_report
+msgid "Bonus Report"
+msgstr "تقرير العلاوات"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/wizards/bonus_month.py:37
+#, python-format
+msgid "Bonus.xlsx"
+msgstr "العلاوات.xlsx"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_genral_manger_date
+msgid "CEO Date"
+msgstr "CEO تاريخ"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_genral_manger_not
+msgid "CEO Notes"
+msgstr "CEO ملاحظة"
+
+#. module: is_hr_customization
+#: selection:hr.permission,state:0 selection:hr.warnings,state:0
+#: model:ir.ui.view,arch_db:is_hr_customization.emp_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.end_service_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_permission_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.is_letter_external_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.is_letter_internal_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.loan_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.view_bonus_report
+#: model:ir.ui.view,arch_db:is_hr_customization.view_gratuities_report
+#: model:ir.ui.view,arch_db:is_hr_customization.view_overtime_test_report
+#: model:ir.ui.view,arch_db:is_hr_customization.view_paysheet_salary_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.view_temporary_workers_report
+#: model:ir.ui.view,arch_db:is_hr_customization.view_wizard_loan
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.wizard_installment_stop_form
+#: model:ir.ui.view,arch_db:is_hr_customization.wizard_return_date_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_check_notification
+msgid "Check Notification"
+msgstr "Check Notification"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_city
+msgid "City"
+msgstr "المدينة"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,help:is_hr_customization.action_hr_custody
+#: model:ir.actions.act_window,help:is_hr_customization.action_hr_property
+msgid "Click to Create a New Record."
+msgstr "Click to Create a New Record."
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_count_manfact_form_view
+msgid "Close Shift"
+msgstr "اغلاق اللقطة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_name
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "Code"
+msgstr "الكود"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_custody_property_code
+#: model:ir.ui.view,arch_db:is_hr_customization.custody_custody_form_view
+msgid "Code/Serial Number"
+msgstr "الرقم المتسلسل"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_comment
+msgid "Comments"
+msgstr "التعليقات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_company_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_emp_company_id
+msgid "Company"
+msgstr "المؤسسة"
+
+#. module: is_hr_customization
+#: selection:hr.cust.overtime,state:0
+msgid "Competent Department Manager"
+msgstr "Competent Department Manager"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_bonus_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+msgid "Compute"
+msgstr "احتساب"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.overtime_form1_view
+msgid "Compute Overtime"
+msgstr "احتساب الزمن الاضافي"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_cust_overtime_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_long_loan_filter
+msgid "Confirm"
+msgstr "ارسال للموارد البشرية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_confirm_date
+msgid "Confirm Date"
+msgstr "تاريخ الموافقة"
+
+#. module: is_hr_customization
+#: selection:hr.bonus.month,state:0 selection:hr.loan,state:0
+#: selection:hr.overtime,state:0 selection:hr.overtime.month,state:0
+msgid "Confirmed"
+msgstr "موافقة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_penalty_penalty_note
+msgid "Consequences"
+msgstr "Consequences"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.temporary_workers_form_view
+msgid "Contact Information"
+msgstr "معلومات التواصل"
+
+#. module: is_hr_customization
+#: model:ir.actions.report.xml,name:is_hr_customization.action_report_contract
+#: model:ir.model,name:is_hr_customization.model_hr_contract
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_contract_name_ex
+msgid "Contract"
+msgstr "الرقم المتسلسل "
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_action_taken
+#: model:ir.model.fields,field_description:is_hr_customization.field_penalty_penalty_action_taken
+#: model:ir.ui.view,arch_db:is_hr_customization.view_warning_warnings_form2
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_management_new
+msgid "Corrective action to be taken"
+msgstr "Corrective action to be taken"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_course_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_emp_line_ids
+msgid "Course"
+msgstr "كورسات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_bonus_month_excel_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_custody_property_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_emp_wizard_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_service_wizard_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_gratuities_report_excel_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_line_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_course_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_destination_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_line_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_especializacion_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_emp_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_hall_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_details_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_boy_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_external_wizard_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_internal_wizard_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_subject_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_loan_wizard_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_line_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_month_excel_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_payslip_report_excel_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_penalty_penalty_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_temporary_workers_excel_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_warning_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_wizard_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_bonus_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_gratuities_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_stop_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_overtime_testing_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_paysheet_roll_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_return_date_create_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_temporary_workers_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_bonus_month_excel_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_custody_property_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_emp_wizard_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_service_wizard_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_gratuities_report_excel_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_line_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_course_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_destination_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_line_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_especializacion_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_emp_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_hall_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_details_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_boy_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_external_wizard_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_internal_wizard_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_subject_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_loan_wizard_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_line_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_month_excel_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_payslip_report_excel_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_penalty_penalty_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_temporary_workers_excel_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_warning_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_wizard_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_bonus_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_gratuities_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_stop_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_overtime_testing_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_paysheet_roll_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_return_date_create_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_temporary_workers_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_credit_account
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_line_account_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_account_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_credit_account
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_loan_account
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_company_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_loan_account
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_overtime_account
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_credit_account
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_account_credit
+msgid "Credit Account"
+msgstr "حساب دائن"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_currency
+msgid "Currency"
+msgstr "العملة"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_employee.py:141
+#: code:addons/is_hr_customization/models/hr_employee.py:152
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_custody
+#: model:ir.ui.view,arch_db:is_hr_customization.end_duty_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_custody_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_custody_search_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_views_form
+#, python-format
+msgid "Custody"
+msgstr "عهدة"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_custody_search_view
+msgid "Custody Name"
+msgstr "اسم العهدة"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.wizard_return_date_act
+#: model:ir.ui.menu,name:is_hr_customization.hr_custody_menu
+msgid "Custody Request"
+msgstr "طلب عهدة"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/is_hr_custody.py:105
+#: code:addons/is_hr_customization/models/is_hr_custody.py:114
+#: code:addons/is_hr_customization/models/is_hr_custody.py:122
+#, python-format
+msgid "Custody is not available now"
+msgstr "Custody is not available now"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_emp_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_overtime_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_date_order
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_sent_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_accept_date
+msgid "Date Accepte"
+msgstr "تاريخ الموافقة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_line_date_bouns
+msgid "Date Bouns"
+msgstr "تاريخ العلاوة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_date_execute
+msgid "Date Execute"
+msgstr "تاريخ التنفيذ"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_date_from
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime_date_from
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_date_from
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_date_from
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_date_from
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_bonus_from_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_gratuities_from_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_stop_date_from
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_overtime_testing_from_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_paysheet_roll_from_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_temporary_workers_from_date
+msgid "Date From"
+msgstr "التاريخ من"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_date
+msgid "Date Order"
+msgstr "تاريخ الطلب"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_request_date_from_period
+msgid "Date Period Start"
+msgstr "تاريخ الفترة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_refund_date
+msgid "Date Refund"
+msgstr "تاريخ الرفض"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_date
+msgid "Date Request"
+msgstr "تاريخ الطلب"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_date_start
+msgid "Date Start"
+msgstr "تاريخ البداية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_date_to
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime_date_to
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_date_to
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_date_to
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_date_to
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_bonus_to_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_gratuities_to_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_stop_date_to
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_overtime_testing_to_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_paysheet_roll_to_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_temporary_workers_to_date
+msgid "Date To"
+msgstr "التاريخ للإنتهاء"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.end_duty_form
+msgid "Date and Time"
+msgstr "التاريخ والزمن"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_loan.py:793
+#, python-format
+msgid "Dates you select are not exits in this loan"
+msgstr "Dates you select are not exits in this loan"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_debit_account
+msgid "Debit  Account"
+msgstr "حساب المدين"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime_employee_account
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_debit_account
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_employee_account
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_employee_account
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_employee_account
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_debit_account
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_account_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_line_employee_account
+msgid "Debit Account"
+msgstr "حساب مدين"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_dedication
+#: model:ir.ui.view,arch_db:is_hr_customization.end_duty_form
+msgid "Dedication"
+msgstr "الاستقطاعات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_dedication_notes
+msgid "Dedication Notes"
+msgstr "ملاحظات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_deduct_amount
+msgid "Deduct Amount"
+msgstr "مبلغ الاستقطاع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_deduct_dayes
+msgid "Deduct Dayes"
+msgstr "ايام الاستقطاع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_penalty_penalty_deduct_dayes
+msgid "Deduct Days "
+msgstr "ايام الاستقطاع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_penalty_penalty_deduct
+msgid "Deduct From Salary"
+msgstr "الاستقطاع من المرتب"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime_department_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_department_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_department_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_department_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_department_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_department_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_custody_property_desc
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_description
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_description
+#: model:ir.ui.view,arch_db:is_hr_customization.custody_custody_form_view
+msgid "Description"
+msgstr "الوصف"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_destination_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_destination_id
+msgid "Destination"
+msgstr "الجهة المرسل اليها"
+
+#. module: is_hr_customization
+#: selection:end.duty,reson:0
+msgid "Dismissal"
+msgstr "فصل"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_bonus_month_excel_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_custody_property_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_emp_wizard_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_service_wizard_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_gratuities_report_excel_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_line_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_course_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_destination_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_line_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_especializacion_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_emp_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_hall_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_details_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_boy_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_external_wizard_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_internal_wizard_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_subject_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_loan_wizard_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_line_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_month_excel_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_payslip_report_excel_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_penalty_penalty_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_end_service_template_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_emp_shift_template_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_external_template_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_internal_template_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_loan_template_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_warning_template_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_temporary_workers_excel_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_warning_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_wizard_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_bonus_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_gratuities_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_stop_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_overtime_testing_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_paysheet_roll_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_return_date_display_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_temporary_workers_display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: is_hr_customization
+#: selection:hr.temporary.worker,marital:0
+msgid "Divorced"
+msgstr "مطلق"
+
+#. module: is_hr_customization
+#: selection:end.duty,state:0 selection:hr.bonus.month,state:0
+#: selection:hr.cust.overtime,state:0 selection:hr.employee.traning,state:0
+#: selection:hr.gratuities.paysheet,state:0
+#: selection:hr.letter.external,state:0 selection:hr.letter.internal,state:0
+#: selection:hr.loan,state:0 selection:hr.long.loan,state:0
+#: selection:hr.overtime,state:0 selection:hr.overtime.month,state:0
+#: selection:hr.task,state:0 selection:hr.warnings,state:0
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_traning_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_letter_external_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_letter_internal_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_long_loan_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_overtime_form_cust_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_task_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_management_new
+#: selection:resignation,state:0 selection:separation.staff,state:0
+msgid "Done"
+msgstr "منتهي"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_filter
+msgid "Done Batch Grant"
+msgstr "اكتمال المنحة"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_long_loan_filter
+msgid "Done Loan"
+msgstr "تم اكتمال السلفية"
+
+#. module: is_hr_customization
+#: selection:hr.bonus.month,state:0 selection:hr.cust.overtime,state:0
+#: selection:hr.custody,state:0 selection:hr.gratuities.paysheet,state:0
+#: selection:hr.overtime.month,state:0
+#: selection:hr.temporary.worker.paysheet,state:0
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_long_loan_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_filter
+#: selection:is.hr.count.manfact,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_filter
+msgid "Draft Batch Grant"
+msgstr "مسودة منحة"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_long_loan_filter
+msgid "Draft Loan"
+msgstr "تاريخ السلفية"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.emp_report_action
+msgid "Emp Status"
+msgstr "حالة الموظف"
+
+#. module: is_hr_customization
+#: model:ir.actions.report.xml,name:is_hr_customization.action_report_details
+#: model:ir.model,name:is_hr_customization.model_hr_employee
+#: model:ir.model,name:is_hr_customization.model_hr_temporary_worker
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_employee_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_service_wizard_employee_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_line_employee_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_employee
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_emp_employee_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_employee_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_emp_internal_ids
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_employee_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_employee_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line_employee_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_employee_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_employee_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_line_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_employee_id
+#: model:ir.ui.menu,name:is_hr_customization.menu_hr_emp_gratuitiess
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_custody_search_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_traning_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_views_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_letter_internal_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_long_loan_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_employee_id
+msgid "Employee "
+msgstr "الموظف "
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_End_duty_management
+#: model:ir.actions.act_window,name:is_hr_customization.action_End_duty_management_menu
+#: model:ir.ui.menu,name:is_hr_customization.menu_End_menu_services
+#: model:ir.ui.view,arch_db:is_hr_customization.end_duty_form
+msgid "Employee Benefits"
+msgstr "فوائد الموظفين"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_bonus_view_form
+msgid "Employee Bonus"
+msgstr "علاوات الموظفين"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_management_new
+msgid "Employee Explanation"
+msgstr "تفسير الموظف"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_gratuities_emp
+msgid "Employee Gratuities"
+msgstr "اكرميات الموظفين"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.end_duty_form
+msgid "Employee Informations"
+msgstr "معلومات الموظف"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_views_form
+msgid "Employee Long Loan(s)"
+msgstr "سلفيات طويلة "
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_is_hr_count_manfact
+#: model:ir.ui.menu,name:is_hr_customization.menu_hr_manufacturing
+#: model:ir.ui.menu,name:is_hr_customization.menu_hr_manufacturing_allowance
+msgid "Employee Manufacturing"
+msgstr "عمال المصنع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_emp_note
+msgid "Employee Note"
+msgstr "ملاحظات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_staff_no
+msgid "Employee Number"
+msgstr "رقم الموظف"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.emp_report_menu
+msgid "Employee Report"
+msgstr "تقرير الموظف"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_employee_salary
+msgid "Employee Salary"
+msgstr "مرتب الموظف"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_views_form
+msgid "Employee Short Loan(s)"
+msgstr "سلفية قصيرة"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_views_form
+msgid "Employee Warning(s)"
+msgstr "اخطاء الموظفين"
+
+#. module: is_hr_customization
+#: selection:end.duty,state:0
+msgid "End"
+msgstr "نهاية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_emp_wizard_end_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_service_wizard_end_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_external_wizard_end_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_internal_wizard_end_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_loan_wizard_end_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_wizard_end_date
+msgid "End Date"
+msgstr "تاريخ الإنتهاء"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.end_duty_tree
+msgid "End Duty"
+msgstr "End Duty"
+
+#. module: is_hr_customization
+#: selection:separation.staff,type:0
+msgid "End contract"
+msgstr "نهاية العقد"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.end_duty_search
+msgid "End duty"
+msgstr "End duty"
+
+#. module: is_hr_customization
+#: selection:end.duty,reson:0
+msgid "End of Contract"
+msgstr "نهاية العقد"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.menu_services
+msgid "End of service "
+msgstr "نهاية الخدمة"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.end_service_wizard_report_action
+#: model:ir.actions.report.xml,name:is_hr_customization.action_hr_end_service_template
+msgid "End service"
+msgstr "نهاية الخدمة"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.end_service_wizard_report_menu
+msgid "End service Report"
+msgstr "تقرير نهاية الخدمة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_entry_count
+msgid "Entry Count"
+msgstr "قيد اليومية"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.custody_custody_form_view
+msgid "Equipments"
+msgstr "المعدات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_especial_id
+msgid "Especializacion"
+msgstr "التخصص"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_explanation_date
+msgid "Explanation Form Date"
+msgstr "تاريخ التفسير"
+
+#. module: is_hr_customization
+#: model:ir.actions.report.xml,name:is_hr_customization.action_hr_external_template_report
+msgid "External"
+msgstr "خارجي"
+
+#. module: is_hr_customization
+#: selection:hr.temporary.worker,gender:0
+msgid "Female"
+msgstr "انثي"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_bonus_month_excel_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_gratuities_report_excel_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_month_excel_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_payslip_report_excel_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_temporary_workers_excel_name
+msgid "File Name"
+msgstr "اسم الملف"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_bonus_month_excel_file_download
+#: model:ir.model.fields,field_description:is_hr_customization.field_gratuities_report_excel_file_download
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_month_excel_file_download
+#: model:ir.model.fields,field_description:is_hr_customization.field_payslip_report_excel_file_download
+#: model:ir.model.fields,field_description:is_hr_customization.field_temporary_workers_excel_file_download
+msgid "File to Download"
+msgstr "تحميل الملف"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_bonus_excel
+#: model:ir.ui.view,arch_db:is_hr_customization.view_gratuities_excel
+#: model:ir.ui.view,arch_db:is_hr_customization.view_overtime_test_excel
+#: model:ir.ui.view,arch_db:is_hr_customization.view_paysheet_salary_wizard_report_excel
+#: model:ir.ui.view,arch_db:is_hr_customization.view_temporary_workers_excel
+msgid "File to Downloads"
+msgstr "تحميل الملف"
+
+#. module: is_hr_customization
+#: selection:hr.task,state:0
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_form_view
+#: selection:is.hr.count.manfact,state:0
+msgid "Finance Approval"
+msgstr "تصديق مالي"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_bonus_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_count_manfact_form_view
+msgid "Finance Approve"
+msgstr "تصديق مالي"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_finance_request
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_finance_request
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_task_view_form
+msgid "Finance Request"
+msgstr "ارسال المالية"
+
+#. module: is_hr_customization
+#: selection:hr.gratuities.paysheet,state:0
+#: selection:hr.temporary.worker.paysheet,state:0
+msgid "Finance approval"
+msgstr "المالية"
+
+#. module: is_hr_customization
+#: selection:hr.warnings,leval:0
+msgid "First penalty"
+msgstr "الانذار الاول"
+
+#. module: is_hr_customization
+#: selection:hr.warnings,leval:0
+msgid "Four penalty"
+msgstr "الانذار الرابع"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_permission_view_form
+msgid "From"
+msgstr "فورم"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_fench_experience
+msgid "Full Experience"
+msgstr "خبرة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_gender
+msgid "Gender"
+msgstr "الجنس"
+
+#. module: is_hr_customization
+#: selection:hr.cust.overtime,state:0
+msgid "General Department Manager"
+msgstr "مدير الادارة"
+
+#. module: is_hr_customization
+#: selection:hr.cust.overtime,state:0
+msgid "General HR Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.form_hr_long_loan_view
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+msgid "Generate Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.overtime_form1_view
+msgid "Generate Journal Entryl"
+msgstr "قيد اليومية"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_payslip_employees
+msgid "Generate payslips for all selected employees"
+msgstr "إنشاء قسائم دفع الرواتب لجميع الموظفين الذين تم تحديدهم"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_filter
+msgid "Grant Batch Name"
+msgstr "اسم المنحة"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_gratuities
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_emp_gratuities
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_gratuities_name
+#: model:ir.ui.view,arch_db:is_hr_customization.gratuities_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.gratuities_paysheet_tree_view
+#: model:ir.ui.view,arch_db:is_hr_customization.gratuities_tree_view
+msgid "Gratuities"
+msgstr "الاكرميات"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_gratuities_report_excel
+msgid "Gratuities Excel Report"
+msgstr "تقرير الاكرميات"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.menu_gratuities_report
+msgid "Gratuities Report"
+msgstr "تقرير الاكرميات"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_gratuities_employee.py:49
+#: code:addons/is_hr_customization/models/hr_temporary_workers.py:69
+#, python-format
+msgid "Gratuities for %s"
+msgstr ""
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/wizards/hr_gratuities_payslip.py:37
+#, python-format
+msgid "Gratuities.xlsx"
+msgstr " الاكرميات.xlsx"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.menu_hr_gratuities_allowance
+msgid "Gratuitiess Employee"
+msgstr "اكرميات الموظفين"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_contract_gross
+msgid "Gross"
+msgstr "البدلات"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.end_duty_search
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_custody_search_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_traning_view_search
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_long_loan_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_permission_view_search
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_task_view_search
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.resignation_search
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: is_hr_customization
+#: selection:hr.warnings,state:0
+msgid "HOD Approve"
+msgstr "موافقة المدير المباشر"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_management_new
+msgid "HOD Confirm"
+msgstr "موافقة المدير المباشر"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_management_new
+msgid "HOD approve"
+msgstr "موافقة المدير المباشر"
+
+#. module: is_hr_customization
+#: selection:hr.warnings,state:0
+msgid "HR Approval"
+msgstr "موافقة الموارد البشرية"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_management_new
+msgid "HR Confirm"
+msgstr "موافقة الموارد البشرية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_hr_date
+msgid "HR Date"
+msgstr "تاريخ الموافقة"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_loan
+msgid "HR Loan Request"
+msgstr "طلب سلفية"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_loan_line
+msgid "HR Loan Request Line"
+msgstr "طلب سلفية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_hr_notes
+msgid "HR Notes"
+msgstr "ملاحظات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_request_unit_half
+msgid "Half Day"
+msgstr "Half Day"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_hall_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_line_ids
+msgid "Hall"
+msgstr "قاعة"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/is_hr_custody.py:26
+#, python-format
+msgid "Hi %s,<br>As per the %s you took %s on %s for the reason of %s. S0 here we remind you that you have to return that on or before %s. Otherwise, you can renew the reference number(%s) by extending the return date through following link.<br> <div style = \"text-align: center; margin-top: 16px;\"><a href = \"%s\"style = \"padding: 5px 10px; font-size: 12px; line-height: 18px; color: #FFFFFF; border-color:#875A7B;text-decoration: none; display: inline-block; margin-bottom: 0px; font-weight: 400;text-align: center; vertical-align: middle; cursor: pointer; white-space: nowrap; background-image: none; background-color: #875A7B; border: 1px solid #875A7B; border-radius:3px;\">Renew %s</a></div>"
+msgstr "Hi %s,<br>As per the %s you took %s on %s for the reason of %s. S0 here we remind you that you have to return that on or before %s. Otherwise, you can renew the reference number(%s) by extending the return date through following link.<br> <div style = \"text-align: center; margin-top: 16px;\"><a href = \"%s\"style = \"padding: 5px 10px; font-size: 12px; line-height: 18px; color: #FFFFFF; border-color:#875A7B;text-decoration: none; display: inline-block; margin-bottom: 0px; font-weight: 400;text-align: center; vertical-align: middle; cursor: pointer; white-space: nowrap; background-image: none; background-color: #875A7B; border: 1px solid #875A7B; border-radius:3px;\">Renew %s</a></div>"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_hiring_date
+msgid "Hiring Date"
+msgstr "تاريخ الانضمام"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_is_holiday
+msgid "Holiday Day"
+msgstr "تاريخ الاجازة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_line_overtime_month_holiday
+msgid "Holiday Day Hours"
+msgstr "Holiday Day Hours"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_home_address
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_address_home_id
+msgid "Home Address"
+msgstr "عنوان المنزل"
+
+#. module: is_hr_customization
+#: selection:hr.overtime,state:0
+msgid "Hr"
+msgstr "Hr"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_custody
+msgid "Hr Custody Management"
+msgstr "Hr Custody Management"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_wizard_return_date
+msgid "Hr Custody Name"
+msgstr "Hr Custody Name"
+
+#. module: is_hr_customization
+#: selection:hr.cust.overtime,state:0
+msgid "Hr Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_hr_note
+msgid "Hr Note"
+msgstr "تعليق  الموارد البشرية"
+
+#. module: is_hr_customization
+#: selection:hr.cust.overtime,state:0
+msgid "Hr Person"
+msgstr "Hr Person"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_bonus_month_excel_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_custody_property_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_emp_wizard_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_service_wizard_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_gratuities_report_excel_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_line_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_course_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_destination_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_line_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_especializacion_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_emp_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_hall_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_details_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_boy_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_external_wizard_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_internal_wizard_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_subject_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_loan_wizard_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_line_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_month_excel_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_payslip_report_excel_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_penalty_penalty_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_end_service_template_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_emp_shift_template_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_external_template_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_internal_template_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_loan_template_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_warning_template_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_temporary_workers_excel_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_warning_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_wizard_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_bonus_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_gratuities_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_stop_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_overtime_testing_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_paysheet_roll_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_return_date_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_temporary_workers_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_identification_id
+msgid "Identification No"
+msgstr "رقم الهوية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_custody_property_image
+msgid "Image"
+msgstr "الصورة"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_permission_view_form
+msgid "In"
+msgstr "In"
+
+#. module: is_hr_customization
+#: selection:is.hr.count.manfact,state:0
+msgid "In Progress"
+msgstr "في المعالجة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_contract_incentive
+msgid "Incentive"
+msgstr "Incentive"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+msgid "Installments"
+msgstr "Installments"
+
+#. module: is_hr_customization
+#: model:ir.actions.report.xml,name:is_hr_customization.action_hr_internal_template_report
+msgid "Internal"
+msgstr "داخلي"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_line_invoice_id
+msgid "Invoice"
+msgstr "الفاتورة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_job_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_job_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_job_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_job_id
+msgid "Job Position"
+msgstr "الوظيفة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_job_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_job_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_job_id
+msgid "Job Title"
+msgstr "المسمى الوظيفي"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_journal_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_journal_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_journal_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_journal_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_journal_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_journal_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_journal_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_journal_id
+msgid "Journal"
+msgstr "اليومية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_move_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_move_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_move_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_move_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_move_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_move_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_move_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_move_id
+msgid "Journal Entry"
+msgstr "قيد يومية"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_account_move_line
+msgid "Journal Item"
+msgstr "قيد يومية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_refund_move_id
+msgid "Journal Refund Entry"
+msgstr "قيد يومية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_bonus_month_excel___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_custody_property___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_emp_wizard___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_service_wizard___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_gratuities_report_excel___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_line___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_course___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_destination___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_line___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_especializacion___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_emp___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_hall___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_details___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_boy___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_external_wizard___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_internal_wizard___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_subject___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_loan_wizard___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_line___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_month_excel___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_payslip_report_excel___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_penalty_penalty___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_end_service_template___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_emp_shift_template___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_external_template___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_internal_template___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_loan_template___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_report_is_hr_customization_hr_warning_template___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_temporary_workers_excel___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_warning___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_wizard___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_bonus___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_gratuities___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_stop___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_overtime_testing___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_paysheet_roll___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_return_date___last_update
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_temporary_workers___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_bonus_month_excel_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_custody_property_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_emp_wizard_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_service_wizard_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_gratuities_report_excel_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_line_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_course_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_destination_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_line_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_especializacion_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_emp_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_hall_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_details_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_boy_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_external_wizard_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_internal_wizard_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_subject_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_loan_wizard_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_line_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_month_excel_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_payslip_report_excel_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_penalty_penalty_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_temporary_workers_excel_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_warning_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_wizard_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_bonus_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_gratuities_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_stop_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_overtime_testing_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_paysheet_roll_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_return_date_write_uid
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_temporary_workers_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_bonus_month_excel_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_custody_property_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_emp_wizard_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_service_wizard_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_gratuities_report_excel_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_line_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_course_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_destination_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_line_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_especializacion_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_emp_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_hall_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_details_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_boy_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_external_wizard_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_internal_wizard_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_subject_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_loan_wizard_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_line_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_month_excel_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_payslip_report_excel_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_penalty_penalty_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_temporary_workers_excel_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_warning_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_wizard_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_bonus_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_gratuities_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_stop_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_overtime_testing_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_paysheet_roll_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_return_date_write_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_temporary_workers_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_management_new_tree
+msgid "Leave Plan(s)"
+msgstr "Leave Plan(s)"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_contract_legal_leave
+msgid "Legal Leave"
+msgstr "Legal Leave"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.hr_letter_views
+msgid "Letter"
+msgstr "الخطاب"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_letter_external
+#: model:ir.ui.menu,name:is_hr_customization.hr_letter_external_views
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_letter_external_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_letter_external_view_tree
+#: model:ir.ui.view,arch_db:is_hr_customization.is_letter_external_wizard
+msgid "Letter External"
+msgstr "الخطابات الخارجية"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.is_letter_external_report_menu
+msgid "Letter External Report"
+msgstr "تقرير الخطابات الخارجية"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.is_letter_external_report_action
+msgid "Letter External Status"
+msgstr "حالة الخطابات الخارجية"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_letter_internal
+#: model:ir.ui.menu,name:is_hr_customization.hr_letter_internal_views
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_letter_internal_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_letter_internal_view_tree
+#: model:ir.ui.view,arch_db:is_hr_customization.is_letter_internal_wizard
+msgid "Letter Internal"
+msgstr "الخطابات الداخلية"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.is_letter_internal_report_menu
+msgid "Letter Internal Report"
+msgstr "تقرير الخطابات الداخلية"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.is_letter_internal_report_action
+msgid "Letter Internal Status"
+msgstr "حالة الخطابات الداخلية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_leval
+msgid "Leval"
+msgstr "الاجازة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_manfact_boy_ids
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_manfact_ids
+msgid "Line"
+msgstr "Line"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_wizard_loan
+#: model:ir.model.fields,field_description:is_hr_customization.field_account_move_line_loan_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_loan_id
+msgid "Loan"
+msgstr "السلفيات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_loan_amount
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_loan_amount
+msgid "Loan Amount"
+msgstr "مبلغ السلفية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_loan_line_ids
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+msgid "Loan Line"
+msgstr "Loan Line"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_name
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_long_loan_filter
+msgid "Loan Name"
+msgstr "اسم السلفية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_date_pay
+msgid "Loan Pay Date"
+msgstr "تاريخ دفع السلفية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_move_id_pay
+msgid "Loan Pay Entry"
+msgstr "قيد يومية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line_loan_id
+msgid "Loan Ref."
+msgstr "مرجع السلفية"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.loan_report_menu
+msgid "Loan Report"
+msgstr "تقرير السلفيات"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+msgid "Loan Request"
+msgstr "طلب سلفية"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_loan.py:331
+#, python-format
+msgid "Loan Request must be approved"
+msgstr "Loan Request must be approved"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_loan_request
+#: model:ir.ui.view,arch_db:is_hr_customization.tree_hr_loan_view
+msgid "Loan Requests"
+msgstr "طلب سلفية"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.loan_report_action
+msgid "Loan Status"
+msgstr "حالة السلفية"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_loan.py:145
+#, python-format
+msgid "Loan period can't be less than 1 month"
+msgstr "Loan period can't be less than 1 month"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.act_hr_employee_loan_request
+#: model:ir.actions.act_window,name:is_hr_customization.act_hr_loan_request
+#: model:ir.actions.report.xml,name:is_hr_customization.action_hr_loan_template
+#: model:ir.ui.menu,name:is_hr_customization.menu_hr_loans
+msgid "Loans"
+msgstr "السلفيات"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.menu_hr_long_loan_request
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_views_form
+msgid "Long Loan"
+msgstr "سلفيات طويلة الاجل"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_long_loan_request
+#: model:ir.ui.view,arch_db:is_hr_customization.form_hr_long_loan_view
+#: model:ir.ui.view,arch_db:is_hr_customization.tree_hr_long_loan_view
+msgid "Long Loan Requests"
+msgstr "سلفيات طويلة الاجل"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_loan_ids
+msgid "Long Lone"
+msgstr "سلفيات طويلة الاجل"
+
+#. module: is_hr_customization
+#: selection:hr.temporary.worker,gender:0
+msgid "Male"
+msgstr "ذكر"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_parent_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_parent_id
+msgid "Manager"
+msgstr "المدير"
+
+#. module: is_hr_customization
+#: selection:hr.warnings,state:0
+msgid "Manager Approve"
+msgstr "موافقة المدير"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_parent_id
+msgid "Manger"
+msgstr "مدير"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_count_manfact_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_count_manfact_tree_view
+msgid "Manufacturing"
+msgstr "التصنيع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_marital
+msgid "Marital Status"
+msgstr "الحالة الاجتماعية"
+
+#. module: is_hr_customization
+#: selection:hr.temporary.worker,marital:0
+msgid "Married"
+msgstr "متزوج"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_materail
+msgid "Materail"
+msgstr "ارمل"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_task_view_form
+msgid "Material Request"
+msgstr "طلب المخزن"
+
+#. module: is_hr_customization
+#: selection:hr.task,state:0
+msgid "Material Requested"
+msgstr "طلب المخزن"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_custody_property_image_medium
+msgid "Medium-sized image"
+msgstr "صورة متوسطة الحجم"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,help:is_hr_customization.field_custody_property_image_medium
+msgid "Medium-sized image of this provider. It is automatically resized as a 128x128px image, with aspect ratio preserved. Use this field in form views or some kanban views."
+msgstr "Medium-sized image of this provider. It is automatically resized as a 128x128px image, with aspect ratio preserved. Use this field in form views or some kanban views."
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.menu_hr_overtime_month
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_cust_overtime_tree_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_cust_overtime_view
+#: model:ir.ui.view,arch_db:is_hr_customization.overtime_form1_view
+#: model:ir.ui.view,arch_db:is_hr_customization.overtime_month_tree_view
+msgid "Month Overtime"
+msgstr "الزمن الاضافي الشهري"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_month_experience
+msgid "Months of Experience"
+msgstr "Months of Experience"
+
+#. module: is_hr_customization
+#: selection:hr.permission,request_date_from_period:0
+msgid "Morning"
+msgstr "Morning"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_course_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_destination_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_line_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_especializacion_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_hall_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_boy_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_subject_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_name
+#: model:ir.ui.view,arch_db:is_hr_customization.custody_custody_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "Name"
+msgstr "الاسم"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_emp_name
+msgid "Name Gratuities"
+msgstr "اسم الاكرامية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_country_id
+msgid "Nationality (Country)"
+msgstr "الجنسية (البلد)"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_no_month
+msgid "No Of Month"
+msgstr "عدد الشهور"
+
+#. module: is_hr_customization
+#: selection:resignation,type:0
+msgid "Non-renewal"
+msgstr "Non-renewal"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_note
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_note
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_note
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line_note
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_note
+msgid "Note"
+msgstr "الملاحظة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_notes
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line_notes
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_notes
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_custody_form_view
+msgid "Notes"
+msgstr "الملاحظات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_month
+msgid "Number of Month"
+msgstr "عدد الشهور"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime_user_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_user_id
+msgid "Ordered by"
+msgstr "Ordered by"
+
+#. module: is_hr_customization
+#: selection:end.duty,reson:0 selection:hr.permission,type:0
+#: selection:hr.temporary.worker,gender:0
+msgid "Other"
+msgstr "Other"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_payslip_over
+msgid "Over"
+msgstr "Over"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_overtime_testing_name
+#: model:ir.ui.menu,name:is_hr_customization.menu_hr_overtime
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_cust_overtime_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_overtime_form_cust_view
+#: model:ir.ui.view,arch_db:is_hr_customization.overtime_form1_view
+#: model:ir.ui.view,arch_db:is_hr_customization.view_overtime_test_report
+msgid "Overtime"
+msgstr "الزمن الاضافي"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_overtime_report_test_excel
+msgid "Overtime Excel Report"
+msgstr "تقرير الزمن الاضافي"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime_overtime_line_ids
+msgid "Overtime Line"
+msgstr "الزمن الاضافي"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_overtime_line_ids
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_line_overtime_line_id
+msgid "Overtime Month"
+msgstr "الزمن الاضافي الشهري"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.menu_overtime_test_report
+msgid "Overtime Report"
+msgstr "تقرير الزمن الاضافي"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_cust_overtime
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_overtime_month
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_overtime_request
+#: model:ir.ui.menu,name:is_hr_customization.menu_hr_overtime_request
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_overtime_form_cust_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_overtime_tree
+msgid "Overtime Request"
+msgstr "طلب الزمن الاضافي"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_line_overtime_month_value
+msgid "Overtime Value"
+msgstr "قيمة الزمن الاضافي"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/wizards/overtime_month.py:38
+#, python-format
+msgid "Overtime.xlsx"
+msgstr "الزمن الاضافي.xlsx"
+
+#. module: is_hr_customization
+#: selection:hr.long.loan,state:0
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line_paid
+msgid "Paid"
+msgstr "تم الدفع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line_paid_amount
+msgid "Paid Amount"
+msgstr "المبلغ المدفوع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_contract_paid_leave
+msgid "Paid Leave"
+msgstr "الاجازات المدفوعة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_emp_partner_id
+msgid "Partner"
+msgstr "مورد"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_wizard_loan
+msgid "Pay"
+msgstr "Pay"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+msgid "Pay Amount"
+msgstr "Pay Amount"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_wizard_loan
+msgid "Pay Loan"
+msgstr "Pay Loan"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_paysheet_salary_wizard
+msgid "Pay Sheet"
+msgstr "المرتبات"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.menu_wazird_payslip_report
+msgid "Pay Sheet Report"
+msgstr "تقرير المرتبات"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/wizards/pay_sheet.py:38
+#, python-format
+msgid "Pay Sheet.xlsx"
+msgstr "المرتبات.xlsx"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_payslip
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "Pay Slip"
+msgstr "ظرف المرتب"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_payslip_salary_wizard_report_excel
+msgid "Paylsip Report Excel Report"
+msgstr "تقرير المرتبات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_employee_gratuities_ids
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_lta_temporary_ids
+msgid "Payment"
+msgstr "Payment"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line_paid_date
+msgid "Payment Date"
+msgstr "تاريخ السداد"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_payment_finance_approval_id
+msgid "Payment Finance Approval No."
+msgstr "Payment Finance Approval No."
+
+#. module: is_hr_customization
+#: model:ir.actions.report.xml,name:is_hr_customization.action_is_hr_report_payslip
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_paysheet_roll_name
+msgid "Payslip"
+msgstr "قسيمة الدفع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line_payroll_id
+msgid "Payslip Ref."
+msgstr "Payslip Ref."
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_gratuities_paysheet
+#: model:ir.ui.menu,name:is_hr_customization.menu_hr_gratuities
+msgid "Payslips Temporary Gratuitiess"
+msgstr "اكراميات الموظفين"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_worker_paysheet
+#: model:ir.ui.menu,name:is_hr_customization.menu_hr_worker
+msgid "Payslips Temporary Workers"
+msgstr "العمال"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_warning_warnings_conf
+#: model:ir.ui.menu,name:is_hr_customization.menu_warning_warning_new
+msgid "Penalties Configuration "
+msgstr "العقوبات"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.act_hr_employee_warning_menu
+#: model:ir.ui.menu,name:is_hr_customization.menu_warning_management_new
+msgid "Penalties of Employees"
+msgstr "عقوبات الموظفين"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_pen_type
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_warning_penalty_ids
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_management_new
+msgid "Penalty"
+msgstr "العقوبات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_pen_desc
+msgid "Penalty Description"
+msgstr "وصف العقوبة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_penalty_penalty_name
+msgid "Penalty Name"
+msgstr "اسم العقوبة"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_cust_overtime_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_traning_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.overtime_form1_view
+msgid "Period"
+msgstr "الفترة"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_permission
+#: model:ir.actions.report.xml,name:is_hr_customization.action_hr_report_permission
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_details_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_name
+#: model:ir.ui.menu,name:is_hr_customization.hr_permission_views
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_permission_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_permission_view_search
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_permission_view_tree
+msgid "Permission"
+msgstr "الاذونات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_phone
+msgid "Phone"
+msgstr "هاتف"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_loan.py:544
+#, python-format
+msgid "Please Add employee Hiring date!"
+msgstr "يجب اضافة تاريخ انضمام الموظف!"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_overtime.py:90
+#: code:addons/is_hr_customization/models/hr_overtime.py:93
+#: code:addons/is_hr_customization/models/hr_overtime.py:141
+#: code:addons/is_hr_customization/models/hr_overtime.py:144
+#, python-format
+msgid "Please determine work day of overtime is it work day or holiday day!"
+msgstr "Please determine work day of overtime is it work day or holiday day!"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line_price
+msgid "Price"
+msgstr "السعر"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_boy_price_daily
+msgid "Price Daily"
+msgstr "سعر اليومية"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.emp_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.end_service_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.is_letter_external_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.is_letter_internal_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.loan_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.view_bonus_report
+#: model:ir.ui.view,arch_db:is_hr_customization.view_gratuities_report
+#: model:ir.ui.view,arch_db:is_hr_customization.view_overtime_test_report
+#: model:ir.ui.view,arch_db:is_hr_customization.view_paysheet_salary_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.view_temporary_workers_report
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_wizard
+msgid "Print"
+msgstr "طباعة"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_wizard_bonus
+msgid "Print Bonus"
+msgstr "طباعة العلاوت"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_wizard_gratuities
+msgid "Print Gratuities"
+msgstr "طباعة الاكرميات"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_wizard_paysheet_roll
+msgid "Print Payslip"
+msgstr "طباعة المرتب"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_wizard_temporary_workers
+msgid "Print Temporary Workers"
+msgstr "طباعة العمال"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_wizard_overtime_testing
+msgid "Print overtime"
+msgstr "طباعة الزمن الاضافي"
+
+#. module: is_hr_customization
+#: selection:end.duty,reson:0
+msgid "Probation Period"
+msgstr "Probation Period"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.wizard_return_date_form
+msgid "Proceed"
+msgstr "Proceed"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_task_view_form
+msgid "Product"
+msgstr "منتج"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line_product_id
+msgid "Product Service"
+msgstr "Product Service"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line_uom_id
+msgid "Product Uom"
+msgstr "Product Uom"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_property
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_custody_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_custody_name
+#: model:ir.ui.menu,name:is_hr_customization.hr_property_menu
+msgid "Property"
+msgstr "Property"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_custody_property
+#: model:ir.model.fields,field_description:is_hr_customization.field_custody_property_name
+msgid "Property Name"
+msgstr "Property Name"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line_purchase
+msgid "Purchase"
+msgstr "المشتريات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line_quantity
+msgid "Quantity"
+msgstr "كمية"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "Quantity/rate"
+msgstr "كمية/نسبة"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_resignation
+#: model:ir.ui.menu,name:is_hr_customization.menu_resignation_services
+#: model:ir.ui.view,arch_db:is_hr_customization.resignation_form
+msgid "Quit"
+msgstr "Quit"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/is_hr_custody.py:39
+#, python-format
+msgid "REMINDER On %s"
+msgstr "REMINDER On %s"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_purpose
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_explanation
+msgid "Reason"
+msgstr "السبب"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_reson
+msgid "Reasons"
+msgstr "الأسباب"
+
+#. module: is_hr_customization
+#: model:ir.actions.report.xml,name:is_hr_customization.action_hr_delivery_report
+msgid "Receiving benefits"
+msgstr "Receiving benefits"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+msgid "Recompute Balance"
+msgstr "Recompute Balance"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_wizard_loan
+msgid "Ref Loan"
+msgstr "رفض السلفية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_refund_amount
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_loan_refund_amount
+msgid "Refund"
+msgstr "رفض"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+msgid "Refund Loan"
+msgstr "رفض السلفية"
+
+#. module: is_hr_customization
+#: selection:hr.loan,state:0 selection:hr.overtime,state:0
+msgid "Refunded"
+msgstr "رفض "
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.form_hr_long_loan_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_cust_overtime_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_overtime_form_cust_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.overtime_form1_view
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_management_new
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: is_hr_customization
+#: selection:hr.bonus.month,state:0 selection:hr.cust.overtime,state:0
+#: selection:hr.custody,state:0 selection:hr.gratuities.paysheet,state:0
+#: selection:hr.loan,state:0 selection:hr.long.loan,state:0
+#: selection:hr.overtime,state:0 selection:hr.overtime.month,state:0
+#: selection:hr.temporary.worker.paysheet,state:0 selection:hr.warnings,state:0
+msgid "Refused"
+msgstr "رفض السلفية"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_rejected_reason
+msgid "Rejected Reason"
+msgstr "Rejected Reason"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,help:is_hr_customization.field_hr_warnings_user_id
+msgid "Related user name for the resource to manage its access."
+msgstr "اسم المستخدم ذو الصلة للمورد لإدارة وصوله."
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_relation
+msgid "Relation Name"
+msgstr "اسم العلاقة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_relative_relation
+msgid "Relative Relation"
+msgstr "صلة القرابة"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_custody_form_view
+msgid "Renew"
+msgstr "Renew"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_renew_rejected_reason
+msgid "Renew Rejected Reason"
+msgstr "اسباب التجديد"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_renew_reject
+msgid "Renew reject"
+msgstr "Renew reject"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_renew_return_date
+msgid "Renew return date"
+msgstr "تاريخ التجديد"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_custody_form_view
+msgid "Renewal Approval"
+msgstr "موافقة التجديد"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_wizard_return_date_returned_date
+msgid "Renewal Date"
+msgstr "Renewal Date"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.wizard_return_date_form
+msgid "Renewal Request"
+msgstr "Renewal Request"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_renew_date
+msgid "Renewal Return Date"
+msgstr "Renewal Return Date"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_request_date
+msgid "Request Date"
+msgstr "تاريخ الطلب"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_request_date_to
+msgid "Request End Date"
+msgstr "تاريخ نهاية الطلب"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_request_date_from
+msgid "Request Start Date"
+msgstr "تاريخ بداية الطلب"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_date_request
+msgid "Requested Date"
+msgstr "تاريخ الطلب"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_cust_overtime_view
+msgid "Reset"
+msgstr "Reset"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.form_hr_long_loan_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_overtime_form_cust_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_management_new
+msgid "Reset To Draft"
+msgstr "Reset To Draft"
+
+#. module: is_hr_customization
+#: selection:end.duty,reson:0
+#: model:ir.actions.report.xml,name:is_hr_customization.action_hr_resignation_template
+msgid "Resignation"
+msgstr "استقالة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_resons
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_resons
+msgid "Resons"
+msgstr "الاسباب"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_name
+msgid "Responsible"
+msgstr "المسئول"
+
+#. module: is_hr_customization
+#: selection:hr.permission,type:0
+msgid "Rest"
+msgstr "Rest"
+
+#. module: is_hr_customization
+#: selection:end.duty,reson:0
+msgid "Retirement"
+msgstr "Retirement"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_custody_form_view
+msgid "Return"
+msgstr "مرتجع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_return_date
+msgid "Return Date"
+msgstr "تاريخ الاسترجاع"
+
+#. module: is_hr_customization
+#: selection:hr.custody,state:0
+msgid "Returned"
+msgstr "مرتجع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_wage
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_salary
+msgid "Salary"
+msgstr "المرتب"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_salary_amount
+msgid "Salary six months"
+msgstr "مرتب 6 شهور"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_filter
+msgid "Search Allowance"
+msgstr "Search Allowance"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_long_loan_filter
+msgid "Search Long Loan"
+msgstr "Search Long Loan"
+
+#. module: is_hr_customization
+#: selection:hr.warnings,leval:0
+msgid "Second penalty"
+msgstr "الانذار الثاني"
+
+#. module: is_hr_customization
+#: selection:hr.warnings,state:0
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_management_new
+msgid "Seen By Employee"
+msgstr "موافقة الموظف"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_custody_form_view
+msgid "Send For Approval"
+msgstr "ارسال للموافقة"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_overtime_form_cust_view
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+msgid "Send To General manager"
+msgstr "ارسال لمدير"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.form_hr_long_loan_view
+msgid "Send To HR"
+msgstr "ارسال الموارد البشرية"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_hr_loan_form
+msgid "Send To HR Manager"
+msgstr "ارسال لمدير  الموارد البشرية"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_overtime_form_cust_view
+msgid "Send To department General Manager"
+msgstr "ارسال لمدير القسم"
+
+#. module: is_hr_customization
+#: selection:end.duty,state:0 selection:resignation,state:0
+#: selection:separation.staff,state:0
+msgid "Sent"
+msgstr "ارسال"
+
+#. module: is_hr_customization
+#: selection:separation.staff,type:0
+msgid "Separation"
+msgstr "Separation"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_name
+msgid "Serial No"
+msgstr "رقم متسلسل"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.wizard_installment_stop_form
+msgid "Set overtime to confirmed"
+msgstr "Set overtime to confirmed"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_custody_form_view
+msgid "Set to Draft"
+msgstr "ضبط كمسودة"
+
+#. module: is_hr_customization
+#: model:ir.actions.report.xml,name:is_hr_customization.action_hr_emp_shift_template_report
+msgid "Shift"
+msgstr "اللقطة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_payslip_short_loan
+#: model:ir.ui.menu,name:is_hr_customization.menu_hr_loan_request
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_views_form
+msgid "Short Loan"
+msgstr "سلفية قصيرة الاجل"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_short_loan_ids
+msgid "Short Lone"
+msgstr "سلفية قصيرة الاجل"
+
+#. module: is_hr_customization
+#: selection:hr.temporary.worker,marital:0
+msgid "Single"
+msgstr "سنقل"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_custody_property_image_small
+msgid "Small-sized image"
+msgstr "صورة مصغرة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,help:is_hr_customization.field_custody_property_image_small
+msgid "Small-sized image of this provider. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr "Small-sized image of this provider. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_emp_wizard_start_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_service_wizard_start_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_external_wizard_start_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_internal_wizard_start_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_loan_wizard_start_date
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_wizard_start_date
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_payment_start_date
+msgid "Start Date of Payment"
+msgstr "تاريخ بداية الدفع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_bonus_month_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_cust_overtime_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_gratuities_paysheet_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_month_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_paysheet_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_state
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_long_loan_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_filter
+msgid "State"
+msgstr "الحالة"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_state
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_state
+#: model:ir.ui.view,arch_db:is_hr_customization.emp_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.end_service_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_custody_search_view
+#: model:ir.ui.view,arch_db:is_hr_customization.loan_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_wizard
+msgid "Status"
+msgstr "الحاله "
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_improvement_steps
+msgid "Steps for improvement"
+msgstr "Steps for improvement"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_line_stopped
+msgid "Stop Loan"
+msgstr "ايقاف السلفية"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.wizard_installment_stop_form
+msgid "Stop Loan Installment"
+msgstr "Stop Loan Installment"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.wiz_loans_install_stop
+msgid "Stop Loans Installment"
+msgstr "Stop Loans Installment"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_subject_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_subject_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_external_wizard_subject_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_letter_internal_wizard_subject_id
+msgid "Subject"
+msgstr "الموضوع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_subject_sub
+msgid "Subject Sub"
+msgstr "Subject Sub"
+
+#. module: is_hr_customization
+#: selection:hr.employee.traning,state:0 selection:hr.letter.external,state:0
+#: selection:hr.letter.internal,state:0 selection:hr.permission,state:0
+#: selection:hr.task,state:0
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_traning_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_letter_external_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_letter_internal_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_permission_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_task_view_form
+msgid "Submit"
+msgstr "ارسال"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_supervisor_nots
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_depr_nots
+msgid "Supervisor Notes"
+msgstr "ملاحظات المشرف"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_task
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_line_task_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_task_task_ids
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_task_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_task_view_search
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_task_view_tree
+msgid "Task"
+msgstr "المهمة"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.hr_task_views
+msgid "Tasks"
+msgstr "المهام"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_temporary_workers_report_excel
+msgid "Temporary Excel Report"
+msgstr "تقرير العمال"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_temporary_workers
+#: model:ir.ui.menu,name:is_hr_customization.menu_hr_temporary_workers
+#: model:ir.ui.view,arch_db:is_hr_customization.temporary_workers_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.temporary_workers_tree_view
+#: model:ir.ui.view,arch_db:is_hr_customization.view_temporary_workers_report
+msgid "Temporary Workers"
+msgstr "عمال المصنع"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.menu_temporary_workers_report
+msgid "Temporary Workers Report"
+msgstr "تقرير العمال"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/wizards/hr_temporary_workers_wizard.py:38
+#, python-format
+msgid "Temporary Workers.xlsx"
+msgstr "تقرير العمال.xlsx"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_contract_text
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_contract_views_form
+msgid "Terms Contract"
+msgstr "شروط العقد"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_bonus.py:117
+#: code:addons/is_hr_customization/models/hr_loan.py:212
+#: code:addons/is_hr_customization/models/hr_loan.py:681
+#: code:addons/is_hr_customization/models/hr_overtime.py:310
+#: code:addons/is_hr_customization/models/is_hr_manfact.py:93
+#: code:addons/is_hr_customization/models/is_hr_manfact.py:166
+#, python-format
+msgid "The Expense Journal \"%s\" has not properly configured the Credit Account!"
+msgstr "The Expense Journal \"%s\" has not properly configured the Credit Account!"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_bonus.py:133
+#: code:addons/is_hr_customization/models/hr_loan.py:228
+#: code:addons/is_hr_customization/models/hr_loan.py:750
+#: code:addons/is_hr_customization/models/hr_overtime.py:326
+#: code:addons/is_hr_customization/models/is_hr_manfact.py:109
+#: code:addons/is_hr_customization/models/is_hr_manfact.py:183
+#, python-format
+msgid "The Expense Journal \"%s\" has not properly configured the Debit Account!"
+msgstr "The Expense Journal \"%s\" has not properly configured the Debit Account!"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_resons
+msgid "The Resons"
+msgstr "The Resons"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_note
+#: model:ir.ui.view,arch_db:is_hr_customization.view_warning_warnings_form2
+msgid "The consequences if this happens again"
+msgstr "The consequences if this happens again"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_employee.py:23
+#, python-format
+msgid ""
+"The feature behind the field 'Remaining Legal Leaves' can only be used when there is only one leave type with the option 'Allow to Override Limit' unchecked. (%s Found). Otherwise, the update is ambiguous as we cannot decide on which leave type the update has to be done. \n"
+" You may prefer to use the classic menus 'Leave Requests' and 'Allocation Requests' located in Leaves Application to manage the leave days of the employees if the configuration does not allow to use this field."
+msgstr ""
+"The feature behind the field 'Remaining Legal Leaves' can only be used when there is only one leave type with the option 'Allow to Override Limit' unchecked. (%s Found). Otherwise, the update is ambiguous as we cannot decide on which leave type the update has to be done. \n"
+" You may prefer to use the classic menus 'Leave Requests' and 'Allocation Requests' located in Leaves Application to manage the leave days of the employees if the configuration does not allow to use this field."
+
+#. module: is_hr_customization
+#: selection:hr.warnings,leval:0
+msgid "Third penalty"
+msgstr "الانذار الثالث"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_warning.py:110
+#, python-format
+msgid "This Employee Already Took This warnings"
+msgstr "هذا الموظف قد  اخذ هذا الانذار"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_loan.py:301
+#, python-format
+msgid "This employee must complete payments for a current running loan, in order to request another"
+msgstr "This employee must complete payments for a current running loan, in order to request another"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,help:is_hr_customization.field_custody_property_image
+msgid "This field holds the image used for this provider, limited to 1024x1024px"
+msgstr "This field holds the image used for this provider, limited to 1024x1024px"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_time_permission
+msgid "Time Permission"
+msgstr "Time Permission"
+
+#. module: is_hr_customization
+#: selection:hr.long.loan,state:0
+msgid "To Approve"
+msgstr "موافقة"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_cust_overtime_view
+msgid "To Competent"
+msgstr "To Competent"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_employee_id
+msgid "To Employee"
+msgstr "To Employee"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_cust_overtime_view
+msgid "To GM of Hr"
+msgstr "To GM of Hr"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_cust_overtime_view
+msgid "To General"
+msgstr "To General"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_cust_overtime_view
+msgid "To Hr"
+msgstr "To Hr"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_overtime_form_cust_view
+msgid "To Hr Approve"
+msgstr "To Hr Approve"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_cust_overtime_view
+msgid "To Hr Manager"
+msgstr "To Hr Manager"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_custody_to_renew
+msgid "To Renew"
+msgstr "To Renew"
+
+#. module: is_hr_customization
+#: selection:end.duty,state:0 selection:hr.employee.traning,state:0
+#: selection:hr.letter.external,state:0 selection:hr.letter.internal,state:0
+#: selection:hr.loan,state:0 selection:hr.long.loan,state:0
+#: selection:hr.overtime,state:0 selection:hr.permission,state:0
+#: selection:hr.task,state:0 selection:hr.warnings,state:0
+#: selection:resignation,state:0 selection:separation.staff,state:0
+msgid "To Submit"
+msgstr "To Submit"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_total
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_custom_report_payslip
+msgid "Total"
+msgstr "الإجمالي "
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_total_amount
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_total_amount
+msgid "Total Amount"
+msgstr "إجمالي المبلغ"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_loan_total_paid_amount
+msgid "Total Paid Amount"
+msgstr "إجمالي المبلغ المدفوع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_total_receivables
+msgid "Total Receivables"
+msgstr "Total Receivables"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_contract_total_salary
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_wage
+msgid "Total Salary"
+msgstr "إجمالي المبلغ"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.action_hr_emp_traning
+#: model:ir.ui.menu,name:is_hr_customization.hr_emp_traning_views
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_bonus_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_traning_view_form
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_traning_view_search
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_traning_view_tree
+msgid "Traning"
+msgstr "التدريب"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_form_view
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_form_view
+msgid "Transport and leave Allowance"
+msgstr "Transport and leave Allowance"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_permission_type
+#: model:ir.model.fields,field_description:is_hr_customization.field_resignation_type
+#: model:ir.model.fields,field_description:is_hr_customization.field_separation_staff_type
+msgid "Type"
+msgstr "نوع"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_external_type_letter
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_letter_internal_type_letter
+msgid "Type Letter"
+msgstr "نوع الخطاب"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_user_id
+msgid "User"
+msgstr "المستخدم"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_value_vacation
+msgid "Value of vacation"
+msgstr "Value of vacation"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.act_hr_employee_warning_
+msgid "Violations of employees"
+msgstr "عقوبات الموظفين"
+
+#. module: is_hr_customization
+#: selection:hr.custody,state:0
+msgid "Waiting For Approval"
+msgstr "في انتظار الموافقة"
+
+#. module: is_hr_customization
+#: model:ir.actions.report.xml,name:is_hr_customization.action_hr_warning_template
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_payslip_warning
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_name
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_views_form
+#: model:ir.ui.view,arch_db:is_hr_customization.view_warning_warnings_form2
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_management_new
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_warning_new_tree
+msgid "Warning"
+msgstr "تحذير"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_warning_date
+msgid "Warning Date"
+msgstr "تاريخ الخطاء"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_warnings
+#: model:ir.model,name:is_hr_customization.model_warning_warning
+#: model:ir.ui.menu,name:is_hr_customization.menu_warning_management
+msgid "Warning Management"
+msgstr "الاخطاء والعقوبات"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_warnings_warning
+msgid "Warning Name "
+msgstr " العقوبة"
+
+#. module: is_hr_customization
+#: model:ir.ui.menu,name:is_hr_customization.warning_report_menu
+msgid "Warning Report"
+msgstr "تقرير العقوبات"
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.warning_report_action
+msgid "Warning Status"
+msgstr "حالة العقوبات"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_loan.py:656
+#, python-format
+msgid "Warning! You cannot delete a Loan which is in %s state."
+msgstr ""
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_warning.py:59
+#: code:addons/is_hr_customization/models/hr_warning.py:127
+#, python-format
+msgid "Warning! You cannot delete warning which is in %s state."
+msgstr "Warning! You cannot delete warning which is in %s state."
+
+#. module: is_hr_customization
+#: model:ir.actions.act_window,name:is_hr_customization.warning_management_ac
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_hr_warning_ids
+#: model:ir.model.fields,field_description:is_hr_customization.field_penalty_penalty_warnings_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_warning_warning_name
+msgid "Warnings"
+msgstr "Warnings"
+
+#. module: is_hr_customization
+#: selection:hr.temporary.worker,marital:0
+msgid "Widower"
+msgstr "Widower"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_hour
+msgid "Work Hours"
+msgstr "Work Hours"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_work_location
+msgid "Work Location"
+msgstr "مكان العمل"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_mobile_phone
+msgid "Work Mobile"
+msgstr "محمول العمل"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_work_phone
+msgid "Work Phone"
+msgstr "هاتف العمل"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_boy_boy_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_boy_worker_name
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_manfact_id
+#: model:ir.model.fields,field_description:is_hr_customization.field_is_hr_count_manfact_line_worker_name
+msgid "Worker"
+msgstr "عامل"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_count_manfact_form_view
+msgid "Worker Boy"
+msgstr "العمال الرجال"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.is_hr_count_manfact_form_view
+msgid "Worker Girls"
+msgstr "العمال من النساء"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.temporary_workers_form_view
+msgid "Workers Informations"
+msgstr "معلومات العمال"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_temporary_worker_address_id
+msgid "Working Address"
+msgstr "عنوان العمل"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_is_working_day
+msgid "Working Day"
+msgstr "Working Day"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_overtime_line_overtime_month_working
+msgid "Working Day hours"
+msgstr "Working Day hours"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_end_duty_year_experience
+msgid "Years of Experience"
+msgstr "Years of Experience"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_loan.py:769
+#, python-format
+msgid "You Have To Refund %s"
+msgstr "You Have To Refund %s"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_overtime.py:47
+#, python-format
+msgid "You are not allow to delete the Confirm and Done state records"
+msgstr "You are not allow to delete the Confirm and Done state records"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_loan.py:551
+#, python-format
+msgid "You can not request Loan before you complete One Year!"
+msgstr "You can not request Loan before you complete One Year!"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_loan.py:86
+#, python-format
+msgid "You cannot delete a Loan which is not draft or refused!"
+msgstr "You cannot delete a Loan which is not draft or refused!"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_overtime.py:215
+#, python-format
+msgid "You cannot delete a Overtime which is not draft or cancelled!"
+msgstr "You cannot delete a Overtime which is not draft or cancelled!"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_overtime.py:127
+#, python-format
+msgid "You cannot delete a Overtime which is not draft or refused!"
+msgstr "You cannot delete a Overtime which is not draft or refused!"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_end_service.py:258
+#, python-format
+msgid "You cannot delete a Receivables which is not draft or refused!"
+msgstr "You cannot delete a Receivables which is not draft or refused!"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_gratuities_employee.py:141
+#: code:addons/is_hr_customization/models/hr_temporary_workers.py:162
+#, python-format
+msgid "You cannot delete allowance & bonus batch which is not draft or refused!"
+msgstr "You cannot delete allowance & bonus batch which is not draft or refused!"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/wizards/bonus_month.py:34
+#: code:addons/is_hr_customization/wizards/hr_gratuities_payslip.py:34
+#: code:addons/is_hr_customization/wizards/hr_temporary_workers_wizard.py:35
+#: code:addons/is_hr_customization/wizards/overtime_month.py:35
+#: code:addons/is_hr_customization/wizards/pay_sheet.py:35
+#, python-format
+msgid "You must be enter start date less than end date !"
+msgstr "You must be enter start date less than end date !"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_loan.py:158
+#, python-format
+msgid "You must compute Loan Request before Approved"
+msgstr "You must compute Loan Request before Approved"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_loan.py:156
+#: code:addons/is_hr_customization/models/hr_loan.py:577
+#, python-format
+msgid "You must enter employee account & Loan account and journal to approve "
+msgstr "You must enter employee account & Loan account and journal to approve "
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_payslip.py:112
+#, python-format
+msgid "You must select employee(s) to generate payslip(s)."
+msgstr "You must select employee(s) to generate payslip(s)."
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_gratuities_paysheet_filter
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_worker_paysheet_filter
+#: selection:resignation,state:0
+msgid "approve"
+msgstr "approve"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_bonus_month_excel
+msgid "bonus.month.excel"
+msgstr "bonus.month.excel"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_emp_wizard
+msgid "emp.wizard"
+msgstr "emp.wizard"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_end_duty
+msgid "end.duty"
+msgstr "end.duty"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_end_service_wizard
+msgid "end.service.wizard"
+msgstr "end.service.wizard"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_gratuities_report
+msgid "gratuities"
+msgstr "gratuities"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_gratuities_report_excel
+msgid "gratuities.report.excel"
+msgstr "gratuities.report.excel"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,help:is_hr_customization.field_hr_loan_attach
+msgid "here you can attach a file or a document to the record !!"
+msgstr "here you can attach a file or a document to the record !!"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_bonus_line
+msgid "hr.bonus.line"
+msgstr "hr.bonus.line"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_bonus_month
+msgid "hr.bonus.month"
+msgstr "hr.bonus.month"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_course
+msgid "hr.course"
+msgstr "hr.course"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_cust_overtime
+msgid "hr.cust.overtime"
+msgstr "hr.cust.overtime"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_destination
+msgid "hr.destination"
+msgstr "hr.destination"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_employee_traning
+msgid "hr.employee.traning"
+msgstr "hr.employee.traning"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_employee_traning_line
+msgid "hr.employee.traning.line"
+msgstr "hr.employee.traning.line"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_especializacion
+msgid "hr.especializacion"
+msgstr "hr.especializacion"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_gratuities_paysheet
+msgid "hr.gratuities.paysheet"
+msgstr "hr.gratuities.paysheet"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_hall
+msgid "hr.hall"
+msgstr "hr.hall"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_letter_external
+msgid "hr.letter.external"
+msgstr "hr.letter.external"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_letter_internal
+msgid "hr.letter.internal"
+msgstr "hr.letter.internal"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_long_loan
+msgid "hr.long.loan"
+msgstr "hr.long.loan"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_overtime
+msgid "hr.overtime"
+msgstr "hr.overtime"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_overtime_month
+msgid "hr.overtime.month"
+msgstr "hr.overtime.month"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_permission
+msgid "hr.permission"
+msgstr "hr.permission"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_permission_details
+msgid "hr.permission.details"
+msgstr "hr.permission.details"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_task
+msgid "hr.task"
+msgstr "hr.task"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_task_line
+msgid "hr.task.line"
+msgstr "hr.task.line"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_hr_temporary_worker_paysheet
+msgid "hr.temporary.worker.paysheet"
+msgstr "hr.temporary.worker.paysheet"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_is_hr_count_manfact
+msgid "is.hr.count.manfact"
+msgstr "is.hr.count.manfact"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_is_hr_count_manfact_line
+msgid "is.hr.count.manfact.line"
+msgstr "is.hr.count.manfact.line"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_is_hr_count_manfact_line_boy
+msgid "is.hr.count.manfact.line.boy"
+msgstr "is.hr.count.manfact.line.boy"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_is_letter_external_wizard
+msgid "is.letter.external.wizard"
+msgstr "is.letter.external.wizard"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_is_letter_internal_wizard
+msgid "is.letter.internal.wizard"
+msgstr "is.letter.internal.wizard"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_is_subject
+msgid "is.subject"
+msgstr "is.subject"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_penalty_penalty_leval
+msgid "leval"
+msgstr "leval"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_long_loan_date
+msgid "loan Date"
+msgstr "loan Date"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_loan_wizard
+msgid "loan.wizard"
+msgstr "loan.wizard"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.hr_emp_views_form
+#: model:ir.ui.view,arch_db:is_hr_customization.tree_hr_loan_view
+#: model:ir.ui.view,arch_db:is_hr_customization.tree_hr_long_loan_view
+msgid "loan_amount"
+msgstr "loan_amount"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.emp_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.end_service_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.is_letter_external_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.is_letter_internal_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.loan_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.view_bonus_report
+#: model:ir.ui.view,arch_db:is_hr_customization.view_gratuities_report
+#: model:ir.ui.view,arch_db:is_hr_customization.view_overtime_test_report
+#: model:ir.ui.view,arch_db:is_hr_customization.view_paysheet_salary_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.view_temporary_workers_report
+#: model:ir.ui.view,arch_db:is_hr_customization.view_wizard_loan
+#: model:ir.ui.view,arch_db:is_hr_customization.warning_wizard
+#: model:ir.ui.view,arch_db:is_hr_customization.wizard_installment_stop_form
+#: model:ir.ui.view,arch_db:is_hr_customization.wizard_return_date_form
+msgid "or"
+msgstr "أو"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_overtime_overtime_line_id
+msgid "overtime"
+msgstr "overtime"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_overtime_line
+msgid "overtime.line"
+msgstr "overtime.line"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_overtime_month_excel
+msgid "overtime.month.excel"
+msgstr "overtime.month.excel"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_payslip_report_excel
+msgid "payslip.report.excel"
+msgstr "payslip.report.excel"
+
+#. module: is_hr_customization
+#: model:ir.ui.view,arch_db:is_hr_customization.view_warning_warnings_form2
+msgid "penalty Levels"
+msgstr "penalty Levels"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_penalty_penalty
+msgid "penalty Management"
+msgstr "penalty Management"
+
+#. module: is_hr_customization
+#: code:addons/is_hr_customization/models/hr_loan.py:29
+#: code:addons/is_hr_customization/models/hr_loan.py:40
+#, python-format
+msgid "period can't exceed 10 months"
+msgstr "period can't exceed 10 months"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_report_is_hr_customization_end_service_template
+msgid "report.is_hr_customization.end_service_template"
+msgstr "report.is_hr_customization.end_service_template"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_report_is_hr_customization_hr_emp_shift_template
+msgid "report.is_hr_customization.hr_emp_shift_template"
+msgstr "report.is_hr_customization.hr_emp_shift_template"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_report_is_hr_customization_hr_external_template
+msgid "report.is_hr_customization.hr_external_template"
+msgstr "report.is_hr_customization.hr_external_template"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_report_is_hr_customization_hr_internal_template
+msgid "report.is_hr_customization.hr_internal_template"
+msgstr "report.is_hr_customization.hr_internal_template"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_report_is_hr_customization_hr_loan_template
+msgid "report.is_hr_customization.hr_loan_template"
+msgstr "report.is_hr_customization.hr_loan_template"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_report_is_hr_customization_hr_warning_template
+msgid "report.is_hr_customization.hr_warning_template"
+msgstr "report.is_hr_customization.hr_warning_template"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_resignation
+#: model:ir.ui.view,arch_db:is_hr_customization.resignation_search
+#: model:ir.ui.view,arch_db:is_hr_customization.resignation_tree
+#: selection:resignation,type:0
+msgid "resignation"
+msgstr "resignation"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_separation_staff
+msgid "separation.staff"
+msgstr "separation.staff"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_temporary_workers_excel
+msgid "temporary.workers.excel"
+msgstr "temporary.workers.excel"
+
+#. module: is_hr_customization
+#: model:ir.model.fields,field_description:is_hr_customization.field_hr_employee_traning_line_line_id
+msgid "traning"
+msgstr "traning"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_warning_wizard
+msgid "warning.wizard"
+msgstr "warning.wizard"
+
+#. module: is_hr_customization
+#: model:ir.model,name:is_hr_customization.model_wizard_loan_stop
+msgid "wizard.loan.stop"
+msgstr "wizard.loan.stop"

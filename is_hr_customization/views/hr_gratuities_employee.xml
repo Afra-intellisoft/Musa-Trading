@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+		<record id="gratuities_tree_view" model="ir.ui.view">
+			<field name="name">hr.gratuities.emp.tree</field>
+			<field name="model">hr.gratuities.emp</field>
+			<field name="arch" type="xml">
+				<tree string="Gratuities">
+                       <field name="date"/>
+                       <field name="employee_id"/>
+                       <field name="amount"/>
+				</tree>
+			</field>
+		</record>
+
+
+	<record id="gratuities_form_view" model="ir.ui.view">
+			<field name="name">hr.gratuities.emp.form</field>
+			<field name="model">hr.gratuities.emp</field>
+			<field name="arch" type="xml">
+				<form string="Gratuities">
+					<sheet>
+                    <group >
+                       <field name="date" readonly="1"/>
+                       <field name="name"/>
+                       <field name="employee_id"/>
+                       <field name="amount"/>
+                       <field name="partner_id"/>
+                       <field name="company_id"/>
+					</group>
+					</sheet>
+
+				</form>
+			</field>
+		</record>
+		<record id="action_gratuities" model="ir.actions.act_window">
+			<field name="name">Gratuities</field>
+			<field name="res_model">hr.gratuities.emp</field>
+			<field name="view_mode">tree,form</field>
+	</record>
+
+
+
+
+		<record id="hr_gratuities_paysheet_form_view" model="ir.ui.view">
+			<field name="name">hr.gratuities.paysheet.form</field>
+			<field name="model">hr.gratuities.paysheet</field>
+			<field name="arch" type="xml">
+				<form string="Annual leave bonus and transport">
+				<header>
+                    <button string="Approve" name="action_approve"  states="draft" type="object"  class="oe_highlight" groups="hr.group_hr_manager"/>
+                    <button string="Auditor" name="action_auditor"  states="finance_approval" type="object"  class="oe_highlight" groups="is_accounting_approval_10.auditor_access_group"/>
+                    <button string="Finance Approval" name="action_finance_approval"  states="approve" type="object"  class="oe_highlight" groups="is_accounting_approval_10.auditor_access_group"/>
+                    <button string="Refuse" name="action_refuse" groups="hr.group_hr_manager" states="approve" type="object"  class="oe_inline" />
+                    <button string="Reset To Draft" name="action_reset" groups="hr.group_hr_manager" states="refuse" type="object" class="oe_highlight"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,auditor" />
+                </header>
+					<sheet>
+                    <group col="4">
+                        <field name="name" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="date" attrs="{'readonly':[('state','!=','draft')]}"/>
+					</group>
+					 <notebook>
+                        <page string="Transport and leave Allowance">
+                            <field name="employee_gratuities_ids">
+                                <!--<tree>-->
+                                    <!--&lt;!&ndash;<field name="name"/>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;&lt;!&ndash;<field name="employee_id"/>&ndash;&gt;&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<field name="gratuities"/>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<field name="deduction"/>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<field name="total_allowance" sum="total_allowance"/>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<field name="state"/>&ndash;&gt;-->
+                                <!--</tree>-->
+                            </field>
+                        </page>
+						 <page string="Accounting Information" attrs="{'invisible':[('state','=','draft')]}">
+							<group col="4">
+								<field name="debit_account" attrs="{'required':[('state','=','approve')],'invisible':[('state','=','draft')],'readonly':[('state','=','done')]}"/>
+								<field name="credit_account" attrs="{'required':[('state','=','approve')],'invisible':[('state','=','draft')],'readonly':[('state','=','done')]}"/>
+								<field name="journal_id" attrs="{'required':[('state','=','approve')],'invisible':[('state','=','draft')],'readonly':[('state','=','done')]}"/>
+								<field name="move_id" attrs="{'invisible':[('state','=','draft')]}"/>
+							</group>
+						 </page>
+
+                    </notebook>
+
+					</sheet>
+					<!--<div class="oe_chatter">-->
+						<!--<field name="message_follower_ids" widget="mail_followers"/>-->
+						<!--<field name="message_ids" widget="mail_thread"/>-->
+                	<!--</div>-->
+				</form>
+			</field>
+		</record>
+
+		<record id="hr_gratuities_paysheet_filter" model="ir.ui.view">
+            <field name="name">hr.gratuities.paysheet.search</field>
+            <field name="model">hr.gratuities.paysheet</field>
+            <field name="arch" type="xml">
+                <search string="Search Allowance">
+                    <field name="name" string="Grant Batch Name"/>
+                    <field name="date"/>
+                    <filter string="Draft" domain="[('state','=','draft')]" help="Draft Batch Grant"/>
+                    <filter string="approve" domain="[('state','=','approve')]" help="Approve Batch Grant"/>
+                    <filter name="done_filter" string="Done" domain="[('state','=','done')]" help="Done Batch Grant"/>
+					<group col="8" colspan="4" expand="0" string="Group By">
+                        <filter string="State" name="state" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+		<record id="gratuities_paysheet_tree_view" model="ir.ui.view">
+			<field name="name">hr.gratuities.paysheet.tree</field>
+			<field name="model">hr.gratuities.paysheet</field>
+			<field name="arch" type="xml">
+				<tree string="Gratuities">
+                       <field name="name"/>
+                       <field name="date"/>
+                       <field name="state"/>
+				</tree>
+			</field>
+		</record>
+
+		<record id="action_hr_gratuities_paysheet" model="ir.actions.act_window">
+			<field name="name">Payslips Temporary Gratuities</field>
+			<field name="res_model">hr.gratuities.paysheet</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="gratuities_paysheet_tree_view"/>
+	</record>
+
+<menuitem name="Gratuities Employee" parent="hr_payroll.menu_hr_payroll_root" id="menu_hr_gratuities_allowance" groups="hr.group_hr_user,hr.group_hr_manager"  sequence="10"/>
+<menuitem parent="menu_hr_gratuities_allowance" id="menu_hr_gratuities" action="action_hr_gratuities_paysheet" sequence="10" groups="hr.group_hr_user,hr.group_hr_manager" />
+	<menuitem parent="menu_hr_gratuities_allowance" name="Employee" id="menu_hr_emp_gratuitiess" action="action_gratuities" sequence="9" groups="hr.group_hr_user,hr.group_hr_manager" />
+</odoo>

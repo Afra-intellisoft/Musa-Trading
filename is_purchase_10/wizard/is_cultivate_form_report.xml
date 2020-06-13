@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="is_purchase_cultivate_template">
+               <tr t-call="report.html_container">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+                            <strong>Agriculture form for:</strong>
+                            <span t-esc="data['agriculture']"/>
+                            <br/>
+                            <strong>for period from :</strong>
+                            <span t-esc="data['start_date']"/>
+                            <td/>
+                            <strong> to</strong>
+                            <span t-esc="data['end_date']"/>
+                            <td/>
+                            <table class="table table-condensed">
+                                <thead>
+                                        <th><strong>Product</strong></th>
+                                        <th class="text-center"><strong>Qty Approve</strong></th>
+                                        <th class="text-center"><strong>Qty Consumed</strong></th>
+                                        <th class="text-center"><strong>Qty Remaining</strong></th>
+                                        <th class="text-center"><strong>Date from</strong></th>
+                                        <th class="text-center"><strong>Date to</strong></th>
+                                </thead>
+                            <tbody>
+                                 <tr t-foreach="docs" t-as="o">
+                                <td>
+                                    <span t-field="o.product_id.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span  t-field="o.qty_approve"/>
+                                </td>
+
+                                <td class="text-center">
+                                    <span t-field="o.qty_consumed"/>
+                                </td>
+                                 <td class="text-center">
+                                    <span t-field="o.qty_remaining"/>
+                                </td>
+                                  <td class="text-center">
+                                    <span  t-field="o.cultivate_id.date_start"/>
+                                </td>
+                                      <td class="text-center">
+                                    <span  t-field="o.cultivate_id.date_end"/>
+                                </td>
+                                </tr>
+                      </tbody>
+                    </table>
+                            <strong>Consumption</strong>
+                            <table class="table table-condensed">
+                                <thead>
+                                        <th><strong>Contract Ref</strong></th>
+                                        <th class="text-center"><strong>Qty Consumed</strong></th>
+
+                                </thead>
+                            <tbody>
+                                 <tr t-foreach="docs" t-as="o">
+                                <td>
+                                    <span t-field="o.contract_form_id.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span  t-field="o.qty_contract"/>
+                                </td>
+
+                                </tr>
+                      </tbody>
+                    </table>
+<!--                        <tr>-->
+<!--                        <group>-->
+<!--                           <strong>Note</strong>-->
+<!--                            <span t-field="o.cultivate_id.notes"/>-->
+<!--                        </group>-->
+<!--                        </tr>-->
+                        <br/>
+                        <br/>
+                        <br/>
+                </div>
+            </t>
+        </tr>
+    </template>
+</data>
+</odoo>

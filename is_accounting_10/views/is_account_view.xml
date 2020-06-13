@@ -1,0 +1,188 @@
+<?xml version="1.0" ?>
+<openerp>
+ 	<data>
+
+<!--	Dollar tracebaility-->
+<!--<record id="tree_dollar_view" model="ir.ui.view">-->
+<!--			<field name="name">collect.currency.tree</field>-->
+<!--			<field name="model">collect.currency</field>-->
+<!--			<field name="arch" type="xml">-->
+<!--				<tree >-->
+<!--					<field name="customer_id"/>-->
+<!--					<field name="company_id"/>-->
+<!--					<field name="amount"/>-->
+<!--					<field name="amount1"/>-->
+<!--					<field name="average_dollar" />-->
+<!--				</tree>-->
+<!--			</field>-->
+<!--		</record>-->
+
+
+<!--		<record id="act_dollar_request" model="ir.actions.act_window">-->
+<!--			<field name="name">Collect Currency</field>-->
+<!--			<field name="type">ir.actions.act_window</field>-->
+<!--			<field name="res_model">collect.currency</field>-->
+<!--			<field name="view_type">form</field>-->
+<!--			<field name="view_mode">tree,form</field>-->
+
+<!--		</record>-->
+
+<!--		<record id="view_dollar_form" model="ir.ui.view">-->
+<!--			<field name="name">collect.currency.form</field>-->
+<!--			<field name="model">collect.currency</field>-->
+<!--			<field eval="2" name="priority"/>-->
+<!--			<field name="arch" type="xml">-->
+<!--				<form>-->
+<!--                   <header>-->
+<!--						<button string="confirm" name="confirm" type="object"  state="draft" class="oe_highlight" attrs="{'invisible':[('state','!=','draft')]}"/>-->
+<!--						<button string="Set To Draft" name="confirm" type="object"  state="draft" class="oe_highlight" attrs="{'invisible':[('state','!=','draft')]}"/>-->
+<!--	                 	<field name="state" widget="statusbar" statusbar_visible="draft,finish" statusbar_colors='{"draft":"blue","confirm":"blue"}'/>-->
+<!--	              </header>-->
+<!--					<sheet>-->
+<!--                        <div class="oe_title">-->
+<!--							<label for="name" class="oe_edit_only"/>-->
+<!--							<h1>-->
+<!--								<field name="name" class="oe_inline" attrs="{'readonly': [('state','=','finish')]}"/>-->
+<!--							</h1>-->
+<!--						</div>-->
+<!--						<group col="4">-->
+<!--							<div colspan="4">-->
+<!--								<group>-->
+<!--									<field name="customer_id" attrs="{'readonly': [('state','=','finish')]}"/>-->
+<!--									<field name="company_id" attrs="{'readonly': [('state','=','finish')]}"/>-->
+<!--									<field name="amount" attrs="{'readonly': [('state','=','finish')]}"/>-->
+<!--									<field name="amount1" attrs="{'readonly': [('state','=','finish')]}"/>-->
+<!--                                   <field name="average_dollar" attrs="{'readonly': [('state','=','finish')]}" />-->
+<!--&lt;!&ndash;                                   <field name="average_dollar_id" attrs="{'readonly': [('state','=','finish')]}" />&ndash;&gt;-->
+<!--								</group>-->
+<!--							</div>-->
+<!--						</group>-->
+<!--						<notebook>-->
+<!--							<page string="Collect currency">-->
+<!--								<field name="Dollar_line_ids">-->
+<!--									<tree string="Dollar Line" editable="bottom">-->
+<!--									<field name="date"/>-->
+<!--&lt;!&ndash;										<field name="check_no" />&ndash;&gt;-->
+<!--										<field name="request_currency" attrs="{'readonly': [('paid','=',True)]}"/>-->
+<!--										<field name="amount_usd" sum ="Total USD" attrs="{'readonly': [('paid','=',True)]}"/>-->
+<!--										<field name="rate"  attrs="{'readonly': [('paid','=',True)]}"/>-->
+<!--										<field name="amount_sdg" sum ="Total SDG"/>-->
+<!--										<field name="debit_account" attrs="{'readonly': [('paid','=',True)]}"/>-->
+<!--&lt;!&ndash;										<field name="credit_account" attrs="{'readonly': [('paid','=',True)]}"/>&ndash;&gt;-->
+<!--										<field name="journal_id" attrs="{'readonly': [('paid','=',True)]}"/>-->
+<!--										<field name="move_id" readonly="1"/>-->
+<!--										<field name="paid" readonly="1"/>-->
+<!--										<field name="note" attrs="{'readonly': [('paid','=',True)]}"/>-->
+<!--										<button name="validate"  class="oe_highlight" string="Pay Amount" type="object"  attrs="{'invisible': [('paid','=',True)]}" />-->
+<!--									</tree>-->
+<!--								</field>-->
+<!--							</page>-->
+<!--						</notebook>-->
+<!--						<group>-->
+<!--					   </group>-->
+<!--					</sheet>-->
+<!--					<div class="oe_chatter">-->
+<!--                	</div>-->
+<!--				</form>-->
+<!--			</field>-->
+<!--		</record>-->
+<!--		<record id="account_dollar_filter" model="ir.ui.view">-->
+<!--            <field name="name">collect.currency.search</field>-->
+<!--            <field name="model">collect.currency</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <search string="Search">-->
+<!--                    <field name="name" string="Name"/>-->
+<!--                </search>-->
+<!--            </field>-->
+<!--        </record>-->
+<!--            <menuitem   action="act_dollar_request" id="menu_dollar" name="Collect Currency" parent="account.menu_finance_entries" groups="account.group_account_manager"/>-->
+  <record id="is_inherited_view_account_invoice_form" model="ir.ui.view">
+            <field name="name">is.inherited.view.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='invoice_line_ids']" position="attributes">
+                    <attribute name="context">{'currency_id':currency_id}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='payment_term_id']" position="after">
+					<field name="journal_avg_id"/>
+					<field name="average"/>
+				</xpath>
+                <xpath expr="//div[@groups='base.group_multi_currency']" position="after">
+                    <label for ="inv_rate" />
+                    <div>
+                        <field name="currency_rate_id"  invisible="1"/>
+                        <field name="inv_rate" class="oe_inline" attrs="{'readonly':[('state','=','open')]}"/>
+						<button name="get_rate" type="object" class="oe_inline oe_link" attrs="{'invisible':[('state','=','open')]}"><i class="fa fa-arrow-right" > Update Rate </i></button>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+        <record id="is_inherited_view_account_filter_form" model="ir.ui.view">
+            <field name="name">is.inherited.view.supplier.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+            <field name="arch" type="xml">
+                <filter name="group_by_partner_id" position="after">
+                    <filter name="currency_id" string="Currency" context="{'group_by':'currency_id'}"/>
+                </filter>
+            </field>
+        </record>
+        <record id="is_inherited_view_account_supplier_form" model="ir.ui.view">
+            <field name="name">is.inherited.view.supplier.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+                <field name="currency_id" position="after">
+                    <field name="currency_rate_id" invisible="1"/>
+                    <field name="inv_rate" attrs="{'readonly':[('state','=','open')]}"/>
+					<button name="get_rate" type="object" class="oe_inline oe_link" attrs="{'invisible':[('state','=','open')]}"><i class="fa fa-arrow-right"> Update Rate</i></button>
+                </field>
+				<xpath expr="//field[@name='reference']" position="after">
+					<field name="journal_avg_id"/>
+					<field name="average"/>
+				</xpath>
+            </field>
+        </record>
+<!--account payment rate-->
+
+
+  <record id="is_inherited_view_payment_rate_form" model="ir.ui.view">
+            <field name="name">is.inherited.view.payment.form</field>
+            <field name="model">account.payment</field>
+            <field name="inherit_id" ref="account.view_account_payment_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='amount_div']" position="after">
+					 <field name="dollar_invoice" attrs="{'invisible': [('partner_type','!=','supplier')]}"/>
+                    <field name="ave_dollar"  attrs="{'invisible': [('partner_type','!=','supplier')]}" />
+                    <field name="currency_rate_id" invisible="1"/>
+                    <field name="inv_rate" />
+					<button name="get_rate" type="object" ><i class="fa fa-arrow-right">Update Rate</i></button>
+                </xpath>
+            </field>
+        </record>
+
+<record id="is_inherited_view_payment_invoice_rate_form" model="ir.ui.view">
+            <field name="name">is.inherited.view.payment.form</field>
+            <field name="model">account.payment</field>
+            <field name="inherit_id" ref="account.view_account_payment_invoice_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='amount_div']" position="after">
+                    <field name="currency_rate_id" invisible="1"/>
+                    <field name="inv_rate" />
+					<button name="get_rate" type="action" ><i class="fa fa-arrow-right">Update Rate</i></button>
+
+
+                </xpath>
+                <xpath expr="//field[@name='communication']" position="after">
+                      <field name="average"/>
+<!--                    <button name="agriculture_request" type="object" ><i class="fa fa-arrow-right">Confirm</i></button>-->
+<!--                    <button string="Confirm" class="oe_highlight" name="agriculture_request"  type="object" attrs="{'invisible': [('test','=',True)]}"/>-->
+
+                </xpath>
+            </field>
+        </record>
+
+
+	</data>
+    </openerp>

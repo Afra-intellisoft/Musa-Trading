@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_quantity_state_user,product.quantity.state,model_product_quantity_state,stock.group_stock_user,1,1,1,1
+access_product_quantity_state_manger,product.quantity.state,model_product_quantity_state,stock.group_stock_manager,1,1,1,1
+access_city_state_user,city.state,model_city_state,stock.group_stock_user,1,1,1,1
+access_city_state_manager,city.state,model_city_state,stock.group_stock_manager,1,1,1,1

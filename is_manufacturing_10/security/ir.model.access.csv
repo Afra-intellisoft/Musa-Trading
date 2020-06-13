@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mrp_adjustment_manger,mrp.adjustment,model_mrp_adjustment,mrp.group_mrp_manager,1,1,1,1
+access_mrp_adjustment_user,mrp.adjustment,model_mrp_adjustment,mrp.group_mrp_user,1,1,1,1
+access_mrp_production_manger,is.production.worker,model_is_production_worker,mrp.group_mrp_manager,1,1,1,1
+access_mrp_production_user,is.production.worker,model_is_production_worker,mrp.group_mrp_user,1,1,1,1
+access_mrp_production_shift_manger,is.production.shift,model_is_production_shift,mrp.group_mrp_manager,1,1,1,1
+access_mrp_production_shift_user,is.production.shift,model_is_production_shift,mrp.group_mrp_user,1,1,1,1
+access_mrp_production_product_manger,is.production.product,model_is_production_product,mrp.group_mrp_manager,1,1,1,1
+access_mrp_production_product_user,is.production.product,model_is_production_product,mrp.group_mrp_user,1,1,1,1
+access_mrp_daily_production_manger,is.daily.production,model_is_daily_production,mrp.group_mrp_manager,1,1,1,1
+access_mrp_daily_production_user,is.daily.production,model_is_daily_production,mrp.group_mrp_user,1,1,1,1

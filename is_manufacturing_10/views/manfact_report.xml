@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <report
+            string="Sticker"
+            id="action_sticker_report_details"
+            model="maintenance.equipment"
+            report_type="qweb-pdf"
+            name="is_manufacturing_10.equip_details_report"
+            file="is_manufacturing_10.equip_details_report"
+        />
+        <report
+            string="Equipment Details"
+            id="action_is_report_details"
+            model="maintenance.equipment"
+            report_type="qweb-pdf"
+            name="is_manufacturing_10.is_equip_details_report"
+            file="is_manufacturing_10.is_equip_details_report"
+        />
+        <report
+            string="Daily Production"
+            id="action_is_daily_production_report_details"
+            model="mrp.production"
+            report_type="qweb-pdf"
+            name="is_manufacturing_10.is_production_template"
+            file="is_manufacturing_10.is_production_template"
+            menu="False"
+        />
+        <report
+            string="Production Shift"
+            id="action_is_production_shift_report_details"
+            model="mrp.production"
+            report_type="qweb-pdf"
+            name="is_manufacturing_10.is_production_shift_template"
+            file="is_manufacturing_10.is_production_shift_template"
+            menu="False"
+        />
+         <report
+            string="Production Worker"
+            id="action_is_production_worker_report_details"
+            model="mrp.adjustment"
+            report_type="qweb-pdf"
+            name="is_manufacturing_10.is_production_worker_template"
+            file="is_manufacturing_10.is_production_worker_template"
+        />
+        <report
+            string="Production Product"
+            id="action_is_production_product_report_details"
+            model="mrp.production"
+            report_type="qweb-pdf"
+            name="is_manufacturing_10.is_production_product_template"
+            file="is_manufacturing_10.is_production_product_template"
+            menu="False"
+        />
+</odoo>

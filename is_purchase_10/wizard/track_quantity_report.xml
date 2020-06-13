@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="is_purchase_track_template">
+               <tr t-call="report.html_container">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+<!--                         <t t-foreach="docs" t-as="o">-->
+<!--                            <t>-->
+<!--                                <strong>Product Stander:</strong>-->
+<!--                                <span t-esc="data['product_id']"/>-->
+<!--                                <br/>-->
+<!--                                 <strong> Reference NO :</strong>-->
+<!--                                  <span t-field="o.name"/>-->
+<!--                                <br/>-->
+<!--                            </t>-->
+<!--                         </t>-->
+<!--                                <br/>-->
+                                <t>
+<!--                                <strong>Product Stander :</strong>-->
+<!--                                <span t-field="o.stander_id.name"/>-->
+<!--                                <br/>-->
+                                </t>
+                                <br/>
+                            <td/>
+                            <table class="table table-condensed">
+                                <thead>
+                                    <t>
+                                        <th><strong>Product Stander</strong></th>
+<!--                                        <th class="text-center"><strong>Vendor</strong></th>-->
+                                        <th class="text-center"><strong>Contract No</strong></th>
+                                        <th class="text-center"><strong>Price</strong></th>
+                                        <th class="text-center"><strong> Qty Kg </strong></th>
+                                        <th class="text-center"><strong> Qty</strong></th>
+                                    </t>
+                                </thead>
+                            <tbody>
+                                <tr t-foreach="docs" t-as="o">
+<!--                                <tr t-foreach="o.quantity_ids" t-as="line">-->
+                                <td>
+<!--                                     <span t-esc="data['product_id']"/>-->
+                                    <span t-field="o.stander_id.name"/>
+                                </td>
+<!--                                 <td class="text-center">-->
+<!--                                    <span t-field="line.vendor_id.name"/>-->
+<!--                                </td>-->
+                                 <td class="text-center">
+                                    <span t-field="o.contract_id.name"/>
+                                </td>
+                                  <td class="text-center">
+                                    <span t-field="o.avg_price"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.qty_delivery"/>
+                                </td>
+                                 <td class="text-center">
+                                    <span t-field="o.qty_consumed"/>
+                                </td>
+                                </tr>
+                      </tbody>
+                    </table>
+
+<!--                 </t>-->
+                </div>
+            </t>
+        </tr>
+    </template>
+</data>
+</odoo>

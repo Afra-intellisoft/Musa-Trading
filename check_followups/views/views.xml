@@ -1,0 +1,233 @@
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="check_followups.list">
+            <field name="name">check_followups list</field>
+            <field name="model">check_followups.check_followups</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="account_holder"/>
+                    <field name="Date" string="Date Order"/>
+                    <field name="Date_due"/>
+                    <field name="Date_late"/>
+                    <field name="amount" sum="amount"/>
+                    <field name="bank_id"/>
+                    <field name="check_no" sum="check_no"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="check_followups.form">
+            <field name="name">check_followups vendor form</field>
+            <field name="model">check_followups.check_followups</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_withdrawl" states = 'out_standing,rdv' string="Deposit in Bank" class="oe_highlight" type="object"/>
+                        <button name="action_rejectv" states = 'withdrawal' string="Check Rejected" class="oe_highlight" type="object"/>
+                        <button name="action_returnv" states = 'out_standing,rdv' string="Return to Partner" class="oe_highlight" type="object"/>
+                        <button name="action_approve_manger" attrs="{'invisible':['|',('manger','=',True),('state','not in',('out_standing','rdv'))]}" string="Approve Manager" class="oe_highlight" type="object"/>
+                        <button name="action_donev" states = 'withdrawal' string="Set TO Done" class="oe_highlight" type="object"/>
+                        <field name="state" widget="statusbar"  statusbar_visible="out_standing,withdrawal,rdv,return_acv,donev" class="oe_highlight" />
+<!--                        <button name="%(action_check_payment_print)d" string="Print Check" type="action" class="oe_highlight" />-->
+
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1><field name="name"/></h1>
+                        </div>
+                        <group col="4" colspan="4" >
+                            <field name="account_holder" options="{'no_create': True}"/>
+                            <field name="beneficiary_id" options="{'no_create': True}"/>
+                            <field name="Date" required="True" attrs="{'readonly':[('state','!=','out_standing')]}"/>
+                            <field name="amount" sum="amount"/>
+                            <field name="manger" invisible="1"/>
+                            <field name="journal_id" readonly="1"/>
+
+                            <field name="currency_id" onotesptions="{'no_create': True, 'no_open': True}" groups="base.group_multi_currency"/>
+                            <field name="check_no"  sum="check_no" required="True" attrs="{'readonly':[('state','!=','out_standing')]}"/>
+                             <field name="bank_id" String="Bank" required="True" widget="selection"  attrs="{'readonly':[('state','in',('wait_bank','in_bank','return_acc','donev','withdrawal','return_acv'))]}"/>
+                            <filed name="communication"  string="Memo"/>
+                        </group>
+                        <group>
+                            <field name="notes"/>
+                        </group>
+
+                        <field name="log_ids" String="Check Transactions">
+<!--                            <label string="Check Follow up"/>-->
+                            <tree >
+                                <field name="move_id" string="Move"/>
+<!--                                <field name="payment_id"/>-->
+                                <field name="name"/>
+                                <field name="date"/>
+                            </tree>
+                        </field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="check_followups.customerformview">
+            <field name="name">check_followups customer form</field>
+            <field name="model">check_followups.check_followups</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_bankc" states = 'under_collection' string="Waiting In Bank" class="oe_highlight" type="object"/>
+                        <button name="action_submitted" states = 'wait_bank,under_collection,rdc' string="Deposit In Bank" class="oe_highlight" type="object"/>
+                        <button name="action_rejectc" states = 'in_bank' string="Check Rejected" class="oe_highlight" type="object"/>
+                        <button name="action_mnapp" states = 'late_app' string="Approve" class="oe_highlight" type="object" />
+                        <button name="action_donec" states = 'in_bank' string="Set TO Done" class="oe_highlight" type="object"/>
+                        <button name="%(action_check_replacement_wizard)d" states = 'under_collection,rdc,approve_manger' string="Return to Partner" class="oe_highlight" type="action" context="{'_default_original_check': id}"/>
+                        <button name="action_approve_manger" attrs="{'invisible':['|',('manger','=',True),('state','not in',('under_collection','rdc'))]}" string="Approve Manager" class="oe_highlight" type="object"/>
+                        <field name="state" widget="statusbar" statusbar_visible="under_collection,wait_bank,in_bank,rdc,return_acc,donec" class="oe_highlight"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1><field name="name"/></h1>
+                        </div>
+                        <group col="4" colspan="4" >
+                            <field name="account_holder" options="{'no_create': True}"/>
+                            <field name="beneficiary_id" options="{'no_create': True}"/>
+                            <field name="Date" required="True" attrs="{'readonly':[('state','!=','under_collection')]}"/>
+                            <field name="amount"/>
+                            <field name="manger" invisible="1"/>
+                            <field name="journal_id" required="True" widget="selection" attrs="{'readonly':[('state','!=','under_collection')]}"/>
+                            <field name="currency_id" options="{'no_create': True, 'no_open': True}" groups="base.group_multi_currency"/>
+                            <field name="check_no" sum="check_no"  required="True" attrs="{'readonly':[('state','!=','under_collection')]}"/>
+                            <field name="bank_id" String="Bank" required="True" widget="selection"  attrs="{'readonly':[('state','in',('wait_bank','in_bank','return_acc','donec','withdrawal','approve_manger','return_acv','donev'))]}"/>
+                            <field name="communication"  string="Memo"/>
+                            <field name="Date_due"  attrs="{'readonly':[('state','=','donec')]}" />
+                            <field name="Date_late" string="Date Late"  attrs="{'readonly':[('state','=','donec')]}"/>
+                            <field name="notes"  attrs="{'readonly':[('state','=','donec')]}"/>
+                            <field name="check"/>
+                        </group>
+
+                        <field name="log_ids" String="Check Transactions">
+<!--                            <label string="Check Follow up"/>-->
+                            <tree >
+                                <field name="move_id" string="Move"/>
+<!--                                <field name="payment_id"/>-->
+                                <field name="name"/>
+                                <field name="date"/>
+                            </tree>
+                        </field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- actions opening views on models -->
+
+        <!--action for the customer-->
+
+        <record model="ir.actions.act_window" id="check_followups.customer">
+            <field name="name">Check Followups</field>
+            <field name="res_model">check_followups.check_followups</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('payment_id.payment_type','=','inbound')]</field>
+        </record>
+
+        <!-- action for the supplier-->
+
+        <record model="ir.actions.act_window" id="check_followups.vendor">
+            <field name="name">Check Followups</field>
+            <field name="res_model">check_followups.check_followups</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('payment_id.payment_type','in',['outbound','transfer'])]</field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="action_customer_view_tree">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="list"/>
+            <field name="act_window_id" ref="customer"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="action_customer_view">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="customerformview"/>
+            <field name="act_window_id" ref="customer"/>
+        </record>
+
+
+
+        <record model="ir.actions.act_window.view" id="action_vender_view_tree">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="list"/>
+            <field name="act_window_id" ref="vendor"/>
+        </record>
+
+
+     <record model="ir.actions.act_window.view" id="action_vender_view_form">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="check_followups.form"/>
+            <field name="act_window_id" ref="vendor"/>
+        </record>
+
+
+        <record id="seq_check_followup_check" model="ir.sequence">
+            <field name="name">Customer Checks</field>
+            <field name="code">check_followups.check_followups</field>
+            <field name="prefix">Cuscheck/</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <record id="seq_check_followup_check_vender" model="ir.sequence">
+            <field name="name">Vendor Checks</field>
+            <field name="code">check_followups.check_followups_vender</field>
+            <field name="prefix">Vencheck/</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <record id="account_payment_method_check_inBound" model="account.payment.method">
+            <field name="name">Check Followup</field>
+            <field name="code">check_printing</field>
+            <field name="payment_type">inbound</field>
+        </record>
+
+        <record id="account_payment_method_check_outBound" model="account.payment.method">
+            <field name="name">Check Followup</field>
+            <field name="code">check_printing</field>
+            <field name="payment_type">outbound</field>
+        </record>
+
+
+        <menuitem id="menu_finance_checkfollowups" name="Check Followup" parent="account.menu_finance" sequence="3"/>
+        <menuitem name="Customer Check " id="check_followups.customer_action" action="check_followups.customer" parent="menu_finance_checkfollowups"/>
+        <menuitem name="Vendor Check " id="check_followups.vendor_action" action="check_followups.vendor" parent="menu_finance_checkfollowups"/>
+
+        <!--cron action-->
+        <record id="ir_cron_check_withdrawal_action" model="ir.cron">
+            <field name="name">Check Withdrawal and Deposition</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="False" name="doall"/>
+            <field ref="model_check_followups_check_followups" name="model_id"/>
+            <field eval="'cron_checks_withdrawal'" name="function"/>
+        </record>
+        <!---->
+    </data>
+            <record model="ir.ui.view" id="view_check_search_id">
+            <field name="name">check_followups.check_followups.search</field>
+            <field name="model">check_followups.check_followups</field>
+            <field name="arch" type="xml">
+                <search>
+                    <filed name="check_no"/>
+                    <filter string="شيكات الواردة" name="state" domain="[('state', 'in', ['in_bank','donec'])]"/>
+					<filter string="شيكات الراجعة" name="state" domain="[('state', '=', 'return_acc')]"/>
+                    <filter string="شيكات مرفوضة" name="state" domain="[('state', '=', 'rdc')]"/>
+                    <filter string=" شيكات تحت التحصيل " name="under_collection" domain="[('state', '=', 'under_collection')]"/>
+                    <filter string=" شيكات مسحوبة " name="out_standing" domain="[('state', '=', 'out_standing')]"/>
+
+                </search>
+            </field>
+  </record>
+</openerp>

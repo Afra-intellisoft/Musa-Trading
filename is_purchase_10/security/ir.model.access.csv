@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_contract_manger,purchase.contract,model_purchase_contract,purchase.group_purchase_manager,1,1,1,1
+access_purchase_contract_line_manger,purchase.contract.line,model_purchase_contract_line,purchase.group_purchase_manager,1,1,1,1
+access_purchase_cultivate_form_manger,cultivate.form,model_cultivate_form,purchase.group_purchase_manager,1,1,1,1
+access_purchase_customs_clearance_manger,custom.clearance,model_customs_clearance,purchase.group_purchase_manager,1,1,1,1
+access_purchase_vendor_invoice_manger,purchase.vendor.invoice,model_purchase_vendor_invoice,purchase.group_purchase_manager,1,1,1,1
+access_purchase_track_quantity_manger,purchase.track.quantity,model_purchase_track_quantity,purchase.group_purchase_manager,1,1,1,1
+access_purchase_client_wizard_manger,client.wizard,model_client_wizard,purchase.group_purchase_manager,1,1,1,1
+access_purchase_clearance_wizard_manger,clearance.wizard,model_clearance_wizard,purchase.group_purchase_manager,1,1,1,1
+access_purchase_contract_wizard_manger,contract.wizard,model_contract_wizard,purchase.group_purchase_manager,1,1,1,1
+access_purchase_cultivate_wizard_manger,cultivate.wizard,model_cultivate_wizard,purchase.group_purchase_manager,1,1,1,1
+access_purchase_track_wizard_manger,track.wizard,model_track_wizard,purchase.group_purchase_manager,1,1,1,1
+access_purchase_product_grade_manger,product.grade,model_product_grade,purchase.group_purchase_manager,1,1,1,1
+access_purchase_product_stander_manger,product.stander,model_product_stander,purchase.group_purchase_manager,1,1,1,1

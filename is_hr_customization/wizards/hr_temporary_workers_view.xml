@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_temporary_workers_report">
+            <field name="name">temporary.workers.form</field>
+            <field name="model">wizard.temporary.workers</field>
+            <field name="arch" type="xml">
+                <form string="Temporary Workers">
+                    <group colspan="4" col="4">
+                        <field name="from_date"/>
+                        <field name="to_date"/>
+                    </group>
+                    <footer>
+                        <button name = "print_report"  string="Print"  type="object" class="oe_highlight"/> or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_temporary_workers_report_excel" model="ir.actions.act_window">
+            <field name="name">Temporary Excel Report</field>
+            <field name="res_model">wizard.temporary.workers</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <record model="ir.ui.view" id="view_temporary_workers_excel">
+            <field name="name">temporary.workers.excel</field>
+            <field name="model">temporary.workers.excel</field>
+            <field name="arch" type="xml">
+                <form string="File to Downloads">
+                        <field name="name" invisible="1"/>
+                        <field name="file_download" filename="name"/>
+                </form>
+            </field>
+        </record>
+
+    <menuitem action="action_temporary_workers_report_excel" name="Temporary Workers Report" id="menu_temporary_workers_report" parent="menu_hr_worker_allowance" sequence="300"  groups="hr.group_hr_manager,hr.group_hr_user"/>
+
+    </data>
+</openerp>

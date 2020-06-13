@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="hr_overtime_template">
+           <t t-call="report.html_container">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+                            <!--<t>-->
+                                <!--<strong>Date from:</strong>-->
+                                <!--<span t-esc="data['date_from']"/>-->
+                                 <!--<strong>Date to:</strong>-->
+                                  <!--<span t-esc="data['date_to']"/>-->
+                            <!--</t>-->
+                            <table class="table table-condensed">
+                                <t t-set="total1" t-value="0.00"/>
+                                 <!--<t t-set="total1" t-value="0.00"/>-->
+                                <thead>
+                                    <tr>
+                                         <th ><strong>Employee</strong></th>
+                                        <th  class="text-center"><strong> Working Day </strong></th>
+                                        <th  class="text-center"><strong> Holiday Day </strong></th>
+                                        <th class="text-center"><strong>Amount</strong></th>
+                                    </tr>
+                                </thead>
+                            <tr t-foreach="docs" t-as="o">
+                                <tr t-foreach="o.overtime_line_ids" t-as="x">
+                                    <!--<t  t-set="i" t-value="i + 1"/>-->
+
+                                <td><t t-esc="x.name.name" /></td>
+                                <td class="text-center"><t t-esc="x.overtime_month_working" /></td>
+                                    <td class="text-center"><t t-esc="x.overtime_month_holiday" /></td>
+                                    <td class="text-center"><t t-esc="x.overtime_month_value" /><t t-set="total1" t-value="total1+ x.overtime_month_value"/></td>
+                           </tr>
+
+                            </tr>
+                                 <tr style="background-color:white;color:black;border-bottom: 1px solid black;">
+                                            <td>الاجمالي</td>
+                                            <td style="text-align: center;border-bottom: 1px solid black;" class="text-center"> </td>
+                                            <td style="text-align: center;border-bottom: 1px solid black;" class="text-center"> </td>
+                                            <td style="text-align: center;border-bottom: 1px solid black;" class="text-center"> <t t-esc="round(total1,2)"/></td>
+                                         </tr>
+                    </table>
+
+                </div>
+            </t>
+        </t>
+    </template>
+</data>
+</odoo>

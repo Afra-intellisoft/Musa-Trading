@@ -1,0 +1,1105 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* is_custody_clearance_12
+#	* is_accounting_approval_12_tesla
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-12 07:23+0000\n"
+"PO-Revision-Date: 2019-03-12 07:23+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__mn_app_id
+msgid " Approval By"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<span>أخرى</span>"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<span>اعتماد</span>"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<span>تحويل</span>"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<span>شيك</span>"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<span>نقداً</span>"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<strong>PAYMENT APPROVAL REQUEST</strong>"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "<strong>استلام/سداد الفرق:</strong>"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "<strong>الامضاء:</strong>"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<strong>البنك:</strong>"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "<strong>التاريخ:</strong>"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<strong>الرجاء التكرم بتصديق مبلغ</strong>"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "<strong>الغرض:</strong>"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "<strong>الفرق:</strong>"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "<strong>المبلغ كتابتة:</strong>"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "<strong>المبلغ:</strong>"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "<strong>المجموع:</strong>"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<strong>المدير العام:</strong>"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "<strong>المدير المالي:</strong>"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<strong>المستفيد:</strong>"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<strong>بند الصرف:</strong>"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "<strong>بيانات الطلب</strong>"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "<strong>رئيس الحسابات:</strong>"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<strong>طريقة السداد:</strong>"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<strong>طلب تصديق </strong>"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "<strong>مدير االادارة/القسم:</strong>"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<strong>مدير الحسابات:</strong>"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+msgid "<strong>مركز التكلفة:</strong>"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "<strong>مقدم الطلب:</strong>"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "<u>\n"
+"                                                                <strong>طلب تصفية عهدة</strong>\n"
+"                                                            </u>"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.model,name:is_custody_clearance_12.model_custody_clearance
+msgid "A model for tracking custody clearance."
+msgstr "تتبع العهد"
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model,name:is_accounting_approval_12_tesla.model_finance_approval
+msgid "A model for tracking finance approvals."
+msgstr "تتبع التصاديق"
+
+#. module: is_accounting_approval_12_tesla
+#: model:res.groups,name:is_accounting_approval_12_tesla.auditor_access_group
+msgid "Account Manager"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__Account_No
+msgid "Account Number"
+msgstr "رقم الحساب"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_form
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_finance_approval_form
+msgid "Accounting Details"
+msgstr "تفاصيل الحسابات"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__message_needaction
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__message_needaction
+msgid "Action Needed"
+msgstr "الاجراء المطلوب"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__activity_ids
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__activity_state
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:res.groups,name:is_accounting_approval_12_tesla.advisor_access_group
+msgid "Advisor"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance_line__amount
+msgid "Amount"
+msgstr "المبلغ"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__request_amount_words
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__clearance_amount_words
+msgid "Amount in Words"
+msgstr "المبلغ بالحروف"
+
+#. module: is_custody_clearance_12
+#: code:addons/is_custody_clearance_12/account.py:465
+#, python-format
+msgid "An issue was faced when validating difference!"
+msgstr "حدوث خطأ عند معالجة الفرق"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: code:addons/is_accounting_approval_12_tesla/account.py:452
+#: code:addons/is_custody_clearance_12/account.py:537
+#, python-format
+msgid "An issue was faced when validating!"
+msgstr "ثناء المعالجةحدوث خطأ أ"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__analytic_account
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance_line__analytic_account
+msgid "Analytic Account/Cost Center"
+msgstr "الحساب التحليلي/مركز التكلفة"
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__approval_no
+msgid "Approval No."
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__approval_id
+msgid "Approval Reference"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_form
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_finance_approval_form
+msgid "Approve"
+msgstr "تأكيد"
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_res_currency__narration_ar_cn
+msgid "Arabic Narration Denomination"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_res_currency__narration_ar_un
+msgid "Arabic Narration Main"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__message_attachment_count
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,help:is_accounting_approval_12_tesla.field_finance_approval__approval_no
+msgid "Auto-generated Approval No. for finance approvals"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,help:is_custody_clearance_12.field_custody_clearance__clearance_no
+msgid "Auto-generated Clearance No. for custody clearances"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__Bank_id
+msgid "Bank"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__journal_id
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__journal_id
+msgid "Bank/Cash Journal"
+msgstr "يومية بنك/خزنة"
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__beneficiary
+msgid "Beneficiary"
+msgstr "المستفيد"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_form
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_finance_approval_form
+msgid "Cancel"
+msgstr "إالغاء"
+
+#. module: is_accounting_approval_12_tesla
+#: selection:finance.approval,payment_method:0
+msgid "Cash"
+msgstr "نقدي"
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__check_date
+msgid "Check Date"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__Check_no
+msgid "Check Number"
+msgstr "رقم الشيك"
+
+#. module: is_accounting_approval_12_tesla
+#: selection:finance.approval,payment_method:0
+msgid "Cheque"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__custody_clearance_line_ids
+msgid "Clearance Details"
+msgstr "تفاصيل التصفية"
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__clearance_journal_id
+#: model:ir.model.fields,help:is_custody_clearance_12.field_custody_clearance__clearance_journal_id
+msgid "Clearance Journal"
+msgstr "يومية التصفية"
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__move_id
+msgid "Clearance Journal Entry"
+msgstr "قيد التصفية"
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__clearance_no
+msgid "Clearance No."
+msgstr "رقم التصفية"
+
+#. module: is_custody_clearance_12
+#: code:addons/is_custody_clearance_12/account.py:319
+#, python-format
+msgid "Clearance journal must be selected!"
+msgstr "لم تقم باختيار يومية تصفية"
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_form
+msgid "Comments"
+msgstr "تعليقات"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__company_id
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__company_id
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance_line__company_id
+msgid "Company"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.inherit_account_voucher_payment_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__create_uid
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__create_uid
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__create_date
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__create_date
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__cr_account
+msgid "Credit Account"
+msgstr "حساب دائن"
+
+#. module: is_custody_clearance_12
+#: code:addons/is_custody_clearance_12/account.py:323
+#, python-format
+msgid "Credit account must be selected!"
+msgstr "يجب اختيار حساب دائن"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model,name:is_accounting_approval_12_tesla.model_res_currency
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__request_currency
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__clearance_currency
+msgid "Currency"
+msgstr "العملة"
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_finance_approval_form
+msgid "Custody Clearace Information"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance_line__custody_clearance_id
+msgid "Custody Clearance"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.actions.act_window,name:is_custody_clearance_12.action_cc
+#: model:ir.actions.report,name:is_custody_clearance_12.report_clearance_approval_form
+#: model:ir.ui.menu,name:is_custody_clearance_12.menu_cc_child
+#: model:ir.ui.menu,name:is_custody_clearance_12.menu_cc_child_1
+#: model:ir.ui.menu,name:is_custody_clearance_12.menu_cc_child_child
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_custody_clearance_search
+msgid "Custody Clearance Approval"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_custody_clearance_tree
+msgid "Custody Clearance Approvals"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_finance_approval_form
+msgid "Custody Clearance Details"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_finance_approval_form
+msgid "Custody Clearance Management"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__state
+msgid "Custody Clearance Status"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.model,name:is_custody_clearance_12.model_custody_clearance_line
+msgid "Custody clearance details."
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__fa_date
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__cc_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__department_id
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__department_id
+msgid "Department"
+msgstr "القسم"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__name
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__name
+msgid "Details"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__difference_amount
+msgid "Difference Amount"
+msgstr "المبلغ المتبقي"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__display_name
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__display_name
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: selection:finance.approval,state:0
+#: selection:custody.clearance,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: is_accounting_approval_12_tesla
+#: code:addons/is_accounting_approval_12_tesla/account.py:337
+#, python-format
+msgid "Expense Account with Check Followups not Include Supplier selected!"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__expense_item
+msgid "Expense Item"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__exp_account
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance_line__exp_account
+msgid "Expense or Debit Account"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: code:addons/is_accounting_approval_12_tesla/account.py:333
+#, python-format
+msgid "Expense or debit account must be selected!"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_custody_clearance_search
+msgid "Filter By"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.actions.act_window,name:is_accounting_approval_12_tesla.action_fa
+#: model:ir.actions.report,name:is_accounting_approval_12_tesla.report_finance_approval_form
+#: model:ir.ui.menu,name:is_accounting_approval_12_tesla.menu_fa_child
+#: model:ir.ui.menu,name:is_accounting_approval_12_tesla.menu_fa_child_child
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_form
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_search
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_finance_approval_form
+msgid "Finance Approval"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_form
+msgid "Finance Approval Information"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__state
+msgid "Finance Approval Status"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_tree
+msgid "Finance Approvals"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__fm_remarks
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__fm_remarks
+msgid "Finance Man. Remarks"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__gm_app_id
+msgid "Financial  Approval By"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: selection:finance.approval,state:0
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.report_finance_approval
+#: model:mail.activity.type,name:is_accounting_approval_12_tesla.financial_approval
+#: selection:custody.clearance,state:0
+msgid "Financial Approval"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__fm_app_id
+msgid "Financial Approval By"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_form
+msgid "Financial Approval Management"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.inherit_account_voucher_payment_form
+msgid "Financial Manager Approval"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__message_follower_ids
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__message_channel_ids
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__message_partner_ids
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_form
+msgid "GM Approval"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__general_manager_id
+msgid "GM Approval By"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__gm_remarks
+msgid "General Man. Remarks"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:res.groups,name:is_accounting_approval_12_tesla.general_manager_access_group
+msgid "General Manager"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: selection:finance.approval,state:0
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.inherit_account_voucher_payment_form
+msgid "General Manager Approval"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_custody_clearance_search
+msgid "Group By"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__id
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__id
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance_line__id
+msgid "ID"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,help:is_accounting_approval_12_tesla.field_finance_approval__message_unread
+#: model:ir.model.fields,help:is_custody_clearance_12.field_custody_clearance__message_unread
+msgid "If checked new messages require your attention."
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,help:is_accounting_approval_12_tesla.field_finance_approval__message_needaction
+#: model:ir.model.fields,help:is_custody_clearance_12.field_custody_clearance__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,help:is_accounting_approval_12_tesla.field_finance_approval__message_has_error
+#: model:ir.model.fields,help:is_custody_clearance_12.field_custody_clearance__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__message_is_follower
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__move_id
+msgid "Journal Entry"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: code:addons/is_accounting_approval_12_tesla/account.py:340
+#, python-format
+msgid "Journal must be selected!"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval____last_update
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance____last_update
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance_line____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__write_uid
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__write_uid
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__write_date
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__write_date
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__message_main_attachment_id
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__manager_id
+#: model:res.groups,name:is_accounting_approval_12_tesla.manager_access_group
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__manager_id
+msgid "Manager"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__au_app_id
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__mn_app_id
+msgid "Manager Approval By"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__mn_remarks
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__mn_remarks
+msgid "Manager Remarks"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_res_users__approval_manager
+msgid "Manager for Approval(s)"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__message_has_error
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__message_ids
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__pa_name
+msgid "Name"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance_line__name
+msgid "Narration"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__activity_date_deadline
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__activity_summary
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__activity_type_id
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance_line__notes
+msgid "Notes"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__message_needaction_counter
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__message_has_error_counter
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__message_has_error_counter
+msgid "Number of error"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,help:is_accounting_approval_12_tesla.field_finance_approval__message_needaction_counter
+#: model:ir.model.fields,help:is_custody_clearance_12.field_custody_clearance__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,help:is_accounting_approval_12_tesla.field_finance_approval__message_has_error_counter
+#: model:ir.model.fields,help:is_custody_clearance_12.field_custody_clearance__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,help:is_accounting_approval_12_tesla.field_finance_approval__message_unread_counter
+#: model:ir.model.fields,help:is_custody_clearance_12.field_custody_clearance__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: selection:finance.approval,payment_method:0
+msgid "Other"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: selection:finance.approval,activity_state:0
+#: selection:custody.clearance,activity_state:0
+msgid "Overdue"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__payment_method
+msgid "Payment Method"
+msgstr "طرق الدفع"
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__payment_method_name
+msgid "Payment Method Name"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: code:addons/is_custody_clearance_12/account.py:321
+#, python-format
+msgid "Payment journal must be selected!"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,help:is_accounting_approval_12_tesla.field_finance_approval__journal_id
+#: model:ir.model.fields,help:is_custody_clearance_12.field_custody_clearance__journal_id
+msgid "Payment journal."
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__move2_id
+msgid "Payment/Receipt Journal Entry"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: selection:finance.approval,activity_state:0
+#: selection:custody.clearance,activity_state:0
+msgid "Planned"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: code:addons/is_custody_clearance_12/account.py:334
+#, python-format
+msgid "Please select account!"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: selection:finance.approval,state:0
+msgid "Ready for Payment"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__reason
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__reason
+msgid "Reason"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_form
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_finance_approval_form
+msgid "Reject"
+msgstr "رفض"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: selection:finance.approval,state:0
+#: selection:custody.clearance,state:0
+msgid "Rejected"
+msgstr "تم الرفض"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_form
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_finance_approval_form
+msgid "Remarks"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: code:addons/is_accounting_approval_12_tesla/account.py:128
+#, python-format
+msgid "Request Amount Must be greater than zero!"
+msgstr "المبلغ المطلوب يجب أن يكون أكبر من الصفر"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__request_amount
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__clearance_amount
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__clearance_amount_new
+msgid "Requested Amount"
+msgstr "مبلغ التصديق"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__requester
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__requester
+msgid "Requester"
+msgstr "الطالب"
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.ui.menu,name:is_accounting_approval_12_tesla.menu_user_requests
+msgid "Requests and Approvals"
+msgstr "التصاديق "
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.inherit_res_users_form
+msgid "Resize Signature"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_res_users__resized_user_signature
+msgid "Resized Signature"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__activity_user_id
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.inherit_account_voucher_payment_form
+msgid "Reviewer Approval"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__fm_app_id
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__au_app_id
+msgid "Reviewer Approval By"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__auditor_remarks
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__auditor_remarks
+msgid "Reviewer Remarks"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_form
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_finance_approval_form
+msgid "Set to Draft"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_res_users__user_signature
+msgid "Signature"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: code:addons/is_accounting_approval_12_tesla/account.py:203
+#: code:addons/is_accounting_approval_12_tesla/account.py:238
+#: code:addons/is_accounting_approval_12_tesla/account.py:254
+#: code:addons/is_accounting_approval_12_tesla/account.py:364
+#: code:addons/is_accounting_approval_12_tesla/account.py:449
+#: code:addons/is_accounting_approval_12_tesla/account.py:456
+#: code:addons/is_accounting_approval_12_tesla/account.py:470
+#: code:addons/is_custody_clearance_12/account.py:197
+#: code:addons/is_custody_clearance_12/account.py:231
+#: code:addons/is_custody_clearance_12/account.py:275
+#: code:addons/is_custody_clearance_12/account.py:389
+#: code:addons/is_custody_clearance_12/account.py:425
+#: code:addons/is_custody_clearance_12/account.py:462
+#: code:addons/is_custody_clearance_12/account.py:499
+#: code:addons/is_custody_clearance_12/account.py:534
+#: code:addons/is_custody_clearance_12/account.py:541
+#: code:addons/is_custody_clearance_12/account.py:558
+#, python-format
+msgid "State Changed  Confirm -> <em>%s</em>."
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,help:is_accounting_approval_12_tesla.field_finance_approval__activity_state
+#: model:ir.model.fields,help:is_custody_clearance_12.field_custody_clearance__activity_state
+msgid "Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__partner_id
+msgid "Supplier"
+msgstr "المورد"
+
+#. module: is_custody_clearance_12
+#: selection:custody.clearance,state:0
+msgid "To Approve"
+msgstr "للتأكيد"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: selection:finance.approval,activity_state:0
+#: selection:custody.clearance,activity_state:0
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_custody_clearance_search
+msgid "Today"
+msgstr "اليوم"
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_tree
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_custody_clearance_tree
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_finance_approval_form
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: is_accounting_approval_12_tesla
+#: selection:finance.approval,payment_method:0
+msgid "Transfer"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: selection:finance.approval,payment_method:0
+msgid "Trust"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__message_unread
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__message_unread_counter
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__user_id
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__user_id
+msgid "User"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:ir.model,name:is_accounting_approval_12_tesla.model_res_users
+msgid "Users"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model_terms:ir.ui.view,arch_db:is_accounting_approval_12_tesla.view_finance_approval_form
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.view_finance_approval_form
+msgid "Validate"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: selection:finance.approval,state:0
+#: selection:custody.clearance,state:0
+msgid "Validated"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__at_app_id
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__at_app_id
+msgid "Validated By"
+msgstr ""
+
+#. module: is_accounting_approval_12_tesla
+#: model:res.groups,name:is_accounting_approval_12_tesla.validator_access_group
+msgid "Validator"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__view_remarks
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__view_remarks
+msgid "View Remarks"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,field_description:is_accounting_approval_12_tesla.field_finance_approval__website_message_ids
+#: model:ir.model.fields,field_description:is_custody_clearance_12.field_custody_clearance__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. modules: is_custody_clearance_12, is_accounting_approval_12_tesla
+#: model:ir.model.fields,help:is_accounting_approval_12_tesla.field_finance_approval__website_message_ids
+#: model:ir.model.fields,help:is_custody_clearance_12.field_custody_clearance__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "البند"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "الرقم"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "المبلخ"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "مركز التكلفة"
+msgstr ""
+
+#. module: is_custody_clearance_12
+#: model_terms:ir.ui.view,arch_db:is_custody_clearance_12.report_clearance_approval
+msgid "ملاحظات"
+msgstr ""
+

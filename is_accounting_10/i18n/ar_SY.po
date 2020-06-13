@@ -1,0 +1,816 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* is_accounting_10
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-12 11:25+0000\n"
+"PO-Revision-Date: 2020-03-12 11:25+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_average_dollar
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_average_dollar_id
+msgid " Currency  Average"
+msgstr " متوسط العملة"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_emp_note
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_note
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_note
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_note
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_zakah_note
+msgid " Note"
+msgstr " ملاحظة"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.is_inherited_view_account_invoice_form
+msgid "<i class=\"fa fa-arrow-right\"> Update Rate </i>"
+msgstr "<i class=\"fa fa-arrow-right\"> Update Rate </i>"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.is_inherited_view_account_supplier_form
+msgid "<i class=\"fa fa-arrow-right\"> Update Rate</i>"
+msgstr "<i class=\"fa fa-arrow-right\"> Update Rate</i>"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.is_inherited_view_payment_invoice_rate_form
+#: model:ir.ui.view,arch_db:is_accounting_10.is_inherited_view_payment_rate_form
+msgid "<i class=\"fa fa-arrow-right\">Update Rate</i>"
+msgstr "<i class=\"fa fa-arrow-right\">Update Rate</i>"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.currency_valuation
+msgid "<strong> Average Of Currency: </strong>"
+msgstr "<strong> متوسط العملة: </strong>"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.currency_valuation
+msgid "<strong> Currency </strong>"
+msgstr "<strong> Currency </strong>"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.currency_valuation
+msgid "<strong> Date.</strong>"
+msgstr "<strong> Date.</strong>"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.currency_valuation
+msgid "<strong> Rate Amount </strong>"
+msgstr "<strong> Rate Amount </strong>"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.currency_valuation
+msgid "<strong>Amount SDG</strong>"
+msgstr "<strong>Amount SDG</strong>"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.currency_valuation
+msgid "<strong>Amount USD</strong>"
+msgstr "<strong>Amount USD</strong>"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.currency_valuation
+msgid "<strong>Date from:</strong>"
+msgstr "<strong>من تاريخ:</strong>"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.currency_valuation
+msgid "<strong>Date to:</strong>"
+msgstr "<strong>الى تاريخ:</strong>"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.currency_valuation
+msgid "<strong>No.</strong>"
+msgstr "<strong>الرقم.</strong>"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_account_holder
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_account_holder
+msgid "Account Holder"
+msgstr "صاحب الحساب"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_amount
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_amount
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_amount_sdg
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_amount
+msgid "Amount SDG"
+msgstr "المبلغ بالجنية"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_amount_usd
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_amount1
+msgid "Amount USD"
+msgstr "المبلغ العملة"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_attach
+msgid "Attachments"
+msgstr "المُرفقات"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_payment_ave_dollar_id
+msgid "Ave dollar id"
+msgstr "Ave dollar id"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_payment_ave_dollar
+msgid "Average Of Currency"
+msgstr "متوسط العملة"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_invoice_ave_dollar
+msgid "Average Of Dollar Rate"
+msgstr "متوسط العملة"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_bank_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_bank_id
+msgid "Bank id"
+msgstr "اسم البنك"
+
+#. module: is_accounting_10
+#: code:addons/is_accounting_10/models/is_account.py:261
+#, python-format
+msgid "Can not divide by zero!"
+msgstr "لايمكن القسمة على الصفر!"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.currency_report_wizard_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_check_no
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_check_no
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_check_no
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_check_no
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_check_no
+msgid "Check No."
+msgstr "رقم الشيك"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_taxe_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_zakat_check_id
+msgid "Check Ref."
+msgstr "مرجع الشيك."
+
+#. module: is_accounting_10
+#: model:ir.model,name:is_accounting_10.model_check_taxes_line
+#: model:ir.model,name:is_accounting_10.model_check_zakat_line
+msgid "Check Request Line"
+msgstr "Check Request Line"
+
+#. module: is_accounting_10
+#: model:ir.actions.act_window,name:is_accounting_10.act_dollar_request
+#: model:ir.ui.menu,name:is_accounting_10.menu_dollar
+msgid "Collect Currency"
+msgstr "تجميع العملة"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_dollar_form
+msgid "Collect currency"
+msgstr "تجميع العملة"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_zakah_form
+msgid "Collect zakah"
+msgstr " دفعيات الزكاة"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_company_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_company_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_company_id
+msgid "Company"
+msgstr "المؤسسة"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_taxe_form
+#: model:ir.ui.view,arch_db:is_accounting_10.view_zakah_form
+msgid "Create Check"
+msgstr "إنشاء شيك"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_create_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_create_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_create_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_create_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_currency_report_wizard_create_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_create_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_create_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_create_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_create_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_create_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_create_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_create_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_currency_report_wizard_create_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_create_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_create_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_create_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_credit_account
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_zakah_credit
+msgid "Credit Account"
+msgstr "الحساب الدائن"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_request_currency
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_currency_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_currency_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_request_currency
+#: model:ir.ui.view,arch_db:is_accounting_10.is_inherited_view_account_filter_form
+msgid "Currency"
+msgstr "العملة"
+
+#. module: is_accounting_10
+#: model:ir.model,name:is_accounting_10.model_res_currency_rate
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_invoice_currency_rate_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_invoice_new_rate
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_payment_currency_rate_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_payment_new_rate
+msgid "Currency Rate"
+msgstr "سعر العملة"
+
+#. module: is_accounting_10
+#: model:ir.actions.report.xml,name:is_accounting_10.currency_report
+msgid "Currency Valution"
+msgstr "Currency Valution"
+
+#. module: is_accounting_10
+#: model:ir.actions.act_window,name:is_accounting_10.currency_report_wizard_action
+#: model:ir.ui.menu,name:is_accounting_10.valuation_report_menu_root
+msgid "Currency valuation Report"
+msgstr "تقرير تقييم العملة"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_partner_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_partner_id
+msgid "Customer"
+msgstr "العميل"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.currency_report_wizard_form
+msgid "Customer Report"
+msgstr "تقرير العميل"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_date
+msgid "Date Request"
+msgstr "التاريخ"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_debit_account
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_debit_account
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_debit_account
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_debit_account
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_zakah_debit
+msgid "Debit Account"
+msgstr "الحساب المدين"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_display_name
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_display_name
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_display_name
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_display_name
+#: model:ir.model.fields,field_description:is_accounting_10.field_currency_report_wizard_display_name
+#: model:ir.model.fields,field_description:is_accounting_10.field_report_is_accounting_10_currency_valuation_display_name
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_display_name
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_display_name
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_display_name
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: is_accounting_10
+#: model:ir.model,name:is_accounting_10.model_collect_currency
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_dollar_id
+msgid "Dollar"
+msgstr "Dollar"
+
+#. module: is_accounting_10
+#: model:ir.model,name:is_accounting_10.model_account_dollar_line
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_Dollar_line_ids
+#: model:ir.ui.view,arch_db:is_accounting_10.view_dollar_form
+#: model:ir.ui.view,arch_db:is_accounting_10.view_zakah_form
+msgid "Dollar Line"
+msgstr "Dollar Line"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_invoice_dollar_invoice_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_payment_dollar_invoice
+msgid "Dollar Rate"
+msgstr "معدل العملة"
+
+#. module: is_accounting_10
+#: selection:collect.currency,state:0
+#: selection:request.taxes,state:0
+#: selection:zaka.account,state:0
+msgid "Finished"
+msgstr "منتهي"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_currency_report_wizard_date_from
+msgid "From Date"
+msgstr "من تاريخ"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_currency_report_wizard_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_report_is_accounting_10_currency_valuation_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_taxe_form
+msgid "Installments"
+msgstr "الدفعيات "
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_res_currency_rate_inv_rate
+msgid "Inverse Rate"
+msgstr "المعدل الحالي "
+
+#. module: is_accounting_10
+#: model:ir.model,name:is_accounting_10.model_account_invoice
+msgid "Invoice"
+msgstr "الفاتورة"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_journal_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_journal_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_journal_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_journal_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_journal_id
+msgid "Journal"
+msgstr "اليومية"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_move_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_move_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_move_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_move_id
+msgid "Journal Entry"
+msgstr "قيد يومية"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_refund_move_id
+msgid "Journal Refund Entry"
+msgstr "Journal Refund Entry"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line___last_update
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line___last_update
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line___last_update
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency___last_update
+#: model:ir.model.fields,field_description:is_accounting_10.field_currency_report_wizard___last_update
+#: model:ir.model.fields,field_description:is_accounting_10.field_report_is_accounting_10_currency_valuation___last_update
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes___last_update
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line___last_update
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account___last_update
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_write_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_write_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_write_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_write_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_currency_report_wizard_write_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_write_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_write_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_write_uid
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_write_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_write_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_write_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_write_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_currency_report_wizard_write_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_write_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_write_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_write_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_tax_id
+msgid "Loan Ref."
+msgstr "Loan Ref."
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.tree_taxes_view
+msgid "Loan Requests"
+msgstr "Loan Requests"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_name
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_name
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_name
+#: model:ir.ui.view,arch_db:is_accounting_10.account_dollar_filter
+msgid "Name"
+msgstr "الاسم"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_no_month
+msgid "No Of Month"
+msgstr "عدد الشهور"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_note
+msgid "Note"
+msgstr "الملاحظة"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_note
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_note
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_note
+msgid "Notes"
+msgstr "الملاحظات"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_paid
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_paid
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_paid
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_paid
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_paid
+msgid "Paid"
+msgstr "دفعت"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_amount
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_amount
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_paid_amount
+msgid "Paid Amount"
+msgstr "القيمة المدفوعة"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_customer_id
+msgid "Partner"
+msgstr "شريك"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_dollar_form
+#: model:ir.ui.view,arch_db:is_accounting_10.view_taxe_form
+#: model:ir.ui.view,arch_db:is_accounting_10.view_zakah_form
+msgid "Pay Amount"
+msgstr "إنشاء دفعية "
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_paid_date
+msgid "Payment Date"
+msgstr "تاريخ السداد"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_journal_id
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_journal_id
+msgid "Payment Journal"
+msgstr "يومية السداد"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.currency_report_wizard_form
+msgid "Print"
+msgstr "طباعة"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_rate
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_invoice_inv_rate
+msgid "Rate"
+msgstr "السعر"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_payment_inv_rate
+msgid "Rate "
+msgstr "المعدل "
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_rmain_amount
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_rmain_amount
+msgid "Rmaining Amount"
+msgstr "القيمة المتبقية"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.account_dollar_filter
+msgid "Search"
+msgstr "بحث"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.hr_long_filter
+msgid "Search Long Loan"
+msgstr "Search Long Loan"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.zakah_filter
+msgid "Search Zakah"
+msgstr "بحث"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_dollar_form
+msgid "Set To Draft"
+msgstr "Set To Draft"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_payment_start_date
+msgid "Start Date of Payment"
+msgstr "تاريخ بداية الدفعيات"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_collect_currency_state
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_state
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_state
+msgid "Status"
+msgstr "الحاله "
+
+#. module: is_accounting_10
+#: model:ir.actions.act_window,name:is_accounting_10.act_tax_request
+msgid "Tax"
+msgstr "الضرائب"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_taxe_form
+msgid "Tax Line"
+msgstr "Tax Line"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_tax_no
+msgid "Tax No"
+msgstr "الرقم التسلسلي "
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_taxe_form
+msgid "Tax Payment By Check"
+msgstr "دفعيات الضرائب بالشيكات"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_name
+msgid "Taxe Name"
+msgstr "اسم الضريبة"
+
+#. module: is_accounting_10
+#: model:ir.ui.menu,name:is_accounting_10.menu_tax
+msgid "Taxes "
+msgstr "دفعيات الضرائب "
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_tax_amount
+msgid "Taxes Amount"
+msgstr "قيمة الضريبة"
+
+#. module: is_accounting_10
+#: code:addons/is_accounting_10/models/is_account.py:78
+#, python-format
+msgid "The SDG Amount Must be Strictly positive."
+msgstr "ضع المبلغ بالجنية "
+
+#. module: is_accounting_10
+#: code:addons/is_accounting_10/models/is_tax.py:57
+#, python-format
+msgid "The Tax Amount Must be Strictly positive."
+msgstr "يجب ان تكون قيمة الضريبة اكبر من الصفر "
+
+#. module: is_accounting_10
+#: code:addons/is_accounting_10/models/is_zaka.py:78
+#, python-format
+msgid "The Tax amount must be strictly positive."
+msgstr "يجب ان تكون مبلغ الضريبة اكبر من الصفر "
+
+#. module: is_accounting_10
+#: code:addons/is_accounting_10/models/is_account.py:84
+#, python-format
+msgid "The USD  Amount Must be Strictly positive"
+msgstr "يجب ان يكون مبلغ العملة اكبر من الصفر"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,help:is_accounting_10.field_account_payment_new_rate
+msgid "The rate of the currency to the currency of rate 1"
+msgstr "سعر العملة باستخدام العملة ذات السعر 1"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_currency_report_wizard_date_to
+msgid "To Date"
+msgstr "الى تاريخ"
+
+#. module: is_accounting_10
+#: selection:collect.currency,state:0
+#: selection:request.taxes,state:0
+#: selection:zaka.account,state:0
+msgid "To Submit"
+msgstr "مسودة"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_zakah_form
+msgid "Total"
+msgstr "الإجمالي "
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_dollar_form
+msgid "Total SDG"
+msgstr "القيمة بالجنيه"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_dollar_form
+msgid "Total USD"
+msgstr "مبلغ العملة الاخرى"
+
+#. module: is_accounting_10
+#: code:addons/is_accounting_10/models/is_tax.py:184
+#, python-format
+msgid "Warning! You  Cannot Delete A Check "
+msgstr "Warning! You  Cannot Delete A Check "
+
+#. module: is_accounting_10
+#: code:addons/is_accounting_10/models/is_zaka.py:393
+#, python-format
+msgid "Warning! You Cannot Delete A Check "
+msgstr "لا يمكن مسح الشيكات "
+
+#. module: is_accounting_10
+#: code:addons/is_accounting_10/models/is_tax.py:161
+#: code:addons/is_accounting_10/models/is_zaka.py:367
+#, python-format
+msgid "Warning! You cannot delete a Taxes which paid"
+msgstr "لايمكن مسح الدفعيات التي دفعت"
+
+#. module: is_accounting_10
+#: code:addons/is_accounting_10/models/is_account.py:150
+#: code:addons/is_accounting_10/models/is_tax.py:98
+#: code:addons/is_accounting_10/models/is_zaka.py:303
+#, python-format
+msgid "You Must Enter  &  Account and Journal to Create Entries "
+msgstr "يجب ادخال الحساب واليومية ﻹنشاء قيد اليومية "
+
+#. module: is_accounting_10
+#: code:addons/is_accounting_10/models/is_account.py:89
+#: code:addons/is_accounting_10/models/is_account.py:220
+#: code:addons/is_accounting_10/models/is_tax.py:70
+#: code:addons/is_accounting_10/models/is_zaka.py:58
+#, python-format
+msgid "You can not delete a payment that is already posted"
+msgstr "لايمكن مسح الدفيات التي دفعت"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_zaka_date
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_zaka_no
+msgid "Zaka No"
+msgstr "الرقم التسلسلي"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_line_zakah_id
+msgid "Zakah"
+msgstr "Zakah"
+
+#. module: is_accounting_10
+#: model:ir.actions.act_window,name:is_accounting_10.act_zakah_request
+msgid "Zakat Payment"
+msgstr "دفعيات الزكاة"
+
+#. module: is_accounting_10
+#: model:ir.ui.menu,name:is_accounting_10.menu_zakah
+msgid "Zakat Payment "
+msgstr "دفعيات الزكاة"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_zakah_form
+msgid "Zakat Payment By Check"
+msgstr "دفعيات الزكاة بالشيكات"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_dollar_form
+#: model:ir.ui.view,arch_db:is_accounting_10.view_taxe_form
+#: model:ir.ui.view,arch_db:is_accounting_10.view_zakah_form
+msgid "confirm"
+msgstr "تم"
+
+#. module: is_accounting_10
+#: model:ir.model,name:is_accounting_10.model_currency_report_wizard
+msgid "currency.report.wizard"
+msgstr "currency.report.wizard"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,help:is_accounting_10.field_request_taxes_attach
+msgid "here you can attach a file or a document to the record !!"
+msgstr "here you can attach a file or a document to the record !!"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_account_dollar_line_name
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_taxes_line_name
+#: model:ir.model.fields,field_description:is_accounting_10.field_check_zakat_line_name
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_line_name
+msgid "name"
+msgstr "الإسم"
+
+#. module: is_accounting_10
+#: model:ir.model,name:is_accounting_10.model_account_payment
+msgid "payment"
+msgstr "payment"
+
+#. module: is_accounting_10
+#: model:ir.model,name:is_accounting_10.model_report_is_accounting_10_currency_valuation
+msgid "report.is_accounting_10.currency_valuation"
+msgstr "report.is_accounting_10.currency_valuation"
+
+#. module: is_accounting_10
+#: model:ir.model,name:is_accounting_10.model_report_is_accounting_10_currency_valuation_template
+msgid "report.is_accounting_10.currency_valuation_template"
+msgstr "report.is_accounting_10.currency_valuation_template"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_tax_line_ids
+msgid "tax Line"
+msgstr "tax Line"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.hr_long_filter
+msgid "tax Name"
+msgstr "اسم الضريبة"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.tree_taxes_view
+#: model:ir.ui.view,arch_db:is_accounting_10.tree_zakah_view
+msgid "tax_amount"
+msgstr "مبلغ الضريبة"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_request_taxes_check_line_ids
+msgid "taxe Line"
+msgstr "taxe Line"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_taxe_form
+msgid "taxe Request"
+msgstr "الضريبة"
+
+#. module: is_accounting_10
+#: model:ir.model,name:is_accounting_10.model_request_taxes
+msgid "taxes Request"
+msgstr "taxes Request"
+
+#. module: is_accounting_10
+#: model:ir.model,name:is_accounting_10.model_request_taxes_line
+msgid "taxes Request Line"
+msgstr "taxes Request Line"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.view_taxe_form
+#: model:ir.ui.view,arch_db:is_accounting_10.view_zakah_form
+msgid "total"
+msgstr "المجموع"
+
+#. module: is_accounting_10
+#: model:ir.model,name:is_accounting_10.model_zaka_account
+#: model:ir.model,name:is_accounting_10.model_zaka_account_line
+msgid "zaka Request"
+msgstr "zaka Request"
+
+#. module: is_accounting_10
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_check_line_ids
+#: model:ir.model.fields,field_description:is_accounting_10.field_zaka_account_zakah_line_ids
+msgid "zakah Line"
+msgstr "zakah Line"
+
+#. module: is_accounting_10
+#: model:ir.ui.view,arch_db:is_accounting_10.zakah_filter
+msgid "zakah Name"
+msgstr "الإسم"
+

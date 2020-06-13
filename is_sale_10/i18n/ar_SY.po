@@ -1,0 +1,1973 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* is_sale_10
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-12 11:37+0000\n"
+"PO-Revision-Date: 2020-03-12 11:37+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_bank_details
+msgid " Bank Details"
+msgstr " Bank Details"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_expiration_date
+msgid " Expiration Date"
+msgstr " تاريخ الإنتهاء"
+
+#. module: is_sale_10
+#: model:ir.actions.report.xml,name:is_sale_10.external_report_invoice_sale_order
+msgid " External Order Invoice "
+msgstr " فاتورة طلبات الشراء الخارجبة "
+
+#. module: is_sale_10
+#: model:ir.actions.report.xml,name:is_sale_10.external_report_sale_order
+msgid " External Quotation / Order"
+msgstr "طلبات الشراء الخارجية"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_signal_consign_id
+msgid " Final Consign"
+msgstr " Final Consign"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_mark_number
+msgid " Marks Of Number"
+msgstr " Marks Of Number"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_production_date
+msgid " Production Date"
+msgstr "تاريخ الإنتاج"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_per_item
+msgid " Promotional Item"
+msgstr " Promotional Item"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_line_grade
+msgid " STD Grade"
+msgstr " الدرجة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_other_stamp
+msgid " Stamp"
+msgstr " الدمغة"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.sales_customer_template
+msgid "<br/>\n"
+"                                 <strong> Customer :</strong>"
+msgstr "<br/>\n"
+"                                 <strong> العميل :</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.product_state_template
+msgid "<br/>\n"
+"                                 <strong> Product :</strong>"
+msgstr "<br/>\n"
+"                                 <strong> المنتج :</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.state_customer_template
+msgid "<br/>\n"
+"                                 <strong> State :</strong>"
+msgstr "<br/>\n"
+"                                 <strong> الحالة :</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_product_template
+msgid "<br/>\n"
+"                                <strong>product:</strong>"
+msgstr "<br/>\n"
+"                                <strong>product:</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "<strong>  Notify Party  :</strong>"
+msgstr "<strong>  Notify Party  :</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "<strong>  Ship To  :</strong>"
+msgstr "<strong>  Ship To  :</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "<strong>  Stamp :...........................................................</strong>"
+msgstr "<strong>  Stamp :...........................................................</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.best_partner_template
+msgid "<strong> Amount Total</strong>"
+msgstr "<strong> المبلغ الكلي</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_quotation_sale_inherit_edit
+msgid "<strong> Amount in word : </strong>"
+msgstr "<strong> المبلغ بالكلمات: </strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.best_partner_template
+msgid "<strong> Best Customer</strong>"
+msgstr "<strong> أفضل عميل</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.sales_customer_template
+#: model:ir.ui.view,arch_db:is_sale_10.state_customer_template
+msgid "<strong> Best Selling Products</strong>"
+msgstr "<strong> أفضل المنتجات مبيعا</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.state_customer_template
+msgid "<strong> City :</strong>"
+msgstr "<strong> المدينة :</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "<strong> Destination :</strong>"
+msgstr "<strong> Destination :</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "<strong> Final Consign  :</strong>"
+msgstr "<strong> Final Consign  :</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_product_template
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_template
+msgid "<strong> Name </strong>"
+msgstr "<strong> Name </strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.best_partner_template
+msgid "<strong> No.</strong>"
+msgstr "<strong> الرقم.</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_template
+msgid "<strong> Product </strong>"
+msgstr "<strong> Product </strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.sales_product_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_template
+msgid "<strong> Quantity Total: </strong>"
+msgstr "<strong> مجموع الكمي: </strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "<strong> Signature : ........................................................</strong>"
+msgstr "<strong> Signature : ........................................................</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_quotation_sale_inherit_edit
+msgid "<strong> Warehouse :</strong>"
+msgstr "<strong> المخزن :</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.is_sales_bonus_template
+msgid "<strong>Bonus Amount</strong>"
+msgstr "<strong>قيمة الحافز</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.is_sales_bonus_template
+msgid "<strong>Bonus No.</strong>"
+msgstr "<strong>رقم الحافز.</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.is_sales_bonus_template
+msgid "<strong>Bonus Type</strong>"
+msgstr "<strong>نوع الحافز</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.all_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.product_state_template
+msgid "<strong>City</strong>"
+msgstr "<strong>المدينة</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "<strong>Customer:</strong>"
+msgstr "<strong>العميل:</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.all_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.product_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.state_customer_template
+msgid "<strong>Customer</strong>"
+msgstr "<strong>العميل</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.all_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.best_partner_template
+#: model:ir.ui.view,arch_db:is_sale_10.is_sales_bonus_template
+#: model:ir.ui.view,arch_db:is_sale_10.product_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_customer_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_product_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_template
+#: model:ir.ui.view,arch_db:is_sale_10.state_customer_template
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_product_template
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_template
+msgid "<strong>Date from:</strong>"
+msgstr "<strong>من تاريخ:</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.all_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.best_partner_template
+#: model:ir.ui.view,arch_db:is_sale_10.is_sales_bonus_template
+#: model:ir.ui.view,arch_db:is_sale_10.product_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_customer_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_product_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_template
+#: model:ir.ui.view,arch_db:is_sale_10.state_customer_template
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_product_template
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_template
+msgid "<strong>Date to:</strong>"
+msgstr "<strong>الى تاريخ:</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.is_sales_bonus_template
+msgid "<strong>Date</strong>"
+msgstr "<strong>التاريخ</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.is_sales_bonus_template
+msgid "<strong>Employee</strong>"
+msgstr "<strong>الموظف</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "<strong>Fiscal Position Remark:</strong>"
+msgstr "<strong>ملاحظة الوضع المالي:</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_quotation_sale_inherit_edit
+msgid "<strong>Grade</strong>"
+msgstr "<strong>الدرجة</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.all_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.product_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_customer_template
+#: model:ir.ui.view,arch_db:is_sale_10.state_customer_template
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_product_template
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_template
+msgid "<strong>No.</strong>"
+msgstr "<strong>الرقم.</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.is_sales_bonus_template
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_product_template
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_template
+msgid "<strong>Note</strong>"
+msgstr "<strong>ملاحظات</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.is_sales_bonus_template
+msgid "<strong>Partner</strong>"
+msgstr "<strong>الشريك</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "<strong>Payment Terms:</strong>"
+msgstr "<strong>شروط السداد:</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+msgid "<strong>Per Unit Packing Net Weghit </strong>"
+msgstr "<strong>Per Unit Packing Net Weghit </strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.sales_product_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_template
+msgid "<strong>Product Qty</strong>"
+msgstr "<strong>كمية المنتج</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.all_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.is_sales_bonus_template
+msgid "<strong>Product</strong>"
+msgstr "<strong>المنتج</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.all_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.is_sales_bonus_template
+#: model:ir.ui.view,arch_db:is_sale_10.product_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_customer_template
+#: model:ir.ui.view,arch_db:is_sale_10.state_customer_template
+msgid "<strong>Quantity</strong>"
+msgstr "<strong>كمية</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+msgid "<strong>STD Grade</strong>"
+msgstr "<strong>STD Grade</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "<strong>Salesperson:</strong>"
+msgstr "<strong>موظف المبيعات:</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "<strong>Shipping address:</strong>"
+msgstr "<strong>عنوان الشحن:</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.all_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.product_state_template
+msgid "<strong>State</strong>"
+msgstr "<strong>حالة</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.sales_product_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_template
+msgid "<strong>Sub total</strong>"
+msgstr "<strong>المجموع</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+msgid "<strong>Total Nos Of Unit bag</strong>"
+msgstr "<strong>Total Nos Of Unit bag</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+msgid "<strong>Total Qty Packing Net Weghit</strong>"
+msgstr "<strong>Total Qty Packing Net Weghit</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.sales_product_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_template
+msgid "<strong>Total: </strong>"
+msgstr "<strong>الإجمالي: </strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "<strong>Total</strong>"
+msgstr "<strong>الإجمالي</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.sales_product_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_template
+msgid "<strong>Unit Price</strong>"
+msgstr "<strong>سعر الوحدة</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_product_template
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_template
+msgid "<strong>Valuation Date.</strong>"
+msgstr "<strong>تاريخ التقييم.</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "<strong>Your Reference:</strong>"
+msgstr "<strong>المرجع الخاص بك:</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_quotation_sale_inherit_edit
+msgid "<strong>net kgs</strong>"
+msgstr "<strong>الوزن الصافي</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_quotation_sale_inherit_edit
+msgid "<strong>pkgs</strong>"
+msgstr "<strong>الجوال</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.all_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.product_state_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_customer_template
+msgid "<strong>precentage</strong>"
+msgstr "<strong>النسبة المئوية</strong>"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.sales_product_template
+#: model:ir.ui.view,arch_db:is_sale_10.sales_template
+msgid "<strong>product</strong>"
+msgstr "<strong>المنتج</strong>"
+
+#. module: is_sale_10
+#: selection:all.state.wizard,all_type:0
+msgid "ALL State"
+msgstr "جميع الولايات"
+
+#. module: is_sale_10
+#: model:ir.actions.report.xml,name:is_sale_10.all_state_report
+msgid "ALL State Report"
+msgstr "تقرير الولايات"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_account_credit_id
+msgid "Account Credit"
+msgstr "حساب الدائن"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_account_debit_id
+msgid "Account Debit"
+msgstr "حساب المدين"
+
+#. module: is_sale_10
+#: code:addons/is_sale_10/models/is_sales.py:861
+#: code:addons/is_sale_10/models/is_sales.py:878
+#, python-format
+msgid "Adjustment Entry"
+msgstr "Adjustment Entry"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.all_state_wizard_action
+#: model:ir.ui.menu,name:is_sale_10.all_state_report_menu_root
+msgid "All State Report"
+msgstr "تقرير الولايات"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_amount_rent
+#: model:ir.model.fields,field_description:is_sale_10.field_res_partner_amount
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_check_amount_in_words
+msgid "Amount in Words"
+msgstr "المبلغ بالكلمات"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_to_text
+msgid "Amount in Words:"
+msgstr "المبلغ بالكلمات:"
+
+#. module: is_sale_10
+#: code:addons/is_sale_10/models/is_sales.py:338
+#, python-format
+msgid "An issue was faced when validating!"
+msgstr "An issue was faced when validating!"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_appeal_signed
+msgid "Appeal Signed"
+msgstr "Appeal Signed"
+
+#. module: is_sale_10
+#: selection:sale.person.bonus,state:0
+msgid "Auditor"
+msgstr "Auditor"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_product_template_average_price
+msgid "Average Price"
+msgstr "متوسط السعر"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_bl_no
+msgid "B/L No"
+msgstr "B/L رقم"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_bank_id
+msgid "Bank"
+msgstr "المصرف"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_bank_commission
+msgid "Bank Commission"
+msgstr "عمولة البنك"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Bank Details :"
+msgstr "Bank Details :"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_journal_id
+msgid "Bank/Cash Journal"
+msgstr "اليومية"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_beneficiary
+msgid "Beneficiary"
+msgstr "المستفيد"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.best_partner_wizard_action
+#: model:ir.ui.menu,name:is_sale_10.main_pbest_partner_report_menu_root
+msgid "Best Partner Report"
+msgstr "تقرير أفضل العملاء"
+
+#. module: is_sale_10
+#: model:ir.actions.report.xml,name:is_sale_10.partner_report
+msgid "Best Partners Report"
+msgstr "تقرير  أفضل العملاء"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.view_sale_bonus_tree
+msgid "Bonus"
+msgstr "الحافز"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_request_amount
+msgid "Bonus Amount"
+msgstr "مبلغ الحافز"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_name
+msgid "Bonus No"
+msgstr "رقم الحافز"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_bonus_type
+msgid "Bonus Type"
+msgstr "نوع الحافز"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.all_state_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.best_partner_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.customer_report_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.product_state_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.sale_product_report_form
+#: model:ir.ui.view,arch_db:is_sale_10.sale_report_form
+#: model:ir.ui.view,arch_db:is_sale_10.state_report_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_product_report_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_report_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.view_sale_order_for_inherited
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: is_sale_10
+#: selection:sale.person.bonus,bonus_type:0
+msgid "Cash"
+msgstr "Cash"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_certificate_number
+msgid "Certificate No"
+msgstr "رقم الشهادة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_certificate_received
+msgid "Certificate Received"
+msgstr "Certificate Received"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_city
+#: model:ir.model.fields,field_description:is_sale_10.field_state_report_wizard_city_id
+msgid "City"
+msgstr "المدينة"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.customs_clearance_export_view_form
+msgid "Clearance Paperwork"
+msgstr "التخليص الورقي"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_clearance
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_clearance
+msgid "Clearance Request"
+msgstr "التخليص الجمركي"
+
+#. module: is_sale_10
+#: selection:sale.contract,state:0
+msgid "Close"
+msgstr "Close"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_code_number
+msgid "Coder No"
+msgstr "رقم Coder"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_company_id
+msgid "Company"
+msgstr "المؤسسة"
+
+#. module: is_sale_10
+#: selection:sale.person.bonus,state:0
+msgid "Confirmed"
+msgstr "تم"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_container_dispatch
+msgid "Container Dispatch"
+msgstr "Container Dispatch"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_container_number
+msgid "Container No"
+msgstr "رقم الكونتينر"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_export_ids
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_ids
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_line_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_name
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_request_ids
+msgid "Contract"
+msgstr "الرقم المتسلسل "
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_contract
+#: model:ir.ui.view,arch_db:is_sale_10.view_sale_order_for_inherited
+msgid "Contract Request"
+msgstr "العقد"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_sale_count
+msgid "Count"
+msgstr "Count"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_account_invoice_id
+msgid "Count Rate"
+msgstr "Count Rate"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,help:is_sale_10.is_action_orders
+#: model:ir.actions.act_window,help:is_sale_10.is_action_quotations
+msgid "Create a Quotation, the first step of a new sale."
+msgstr "الخطوه الاولى للمبيعات الجديدة ، إنشاء التسعيرة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_all_state_wizard_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_best_partner_wizard_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_customer_report_wizard_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_destination_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_final_consign_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_market_valuation_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_notify_party_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_product_state_wizard_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_bonus_wizard_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_product_wizard_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_report_wizard_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_state_report_wizard_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_product_wizard_create_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_report_wizard_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_all_state_wizard_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_best_partner_wizard_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_customer_report_wizard_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_destination_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_final_consign_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_market_valuation_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_notify_party_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_product_state_wizard_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_bonus_wizard_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_product_wizard_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_report_wizard_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_state_report_wizard_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_product_wizard_create_date
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_report_wizard_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_currency_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_currency_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_request_currency
+msgid "Currency"
+msgstr "العملة"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.sale_contract_view_form
+msgid "Custom/Clearance"
+msgstr "Custom/Clearance"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customer_report_wizard_partner_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_vendor_id
+msgid "Customer"
+msgstr "العميل"
+
+#. module: is_sale_10
+#: model:ir.ui.menu,name:is_sale_10.main_customer_report_menu_root
+msgid "Customer  Report"
+msgstr "تقرير العميل"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.customer_report_wizard_action
+#: model:ir.actions.report.xml,name:is_sale_10.customer_products_amount
+#: model:ir.ui.view,arch_db:is_sale_10.customer_report_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_product_report_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_report_wizard_form
+msgid "Customer Report"
+msgstr "تقرير العميل"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Customer:"
+msgstr "العميل:"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.action_customs_clearance_export
+#: model:ir.ui.menu,name:is_sale_10.menu_customs_clearance_export
+#: model:ir.ui.view,arch_db:is_sale_10.customs_clearance_export_view_form
+#: model:ir.ui.view,arch_db:is_sale_10.customs_clearance_export_view_tree
+msgid "Customs Clearance"
+msgstr "التخليص الجمركي"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_appeal_signed
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_arrive
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_bank
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_certificate
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_container_dispatch
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_docs
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_eta
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_goods
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_health
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_idbc
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_inspector
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_moving
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_other
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_rent
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_shipping_time
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_ssmo
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_vassal_hooked
+#: model:ir.model.fields,field_description:is_sale_10.field_market_valuation_valuation_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_date_bl_no
+msgid "Date B/L No"
+msgstr "Date B/L No"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_date_from
+msgid "Date From"
+msgstr "التاريخ من"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_date_invoice
+msgid "Date Invoice"
+msgstr "تاريخ الفاتورة"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Date Ordered:"
+msgstr "تاريخ الطلب:"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_date_to
+msgid "Date To"
+msgstr "التاريخ للإنتهاء"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_delivery_location
+msgid "Delivery Location"
+msgstr "موقع التسليم"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_market_valuation_note
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_name
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Description"
+msgstr "الوصف"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_destination_id
+msgid "Destination"
+msgstr "Destination"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_discount
+msgid "Discount (%)"
+msgstr "الخصم (%)"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_all_state_wizard_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_best_partner_wizard_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_customer_report_wizard_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_destination_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_final_consign_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_market_valuation_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_notify_party_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_product_state_wizard_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_all_state_template_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_best_partner_template_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_is_sales_bonus_template_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_product_state_template_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_sales_customer_template_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_sales_product_template_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_sales_template_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_state_customer_template_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_valuation_product_template_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_valuation_template_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_bonus_wizard_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_product_wizard_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_report_wizard_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_state_report_wizard_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_product_wizard_display_name
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_report_wizard_display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_docs
+msgid "Docs"
+msgstr "المستندات"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_docs_bank
+msgid "Docs Bank"
+msgstr "مستندات البنك"
+
+#. module: is_sale_10
+#: selection:customs.clearance.export,state:0
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_done_clearance
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_done_docs
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_done_shipment_arrive
+#: model:ir.ui.view,arch_db:is_sale_10.customs_clearance_export_view_form
+#: selection:sale.person.bonus,state:0
+msgid "Done"
+msgstr "منتهي"
+
+#. module: is_sale_10
+#: selection:sale.person.bonus,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_eta
+msgid "ETA"
+msgstr "ETA"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.action_sale_bonus
+#: model:ir.ui.menu,name:is_sale_10.menu_bonus
+#: model:ir.ui.view,arch_db:is_sale_10.view_sale_bonus_form
+#: model:ir.ui.view,arch_db:is_sale_10.view_sale_bonus_search
+msgid "Employee Bonus"
+msgstr "حافز الموظف"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_bonus_wizard_end_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_product_wizard_end_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_report_wizard_end_date
+msgid "End Date"
+msgstr "تاريخ الإنتهاء"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_examine_goods
+msgid "Examine Goods"
+msgstr "فحص البضاعة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_exp_account
+msgid "Expense Account"
+msgstr "حساب المصروف"
+
+#. module: is_sale_10
+#: code:addons/is_sale_10/models/is_sales.py:261
+#, python-format
+msgid "Expense or debit account must be selected!"
+msgstr "Expense or debit account must be selected!"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_account_invoice_product_expiration
+msgid "Expiration Dates "
+msgstr "Expiration Dates "
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_expired
+msgid "Expired"
+msgstr "Expired"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_export_id
+msgid "Export"
+msgstr "تصدير"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.view_sale_order_for_inherited
+msgid "Export Information"
+msgstr "معلومات التصدير"
+
+#. module: is_sale_10
+#: selection:sale.order,sale_type:0
+msgid "External Sale"
+msgstr "External Sale"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.customs_clearance_export_view_form
+msgid "Finance Request"
+msgstr "طلب تصديق"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_all_state_wizard_date_from
+#: model:ir.model.fields,field_description:is_sale_10.field_best_partner_wizard_date_from
+#: model:ir.model.fields,field_description:is_sale_10.field_customer_report_wizard_date_from
+#: model:ir.model.fields,field_description:is_sale_10.field_product_state_wizard_date_from
+#: model:ir.model.fields,field_description:is_sale_10.field_state_report_wizard_date_from
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_product_wizard_date_from
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_report_wizard_date_from
+msgid "From Date"
+msgstr "من تاريخ"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_account_invoice_line_grade
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_grade
+msgid "Grade"
+msgstr "الدرجة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_health
+msgid "Health"
+msgstr "الصحة"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.view_sale_bonus_form
+msgid "Hr Request"
+msgstr "ارسال الى الموارد البشرية"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_all_state_wizard_id
+#: model:ir.model.fields,field_description:is_sale_10.field_best_partner_wizard_id
+#: model:ir.model.fields,field_description:is_sale_10.field_customer_report_wizard_id
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_id
+#: model:ir.model.fields,field_description:is_sale_10.field_destination_id
+#: model:ir.model.fields,field_description:is_sale_10.field_final_consign_id
+#: model:ir.model.fields,field_description:is_sale_10.field_market_valuation_id
+#: model:ir.model.fields,field_description:is_sale_10.field_notify_party_id
+#: model:ir.model.fields,field_description:is_sale_10.field_product_state_wizard_id
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_all_state_template_id
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_best_partner_template_id
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_is_sales_bonus_template_id
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_product_state_template_id
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_sales_customer_template_id
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_sales_product_template_id
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_sales_template_id
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_state_customer_template_id
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_valuation_product_template_id
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_valuation_template_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_bonus_wizard_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_product_wizard_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_report_wizard_id
+#: model:ir.model.fields,field_description:is_sale_10.field_state_report_wizard_id
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_product_wizard_id
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_report_wizard_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_idbc
+msgid "IDBC"
+msgstr "IDBC"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.customs_clearance_export_view_form
+msgid "Information Bank"
+msgstr "معلومات البنك"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_inspector
+msgid "Inspector"
+msgstr "Inspector"
+
+#. module: is_sale_10
+#: selection:sale.order,sale_type:0
+msgid "Internal Sale"
+msgstr "Internal Sale"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_account_invoice
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_invoice_id
+msgid "Invoice"
+msgstr "الفاتورة"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "بند الفاتورة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_invoice_no
+msgid "Invoice No"
+msgstr "رقم الفاتورة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_invoice
+msgid "Invoice Reference"
+msgstr "مرجع الفاتورة"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Invoicing address:"
+msgstr "عنوان الفاتورة"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Invoicing and shipping address:"
+msgstr "عنوان الفاتورة والشحن"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_move_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_move_id
+msgid "Journal Entry"
+msgstr "قيد يومية"
+
+#. module: is_sale_10
+#: code:addons/is_sale_10/models/is_sales.py:264
+#, python-format
+msgid "Journal must be selected!"
+msgstr "Journal must be selected!"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_all_state_wizard___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_best_partner_wizard___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_customer_report_wizard___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_destination___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_final_consign___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_market_valuation___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_notify_party___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_product_state_wizard___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_all_state_template___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_best_partner_template___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_is_sales_bonus_template___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_product_state_template___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_sales_customer_template___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_sales_product_template___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_sales_template___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_state_customer_template___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_valuation_product_template___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_report_is_sale_10_valuation_template___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_bonus_wizard___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_product_wizard___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_report_wizard___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_state_report_wizard___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_product_wizard___last_update
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_report_wizard___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_all_state_wizard_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_best_partner_wizard_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_customer_report_wizard_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_destination_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_final_consign_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_market_valuation_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_notify_party_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_product_state_wizard_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_bonus_wizard_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_product_wizard_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_report_wizard_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_state_report_wizard_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_product_wizard_write_uid
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_report_wizard_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_all_state_wizard_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_best_partner_wizard_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_customer_report_wizard_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_destination_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_final_consign_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_market_valuation_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_notify_party_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_product_state_wizard_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_bonus_wizard_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_product_wizard_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_report_wizard_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_state_report_wizard_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_product_wizard_write_date
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_report_wizard_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.view_sale_order_for_inherited
+msgid "Manager Approval"
+msgstr "موافقة المدير"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.valuation_product_report_wizard_action
+#: model:ir.actions.report.xml,name:is_sale_10.product_valuation_report
+#: model:ir.ui.menu,name:is_sale_10.valuation_product_report_menu_root
+msgid "Market Product valuation Report"
+msgstr "تقرير تقيم المنتج في السوق"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.action_market_valuation
+#: model:ir.ui.menu,name:is_sale_10.menu_market_valuation
+#: model:ir.ui.view,arch_db:is_sale_10.market_valuation_view_tree
+msgid "Market Valuation"
+msgstr "تقييم السوق"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_view_form
+msgid "Market valuation"
+msgstr "تقييم السوق"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.valuation_report_wizard_action
+#: model:ir.actions.report.xml,name:is_sale_10.valuation_report
+#: model:ir.ui.menu,name:is_sale_10.valuation_report_menu_root
+msgid "Market valuation Report"
+msgstr "تقرير تقييم السوق"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Marks Of Number :"
+msgstr "Marks Of Number :"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.view_sale_bonus_form
+msgid "Material Request"
+msgstr "طلب مواد"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_moving_containers
+msgid "Moving Containers"
+msgstr "Moving Containers"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+msgid "NOTES :"
+msgstr "NOTES :"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_destination_name
+#: model:ir.model.fields,field_description:is_sale_10.field_final_consign_name
+#: model:ir.model.fields,field_description:is_sale_10.field_market_valuation_name
+#: model:ir.model.fields,field_description:is_sale_10.field_notify_party_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.view_sale_order_for_inherited
+msgid "Need Approval"
+msgstr "طلب موافقة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_account_invoice_line_net_kgs
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_line_net_kgs
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_net_kgs
+msgid "Net Kgs"
+msgstr "الوزن الصافي"
+
+#. module: is_sale_10
+#: selection:customs.clearance.export,state:0
+#: selection:sale.contract,state:0
+msgid "New"
+msgstr "New"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.sale_contract_view_form
+msgid "New C/C"
+msgstr "New C/C"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_line_new_price
+msgid "New Price"
+msgstr "السعر الجديد"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_appeal_signed
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_arrive
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_bank
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_bl_no
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_certificate
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_container_dispatch
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_docs
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_eta
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_goods
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_health
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_idbc
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_inspector
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_moving
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_other
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_rent
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_shipping_time
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_ssmo
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_note_vassal_hooked
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_note
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_note
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_notes
+msgid "Note"
+msgstr "الملاحظة"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,help:is_sale_10.is_action_quotations
+msgid "Note that once a Quotation becomes a Sale Order, it will be moved\n"
+"                from the Quotations list to the Sales Order list."
+msgstr "Note that once a Quotation becomes a Sale Order, it will be moved\n"
+"                from the Quotations list to the Sales Order list."
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_notify_party_id
+msgid "Notify Party"
+msgstr "Notify Party"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_docs_no
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_health_no
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_inspector_no
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_other_no
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_ssmo_no
+msgid "Number"
+msgstr "عدد"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_best_partner_wizard_no_of_partner
+msgid "Number of Partner to Display"
+msgstr " اختيار عدد العملاء"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,help:is_sale_10.is_action_orders
+msgid "Once the quotation is confirmed, it becomes a sales order.\n"
+"                    You'll be able to invoice it and collect payments.\n"
+"                    From the <i>Sales Orders</i> menu, you can track delivery\n"
+"                    orders or services."
+msgstr "Once the quotation is confirmed, it becomes a sales order.\n"
+"                    You'll be able to invoice it and collect payments.\n"
+"                    From the <i>Sales Orders</i> menu, you can track delivery\n"
+"                    orders or services."
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_other
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_other
+msgid "Other"
+msgstr "اخري"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_other_condition
+msgid "Other Condition"
+msgstr "Other Condition"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Other Condition :"
+msgstr "Other Condition :"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_packaging_details
+msgid "Packaging Details"
+msgstr "Packaging Details"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Packaging Details :"
+msgstr "Packaging Details :"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_res_partner
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_partner_id
+msgid "Partner"
+msgstr "شريك"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.best_partner_wizard_form
+msgid "Partner Report"
+msgstr "تقرير العميل"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_path_number
+msgid "Path No"
+msgstr "Path No"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_payment_term_id
+msgid "Payment Terms"
+msgstr "شروط السداد"
+
+#. module: is_sale_10
+#: model:ir.model.fields,help:is_sale_10.field_sale_person_bonus_journal_id
+msgid "Payment journal."
+msgstr "Payment journal."
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_account_invoice_line_total_kgs
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_line_total_kgs
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_total_kgs
+msgid "Pkgs"
+msgstr "الجوال"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_account_invoice_port_city
+msgid "Port"
+msgstr "المنفذ"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_price
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_line_special_price
+msgid "Price"
+msgstr "السعر"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_pricelist_id
+msgid "Pricelist"
+msgstr "قائمه الاسعار"
+
+#. module: is_sale_10
+#: model:ir.model.fields,help:is_sale_10.field_sale_contract_pricelist_id
+msgid "Pricelist for current sales order."
+msgstr "قائمة الأسعار لأمر البيع الحالي"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.all_state_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.best_partner_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.customer_report_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.product_state_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.sale_product_report_form
+#: model:ir.ui.view,arch_db:is_sale_10.sale_report_form
+#: model:ir.ui.view,arch_db:is_sale_10.state_report_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_product_report_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.valuation_report_wizard_form
+msgid "Print"
+msgstr "طباعة"
+
+#. module: is_sale_10
+#: model:ir.actions.report.xml,name:is_sale_10.sale_product_wizard
+#: model:ir.model.fields,field_description:is_sale_10.field_market_valuation_product_id
+#: model:ir.model.fields,field_description:is_sale_10.field_product_state_wizard_product_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_product_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_product_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_product_wizard_product_id
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_product_wizard_product_id
+#: model:ir.ui.view,arch_db:is_sale_10.customs_clearance_export_view_form
+#: model:ir.ui.view,arch_db:is_sale_10.sale_contract_view_form
+#: selection:sale.person.bonus,bonus_type:0
+msgid "Product"
+msgstr "منتج"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.product_state_wizard_action
+msgid "Product By State"
+msgstr "تقرير المنتج بالولاية"
+
+#. module: is_sale_10
+#: model:ir.ui.menu,name:is_sale_10.main_product_state_report_menu_root
+msgid "Product By State Report"
+msgstr "تقرير المنتج بالولاية"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.sale_product_ac_action
+#: model:ir.ui.menu,name:is_sale_10.sale_product_ac_menu
+msgid "Product Details"
+msgstr "تفاصيل المنتج"
+
+#. module: is_sale_10
+#: model:ir.actions.report.xml,name:is_sale_10.state_products_amount
+msgid "Product State  Report"
+msgstr "تقرير المنتج بالولاية"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Production Date :"
+msgstr "Production Date :"
+
+#. module: is_sale_10
+#: model:ir.actions.report.xml,name:is_sale_10.sale_wizard
+msgid "Products Sales Report"
+msgstr "مبيعات المنتج"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Promotional Item :"
+msgstr "Promotional Item :"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_product_qty
+msgid "Qty Approved"
+msgstr "Qty Approved"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_qty_remaining
+msgid "Qty Consumed"
+msgstr "الكمية المستهلكة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_qty_consumed
+msgid "Qty Delivery"
+msgstr "الكمية المشحونة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_product_qty
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Quantity"
+msgstr "كمية"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Quotation #"
+msgstr "التسعيرة #"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Quotation Date:"
+msgstr "تاريخ عرض السعر"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.is_action_quotations
+#: model:ir.ui.menu,name:is_sale_10.is_quotations_order_views
+msgid "Quotations"
+msgstr "عروض السعر"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_contract_id
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_request_id
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_reference
+msgid "Reference"
+msgstr "مرجع"
+
+#. module: is_sale_10
+#: selection:sale.person.bonus,state:0
+msgid "Refused"
+msgstr "رفض"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_rent_car
+msgid "Rent Car"
+msgstr "ايجار العربة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_all_state_wizard_all_type
+msgid "Report Type"
+msgstr "نوع التقرير"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_order_request
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_request
+msgid "Request"
+msgstr "طلب"
+
+#. module: is_sale_10
+#: selection:customs.clearance.export,state:0
+#: model:ir.ui.view,arch_db:is_sale_10.customs_clearance_export_view_form
+#: model:ir.ui.view,arch_db:is_sale_10.sale_contract_view_form
+#: selection:sale.contract,state:0
+msgid "Running"
+msgstr "قيد العمل"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_ssmo
+msgid "SSMO"
+msgstr "SSMO"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_line_std
+msgid "STD"
+msgstr "STD"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_request_id
+msgid "Sale Agreement"
+msgstr "Sale Agreement"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.action_sale_contract
+#: model:ir.ui.menu,name:is_sale_10.menu_sale_contract
+#: model:ir.ui.view,arch_db:is_sale_10.sale_contract_view_form
+#: model:ir.ui.view,arch_db:is_sale_10.sale_contract_view_tree
+msgid "Sale Contract"
+msgstr "عقود المبيعات الخارجية"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_quotation_sale_inherit_edit
+msgid "Sale Order #"
+msgstr "Sale Order #"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.sale_product_action
+#: model:ir.ui.menu,name:is_sale_10.sale_product_menu
+msgid "Sale Product Details"
+msgstr "تقرير تفاصيل المنتجات"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_sale_type
+msgid "Sale Type"
+msgstr "Sale Type"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.action_sale_contract_list
+#: model:ir.actions.act_window,name:is_sale_10.action_sale_contract_to_so
+msgid "Sale for Contract"
+msgstr "Sale for Contract"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_account_invoice_sale_type
+msgid "Sale type"
+msgstr "Sale type"
+
+#. module: is_sale_10
+#: model:ir.ui.menu,name:is_sale_10.is_menu_sales_config
+msgid "Sales External"
+msgstr "مبيعات خارجية"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_sale_order
+msgid "Sales Order"
+msgstr "أمر البيع"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "سطر أمر البيع"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.is_action_orders
+#: model:ir.ui.menu,name:is_sale_10.is_sale_order_views
+msgid "Sales Orders"
+msgstr "أوامر البيع"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_name
+msgid "Serial No"
+msgstr "الرقم المتسلسل"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_ship_to
+msgid "Ship To"
+msgstr "Ship To"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.customs_clearance_export_view_form
+msgid "Shipment"
+msgstr "الشحنة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_shipment_arrive
+msgid "Shipment Arrived"
+msgstr "وصول الشحنة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_shipment_duration
+msgid "Shipment Duration"
+msgstr "Shipment Duration"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "Shipment Duration :"
+msgstr "Shipment Duration :"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_shipping_time
+msgid "Shipping Time"
+msgstr "زمن الشحنة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_other_signature
+msgid "Signature"
+msgstr "التوقيع"
+
+#. module: is_sale_10
+#: selection:sale.contract,state:0
+msgid "Start Clearance"
+msgstr "Start Clearance"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_bonus_wizard_start_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_product_wizard_start_date
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_report_wizard_start_date
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_person_bonus_state
+#: model:ir.model.fields,field_description:is_sale_10.field_state_report_wizard_state
+msgid "State"
+msgstr "الولاية"
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,name:is_sale_10.state_report_wizard_action
+#: model:ir.actions.report.xml,name:is_sale_10.state_report
+#: model:ir.ui.menu,name:is_sale_10.state_report_menu_root
+msgid "State And City Report"
+msgstr "تقرير الولاية والمدينة"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.all_state_wizard_form
+#: model:ir.ui.view,arch_db:is_sale_10.state_report_wizard_form
+msgid "State Report"
+msgstr "تقرير الولايات"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_state
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_state
+msgid "Status"
+msgstr "الحاله "
+
+#. module: is_sale_10
+#: model:ir.model.fields,help:is_sale_10.field_sale_contract_state
+msgid "Status of the contract"
+msgstr "حالة العقد"
+
+#. module: is_sale_10
+#: code:addons/is_sale_10/models/is_sales.py:858
+#, python-format
+msgid "The Expense Journal \"%s\" has not properly configured the Credit Account!"
+msgstr "The Expense Journal \"%s\" has not properly configured the Credit Account!"
+
+#. module: is_sale_10
+#: code:addons/is_sale_10/models/is_sales.py:875
+#, python-format
+msgid "The Expense Journal \"%s\" has not properly configured the Debit Account!"
+msgstr "The Expense Journal \"%s\" has not properly configured the Debit Account!"
+
+#. module: is_sale_10
+#: code:addons/is_sale_10/models/is_sales.py:700
+#, python-format
+msgid "The Qty consumed greater than qty approved"
+msgstr "The Qty consumed greater than qty approved"
+
+#. module: is_sale_10
+#: code:addons/is_sale_10/models/is_sales.py:79
+#, python-format
+msgid "This Customer Has Unpaid Checks .!"
+msgstr "هذا العميل لديه شيكات غير مدفوعة.!"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_all_state_wizard_date_to
+#: model:ir.model.fields,field_description:is_sale_10.field_best_partner_wizard_date_to
+#: model:ir.model.fields,field_description:is_sale_10.field_customer_report_wizard_date_to
+#: model:ir.model.fields,field_description:is_sale_10.field_product_state_wizard_date_to
+#: model:ir.model.fields,field_description:is_sale_10.field_state_report_wizard_date_to
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_product_wizard_date_to
+#: model:ir.model.fields,field_description:is_sale_10.field_valution_report_wizard_date_to
+msgid "To Date"
+msgstr "الى تاريخ"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_total_bank
+msgid "Total"
+msgstr "الإجمالي "
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_total_amount_clearance
+msgid "Total Amount Clearance"
+msgstr "Total Amount Clearance"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.customs_clearance_export_view_form
+msgid "Under Clearance Point"
+msgstr "تحت عملية التخليص"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_line_unit_in_page
+msgid "Unit In One Page"
+msgstr "Unit In One Page"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_contract_line_product_uom_qty
+msgid "Unit of measure"
+msgstr "وحدة القياس"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_attach
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_attach_docs
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_attach_health
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_attach_inspector
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_attach_other
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_attach_shipping
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_attach_ssmo
+msgid "Upload File"
+msgstr "تحميل ملف"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_invoce_saleorder_document
+#: model:ir.ui.view,arch_db:is_sale_10.report_external_saleorder_document
+msgid "VAT:"
+msgstr "ضريبة القيمة المضافة:"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_value_goods
+msgid "Value Goods"
+msgstr "قيمة البضاعة"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_vassal_hooked
+msgid "Vassal Hooked"
+msgstr "Vassal Hooked"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_customs_clearance_export_vendor_id
+msgid "Vendor"
+msgstr "المورّد"
+
+#. module: is_sale_10
+#: code:addons/is_sale_10/models/is_sales.py:89
+#, python-format
+msgid "You Can Not Sell This Product Because It Does Not Have A Price."
+msgstr "لايمكن بيع هذا المنتج لانه غير مسعر."
+
+#. module: is_sale_10
+#: model:ir.actions.act_window,help:is_sale_10.is_action_quotations
+msgid "Your next actions should flow efficiently: confirm the Quotation\n"
+"                to a Sale Order, then create the Invoice and collect the Payment."
+msgstr "Your next actions should flow efficiently: confirm the Quotation\n"
+"                to a Sale Order, then create the Invoice and collect the Payment."
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_sale_order_get_total_special
+msgid "aMOUNT"
+msgstr "aMOUNT"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_all_state_wizard
+msgid "all.state.wizard"
+msgstr "all.state.wizard"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_best_partner_wizard
+msgid "best.partner.wizard"
+msgstr "best.partner.wizard"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_account_invoice_contract_no
+msgid "contract No"
+msgstr "رقم العقد"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_customer_report_wizard
+msgid "customer.report.wizard"
+msgstr "customer.report.wizard"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_account_invoice_custom_no
+msgid "customs NO"
+msgstr "customs NO"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_customs_clearance_export
+msgid "customs.clearance.export"
+msgstr "customs.clearance.export"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_destination
+msgid "destination"
+msgstr "destination"
+
+#. module: is_sale_10
+#: selection:account.invoice,sale_type:0
+msgid "external sale"
+msgstr "المبيعات الخارجية"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_final_consign
+msgid "final.consign"
+msgstr "final.consign"
+
+#. module: is_sale_10
+#: selection:account.invoice,sale_type:0
+msgid "local sale"
+msgstr "المبيعات المحلية"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_market_valuation
+msgid "market.valuation"
+msgstr "market.valuation"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_notify_party
+msgid "notify.party"
+msgstr "notify.party"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_account_invoice_payment_type
+msgid "payment type"
+msgstr "payment type"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_account_invoice_policyholder
+msgid "policyholder"
+msgstr "policyholder"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.product_state_wizard_form
+msgid "product Report"
+msgstr "تقرير المنتج"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_product_state_wizard
+msgid "product.state.wizard"
+msgstr "product.state.wizard"
+
+#. module: is_sale_10
+#: model:ir.model.fields,field_description:is_sale_10.field_account_invoice_product_production
+msgid "production Date"
+msgstr "production Date"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_report_is_sale_10_all_state_template
+msgid "report.is_sale_10.all_state_template"
+msgstr "report.is_sale_10.all_state_template"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_report_is_sale_10_best_partner_template
+msgid "report.is_sale_10.best_partner_template"
+msgstr "report.is_sale_10.best_partner_template"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_report_is_sale_10_is_sales_bonus_template
+msgid "report.is_sale_10.is_sales_bonus_template"
+msgstr "report.is_sale_10.is_sales_bonus_template"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_report_is_sale_10_product_state_template
+msgid "report.is_sale_10.product_state_template"
+msgstr "report.is_sale_10.product_state_template"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_report_is_sale_10_sales_customer_template
+msgid "report.is_sale_10.sales_customer_template"
+msgstr "report.is_sale_10.sales_customer_template"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_report_is_sale_10_sales_product_template
+msgid "report.is_sale_10.sales_product_template"
+msgstr "report.is_sale_10.sales_product_template"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_report_is_sale_10_sales_template
+msgid "report.is_sale_10.sales_template"
+msgstr "report.is_sale_10.sales_template"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_report_is_sale_10_state_customer_template
+msgid "report.is_sale_10.state_customer_template"
+msgstr "report.is_sale_10.state_customer_template"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_report_is_sale_10_valuation_product_template
+msgid "report.is_sale_10.valuation_product_template"
+msgstr "report.is_sale_10.valuation_product_template"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_report_is_sale_10_valuation_template
+msgid "report.is_sale_10.valuation_template"
+msgstr "report.is_sale_10.valuation_template"
+
+#. module: is_sale_10
+#: model:ir.ui.view,arch_db:is_sale_10.sale_product_report_form
+#: model:ir.ui.view,arch_db:is_sale_10.sale_report_form
+msgid "sale product"
+msgstr "مبيعات المنتج"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_sale_bonus_wizard
+msgid "sale.bonus.wizard"
+msgstr "sale.bonus.wizard"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_sale_contract
+msgid "sale.contract"
+msgstr "sale.contract"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_sale_contract_line
+msgid "sale.contract.line"
+msgstr "sale.contract.line"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_sale_person_bonus
+msgid "sale.person.bonus"
+msgstr "sale.person.bonus"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_sale_product_wizard
+msgid "sale.product.wizard"
+msgstr "sale.product.wizard"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_sale_report_wizard
+msgid "sale.report.wizard"
+msgstr "sale.report.wizard"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_state_report_wizard
+msgid "state.report.wizard"
+msgstr "state.report.wizard"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_valution_product_wizard
+msgid "valution.product.wizard"
+msgstr "valution.product.wizard"
+
+#. module: is_sale_10
+#: model:ir.model,name:is_sale_10.model_valution_report_wizard
+msgid "valution.report.wizard"
+msgstr "valution.report.wizard"
+

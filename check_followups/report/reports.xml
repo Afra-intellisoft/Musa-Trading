@@ -1,0 +1,22 @@
+<odoo>
+
+    <report id="action_check_report"
+            model="payment.check_reports"
+            string="Print Check"
+            report_type="qweb-pdf"
+            name="check_followups.check_bank_template1"
+            file="check_followups.check_bank_template"
+            />
+ <report id="all_check"
+                model="check_followups.check_followups"
+                string="Print Check"
+                report_type="qweb-pdf"
+                name="check_followups.all_check_report"
+                file="check_followups.all_check_report"
+                menu="False"
+        />
+
+
+
+
+</odoo>

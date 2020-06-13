@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+        <record id='fleet_vehicle_model_view_form' model='ir.ui.view'>
+            <field name="name">fleet.vehicle.model.form</field>
+            <field name="model">fleet.vehicle</field>
+            <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
+            <field name="arch" type="xml">
+                 <xpath expr="//field[@name='acquisition_date']" position="before">
+                     <label for="max_odometer"/>
+                            <div class="o_row">
+                                <field name="max_odometer"/>
+                                <field name="odometer_unit"/>
+                            </div>
+                 </xpath>
+                <xpath expr="//field[@name='driver_id']" position="replace">
+                                <field name="employee_id" string="Driver"/>
+                                <field name="allowed_driver"/>
+                 </xpath>
+            </field>
+        </record>
+    <record id='fleet_vehicle_log_fule_services_model_view_form' model='ir.ui.view'>
+            <field name="name">fleet.vehicle.log.services.form</field>
+            <field name="model">fleet.vehicle.log.services</field>
+            <field name="inherit_id" ref="fleet.fleet_vehicle_log_services_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet" position="before">
+                    <header>
+                        <button name="order_send" string="Submit" type="object" states="draft" class="oe_highlight" />
+                        <button name="order_approve" string="Confirm Order" type="object" states="send"  class="oe_highlight" />
+                        <button name="order_purchases" string="Purchase Agreements" type="object" states="approve"  class="oe_highlight" />
+                        <button name="order_stock" string="Material Request" type="object" states="approve"  class="oe_highlight" />
+                        <button name="account_validate" string="Create Invoice" type="object" class="oe_highlight" attrs="{'invisible': ['|',('request', '=', True),('state', '!=', 'request')]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
+                    </header>
+                </xpath>
+                 <xpath expr="//field//tree//field[@name='cost_subtype_id']" position="before">
+                     <field name="product_id"/>
+                     <field name="uom_id"/>
+                 </xpath>
+                <xpath expr="//field//tree//field[@name='amount']" position="after">
+                     <field name="total" />
+                 </xpath>
+                 <xpath expr="//field//tree//field[@name='cost_subtype_id']" position="after">
+                     <field name="quantity"/>
+                     <field name="account_id" invisible="1"/>
+                     <field name="vendor_id"/>
+                     <field name="price"/>
+                     <field name="note" />
+                 </xpath>
+                <xpath expr="//field[@name='vehicle_id']" position="before">
+                     <field name="user_id"/>
+                     <field name="request" invisible="1"/>
+                 </xpath>
+                <xpath expr="//field[@name='purchaser_id']" position="replace">
+                     <field name="purchaser_id" invisible="1"/>
+                 </xpath>
+                <xpath expr="//field[@name='vendor_id']" position="replace">
+                     <field name="vendor_id" invisible="1"/>
+                 </xpath>
+                <xpath expr="//field[@name='date']" position="replace">
+                     <field name="date" string="Date Request" readonly="1"/>
+                 </xpath>
+                <!--<xpath expr="//field[@name='vendor_id']" position="replace">-->
+                     <!--<field name="vendor_id" attrs="{'required': [('state', '=', 'request')]}"/>-->
+                 <!--</xpath>-->
+                <xpath expr="//group" string="Odometer Details" position="after">
+                     <group col="2">
+                        <field name="attach" string="Attach "/>
+                    </group>
+                 </xpath>
+                  <xpath expr="//group" string="Additional Details" position="after">
+                     <group col="2" string="Period Maintenance">
+                         <field name="date_from"/>
+                         <field name="date_to"/>
+                    </group>
+                 </xpath>
+            </field>
+        </record>
+
+    <record id='fleet_vehicle_log_fule_model_view_form' model='ir.ui.view'>
+            <field name="name">fleet.vehicle.log.fuel.form</field>
+            <field name="model">fleet.vehicle.log.fuel</field>
+            <field name="inherit_id" ref="fleet.fleet_vehicle_log_fuel_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet" position="before">
+                    <header>
+                        <button name="material_request" string="Material Request" type="object" class="oe_highlight"  attrs="{'invisible': [('state', '=', 'done')]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="done"/>
+                    </header>
+                </xpath>
+                 <xpath expr="//field[@name='liter']" position="before">
+                     <field name="product_id"/>
+                     <field name="material" invisible="1"/>
+                 </xpath>
+                <xpath expr="//field[@name='vehicle_id']" position="after">
+                     <field name="user_id"/>
+                 </xpath>
+                <xpath expr="//field[@name='amount']" position="after">
+                     <field name="next_date"/>
+                 </xpath>
+
+            </field>
+        </record>
+        <record id='is_fleet_vehicle_odometer_view_tree' model='ir.ui.view'>
+        <field name="name">fleet.vehicle.odometer.tree</field>
+        <field name="model">fleet.vehicle.odometer</field>
+            <field name="inherit_id" ref="fleet.fleet_vehicle_odometer_view_tree"/>
+            <field name="arch" type="xml">
+                    <xpath expr="//field[@name='value']" position="replace">
+                    <field name="value" sum="value"/>
+                    </xpath>
+            </field>
+    </record>
+ <!--<record id="view_fleet_maintenance_order_form" model="ir.ui.view">-->
+            <!--<field name="name">fleet.maintenance.order.form</field>-->
+            <!--<field name="model">fleet.maintenance.order</field>-->
+            <!--<field name="arch" type="xml">-->
+                <!--<form string="Maintenance Order Information">-->
+                    <!--<header>-->
+                        <!--<button name="order_submit" string="Submit" type="object" states="draft" class="oe_highlight" />-->
+                        <!--<button name="order_approval" string="Confirm Order" type="object" states="submit"  class="oe_highlight" />-->
+                        <!--<button name="order_progress" string="Progress Order" type="object" states="approval"  class="oe_highlight" />-->
+                        <!--<button name="order_done" string="Done" type="object" states="progress"  class="oe_highlight" />-->
+                        <!--<button name="account_validate" string="Create Invoice" type="object"   class="oe_highlight"  attrs="{'invisible': ['|',('request', '=', True),('state', '!=', 'done')]}"/>-->
+                        <!--<field name="state" widget="statusbar" statusbar_visible="draft,done"/>-->
+
+                    <!--</header>-->
+
+<!--                    <sheet string="Maintenance Order Management">-->
+<!--                          <div class="oe_button_box" name="button_box">-->
+<!--                       -->
+<!--                            <field name="invoice_count" widget="statinfo" string="Vendor Bills"/>-->
+<!--                            <field name='invoice_ids' invisible="1"/>-->
+                        <!--</button>-->
+                          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--<field name="image_medium" widget='image' class="oe_avatar"/>-->
+                        <!--<div class="oe_title">-->
+                            <!--<h1>-->
+                                <!--<field name="name"/>-->
+                                 <!--<field name="request" invisible="1"/>-->
+                            <!--</h1>-->
+                        <!--</div>-->
+                        <!--<group>-->
+                          <!--<separator string="maintenance Order Details"/>-->
+                            <!--<group colspan="2" col="4">-->
+                                <!--<field name="main_date" />-->
+                                <!--<field name="main_no"/>-->
+                                <!--<field name="vehicle_id" />-->
+                                <!--<field name="driver_id" />-->
+                                <!--<field name="license_plate" />-->
+                                <!--<field name="company_id"/>-->
+                                <!--<field name="customer_id"  string="Customer" />-->
+                                <!--<field name="start_date" />-->
+                                <!--<field name="end_date" />-->
+                                <!--<field name="days_left"/>-->
+                            <!--</group>-->
+                        <!--</group>-->
+                        <!--<group>-->
+                            <!--<field name="note"/>-->
+                        <!--</group>-->
+                        <!--<notebook>-->
+                            <!--<page string="Order Line">-->
+                                 <!--<field name="order_ids" nolabel="1">-->
+                                     <!--<tree editable="bottom">-->
+                                         <!--<field name="product_id"/>-->
+                                         <!--<field name="name"/>-->
+                                         <!--<field name="product_uom"/>-->
+                                         <!--<field name="account_id"/>-->
+                                         <!--<field name="quantity"/>-->
+                                         <!--<field name="price"/>-->
+                                         <!--<field name="price_install"/>-->
+                                         <!--<field name="total"/>-->
+                                     <!--</tree>-->
+                                 <!--</field>-->
+                            <!--</page>-->
+                        <!--</notebook>-->
+                    <!--</sheet>-->
+                <!--</form>-->
+            <!--</field>-->
+        <!--</record>-->
+
+        <!--&lt;!&ndash; Tree view of maintenance Orders &ndash;&gt;-->
+        <!--<record id="view_fleet_maintenance_order_tree" model="ir.ui.view">-->
+            <!--<field name="name">view.fleet.maintenance.order.tree</field>-->
+            <!--<field name="model">fleet.maintenance.order</field>-->
+            <!--<field name="arch" type="xml">-->
+                <!--<tree string="Maintenance Order(s)" default_order="vehicle_id">-->
+                    <!--<field name="main_no"/>-->
+                    <!--<field name="vehicle_id" />-->
+                    <!--<field name="customer_id"/>-->
+                    <!--<field name="start_date"/>-->
+                    <!--<field name="end_date"/>-->
+                    <!--<field name="state"/>-->
+                <!--</tree>-->
+            <!--</field>-->
+        <!--</record>-->
+        <!--<record id='fleet_vehicle_order_view_graph' model='ir.ui.view'>-->
+            <!--<field name="name">fleet.maintenance.order.graph</field>-->
+            <!--<field name="model">fleet.maintenance.order</field>-->
+            <!--<field name="arch" type="xml">-->
+                <!--<graph string="Maintenance Orders">-->
+                    <!--<field name="vehicle_id"/>-->
+                    <!--<field name="main_date"/>-->
+                    <!--<field name="main_no" type="row"/>-->
+                <!--</graph>-->
+            <!--</field>-->
+        <!--</record>-->
+        <!--&lt;!&ndash; Action of maintenance Orders &ndash;&gt;-->
+        <!--<record id="action_fleet_maintenance" model="ir.actions.act_window">-->
+            <!--<field name="name">Maintenance Orders</field>-->
+            <!--<field name="res_model">fleet.maintenance.order</field>-->
+            <!--<field name="view_type">form</field>-->
+            <!--<field name="view_mode">tree,form,graph</field>-->
+
+        <!--</record>-->
+        <!--<menuitem id="menu_maintenance_child" parent="fleet.fleet_vehicles" name="Maintenance Orders" action="action_fleet_maintenance"/>-->
+</odoo>

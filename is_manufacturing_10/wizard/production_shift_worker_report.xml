@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="is_production_worker_template">
+               <t t-call="report.html_container">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+                            <t>
+                                <strong>Date from:</strong>
+                                <span t-esc="data['start_date']"/>
+                                <br/>
+                                 <strong>Date to:</strong>
+                                  <span t-esc="data['end_date']"/>
+                            </t>
+                            <br/>
+                                <t>
+                                     <th><strong>Worker:</strong></th>
+                                    <span t-esc="data['worker_id']"/>
+                                </t>
+                                <br/>
+                            <table class="table table-condensed">
+                                <thead>
+                                    <tr>
+
+                                        <th><strong>Product</strong></th>
+                                        <th class="text-center"><strong> Quantity </strong></th>
+                                        <!--<th class="text-center"><strong>Serial No </strong></th>-->
+                                        <!--<th class="text-center"><strong>Quantity</strong></th>-->
+                                        <!--<th class="text-center"><strong>Barcode</strong></th>-->
+                                        <!--<th class="text-center"><strong>End of Life Date </strong></th>-->
+                                    </tr>
+                                </thead>
+                            <tbody>
+                            <tr t-foreach="docs" t-as="o">
+
+                                <tr t-foreach="o.mrp_ids" t-as="line">
+                                    <tr t-foreach="o.mo_ids" t-as="mo">
+                                <td>
+                                    <span t-field="mo.product_id.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="line.quantity"/>
+                                </td>
+
+                           </tr>
+                           </tr>
+                            </tr>
+
+                      </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</data>
+</odoo>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="currency_valuation">
+               <t t-call="report.html_container">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+                            <t>
+                                <strong>Date from:</strong>
+                                <span t-esc="date_from"/>
+                                 <strong>Date to:</strong>
+                                  <span t-esc="date_to"/><br/>
+                            </t>
+                            <br/>
+                            <br/>
+                            <br/>
+
+                            <table class="table table-condensed">
+                                 <t t-set="total1" t-value="0.00"/>
+                                <t  t-set="i" t-value="0"/>
+
+                                <thead>
+                                    <tr>
+                                        <th ><strong>No.</strong></th>
+                                        <th class="text-center"><strong> Date.</strong></th>
+                                        <th class="text-center"><strong> Currency </strong></th>
+                                        <th class="text-center"><strong>Amount USD</strong></th>
+                                        <th class="text-center"><strong> Rate Amount </strong></th>
+                                        <th class="text-center"><strong>Amount SDG</strong></th>
+                                    </tr>
+                                </thead>
+
+                          <t t-foreach="currency_id" t-as="o">
+
+                            <tr >
+                             <t  t-set="i" t-value="i + 1"/>
+                                <td > <span t-esc="i"/>
+                                </td>
+                                <td class="text-center" >
+                                    <span t-esc="o['date']"/>
+                                </td>
+                                 <td class="text-center">
+                                     <span t-esc="o['request_currency']"/>
+                                </td>
+                                <td class="text-center">
+                                     <span t-esc="o['amount_usd']"/>
+
+                                </td> <td class="text-center">
+                                     <span t-esc="o['rate']"/>
+
+                                </td> <td class="text-center">
+                                     <span t-esc="o['amount_sdg']"/>
+                                </td>
+
+                                </tr>
+                                </t>
+                                    <tr class="text-right">
+                              <td colspan="6" >
+                                    <strong> Average Of Currency: </strong>
+                                   <span t-esc="round(average)"/>
+                                </td>
+                             </tr>
+
+
+                    </table>
+
+
+
+                </div>
+            </t>
+        </t>
+    </template>
+</data>
+</odoo>

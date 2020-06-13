@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+    <record id="all_state_wizard_form" model="ir.ui.view">
+        <field name="name">all.state.wizard</field>
+        <field name="model">all.state.wizard</field>
+        <field name="arch" type="xml">
+            <form string="State Report">
+
+                <group  col="4">
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                    <field name="all_type"/>
+                </group>
+
+
+                <footer>
+                    <button name="create_report" string="Print"  type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+
+            </form>
+        </field>
+    </record>
+    <record id="all_state_wizard_action" model="ir.actions.act_window">
+        <field name="name">All State Report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">all.state.wizard</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="all_state_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+    <menuitem action="all_state_wizard_action"  name="All State Report" id="all_state_report_menu_root" parent="sales_team.menu_sale_report" />
+
+
+    </data>
+</odoo>
